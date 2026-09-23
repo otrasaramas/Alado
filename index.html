@@ -1,0 +1,1382 @@
+<title>Ecosistema Alado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=DM+Mono:wght@400;500&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#ECE7DC; --paper-2:#F7F4ED; --paper-3:#E0D9CA; --ink:#171613; --graphite:#3A3833;
+  --stone:#6D675C; --line:#C9C1B0; --anil:#2F3D8E; --anil-wash:rgba(47,61,142,.08); --anil-line:rgba(47,61,142,.35);
+  --tape:rgba(206,194,166,.72); --grain-op:.22;
+  --shadow:0 1px 0 rgba(23,22,19,.05), 0 14px 32px -22px rgba(23,22,19,.45);
+  --display:"Bodoni Moda","Bodoni 72","Didot",Georgia,serif;
+  --body:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
+  --mono:"DM Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --gutter:clamp(16px,4vw,52px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#141311; --paper-2:#1D1B18; --paper-3:#29261F; --ink:#EEE8DC; --graphite:#CBC3B4;
+    --stone:#9A9385; --line:#3B372F; --anil:#9DA8EC; --anil-wash:rgba(157,168,236,.10); --anil-line:rgba(157,168,236,.4);
+    --tape:rgba(120,108,86,.5); --grain-op:.10;
+    --shadow:0 14px 32px -20px rgba(0,0,0,.9);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#141311; --paper-2:#1D1B18; --paper-3:#29261F; --ink:#EEE8DC; --graphite:#CBC3B4;
+  --stone:#9A9385; --line:#3B372F; --anil:#9DA8EC; --anil-wash:rgba(157,168,236,.10); --anil-line:rgba(157,168,236,.4);
+  --tape:rgba(120,108,86,.5); --grain-op:.10;
+  --shadow:0 14px 32px -20px rgba(0,0,0,.9);
+}
+
+html,body{height:100%}
+body{
+  background:var(--paper); color:var(--ink);
+  font:400 15px/1.55 var(--body);
+  display:grid; grid-template-rows:auto minmax(0,1fr) auto; grid-template-columns:minmax(0,1fr);
+  overflow:hidden; -webkit-font-smoothing:antialiased;
+}
+body::after{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:60; opacity:var(--grain-op);
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .1  0 0 0 0 .09  0 0 0 0 .07  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+:focus-visible{outline:2px solid var(--anil);outline-offset:3px}
+h1,h2,h3,h4{margin:0;font-weight:500;text-wrap:balance}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+
+/* ——— type utilities ——— */
+.eyebrow,.mono{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.eyebrow{color:var(--stone)}
+.muted{color:var(--stone)}
+
+/* ——— header ——— */
+.top{
+  display:flex; align-items:center; gap:24px;
+  padding-inline:var(--gutter); padding-block:14px;
+  border-bottom:1px solid var(--line); background:var(--paper); position:relative; z-index:5;
+}
+.brand{display:flex;align-items:baseline;gap:12px;flex:none;text-align:left}
+.brand b{font:600 22px/1 var(--display);letter-spacing:.28em}
+.brand span{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--stone)}
+.folios{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
+.folios::-webkit-scrollbar{display:none}
+.folios button{
+  flex:none; display:flex; align-items:baseline; gap:7px; padding:8px 11px; border-radius:2px;
+  font-size:12.5px; color:var(--stone); white-space:nowrap; position:relative;
+}
+.folios button i{font:italic 500 14px/1 var(--display);color:var(--stone)}
+.folios button:hover{color:var(--ink)}
+.folios button[aria-current="true"]{color:var(--ink)}
+.folios button[aria-current="true"] i{color:var(--anil)}
+.folios button[aria-current="true"]::after{content:"";position:absolute;left:11px;right:11px;bottom:2px;height:1.5px;background:var(--anil)}
+.proto{flex:none;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--stone);border:1px solid var(--line);padding:5px 8px}
+
+/* ——— stage ——— */
+#stage{overflow-y:auto;overflow-x:hidden;position:relative;scroll-behavior:smooth}
+.folio{padding-inline:var(--gutter);padding-block:34px 56px;max-width:1320px;margin-inline:auto}
+.folio.enter{animation:rise .5s cubic-bezier(.2,.7,.2,1)}
+@keyframes rise{from{opacity:.001;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+.fhead{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 40px;align-items:end;margin-bottom:28px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.fhead .eyebrow{grid-column:1/-1;display:flex;gap:14px;align-items:baseline}
+.fhead .eyebrow i{font:italic 500 17px/1 var(--display);letter-spacing:0;text-transform:none;color:var(--anil)}
+.fhead h2{font:400 clamp(30px,4.2vw,50px)/1.04 var(--display);letter-spacing:-.01em;max-width:18ch}
+.fhead h2 em{font-style:italic}
+.fhead .lede{grid-column:1;max-width:62ch;color:var(--graphite);font-size:15.5px}
+.answers{grid-column:2;grid-row:2/4;display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.answers .eyebrow{display:block}
+.fase{font-family:var(--mono);font-size:11px;letter-spacing:.08em;border:1px solid var(--ink);padding:4px 8px;border-radius:2px;white-space:nowrap}
+.fase-row{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+
+/* ——— shared bits ——— */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border:1px solid var(--ink);
+  font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;border-radius:2px;
+  transition:background .2s,color .2s;
+}
+.btn:hover{background:var(--ink);color:var(--paper-2)}
+.btn.solid{background:var(--ink);color:var(--paper-2)}
+.btn.solid:hover{background:var(--anil);border-color:var(--anil);color:var(--paper-2)}
+.chip{
+  display:inline-flex;align-items:center;gap:6px;padding:6px 11px;border:1px solid var(--line);border-radius:999px;
+  font-size:12.5px;color:var(--graphite);background:var(--paper-2);transition:border-color .2s,background .2s,color .2s;
+}
+.chip:hover{border-color:var(--ink);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper-2)}
+.chip .ico{width:14px;height:14px}
+.chip .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+
+.tag{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;padding:2px 6px;border-radius:2px;white-space:nowrap;vertical-align:middle}
+.tag.prop{border:1px dashed var(--graphite);color:var(--graphite)}
+.tag.demo{border:1px solid var(--anil);color:var(--anil)}
+.tag.now{border:1px solid var(--line);color:var(--stone)}
+
+.lchip{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px 3px 6px;border-radius:2px;white-space:nowrap}
+.lchip .ico{width:14px;height:14px}
+.lchip.auto{border:1px dashed var(--ink);color:var(--ink)}
+.lchip.ia{background:var(--anil-wash);border:1px solid var(--anil-line);color:var(--anil)}
+.lchip.hum{background:var(--ink);color:var(--paper-2);border:1px solid var(--ink)}
+.ico{display:inline-block;flex:none}
+
+.paper{background:var(--paper-2);border:1px solid var(--line);box-shadow:var(--shadow);position:relative}
+.taped::before{
+  content:"";position:absolute;top:-11px;left:50%;width:84px;height:22px;background:var(--tape);
+  transform:translateX(-50%) rotate(-2.5deg);box-shadow:0 1px 2px rgba(0,0,0,.06);
+}
+.hatch{background-image:repeating-linear-gradient(135deg,var(--line) 0 1px,transparent 1px 7px)}
+
+.panel{padding:24px 24px 26px;display:flex;flex-direction:column;gap:14px}
+.panel h3{font:400 30px/1.05 var(--display)}
+.panel h3 em{font-style:italic}
+.facts{display:grid;gap:12px;margin:0}
+.facts > div{display:grid;grid-template-columns:104px minmax(0,1fr);gap:12px;padding-top:11px;border-top:1px solid var(--line)}
+.facts dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--stone);padding-top:2px}
+.facts dd{margin:0;font-size:14px;color:var(--graphite)}
+.facts .opp dt{color:var(--anil)}
+.facts .opp dd{color:var(--ink)}
+.toolrow{display:flex;flex-wrap:wrap;gap:6px}
+.toolrow .t{font-size:12.5px;border:1px solid var(--line);padding:3px 8px;border-radius:2px;background:var(--paper);display:inline-flex;gap:6px;align-items:center}
+
+.scrollx{overflow-x:auto;overflow-y:hidden}
+svg text{font-family:var(--body)}
+
+/* ——— tooltip ——— */
+#tip{position:fixed;z-index:80;pointer-events:none;max-width:280px;background:var(--ink);color:var(--paper-2);font-size:12.5px;line-height:1.4;padding:8px 10px;border-radius:2px;opacity:0;transform:translateY(4px);transition:opacity .15s,transform .15s}
+#tip.on{opacity:1;transform:none}
+
+/* ——— footer ——— */
+.bottom{display:flex;align-items:center;gap:18px;padding-inline:var(--gutter);padding-block:10px;border-top:1px solid var(--line);background:var(--paper);position:relative;z-index:5}
+.bottom .nav{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:8px 2px;color:var(--graphite)}
+.bottom .nav:hover:not(:disabled){color:var(--anil)}
+.bottom .nav:disabled{opacity:.3;cursor:default}
+.thread{flex:1;display:flex;align-items:center;gap:0;min-width:0}
+.thread button{flex:1;height:22px;position:relative}
+.thread button::before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:var(--line)}
+.thread button::after{content:"";position:absolute;left:50%;top:50%;width:7px;height:7px;border:1px solid var(--stone);background:var(--paper);border-radius:50%;transform:translate(-50%,-50%)}
+.thread button.done::before{background:var(--ink)}
+.thread button.done::after{background:var(--ink);border-color:var(--ink)}
+.thread button[aria-current="true"]::after{background:var(--anil);border-color:var(--anil);width:11px;height:11px}
+.legend-demo{font-size:11.5px;color:var(--stone);display:flex;gap:8px;align-items:center;white-space:nowrap}
+
+/* ════════ I · INTRO ════════ */
+.intro{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:48px;align-items:center;padding-top:18px}
+.intro-meta{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:22px}
+.hero-word{font:500 clamp(76px,13vw,176px)/.86 var(--display);letter-spacing:.06em;margin-left:-.04em}
+.hero-sub{display:flex;align-items:center;gap:14px;margin:18px 0 26px}
+.hero-sub .mono{font-size:13px;letter-spacing:.34em}
+.hero-sub::before{content:"";width:48px;height:1px;background:var(--ink)}
+.hero-quote{font:italic 400 clamp(22px,2.4vw,30px)/1.2 var(--display);max-width:22ch;margin-bottom:22px}
+.hero-problem{max-width:52ch;color:var(--graphite);font-size:16px;margin-bottom:28px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.intro-collage{position:relative;min-height:470px}
+.intro-collage .whorl{position:absolute;inset:0;margin:auto;width:min(100%,460px);height:auto;color:var(--line)}
+.strip{position:absolute;padding:18px 20px 16px;width:min(92%,430px)}
+.strip.s1{top:22px;left:0;transform:rotate(-1.6deg)}
+.strip.s2{bottom:26px;right:0;transform:rotate(1.2deg)}
+.strip .eyebrow{margin-bottom:12px;display:flex;justify-content:space-between;gap:10px}
+.chain{display:flex;align-items:center;flex-wrap:wrap;gap:6px 4px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.chain span{padding:5px 7px;border:1px solid var(--ink)}
+.chain .arr{border:0;padding:0 2px;color:var(--stone)}
+.chain .fog{border:1px dashed var(--stone);color:var(--stone);filter:blur(.6px)}
+.chain .fogwrap{display:inline-flex;gap:4px;align-items:center;padding:6px;background-image:repeating-linear-gradient(135deg,var(--line) 0 1px,transparent 1px 6px);border:0}
+.strip p.note{margin-top:12px;font-size:13px;color:var(--graphite)}
+.phase-index{margin-top:42px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;border-top:1px solid var(--line);padding-top:20px}
+.phase-index div{display:grid;gap:6px}
+.phase-index b{font:italic 500 18px/1 var(--display);color:var(--anil)}
+.phase-index p{font-size:13.5px;color:var(--graphite)}
+
+/* ════════ II · ECOSISTEMA ACTUAL ════════ */
+.split{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(300px,1fr);gap:24px;align-items:start}
+.mapbox{padding:16px 16px 12px}
+.mapbox .scrollx > svg{display:block;width:100%;height:auto;min-width:620px}
+.map-tools{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.jline{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--graphite);min-height:18px;margin-top:10px}
+.node{cursor:pointer}
+.node .shape{fill:var(--paper-2);stroke:var(--ink);stroke-width:1.4;transition:fill .25s,stroke .25s}
+.node .lbl,.node .sub{paint-order:stroke;stroke:var(--paper-2);stroke-width:6px;stroke-linejoin:round}
+.node .lbl{font-size:16px;fill:var(--ink);text-anchor:middle;font-weight:500}
+.node .sub{font-family:var(--mono);font-size:10.5px;fill:var(--stone);text-anchor:middle;letter-spacing:.08em;text-transform:uppercase}
+.node .glyph{font:italic 600 20px var(--display);fill:var(--ink);text-anchor:middle;pointer-events:none}
+.node:hover .shape{stroke:var(--anil);stroke-width:2}
+.node.sel .shape{fill:var(--ink)}
+.node.sel .glyph{fill:var(--paper-2)}
+.node.dim{opacity:.28}
+.node.on .shape{stroke:var(--anil);stroke-width:2.4}
+.edge path.e{fill:none;stroke:var(--graphite);stroke-width:1.5;transition:stroke .25s,opacity .25s}
+.edge path.hit{fill:none;stroke:transparent;stroke-width:16}
+.edge.replica path.e{stroke-dasharray:2 5;stroke:var(--stone)}
+.edge.weak path.e{stroke-dasharray:6 6;stroke:var(--stone)}
+.edge.dim{opacity:.15}
+.edge.on path.e{stroke:var(--anil);stroke-width:2.6;stroke-dasharray:7 7;animation:flow 1s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-14}}
+.leak line{stroke:var(--stone);stroke-width:1.2;stroke-dasharray:3 4}
+.leak circle{fill:var(--paper);stroke:var(--stone);stroke-width:1}
+.leak text{font:italic 600 15px var(--display);fill:var(--stone);text-anchor:middle}
+.leak{cursor:help}
+.leak.dim{opacity:.2}
+.maplegend{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:var(--stone);margin-top:8px;padding-top:10px;border-top:1px solid var(--line)}
+.maplegend span{display:inline-flex;align-items:center;gap:7px}
+.maplegend svg{width:28px;height:10px;min-width:0}
+
+/* ════════ III · RECORRIDOS ════════ */
+.jlist{display:grid;gap:8px}
+.jrow{display:grid;grid-template-columns:40px minmax(0,1fr);gap:12px;align-items:center;padding:12px 14px;border:1px solid var(--line);background:var(--paper-2);text-align:left;border-radius:2px;transition:border-color .2s,background .2s}
+.jrow:hover{border-color:var(--ink)}
+.jrow[aria-pressed="true"]{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.jcode{font:italic 500 22px/1 var(--display);color:var(--stone)}
+.jrow[aria-pressed="true"] .jcode{color:var(--anil)}
+.jsteps{display:flex;flex-wrap:wrap;align-items:center;gap:6px 0}
+.jsteps li{display:flex;align-items:center;font-size:13px}
+.jsteps li + li::before{content:"";width:18px;height:1px;background:var(--graphite);margin-inline:4px}
+.jsteps .st{padding:3px 8px;border:1px solid var(--line);border-radius:2px;background:var(--paper);position:relative}
+.jsteps .st.end{background:var(--ink);color:var(--paper-2);border-color:var(--ink)}
+.jsteps .st.leak{border-style:dashed;border-color:var(--stone)}
+.jsteps .st.leak::after{content:"?";position:absolute;right:-7px;top:-9px;font:italic 600 13px/1 var(--display);background:var(--paper-2);color:var(--anil);padding:1px 3px;border:1px solid var(--anil-line);border-radius:50%}
+.jdetail{padding:22px 22px 24px;display:grid;gap:14px}
+.jdetail h3{font:400 26px/1.1 var(--display)}
+.unknowns{display:grid;gap:6px}
+.unknowns li{font:italic 400 17px/1.3 var(--display);color:var(--graphite);display:flex;gap:10px}
+.opaque{margin-top:28px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:0;border:1px solid var(--ink)}
+.fogbox{padding:24px;position:relative;overflow:hidden;border-right:1px solid var(--ink);display:flex;flex-direction:column;gap:14px}
+.fogbox::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(135deg,var(--line) 0 1px,transparent 1px 7px);transition:opacity .6s}
+.fogbox > *{position:relative}
+.fogbox h3{font:500 34px/1 var(--display);letter-spacing:.14em}
+.fogbox .def{font-size:14.5px;color:var(--graphite);max-width:40ch;background:var(--paper);padding:2px 0}
+.fogq{display:flex;flex-wrap:wrap;gap:8px}
+.fogq li{background:var(--paper-2);border:1px dashed var(--stone);padding:6px 10px;font-size:13px;border-radius:2px;filter:blur(1.4px);transition:filter .5s,border-color .5s;display:grid;gap:2px}
+.fogq li small{display:none;font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--anil);text-transform:uppercase}
+.opaque.lit .fogbox::before{opacity:.15}
+.opaque.lit .fogq li{filter:none;border-style:solid;border-color:var(--anil-line)}
+.opaque.lit .fogq li small{display:block}
+.oppbox{padding:24px;display:flex;flex-direction:column;gap:16px;background:var(--paper-2)}
+.oflow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;counter-reset:of}
+.oflow li{padding:12px 12px 14px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:8px;position:relative;transition:background .3s}
+.oflow li:first-child{border-left:0}
+.oflow li b{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;font-weight:500;text-transform:uppercase;display:flex;justify-content:space-between;gap:4px}
+.oflow li b::after{content:"→";color:var(--stone)}
+.oflow li:last-child b::after{content:"↺";color:var(--anil)}
+.oflow li p{font-size:13px;color:var(--graphite)}
+.oflow li:hover{background:var(--anil-wash)}
+
+/* ════════ IV · PROPUESTO ════════ */
+.viewtabs{display:inline-flex;border:1px solid var(--ink);border-radius:2px;margin-bottom:16px}
+.viewtabs button{padding:8px 14px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.viewtabs button[aria-pressed="true"]{background:var(--ink);color:var(--paper-2)}
+.ringwrap{padding:14px}
+.ringwrap .scrollx > svg{display:block;width:100%;height:auto;max-height:620px;min-width:520px}
+.stage-node{cursor:pointer}
+.stage-node circle.n{stroke-width:1.4;transition:r .2s}
+.stage-node.hum circle.n{fill:var(--ink);stroke:var(--ink)}
+.stage-node.ia circle.n{fill:var(--anil);stroke:var(--anil)}
+.stage-node.auto circle.n{fill:var(--paper-2);stroke:var(--ink);stroke-dasharray:3 2.5}
+.stage-node text.num{font-family:var(--mono);font-size:11px;text-anchor:middle;pointer-events:none}
+.stage-node.hum text.num,.stage-node.ia text.num{fill:var(--paper-2)}
+.stage-node.auto text.num{fill:var(--ink)}
+.stage-node text.lab{font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;fill:var(--ink)}
+.stage-node .halo{fill:none;stroke:var(--anil);stroke-width:1.5;opacity:0}
+.stage-node.sel .halo{opacity:1}
+.stage-node.sel text.lab{fill:var(--anil)}
+.stage-node:hover .halo{opacity:.6}
+.stage-node.dim{opacity:.22}
+.layerfilter{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.roles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.role{padding:18px 16px 16px;display:flex;flex-direction:column;gap:10px}
+.role h4{font:400 22px/1.1 var(--display)}
+.role .r{font:italic 400 16px/1.3 var(--display);color:var(--anil)}
+.role dl{display:grid;gap:8px;margin:0}
+.role dt{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--stone)}
+.role dd{margin:0;font-size:13px;color:var(--graphite)}
+.role.center{background:var(--ink);color:var(--paper-2);border-color:var(--ink)}
+.role.center .r{color:var(--paper-3)}
+.role.center dd,.role.center dt{color:var(--paper-3)}
+.role.center .toolrow .t{background:transparent;border-color:var(--stone);color:var(--paper-2)}
+.role.center .tag.prop{border-color:var(--paper-3);color:var(--paper-3)}
+
+/* ════════ V · COLECCIÓN ════════ */
+.flowbox{padding:14px}
+.flowbox .scrollx > svg{display:block;width:100%;height:auto;min-width:760px}
+.fnode{cursor:pointer}
+.fnode rect{stroke-width:1.3;transition:stroke-width .2s}
+.fnode.input rect{fill:var(--paper-2);stroke:var(--line)}
+.fnode.ia rect{fill:var(--anil-wash);stroke:var(--anil)}
+.fnode.hum rect{fill:var(--ink);stroke:var(--ink)}
+.fnode.auto rect{fill:var(--paper-2);stroke:var(--ink);stroke-dasharray:4 3}
+.fnode.cycle rect{fill:var(--paper);stroke:var(--anil);stroke-width:1.6}
+.fnode text{font-size:14px;text-anchor:middle;fill:var(--ink);font-weight:500}
+.fnode text.src{font-family:var(--mono);font-size:10px;fill:var(--stone);font-weight:400;letter-spacing:.06em}
+.fnode.ia text{fill:var(--anil)}
+.fnode.hum text{fill:var(--paper-2)}
+.fnode.cycle text{fill:var(--anil)}
+.fnode:hover rect{stroke-width:2.4}
+.fnode.sel rect{stroke:var(--anil);stroke-width:3}
+.flink{fill:none;stroke:var(--graphite);stroke-width:1.3}
+.flink.loop{stroke:var(--anil);stroke-dasharray:5 5;stroke-width:1.6}
+.flabel{font-family:var(--mono);font-size:10.5px;fill:var(--stone);letter-spacing:.08em}
+.coll-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:24px;margin-top:24px;align-items:start}
+.timeline{padding:22px 22px 18px}
+.tl-months{display:grid;grid-template-columns:150px repeat(12,minmax(0,1fr));font-family:var(--mono);font-size:10.5px;color:var(--stone);letter-spacing:.06em;border-bottom:1px solid var(--line);padding-bottom:6px;margin-bottom:8px}
+.tl-months span{text-align:center}
+.tl-row{display:grid;grid-template-columns:150px repeat(12,minmax(0,1fr));align-items:center;min-height:34px;border-bottom:1px dotted var(--line)}
+.tl-row > b{font-weight:500;font-size:12.5px;line-height:1.25;padding-right:8px}
+.tl-bar{height:18px;border-radius:2px;position:relative;cursor:help}
+.tl-bar.sell{background:var(--ink)}
+.tl-bar.learn{background:var(--anil)}
+.tl-bar.design{border:1px solid var(--ink);background-image:repeating-linear-gradient(135deg,var(--line) 0 1px,transparent 1px 5px)}
+.tl-note{font-size:12px;color:var(--stone);margin-top:12px;display:flex;gap:14px;flex-wrap:wrap}
+.tl-note i{display:inline-block;width:18px;height:8px;margin-right:6px;vertical-align:middle;border-radius:1px}
+.dossier{padding:22px;min-height:360px;display:flex;flex-direction:column;gap:14px}
+.dossier-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.scatter{position:relative;min-height:270px;flex:1}
+.scatter span{position:absolute;padding:7px 10px;background:var(--paper);border:1px solid var(--line);font-size:12.5px;box-shadow:var(--shadow);transform:rotate(var(--r));white-space:nowrap;animation:drop .5s both;animation-delay:var(--d)}
+@keyframes drop{from{opacity:0;transform:rotate(var(--r)) translateY(-8px)}to{opacity:1}}
+.scatter span small{display:block;font-family:var(--mono);font-size:9.5px;color:var(--stone);letter-spacing:.08em;text-transform:uppercase}
+.dfile{border:1px solid var(--ink);background:var(--paper);padding:18px 18px 12px;animation:rise .45s both}
+.dfile-top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--ink);padding-bottom:10px;margin-bottom:6px;gap:10px;flex-wrap:wrap}
+.dfile-top h4{font:italic 400 22px/1 var(--display)}
+.dfile ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 18px}
+.dfile li{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px dotted var(--line);font-size:13px}
+.dfile li .n{font-family:var(--mono);font-size:10.5px;color:var(--stone);flex:none;width:18px}
+.dfile li .s{margin-left:auto;flex:none}
+.dfile li.human{font-weight:600}
+
+/* ════════ VI · MATRIZ ════════ */
+.mfilters{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.matrix{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start}
+.mcol{display:flex;flex-direction:column;gap:10px;transition:opacity .3s}
+.mcol.dim{opacity:.3}
+.mhead{padding:18px 18px 16px;text-align:left;display:grid;gap:8px;border:1px solid var(--ink);border-radius:2px;background:var(--paper-2);transition:background .2s,color .2s}
+.mhead .ttl{display:flex;align-items:center;gap:10px;font:500 24px/1 var(--display)}
+.mhead .ttl .ico{width:22px;height:22px}
+.mhead p{font-size:13px;color:var(--graphite)}
+.mhead .rule{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--stone)}
+.mhead[aria-pressed="true"]{background:var(--ink);color:var(--paper-2)}
+.mhead[aria-pressed="true"] p,.mhead[aria-pressed="true"] .rule{color:var(--paper-3)}
+.mhead.ia .ttl{color:var(--anil)}
+.mhead.ia[aria-pressed="true"]{background:var(--anil);border-color:var(--anil)}
+.mhead.ia[aria-pressed="true"] .ttl{color:var(--paper-2)}
+.task{padding:10px 12px;border:1px solid var(--line);background:var(--paper-2);border-radius:2px;display:flex;gap:10px;justify-content:space-between;align-items:flex-start;font-size:13.5px;transition:opacity .25s,border-color .2s;cursor:help}
+.task:hover{border-color:var(--ink)}
+.task.off{opacity:.18}
+.task .area{font-family:var(--mono);font-size:9.5px;color:var(--stone);letter-spacing:.08em;text-transform:uppercase;display:block;margin-top:3px}
+.prio{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;border:1px solid var(--anil);color:var(--anil);padding:1px 5px;border-radius:2px;white-space:nowrap;flex:none}
+.sub-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:24px;margin-top:34px;align-items:start}
+.sub-grid > section > h3{font:400 26px/1.1 var(--display);margin-bottom:6px}
+.sub-grid > section > p{color:var(--graphite);font-size:14px;margin-bottom:16px;max-width:60ch}
+.lflow{display:grid;gap:0;border-left:1px solid var(--ink);margin-left:8px}
+.lflow li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;padding:0 0 16px 18px;position:relative}
+.lflow li::before{content:"";position:absolute;left:-5px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--paper);border:1px solid var(--ink)}
+.lflow li b{font-weight:600;font-size:14px;display:block}
+.lflow li p{font-size:13px;color:var(--graphite)}
+.team{display:grid;gap:10px}
+.team li{padding:14px 16px;display:grid;gap:6px}
+.team h4{font:400 19px/1.15 var(--display)}
+.team .row{display:grid;grid-template-columns:80px minmax(0,1fr);gap:10px;font-size:13px;color:var(--graphite)}
+.team .row span:first-child{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--stone);padding-top:2px}
+
+/* ════════ VII · ASISTENTE ════════ */
+.assist{display:grid;grid-template-columns:minmax(260px,340px) minmax(0,1fr);gap:22px;align-items:start}
+.qlist{display:flex;flex-direction:column;gap:18px;max-height:calc(100vh - 290px);overflow:auto;padding-right:6px}
+.qgroup{display:grid;gap:6px}
+.qgroup > .eyebrow{margin-bottom:2px}
+.q{text-align:left;padding:9px 12px;border:1px solid var(--line);background:var(--paper-2);border-radius:2px;font-size:13.5px;line-height:1.35;transition:border-color .2s,background .2s}
+.q:hover{border-color:var(--ink)}
+.q[aria-pressed="true"]{border-color:var(--anil);background:var(--anil-wash);color:var(--ink)}
+.chat{display:flex;flex-direction:column;min-height:520px;max-height:calc(100vh - 250px)}
+.chat-head{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.chat-head .who{display:flex;gap:12px;align-items:center}
+.chat-head .mark{width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--paper-2);display:grid;place-items:center;font:600 15px/1 var(--display);letter-spacing:.06em}
+.chat-head b{font:500 17px/1.1 var(--display);display:block}
+.chat-log{flex:1;overflow:auto;position:relative;padding:20px 18px;display:flex;flex-direction:column;gap:16px}
+.msg{max-width:88%;animation:rise .35s both}
+.msg.user{align-self:flex-end;background:var(--ink);color:var(--paper-2);padding:10px 14px;border-radius:14px 14px 2px 14px;font-size:14px}
+.msg.bot{align-self:flex-start;display:grid;gap:12px;border:1px solid var(--line);background:var(--paper);padding:16px 16px 14px;border-radius:2px 14px 14px 14px;width:88%}
+.msg.bot .intro{font-size:14px}
+.msg-top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
+.srcs{display:flex;gap:5px;flex-wrap:wrap}
+.srcs span{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;border:1px solid var(--line);padding:2px 6px;border-radius:2px;color:var(--stone)}
+.typing{align-self:flex-start;display:flex;gap:5px;padding:14px 16px;border:1px solid var(--line);border-radius:2px 14px 14px 14px;background:var(--paper)}
+.typing i{width:6px;height:6px;border-radius:50%;background:var(--stone);animation:blink 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes blink{0%,100%{opacity:.25}50%{opacity:1}}
+.bars{display:grid;gap:7px}
+.bars .cap{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--stone)}
+.bar{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) 40px;gap:10px;align-items:center;font-size:12.5px}
+.bar .track{height:12px;position:relative}
+.bar .fill{position:absolute;left:0;top:0;bottom:0;background:var(--anil);border-radius:0 3px 3px 0;animation:grow .7s cubic-bezier(.2,.7,.2,1) both}
+@keyframes grow{from{width:0}}
+.bar .v{font-family:var(--mono);font-size:11.5px;text-align:right;font-variant-numeric:tabular-nums}
+.bar:hover .fill{filter:brightness(1.15)}
+.mtable{width:100%;border-collapse:collapse;font-size:12.5px}
+.mtable th{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--stone);text-align:left;font-weight:400;padding:6px 8px;border-bottom:1px solid var(--ink)}
+.mtable td{padding:7px 8px;border-bottom:1px dotted var(--line);vertical-align:top}
+.mtable td:first-child{font-weight:600}
+.blist{display:grid;gap:6px;font-size:13px}
+.blist li{display:flex;gap:9px}
+.blist li::before{content:"—";color:var(--stone)}
+.bcap{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--stone);margin-bottom:6px}
+.bcols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.bcols > div{border-top:1px solid var(--ink);padding-top:8px;display:grid;gap:6px;align-content:start}
+.bcols b{font:italic 500 16px/1.1 var(--display)}
+.bcols li{font-size:12.5px;color:var(--graphite)}
+.sheet{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.sheet > div{border:1px solid var(--line);background:var(--paper-2);padding:10px;display:grid;gap:5px;font-size:12px}
+.sheet .ph{aspect-ratio:3/4;max-width:100%;background:var(--paper-3);display:grid;place-items:center;font-family:var(--mono);font-size:9.5px;color:var(--stone);letter-spacing:.08em;background-image:repeating-linear-gradient(135deg,var(--line) 0 1px,transparent 1px 6px)}
+.sheet b{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em}
+.sheet p{color:var(--graphite)}
+.sheet .draft{font-style:italic}
+.check{display:grid;gap:0}
+.check li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;padding:7px 0;border-bottom:1px dotted var(--line);font-size:13px}
+.check li small{grid-column:1;font-family:var(--mono);font-size:10px;color:var(--stone);letter-spacing:.04em}
+.check .st{grid-row:1/3;grid-column:2;align-self:center}
+.st-pill{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:999px;border:1px solid var(--ink);white-space:nowrap}
+.st-pill.ok{background:var(--ink);color:var(--paper-2)}
+.st-pill.part{border-style:dashed}
+.st-pill.hum{border-color:var(--anil);color:var(--anil)}
+.bnote{font-size:12.5px;color:var(--graphite);padding:8px 10px;border:1px dashed var(--line);border-radius:2px}
+.human{display:flex;gap:10px;align-items:flex-start;font-size:13px;padding-top:10px;border-top:1px solid var(--line)}
+.human .ico{width:16px;height:16px;margin-top:1px}
+.human b{font-weight:600}
+.chat-form{display:flex;gap:8px;padding:12px 14px;border-top:1px solid var(--line)}
+.chat-form input{flex:1;min-width:0;font:inherit;font-size:14px;padding:10px 12px;border:1px solid var(--line);border-radius:2px;background:var(--paper);color:var(--ink)}
+.chat-form input:focus{outline:none;border-color:var(--anil)}
+
+/* ════════ VIII · RESULTADO ════════ */
+.ba{display:grid;grid-template-columns:minmax(0,1fr) 70px minmax(0,1fr);gap:0;align-items:stretch}
+.bacol{padding:26px 24px;display:flex;flex-direction:column;gap:0}
+.bacol h3{font:500 15px/1 var(--mono);letter-spacing:.3em;margin-bottom:18px}
+.bacol.before{background-image:repeating-linear-gradient(135deg,var(--line) 0 1px,transparent 1px 8px);border:1px solid var(--line)}
+.bacol.after{background:var(--paper-2);border:1px solid var(--ink)}
+.baitem{display:flex;flex-direction:column;align-items:flex-start;gap:0;transition:opacity .25s}
+.baitem .t{padding:9px 13px;font-size:15px;border:1px solid var(--line);background:var(--paper);transition:border-color .2s,background .2s,color .2s;text-align:left;border-radius:2px}
+.bacol.before .baitem .t{color:var(--graphite);font-style:italic;font-family:var(--display);font-size:17px}
+.bacol.after .baitem .t{border-color:var(--ink);font-weight:500}
+.baitem .dn{padding:3px 0 3px 18px;color:var(--stone);font-size:13px;line-height:1}
+.baitem:last-child .dn{display:none}
+.baitem.hi .t{border-color:var(--anil);color:var(--anil);background:var(--anil-wash)}
+.baitem.lo{opacity:.35}
+.baitem .go{font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--stone);margin-left:10px}
+.bamid{display:flex;align-items:center;justify-content:center}
+.bamid svg{width:46px;height:auto}
+.closing{margin:40px 0 10px;display:grid;gap:18px;justify-items:center;text-align:center}
+.closing p{font:italic 400 clamp(26px,3.8vw,48px)/1.12 var(--display);max-width:26ch;text-wrap:balance}
+.closing p span{display:block}
+.closing p span:nth-child(2){color:var(--anil)}
+.triad{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.fanswers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:34px}
+.fanswer{padding:22px 20px 18px;display:flex;flex-direction:column;gap:10px}
+.fanswer .eyebrow{color:var(--anil)}
+.fanswer h4{font:400 20px/1.2 var(--display)}
+.fanswer p{font-size:13.5px;color:var(--graphite)}
+.fanswer .links{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:8px}
+.fanswer .links button{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;border-bottom:1px solid var(--ink);padding:2px 0;margin-right:8px}
+.fanswer .links button:hover{color:var(--anil);border-color:var(--anil)}
+
+/* ——— responsive ——— */
+@media (max-width:1100px){
+  .roles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proto{display:none}
+}
+@media (max-width:960px){
+  .intro,.split,.coll-grid,.sub-grid,.assist{grid-template-columns:minmax(0,1fr)}
+  .intro-collage{min-height:420px}
+  .opaque{grid-template-columns:minmax(0,1fr)}
+  .fogbox{border-right:0;border-bottom:1px solid var(--ink)}
+  .qlist{max-height:none}
+  .chat{max-height:none}
+  .fanswers{grid-template-columns:minmax(0,1fr)}
+  .brand span{display:none}
+}
+@media (max-width:720px){
+  body{font-size:14.5px}
+  .top{gap:14px}
+  .fhead{grid-template-columns:minmax(0,1fr)}
+  .answers{grid-column:1;grid-row:auto;align-items:flex-start}
+  .fase-row{justify-content:flex-start}
+  .matrix{grid-template-columns:minmax(0,1fr)}
+  .oflow{grid-template-columns:minmax(0,1fr)}
+  .oflow li{border-left:0;border-top:1px solid var(--line)}
+  .oflow li:first-child{border-top:0}
+  .ba{grid-template-columns:minmax(0,1fr)}
+  .bamid svg{transform:rotate(90deg);width:36px}
+  .phase-index{grid-template-columns:minmax(0,1fr)}
+  .roles{grid-template-columns:minmax(0,1fr)}
+  .dfile ol{grid-template-columns:minmax(0,1fr)}
+  .bcols,.sheet{grid-template-columns:minmax(0,1fr)}
+  .msg.bot{width:100%;max-width:100%}
+  .legend-demo{display:none}
+  .tl-months,.tl-row{grid-template-columns:96px repeat(12,minmax(0,1fr))}
+  .strip{position:relative;width:100%;top:auto!important;bottom:auto!important;left:auto;right:auto}
+  .intro-collage{display:grid;gap:22px;min-height:0}
+  .intro-collage .whorl{display:none}
+  .facts > div{grid-template-columns:minmax(0,1fr);gap:4px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+
+<header class="top">
+  <button class="brand" data-go="0" aria-label="Ir a la introducción"><b>ALADO</b><span>Ecosistema digital</span></button>
+  <nav class="folios" id="folios" aria-label="Folios del ecosistema"></nav>
+  <span class="proto">Prototipo conceptual</span>
+</header>
+
+<main id="stage">
+
+<!-- ════════ I · INTRODUCCIÓN ════════ -->
+<section class="folio" id="f-intro" data-folio="0">
+  <div class="intro">
+    <div>
+      <div class="intro-meta">
+        <span class="eyebrow">Caso de estudio · Diseño de ecosistemas digitales</span>
+        <span class="eyebrow">Alado · Alado &amp; Co.</span>
+      </div>
+      <h1 class="hero-word">ALADO</h1>
+      <div class="hero-sub"><span class="mono">Ecosistema digital</span></div>
+      <p class="hero-quote">De la construcción de mundo al aprendizaje continuo.</p>
+      <p class="hero-problem">Alado genera contenido e interés, pero necesita conectar mejor contenido, conversación, venta y aprendizaje para convertir la información en decisiones.</p>
+      <div class="hero-actions">
+        <button class="btn solid" data-go="1">Explorar ecosistema <span aria-hidden="true">→</span></button>
+        <span class="muted" style="font-size:12.5px">Usa las flechas del teclado o el hilo inferior para moverte.</span>
+      </div>
+    </div>
+    <div class="intro-collage" aria-label="Las dos rupturas del sistema actual">
+      <svg class="whorl" viewBox="0 0 400 400" aria-hidden="true" id="introWhorl"></svg>
+      <div class="strip s1 paper taped">
+        <p class="eyebrow"><span>Ruptura 1 · Recorrido del cliente</span></p>
+        <div class="chain">
+          <span>Contenido</span><span class="arr">→</span>
+          <span class="fogwrap"><span class="fog">Interés</span><span class="arr">→</span><span class="fog">Conversación</span></span>
+          <span class="arr">→</span><span>Compra</span>
+        </div>
+        <p class="note">Entre el contenido y la compra hay una zona opaca: no se sabe qué ocurrió con quien preguntó y no compró.</p>
+      </div>
+      <div class="strip s2 paper taped">
+        <p class="eyebrow"><span>Ruptura 2 · Ciclo creativo</span></p>
+        <div class="chain">
+          <span>Colección anterior</span><span class="arr">→</span>
+          <span class="fogwrap"><span class="fog">Datos</span><span class="arr">→</span><span class="fog">Aprendizajes</span></span>
+          <span class="arr">→</span><span>Nueva colección</span>
+        </div>
+        <p class="note">La información existe, pero está dispersa en Shopify, Drive, Excel, WhatsApp y la memoria del equipo.</p>
+      </div>
+    </div>
+  </div>
+  <div class="phase-index">
+    <div><b>Fase 1</b><p>¿Cómo puede Alado mejorar su presencia digital mediante un ecosistema conectado?</p></div>
+    <div><b>Fase 2</b><p>¿Cómo deberían trabajar los canales juntos y qué procesos pueden automatizarse?</p></div>
+    <div><b>Fase 3</b><p>¿Dónde puede usarse IA y qué debe automatizarse, asistirse con IA o mantenerse humano?</p></div>
+  </div>
+</section>
+
+<!-- ════════ II · ECOSISTEMA ACTUAL ════════ -->
+<section class="folio" id="f-actual" data-folio="1" hidden>
+  <header class="fhead">
+    <p class="eyebrow"><i>II</i> Ecosistema actual</p>
+    <h2>Siete canales que <em>todavía no conversan</em></h2>
+    <p class="lede">Así funcionan hoy los canales de Alado, conectados según los recorridos reales de sus clientes. Haz clic en un canal para ver su función, o filtra por recorrido.</p>
+    <div class="answers"><span class="eyebrow">Responde a</span><div class="fase-row"><span class="fase">Fase 1</span><span class="fase">Fase 2</span></div></div>
+  </header>
+  <div class="split">
+    <div>
+      <div class="map-tools">
+        <div class="chips" id="jFilter" role="group" aria-label="Filtrar por recorrido"></div>
+      </div>
+      <div class="paper mapbox">
+        <div class="scrollx"><svg id="map" viewBox="0 0 1000 690" role="img" aria-label="Mapa de canales actuales de Alado"></svg></div>
+        <p class="jline" id="jLine">Todos los recorridos documentados. Los signos ? marcan dónde se pierde el rastro.</p>
+        <div class="maplegend">
+          <span><svg viewBox="0 0 28 10"><line x1="0" y1="5" x2="28" y2="5" stroke="currentColor" stroke-width="1.5"/></svg>Recorrido documentado</span>
+          <span><svg viewBox="0 0 28 10"><line x1="0" y1="5" x2="28" y2="5" stroke="currentColor" stroke-width="1.5" stroke-dasharray="6 5"/></svg>Conexión sin recorrido documentado</span>
+          <span><svg viewBox="0 0 28 10"><line x1="0" y1="5" x2="28" y2="5" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 4"/></svg>Réplica de contenido</span>
+          <span><b style="font:italic 600 15px var(--display)">?</b>&nbsp;El recorrido se pierde sin registro</span>
+        </div>
+      </div>
+    </div>
+    <aside class="paper panel" id="chPanel" aria-live="polite"></aside>
+  </div>
+</section>
+
+<!-- ════════ III · RECORRIDOS ════════ -->
+<section class="folio" id="f-recorridos" data-folio="2" hidden>
+  <header class="fhead">
+    <p class="eyebrow"><i>III</i> Recorrido del cliente</p>
+    <h2>Seis caminos hacia la compra y <em>una zona sin registro</em></h2>
+    <p class="lede">Todos los recorridos pueden terminar en compra. Pero cuando no terminan, hoy no dejan información. Elige un recorrido para ver dónde se pierde la señal y qué podría registrarse.</p>
+    <div class="answers"><span class="eyebrow">Responde a</span><div class="fase-row"><span class="fase">Fase 1</span><span class="fase">Fase 2</span></div></div>
+  </header>
+  <div class="split">
+    <ol class="jlist" id="jList"></ol>
+    <aside class="paper jdetail" id="jDetail" aria-live="polite"></aside>
+  </div>
+  <div class="opaque" id="opaque">
+    <div class="fogbox">
+      <p class="eyebrow">Hoy</p>
+      <h3>ZONA OPACA</h3>
+      <p class="def">Personas que preguntan, visitan o interactúan pero cuyo recorrido posterior no siempre queda registrado.</p>
+      <ul class="fogq" id="fogQ"></ul>
+      <div><button class="btn" id="litBtn" aria-pressed="false">Iluminar la zona opaca</button></div>
+    </div>
+    <div class="oppbox">
+      <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline">
+        <p class="eyebrow">Oportunidad · con el ecosistema</p>
+        <span class="mono muted" id="oppFor">Recorrido R1</span>
+      </div>
+      <ol class="oflow" id="oFlow"></ol>
+      <p class="muted" style="font-size:13px">Incluso una conversación que no termina en compra deja aprendizaje: qué pieza interesó, de dónde vino la persona y por qué no siguió.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ IV · ECOSISTEMA PROPUESTO ════════ -->
+<section class="folio" id="f-propuesto" data-folio="3" hidden>
+  <header class="fhead">
+    <p class="eyebrow"><i>IV</i> Ecosistema propuesto</p>
+    <h2>Un ciclo, <em>no una línea</em></h2>
+    <p class="lede">El mundo de Alado genera contenido, el contenido genera interés y conversación, la venta genera datos, y los datos vuelven como aprendizaje a la dirección creativa. Recorre las diez etapas o mira el rol que cumple cada canal.</p>
+    <div class="answers"><span class="eyebrow">Responde a</span><div class="fase-row"><span class="fase">Fase 1</span><span class="fase">Fase 2</span></div></div>
+  </header>
+  <div class="viewtabs" role="group" aria-label="Vista">
+    <button aria-pressed="true" data-view="ring">El ciclo</button>
+    <button aria-pressed="false" data-view="roles">Rol de cada canal</button>
+  </div>
+  <div id="vRing">
+    <div class="split">
+      <div class="paper ringwrap">
+        <div class="layerfilter" id="layerFilter" style="margin-bottom:6px"></div>
+        <div class="scrollx"><svg id="ring" viewBox="0 0 760 640" role="img" aria-label="Ciclo del ecosistema propuesto"></svg></div>
+      </div>
+      <aside class="paper panel" id="stPanel" aria-live="polite"></aside>
+    </div>
+  </div>
+  <div id="vRoles" hidden>
+    <p class="muted" style="margin-bottom:16px;max-width:70ch">Cada canal deja de replicar a los demás y cumple una función dentro del ciclo. Todos marcan el origen de lo que envían y escriben en una base común.</p>
+    <div class="roles" id="roles"></div>
+  </div>
+</section>
+
+<!-- ════════ V · CICLO DE COLECCIÓN ════════ -->
+<section class="folio" id="f-coleccion" data-folio="4" hidden>
+  <header class="fhead">
+    <p class="eyebrow"><i>V</i> Ciclo de colección</p>
+    <h2>De una colección <em>a la siguiente</em></h2>
+    <p class="lede">Seis fuentes de información se ordenan antes de diseñar. El análisis lo prepara la IA; la interpretación, el concepto y el diseño siguen siendo de Andrés y Alejandro. Haz clic en cualquier etapa.</p>
+    <div class="answers"><span class="eyebrow">Responde a</span><div class="fase-row"><span class="fase">Fase 2</span><span class="fase">Fase 3</span></div></div>
+  </header>
+  <div class="paper flowbox">
+    <div class="scrollx"><svg id="flow" viewBox="0 0 1080 470" role="img" aria-label="Ciclo de colección"></svg></div>
+  </div>
+  <div class="coll-grid">
+    <aside class="paper panel" id="flPanel" aria-live="polite"></aside>
+    <div style="display:grid;gap:24px">
+      <div class="paper timeline">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:14px">
+          <p class="eyebrow">Calendario anual de colecciones</p>
+          <span class="tag prop">Ventanas de aprendizaje: propuesta</span>
+        </div>
+        <div class="scrollx"><div style="min-width:520px" id="tl"></div></div>
+        <div class="tl-note">
+          <span><i style="background:var(--ink)"></i>Lanzamiento y venta</span>
+          <span><i style="background:var(--anil)"></i>Cierre y dossier de aprendizaje</span>
+          <span><i class="hatch" style="border:1px solid var(--ink)"></i>Diseño de la siguiente (indicativo)</span>
+        </div>
+      </div>
+      <div class="paper dossier">
+        <div class="dossier-head">
+          <p class="eyebrow">Información antes de diseñar</p>
+          <div class="viewtabs" role="group" aria-label="Estado de la información" style="margin:0">
+            <button aria-pressed="true" data-dos="now">Hoy</button>
+            <button aria-pressed="false" data-dos="future">Con el sistema</button>
+          </div>
+        </div>
+        <div id="dosNow" class="scatter"></div>
+        <div id="dosFuture" hidden></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ VI · MATRIZ ════════ -->
+<section class="folio" id="f-matriz" data-folio="5" hidden>
+  <header class="fhead">
+    <p class="eyebrow"><i>VI</i> IA + automatización + humano</p>
+    <h2>Automatizar, asistir, <em>mantener humano</em></h2>
+    <p class="lede">No todo debe automatizarse. Esta matriz ordena las tareas manuales identificadas en el equipo según quién debería hacerlas. Selecciona una categoría o filtra por área; pasa el cursor sobre una tarea para ver el porqué.</p>
+    <div class="answers"><span class="eyebrow">Responde a</span><div class="fase-row"><span class="fase">Fase 2</span><span class="fase">Fase 3</span></div></div>
+  </header>
+  <div class="mfilters">
+    <div class="chips" id="areaFilter" role="group" aria-label="Filtrar por área"></div>
+    <span class="muted" style="font-size:12.5px"><span class="prio">P1</span> prioridad por carga de trabajo actual</span>
+  </div>
+  <div class="matrix" id="matrix"></div>
+  <div class="sub-grid">
+    <section>
+      <h3>Una tarea, tres manos</h3>
+      <p>La tarea con más carga hoy, el linesheet, muestra cómo se reparte el trabajo: nada sale sin revisión humana.</p>
+      <ol class="lflow" id="lflow"></ol>
+    </section>
+    <section>
+      <h3>El equipo gana tiempo</h3>
+      <p>Una casa pequeña no necesita un equipo digital enorme. Necesita que cada rol dedique más tiempo a lo que solo ese rol puede hacer.</p>
+      <ul class="team" id="team"></ul>
+    </section>
+  </div>
+</section>
+
+<!-- ════════ VII · ASISTENTE ════════ -->
+<section class="folio" id="f-asistente" data-folio="6" hidden>
+  <header class="fhead">
+    <p class="eyebrow"><i>VII</i> Asistente digital Alado</p>
+    <h2>Preguntarle <em>al sistema</em></h2>
+    <p class="lede">Así podría funcionar un asistente conectado a Shopify, Drive, Excel, Instagram y WhatsApp. Todas las respuestas usan datos ficticios marcados DEMO: muestran el tipo de respuesta, no resultados reales de Alado.</p>
+    <div class="answers"><span class="eyebrow">Responde a</span><div class="fase-row"><span class="fase">Fase 3</span></div></div>
+  </header>
+  <div class="assist">
+    <div class="qlist" id="qList"></div>
+    <div class="paper chat">
+      <div class="chat-head">
+        <div class="who"><span class="mark" aria-hidden="true">A</span><div><b>Asistente Alado</b><span class="eyebrow">Herramienta propuesta · prototipo</span></div></div>
+        <span class="tag demo">DEMO · datos ficticios</span>
+      </div>
+      <div class="chat-log" id="chatLog" aria-live="polite"></div>
+      <form class="chat-form" id="askForm" autocomplete="off">
+        <label for="askInput" class="eyebrow" style="position:absolute;left:-9999px">Escribe una pregunta</label>
+        <input id="askInput" type="text" placeholder="Escribe una pregunta (p. ej. «linesheet», «inventario»)">
+        <button class="btn solid" type="submit" style="padding:10px 16px">Preguntar</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ VIII · RESULTADO ════════ -->
+<section class="folio" id="f-resultado" data-folio="7" hidden>
+  <header class="fhead">
+    <p class="eyebrow"><i>VIII</i> Resultado</p>
+    <h2>Del fragmento <em>al ciclo</em></h2>
+    <p class="lede">Lo que cambia cuando los canales, la información y las personas trabajan como un sistema. Pasa el cursor sobre un punto para ver su transformación.</p>
+    <div class="answers"><span class="eyebrow">Responde a</span><div class="fase-row"><span class="fase">Fase 1</span><span class="fase">Fase 2</span><span class="fase">Fase 3</span></div></div>
+  </header>
+  <div class="ba" id="ba"></div>
+  <div class="closing">
+    <p><span>Automatizar lo repetitivo.</span> <span>Asistir lo complejo.</span> <span>Mantener humano lo que hace única a Alado.</span></p>
+    <div class="triad" id="triad"></div>
+  </div>
+  <div class="fanswers" id="fanswers"></div>
+</section>
+
+</main>
+
+<footer class="bottom">
+  <button class="nav" id="prevBtn">← Anterior</button>
+  <div class="thread" id="thread" aria-label="Progreso"></div>
+  <button class="nav" id="nextBtn">Siguiente →</button>
+  <span class="legend-demo"><span class="tag demo">DEMO</span> datos ficticios <span class="tag prop">Propuesta</span> herramienta futura</span>
+</footer>
+
+<div id="tip" role="tooltip"></div>
+
+<script>
+(function(){
+const $=(s,r=document)=>r.querySelector(s);
+const $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const ICON={
+  auto:'<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="6.6" fill="none" stroke="currentColor" stroke-width="3.4" stroke-dasharray="2.6 2.58"/><circle cx="12" cy="12" r="4.4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>',
+  ia:'<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7 L12 17 L18 5 M12 17 L20 15.5 M5 7 L18 5" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="5" cy="7" r="2.3" fill="currentColor"/><circle cx="18" cy="5" r="2.3" fill="currentColor"/><circle cx="12" cy="17" r="2.6" fill="currentColor"/><circle cx="20" cy="15.5" r="1.8" fill="currentColor"/></svg>',
+  hum:'<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 12.5V6a1.5 1.5 0 0 1 3 0v5.5M11 11V4.5a1.5 1.5 0 0 1 3 0V11M14 11V6a1.5 1.5 0 0 1 3 0v6M17 12V8.8a1.5 1.5 0 0 1 3 0V14c0 4.2-3 7.5-7.3 7.5-2.9 0-4.7-1.4-6.2-3.6L4 14.3a1.5 1.5 0 0 1 2.5-1.7L8 14.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+};
+const LAYER={auto:'Automatizar',ia:'IA asiste',hum:'Humano'};
+const lchip=k=>`<span class="lchip ${k}">${ICON[k]}${LAYER[k]}</span>`;
+const tools=list=>`<div class="toolrow">${list.map(t=>`<span class="t">${esc(t[0])}${t[1]?' <span class="tag prop">Propuesta</span>':''}</span>`).join('')}</div>`;
+
+/* ───────── tooltip ───────── */
+const tip=$('#tip');
+document.addEventListener('mouseover',e=>{const t=e.target.closest('[data-tip]');if(!t)return;tip.textContent=t.getAttribute('data-tip');tip.classList.add('on');});
+document.addEventListener('mouseout',e=>{const t=e.target.closest('[data-tip]');if(t&&!t.contains(e.relatedTarget))tip.classList.remove('on');});
+document.addEventListener('mousemove',e=>{if(!tip.classList.contains('on'))return;const w=tip.offsetWidth,h=tip.offsetHeight;let x=e.clientX+14,y=e.clientY+16;if(x+w>innerWidth-8)x=e.clientX-w-14;if(y+h>innerHeight-8)y=e.clientY-h-12;tip.style.left=x+'px';tip.style.top=y+'px';});
+
+/* ───────── navigation ───────── */
+const FOLIOS=[['intro','I','Introducción'],['actual','II','Ecosistema actual'],['recorridos','III','Recorridos'],['propuesto','IV','Ecosistema propuesto'],['coleccion','V','Ciclo de colección'],['matriz','VI','IA · Automatización · Humano'],['asistente','VII','Asistente'],['resultado','VIII','Resultado']];
+const sections=$$('.folio');
+$('#folios').innerHTML=FOLIOS.map((f,i)=>`<button data-go="${i}"><i>${f[1]}</i>${f[2]}</button>`).join('');
+$('#thread').innerHTML=FOLIOS.map((f,i)=>`<button data-go="${i}" aria-label="Folio ${f[1]} · ${f[2]}" data-tip="${f[1]} · ${f[2]}"></button>`).join('');
+let cur=-1;
+function go(i){
+  i=Math.max(0,Math.min(FOLIOS.length-1,i));
+  if(i===cur)return;
+  sections.forEach((s,k)=>{s.hidden=k!==i;s.classList.remove('enter');});
+  const s=sections[i];void s.offsetWidth;s.classList.add('enter');
+  $$('#folios button').forEach((b,k)=>b.setAttribute('aria-current',k===i));
+  $$('#thread button').forEach((b,k)=>{b.setAttribute('aria-current',k===i);b.classList.toggle('done',k<i);});
+  $('#prevBtn').disabled=i===0;$('#nextBtn').disabled=i===FOLIOS.length-1;
+  $('#stage').scrollTop=0;
+  const nb=$$('#folios button')[i];if(nb&&nb.scrollIntoView)nb.scrollIntoView({block:'nearest',inline:'nearest'});
+  cur=i;
+  try{history.replaceState(null,'','#'+FOLIOS[i][0]);}catch(e){}
+}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(b){go(+b.dataset.go);}});
+$('#prevBtn').onclick=()=>go(cur-1);$('#nextBtn').onclick=()=>go(cur+1);
+document.addEventListener('keydown',e=>{if(e.target.closest('input,textarea'))return;if(e.key==='ArrowRight')go(cur+1);if(e.key==='ArrowLeft')go(cur-1);});
+
+/* ───────── intro whorl (volante de huso) ───────── */
+(function(){
+  let s='';const c=200;
+  s+=`<circle cx="${c}" cy="${c}" r="190" fill="none" stroke="currentColor" stroke-width="1"/>`;
+  s+=`<circle cx="${c}" cy="${c}" r="150" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 5"/>`;
+  s+=`<circle cx="${c}" cy="${c}" r="96" fill="none" stroke="currentColor" stroke-width="1"/>`;
+  s+=`<circle cx="${c}" cy="${c}" r="22" fill="none" stroke="currentColor" stroke-width="1"/>`;
+  for(let i=0;i<48;i++){const a=i/48*Math.PI*2,r1=158,r2=i%2?178:186;s+=`<line x1="${(c+Math.cos(a)*r1).toFixed(1)}" y1="${(c+Math.sin(a)*r1).toFixed(1)}" x2="${(c+Math.cos(a)*r2).toFixed(1)}" y2="${(c+Math.sin(a)*r2).toFixed(1)}" stroke="currentColor" stroke-width="1"/>`;}
+  for(let i=0;i<12;i++){const a=i/12*Math.PI*2+.13,r1=30,r2=90;s+=`<path d="M${(c+Math.cos(a)*r1).toFixed(1)},${(c+Math.sin(a)*r1).toFixed(1)} Q${(c+Math.cos(a+.5)*70).toFixed(1)},${(c+Math.sin(a+.5)*70).toFixed(1)} ${(c+Math.cos(a+.4)*r2).toFixed(1)},${(c+Math.sin(a+.4)*r2).toFixed(1)}" fill="none" stroke="currentColor" stroke-width="1"/>`;}
+  $('#introWhorl').innerHTML=s;
+})();
+
+/* ════════ II · CANALES ════════ */
+const NODES={
+  events:{x:150,y:115,r:36,label:'Eventos / pasarelas',g:'E',sub:'Colombiamoda · BFW',
+    fn:'Momento cumbre del world building: Colombiamoda, Bogotá Fashion Week, ferias y pasarelas.',
+    in:'Público, prensa, compradores y personas que aún no conocen la marca.',
+    out:'Contactos por WhatsApp, contenido de desfile e interés inmediato.',
+    prob:'El interés del evento es alto pero breve. Muchos no escriben después, y quienes escriben llegan sin quedar asociados al evento que los trajo.',
+    opp:'Un código QR por evento hacia la página de la colección con registro opcional (propuesta). Cada contacto queda asociado a su evento de origen.'},
+  ig:{x:260,y:330,r:58,label:'Instagram',g:'Ig',sub:'Canal principal',
+    fn:'Canal digital principal y espacio del world building. Carruseles, Stories y Reels construyen el universo de cada colección.',
+    in:'Campañas, editoriales, fotografía de producto, behind the scenes, entrevistas, eventos y desfiles.',
+    out:'Interés, comentarios, mensajes directos, visitas al perfil y salidas hacia la web y WhatsApp.',
+    prob:'La conversación empieza aquí, pero lo que ocurre después (DM, WhatsApp, web) no queda conectado con la publicación que lo originó.',
+    opp:'Marcar el origen de cada interacción con enlaces rastreables y etiquetas por colección y pieza, para saber qué contenido abre conversaciones y cuál lleva a la compra.'},
+  fb:{x:95,y:528,r:30,label:'Facebook',g:'Fb',sub:'Réplica',
+    fn:'Replica el contenido de Instagram, sin estrategia propia.',
+    in:'Las mismas piezas publicadas en Instagram.',
+    out:'Alcance marginal que no se mide por separado.',
+    prob:'Ocupa espacio en el flujo de trabajo pero no cumple un rol distinto dentro del sistema.',
+    opp:'Usarlo como infraestructura: Meta Business Suite (propuesta) para programar publicaciones, unificar la bandeja de mensajes y, más adelante, pauta de descubrimiento dirigida a la web.'},
+  dm:{x:420,y:505,r:26,label:'DM',g:'DM',sub:'',
+    fn:'Mensajes directos de Instagram: primera conversación con la marca.',
+    in:'Preguntas sobre piezas vistas en publicaciones, Stories o Reels.',
+    out:'Asesoría por DM o traslado a WhatsApp.',
+    prob:'Las consultas de producto se mezclan con mensajes de comunidad y prensa. Al pasar a WhatsApp se pierde el contexto de qué preguntó y qué pieza vio.',
+    opp:'Respuestas guardadas para preguntas frecuentes, etiqueta de consulta de producto y un enlace a WhatsApp que conserve la pieza consultada.'},
+  wa:{x:560,y:190,r:42,label:'WhatsApp',g:'Wa',sub:'Asesoría',
+    fn:'Conversación y asesoría personalizada. Aquí se resuelve el precio y se cierra buena parte de las ventas.',
+    in:'Personas que llegan desde Instagram, DMs, la web y eventos.',
+    out:'Asesorías, ventas y preguntas frecuentes.',
+    prob:'Las conversaciones que no terminan en compra se pierden: no se sabe qué pieza interesó, de dónde vino la persona ni por qué no compró.',
+    opp:'WhatsApp Business con catálogo y etiquetas (propuesta): origen, pieza y estado (consulta, asesoría, compra, no compra) registrados en una base común.'},
+  web:{x:640,y:440,r:42,label:'Web',g:'W',sub:'Shopify',
+    fn:'Tienda en Shopify, usada principalmente para vender ropa.',
+    in:'Visitas desde Instagram (enlace del perfil, Stories) y búsquedas.',
+    out:'Compras directas y visitas que salen sin comprar.',
+    prob:'Funciona como catálogo de venta, pero cuenta poco la historia de las piezas. Quien sale sin comprar se va sin dejar rastro.',
+    opp:'Convertirla también en archivo del mundo Alado (historias de colección, oficio, territorio) con fichas que conecten con WhatsApp y registren interés ("avísame", lista de espera).'},
+  gb:{x:470,y:606,r:26,label:'Google Business',g:'G',sub:'Uso parcial',
+    fn:'Ficha de la marca en búsqueda y mapas de Google. Hoy se usa parcialmente.',
+    in:'Búsquedas por nombre de la marca o de la zona.',
+    out:'Llegadas a la tienda física, llamadas y visitas a la web.',
+    prob:'Ficha incompleta o poco actualizada; lo que genera no se mide.',
+    opp:'Completarla con fotografías de colección, horarios y enlaces a la web y WhatsApp. Es un canal de descubrimiento local que pide poco esfuerzo.'},
+  store:{x:790,y:596,r:34,label:'Tienda física',g:'T',sub:'',
+    fn:'Experiencia de la pieza: tocarla, probarla, conversar con la marca.',
+    in:'Clientes que llegan por Instagram, Google, recomendación o eventos.',
+    out:'Ventas presenciales y relación directa.',
+    prob:'Lo que se vende y se conversa en tienda no se cruza con el recorrido digital que trajo a la persona.',
+    opp:'Registrar "¿cómo nos conociste?" y qué pieza motivó la visita. Unificar las ventas de tienda en Shopify POS (propuesta) o en el mismo registro común.'},
+  compra:{x:880,y:320,r:38,label:'Asesoría · compra',g:'$',sub:'',square:true,
+    fn:'Punto donde termina el recorrido cuando hay venta.',
+    in:'Personas asesoradas por WhatsApp o DM, compras directas en la web y en tienda.',
+    out:'Ventas registradas y la base de datos de clientes.',
+    prob:'La base de clientes contiene sobre todo a quienes ya compraron. De quienes preguntaron y no compraron casi no queda nada.',
+    opp:'Registrar también el "no": cada conversación cerrada deja su origen, la pieza y el motivo cuando se conoce.'}
+};
+const EDGES=[
+  {f:'ig',t:'wa',j:[1],tip:'Instagram → WhatsApp (R1)'},
+  {f:'ig',t:'dm',j:[2,3],tip:'Instagram → mensaje directo (R2, R3)'},
+  {f:'dm',t:'wa',j:[3],b:-18,tip:'DM → WhatsApp (R3)'},
+  {f:'dm',t:'compra',j:[2],b:62,tip:'DM → pregunta precio → asesoría → compra (R2)'},
+  {f:'wa',t:'compra',j:[1,3,5,6],b:-14,tip:'WhatsApp → pregunta precio → asesoría → compra (R1, R3, R5, R6)'},
+  {f:'ig',t:'web',j:[4,5],b:16,tip:'Instagram → Web (R4, R5)'},
+  {f:'web',t:'compra',j:[4],b:10,tip:'Compra directa en la web (R4)'},
+  {f:'web',t:'wa',j:[5],b:-26,tip:'Web → WhatsApp → asesoría (R5)'},
+  {f:'events',t:'wa',j:[6],b:-30,tip:'Pasarela / feria / evento → WhatsApp (R6)'},
+  {f:'ig',t:'fb',j:[],k:'replica',b:12,tip:'El contenido de Instagram se replica en Facebook, sin estrategia propia'},
+  {f:'gb',t:'web',j:[],k:'weak',b:-10,tip:'Google Business → web: conexión posible, no medida'},
+  {f:'gb',t:'store',j:[],k:'weak',b:14,tip:'Google Business → tienda física: conexión posible, no medida'},
+  {f:'store',t:'compra',j:[],k:'weak',b:-12,tip:'Venta en tienda: no se cruza con el recorrido digital'}
+];
+const LEAKS=[
+  {n:'ig',a:168,j:[1,2,3,4,5],tip:'Instagram → interacción → no sabemos qué ocurrió después'},
+  {n:'dm',a:150,j:[2,3],tip:'DM → pregunta precio → sin respuesta ni registro'},
+  {n:'wa',a:-62,j:[1,3,5,6],tip:'WhatsApp → pregunta precio → no compra. No queda registrado por qué'},
+  {n:'web',a:58,j:[4,5],tip:'Web → visita → no compra. La visita no deja rastro'},
+  {n:'events',a:-148,j:[6],tip:'Evento → interés → muchas personas nunca escriben'}
+];
+const JOURNEYS=[
+  {id:1,steps:['Instagram','WhatsApp','Pregunta precio','Asesoría','Compra'],leak:[1,2],
+    loss:'Al saltar de Instagram a WhatsApp desaparece la referencia a la publicación. Si la persona pregunta el precio y no vuelve a escribir, la conversación queda en el historial sin etiqueta.',
+    unk:['¿Qué publicación motivó el mensaje?','¿Qué pieza le interesó?','¿Por qué no siguió después del precio?'],
+    reg:[['Mensaje prellenado desde el enlace del perfil, con la pieza',1],['Etiqueta de origen y estado en WhatsApp Business',1]],
+    flow:['Ve una pieza en un Reel o carrusel y abre WhatsApp desde el enlace del perfil.','El mensaje llega con la pieza y el origen; se etiqueta como consulta.','Si la conversación queda abierta, el sistema recuerda al equipo retomarla.','Se marca compra o no compra, con el motivo cuando se conoce: precio, talla, tiempo.','Qué contenido abre conversaciones que terminan en compra y cuál solo genera preguntas.']},
+  {id:2,steps:['Instagram','DM','Pregunta precio','Asesoría','Compra'],leak:[2],
+    loss:'La conversación ocurre dentro de Instagram, mezclada con mensajes de comunidad y prensa. No queda un registro ordenado de la consulta ni de su resultado.',
+    unk:['¿Cuántas consultas de producto llegan por DM?','¿Cuáles se convierten en venta?','¿Qué piezas generan más preguntas?'],
+    reg:[['Respuestas guardadas para preguntas frecuentes',0],['Bandeja unificada con etiqueta de consulta (Meta Business Suite)',1]],
+    flow:['Responde a una Story o escribe por DM sobre una pieza.','La consulta se etiqueta con la pieza en la bandeja unificada.','Respuesta con información completa: precio, tallas, tiempos. Recordatorio si queda sin cierre.','Compra por DM, paso a WhatsApp con contexto, o no compra con motivo.','Qué piezas generan consultas por DM y cuántas se convierten.']},
+  {id:3,steps:['Instagram','DM','WhatsApp','Pregunta precio','Asesoría','Compra'],leak:[2,3],
+    loss:'Doble salto: la persona cambia de canal a mitad de conversación. El contexto (qué preguntó, qué pieza vio) se reescribe o se pierde.',
+    unk:['¿Cuántas personas se pierden al pasar de DM a WhatsApp?','¿Qué había preguntado antes?','¿Llegó a pedir precio?'],
+    reg:[['Enlace de DM a WhatsApp con el código de la pieza',1],['Etiqueta "viene de DM" en WhatsApp',1]],
+    flow:['Pregunta por DM y se le invita a seguir por WhatsApp.','El enlace conserva la pieza: la conversación continúa donde iba.','El equipo ve el historial completo y retoma sin repetir preguntas.','Compra o no compra, sin importar en qué canal terminó.','Cuánto se pierde en el cambio de canal y si conviene cerrar en uno solo.']},
+  {id:4,steps:['Instagram','Web','Compra'],leak:[1],
+    loss:'Quien visita la web y no compra se va sin dejar rastro. Tampoco se sabe qué publicación trajo la visita.',
+    unk:['¿Qué publicación trajo la visita?','¿Qué fichas miró?','¿Por qué no compró?'],
+    reg:[['Enlaces rastreables (UTM) en el perfil y las Stories',1],['Opción "avísame" o lista de espera en cada ficha',1],['Analítica de Shopify + Google Analytics 4',1]],
+    flow:['Toca el enlace de una Story y llega a la ficha de la pieza.','El enlace registra la publicación de origen; Shopify registra la ficha visitada.','Si deja su contacto en "avísame", recibe noticia cuando llegue su talla.','Compra directa, o visita sin compra que igual queda medida.','Qué contenido lleva a la web y qué fichas retienen o pierden visitas.']},
+  {id:5,steps:['Instagram','Web','WhatsApp','Asesoría','Compra'],leak:[1,2],
+    loss:'La web despierta la duda, pero la venta se cierra en WhatsApp. La compra no se atribuye a la visita web ni al contenido que la inició.',
+    unk:['¿Qué ficha provocó la pregunta?','¿Qué información faltaba en la web?','¿Qué contenido inició el recorrido?'],
+    reg:[['Botón de WhatsApp en cada ficha con mensaje que incluye la pieza',0],['Etiqueta "viene de la web" en WhatsApp Business',1]],
+    flow:['Visita la ficha desde Instagram y tiene una duda.','El botón de WhatsApp envía la pieza y la página de origen.','Asesoría con contexto; la duda se registra como pregunta frecuente.','La venta queda atribuida a la web y al contenido de origen.','Qué información falta en las fichas y qué contenido inicia ventas asesoradas.']},
+  {id:6,steps:['Pasarela / feria / evento','WhatsApp','Pregunta precio','Asesoría','Compra'],leak:[0,2],
+    loss:'El interés en pasarela es intenso y breve. Muchas personas no escriben; quienes escriben llegan sin quedar asociadas al evento.',
+    unk:['¿Cuántas personas se interesaron en el evento?','¿Qué evento generó más contactos?','¿Qué piezas del desfile preguntaron?'],
+    reg:[['Código QR por evento hacia la página de la colección',1],['Registro opcional de contacto',1],['Etiqueta de evento en WhatsApp',1]],
+    flow:['Ve el desfile o la feria y escanea el QR de la colección.','Deja su contacto de forma opcional; queda asociado al evento.','El equipo escribe después del evento a quien pidió información.','Compra o no compra, atribuida al evento.','Qué eventos generan clientes y qué piezas del desfile despiertan más interés.']}
+];
+
+(function buildMap(){
+  const svg=$('#map');
+  const trim=(n,tx,ty,extra)=>{const dx=tx-n.x,dy=ty-n.y,L=Math.hypot(dx,dy)||1;const r=n.r+(extra||6);return[+(n.x+dx/L*r).toFixed(1),+(n.y+dy/L*r).toFixed(1)];};
+  let s=`<defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9" fill="none" stroke="var(--graphite)" stroke-width="1.5"/></marker>
+    <marker id="ahOn" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9" fill="none" stroke="var(--anil)" stroke-width="1.6"/></marker>
+  </defs>`;
+  EDGES.forEach((e,i)=>{
+    const a=NODES[e.f],b=NODES[e.t],bend=e.b||0;
+    const mx=(a.x+b.x)/2,my=(a.y+b.y)/2,dx=b.x-a.x,dy=b.y-a.y,L=Math.hypot(dx,dy);
+    const cx=mx+(-dy/L)*bend*2,cy=my+(dx/L)*bend*2;
+    const [sx,sy]=trim(a,cx,cy,6),[ex,ey]=trim(b,cx,cy,9);
+    const d=`M${sx},${sy} Q${cx.toFixed(1)},${cy.toFixed(1)} ${ex},${ey}`;
+    s+=`<g class="edge ${e.k||''}" data-i="${i}" data-tip="${esc(e.tip)}"><path class="e" d="${d}" marker-end="url(#ah)"/><path class="hit" d="${d}"/></g>`;
+  });
+  LEAKS.forEach((l,i)=>{
+    const n=NODES[l.n],a=l.a*Math.PI/180,c=Math.cos(a),si=Math.sin(a);
+    const x1=n.x+c*(n.r+4),y1=n.y+si*(n.r+4),x2=n.x+c*(n.r+44),y2=n.y+si*(n.r+44);
+    s+=`<g class="leak" data-l="${i}" data-tip="${esc(l.tip)}"><line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}"/><circle cx="${(x2+c*11).toFixed(1)}" cy="${(y2+si*11).toFixed(1)}" r="11"/><text x="${(x2+c*11).toFixed(1)}" y="${(y2+si*11+5).toFixed(1)}">?</text></g>`;
+  });
+  Object.entries(NODES).forEach(([k,n])=>{
+    const shape=n.square?`<rect class="shape" x="${n.x-n.r}" y="${n.y-n.r}" width="${n.r*2}" height="${n.r*2}" rx="2"/>`:`<circle class="shape" cx="${n.x}" cy="${n.y}" r="${n.r}"/>`;
+    const gl=n.square?'':`<text class="glyph" x="${n.x}" y="${n.y+7}">${n.g}</text>`;
+    const sq=n.square?`<text class="glyph" x="${n.x}" y="${n.y+7}" style="font-size:15px">compra</text>`:'';
+    s+=`<g class="node" data-n="${k}" tabindex="0" role="button" aria-label="${esc(n.label)}">${shape}${gl}${sq}<text class="lbl" x="${n.x}" y="${n.y+n.r+22}">${esc(n.label)}</text>${n.sub?`<text class="sub" x="${n.x}" y="${n.y+n.r+38}">${esc(n.sub)}</text>`:''}</g>`;
+  });
+  svg.innerHTML=s;
+  svg.addEventListener('click',e=>{const g=e.target.closest('.node');if(g)selectNode(g.dataset.n);});
+  svg.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.closest('.node')){e.preventDefault();selectNode(e.target.closest('.node').dataset.n);}});
+})();
+function selectNode(k){
+  const n=NODES[k];
+  $$('#map .node').forEach(g=>g.classList.toggle('sel',g.dataset.n===k));
+  $('#chPanel').innerHTML=`
+    <p class="eyebrow">${k==='compra'?'Punto de llegada':'Canal'}${n.sub?' · '+esc(n.sub):''}</p>
+    <h3>${esc(n.label)}</h3>
+    <dl class="facts">
+      <div><dt>Función</dt><dd>${esc(n.fn)}</dd></div>
+      <div><dt>Qué entra</dt><dd>${esc(n.in)}</dd></div>
+      <div><dt>Qué sale</dt><dd>${esc(n.out)}</dd></div>
+      <div><dt>Problema actual</dt><dd>${esc(n.prob)}</dd></div>
+      <div class="opp"><dt>Oportunidad</dt><dd>${esc(n.opp)}</dd></div>
+    </dl>`;
+}
+let curJ=0;
+$('#jFilter').innerHTML=`<button class="chip" aria-pressed="true" data-j="0">Todos</button>`+JOURNEYS.map(j=>`<button class="chip" aria-pressed="false" data-j="${j.id}" data-tip="${esc(j.steps.join(' → '))}"><span class="k">R${j.id}</span></button>`).join('');
+$('#jFilter').addEventListener('click',e=>{const b=e.target.closest('[data-j]');if(b)filterJ(+b.dataset.j);});
+function filterJ(j){
+  curJ=j;
+  $$('#jFilter .chip').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.j===j));
+  const onNodes=new Set();
+  $$('#map .edge').forEach(g=>{
+    const e=EDGES[+g.dataset.i];const on=j&&e.j.includes(j);
+    g.classList.toggle('on',!!on);g.classList.toggle('dim',!!j&&!on);
+    g.querySelector('path.e').setAttribute('marker-end',on?'url(#ahOn)':'url(#ah)');
+    if(on){onNodes.add(e.f);onNodes.add(e.t);}
+  });
+  $$('#map .node').forEach(g=>{g.classList.toggle('on',onNodes.has(g.dataset.n));g.classList.toggle('dim',!!j&&!onNodes.has(g.dataset.n));});
+  $$('#map .leak').forEach(g=>{const l=LEAKS[+g.dataset.l];g.classList.toggle('dim',!!j&&!l.j.includes(j));});
+  const J=JOURNEYS.find(x=>x.id===j);
+  $('#jLine').textContent=J?`R${j} · ${J.steps.join(' → ')}`:'Todos los recorridos documentados. Los signos ? marcan dónde se pierde el rastro.';
+}
+selectNode('ig');
+
+/* ════════ III · RECORRIDOS ════════ */
+$('#jList').innerHTML=JOURNEYS.map(j=>`<li><button class="jrow" style="width:100%" data-j="${j.id}" aria-pressed="false"><span class="jcode">R${j.id}</span><ol class="jsteps">${j.steps.map((s,i)=>`<li><span class="st${i===j.steps.length-1?' end':''}${j.leak.includes(i)?' leak':''}">${esc(s)}</span></li>`).join('')}</ol></button></li>`).join('');
+$('#jList').addEventListener('click',e=>{const b=e.target.closest('.jrow');if(b)selectJ(+b.dataset.j);});
+const FOG=[['¿Qué publicación la trajo?','Enlace rastreable o mensaje prellenado'],['¿Qué pieza le interesó?','Código de pieza en el mensaje'],['¿Qué preguntó y qué le respondimos?','Etiqueta de consulta'],['¿Por qué no compró?','Motivo de cierre registrado'],['¿Volvió después?','Recordatorio de seguimiento'],['¿Cuántas personas preguntaron el precio este mes?','Reporte periódico automático']];
+$('#fogQ').innerHTML=FOG.map(f=>`<li>${esc(f[0])}<small>→ ${esc(f[1])}</small></li>`).join('');
+$('#litBtn').onclick=function(){const on=this.getAttribute('aria-pressed')!=='true';this.setAttribute('aria-pressed',on);$('#opaque').classList.toggle('lit',on);this.textContent=on?'Volver a la zona opaca':'Iluminar la zona opaca';};
+const OSTEPS=['Interés','Registro','Seguimiento','Compra / no compra','Aprendizaje'];
+function selectJ(id){
+  const j=JOURNEYS.find(x=>x.id===id);
+  $$('#jList .jrow').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.j===id));
+  $('#jDetail').innerHTML=`
+    <p class="eyebrow">Recorrido R${j.id} · ${j.steps.length} pasos</p>
+    <h3>${j.steps.map(esc).join(' <span class="muted">→</span> ')}</h3>
+    <dl class="facts">
+      <div><dt>Dónde se pierde la señal</dt><dd>${esc(j.loss)}</dd></div>
+      <div><dt>Qué no sabemos</dt><dd><ul class="unknowns">${j.unk.map(u=>`<li>${esc(u)}</li>`).join('')}</ul></dd></div>
+      <div class="opp"><dt>Qué registrar</dt><dd><div class="toolrow" style="flex-direction:column;align-items:flex-start">${j.reg.map(r=>`<span class="t">${esc(r[0])}${r[1]?' <span class="tag prop">Propuesta</span>':''}</span>`).join('')}</div></dd></div>
+    </dl>`;
+  $('#oppFor').textContent='Recorrido R'+j.id;
+  $('#oFlow').innerHTML=j.flow.map((f,i)=>`<li><b>${OSTEPS[i]}</b><p>${esc(f)}</p></li>`).join('');
+}
+selectJ(1);
+
+/* ════════ IV · PROPUESTO ════════ */
+const STAGES=[
+  {n:'World building',L:['hum','ia'],que:'Investigación cultural, histórica y de territorio; referencias, oficio y lenguaje visual. Es el origen de todo lo que Alado cuenta.',dato:'Archivo de investigación organizado por colección.',quien:'Andrés y Alejandro, con apoyo del diseñador multifuncional.',tools:[['Google Drive'],['Adobe'],['Asistente IA para organizar investigación',1]]},
+  {n:'Contenido',L:['hum','ia'],que:'Campañas, editoriales, behind the scenes, entrevistas, desfiles y fotografía de producto que nacen del mundo de la colección.',dato:'Cada pieza de contenido etiquetada por colección, prenda y tema.',quien:'Diseñadora de contenido con la dirección creativa.',tools:[['Canva'],['Adobe'],['IA para adaptar formatos y primeras versiones de copies',1]]},
+  {n:'Canales',L:['auto','hum'],que:'Cada canal cumple un rol: Instagram construye mundo, la web archiva y vende, WhatsApp conversa, los eventos reúnen, Google conecta con la tienda.',dato:'Enlaces rastreables y origen marcado en cada salida.',quien:'Diseñadora de contenido.',tools:[['Instagram'],['Facebook'],['Shopify'],['WhatsApp'],['Google Business'],['Programación y enlaces UTM',1]]},
+  {n:'Interés',L:['auto'],que:'Guardados, mensajes, visitas a fichas y contactos en eventos. Hoy aquí empieza la zona opaca; en el ecosistema, cada señal se captura con su origen.',dato:'Origen + pieza + fecha de cada señal de interés.',quien:'Captura automática; revisión semanal del equipo.',tools:[['Estadísticas de Instagram'],['Analítica de Shopify'],['QR por evento',1]]},
+  {n:'Conversación',L:['hum','ia'],que:'Asesoría personalizada por WhatsApp, DM o en tienda. La conversación sigue siendo humana; el sistema recuerda el contexto.',dato:'Estado: consulta · asesoría · compra · no compra (+ motivo).',quien:'Quien atiende WhatsApp y la tienda.',tools:[['WhatsApp'],['WhatsApp Business con etiquetas',1],['IA que sugiere respuestas a preguntas frecuentes',1]]},
+  {n:'Compra',L:['auto','hum'],que:'Venta en la web, en tienda o por WhatsApp. Confirmaciones y guías de envío se automatizan; la relación con el cliente no.',dato:'Venta asociada a su origen y a la conversación que la produjo.',quien:'Equipo.',tools:[['Shopify'],['Guías de envío automáticas',1],['Shopify POS en tienda',1]]},
+  {n:'Datos',L:['auto'],que:'Ventas, etiquetas de conversación, métricas de contenido y registros de eventos se consolidan en una base común.',dato:'Base común actualizada periódicamente.',quien:'Automático; la mantiene el diseñador multifuncional.',tools:[['Excel'],['Google Drive'],['CRM ligero',1]]},
+  {n:'Aprendizaje',L:['ia','hum'],que:'La IA cruza fuentes, resume comentarios y propone hipótesis. El equipo las lee, las discute y descarta lo que no tiene sentido para la marca.',dato:'Reporte mensual y dossier de cierre de colección.',quien:'Gerencia y dirección creativa.',tools:[['Asistente IA',1],['Reporte periódico automático',1]]},
+  {n:'Nueva estrategia',L:['hum'],que:'La dirección decide qué conservar, qué contar de otra forma y qué explorar. Los datos informan; no dictan.',dato:'Decisiones documentadas para la siguiente colección.',quien:'Andrés y Alejandro.',tools:[['Criterio de la dirección creativa']]},
+  {n:'Nuevo contenido',L:['hum','ia'],que:'El mundo vuelve a contarse con lo aprendido, sin perder su investigación ni su voz. El ciclo empieza de nuevo.',dato:'Calendario de contenidos conectado a la colección.',quien:'Diseñadora de contenido con la dirección.',tools:[['Canva'],['Adobe'],['IA para proponer calendario',1]]}
+];
+let layerSel=null,stSel=0;
+(function buildRing(){
+  const cx=380,cy=320,R=205;let s='';
+  s+=`<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="var(--line)" stroke-width="1.2"/>`;
+  s+=`<circle cx="${cx}" cy="${cy}" r="${R-18}" fill="none" stroke="var(--line)" stroke-width="1" stroke-dasharray="1 6"/>`;
+  // whorl centre
+  s+=`<circle cx="${cx}" cy="${cy}" r="118" fill="var(--paper)" stroke="var(--ink)" stroke-width="1"/>`;
+  s+=`<circle cx="${cx}" cy="${cy}" r="104" fill="none" stroke="var(--line)" stroke-width="1"/>`;
+  for(let i=0;i<60;i++){const a=i/60*Math.PI*2;s+=`<line x1="${(cx+Math.cos(a)*104).toFixed(1)}" y1="${(cy+Math.sin(a)*104).toFixed(1)}" x2="${(cx+Math.cos(a)*(i%5?112:118)).toFixed(1)}" y2="${(cy+Math.sin(a)*(i%5?112:118)).toFixed(1)}" stroke="var(--line)" stroke-width="1"/>`;}
+  s+=`<text x="${cx}" y="${cy-18}" text-anchor="middle" style="font:600 30px var(--display);letter-spacing:.2em;fill:var(--ink)">ALADO</text>`;
+  s+=`<text x="${cx}" y="${cy+8}" text-anchor="middle" style="font:italic 400 17px var(--display);fill:var(--graphite)">dirección creativa</text>`;
+  s+=`<text x="${cx}" y="${cy+28}" text-anchor="middle" style="font:italic 400 17px var(--display);fill:var(--graphite)">humana</text>`;
+  s+=`<text x="${cx}" y="${cy+56}" text-anchor="middle" style="font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;fill:var(--stone)">EN EL CENTRO DEL CICLO</text>`;
+  // chevrons
+  STAGES.forEach((_,i)=>{const a=(-90+i*36+18);const r=a*Math.PI/180;s+=`<path d="M-4,-5 L3,0 L-4,5" fill="none" stroke="var(--graphite)" stroke-width="1.4" transform="translate(${(cx+Math.cos(r)*R).toFixed(1)},${(cy+Math.sin(r)*R).toFixed(1)}) rotate(${a+90})"/>`;});
+  if(!reduce)s+=`<circle r="5" fill="var(--anil)"><animateMotion dur="16s" repeatCount="indefinite" path="M${cx},${cy-R} A${R},${R} 0 1,1 ${cx-0.01},${cy-R}"/></circle>`;
+  STAGES.forEach((st,i)=>{
+    const a=(-90+i*36)*Math.PI/180,x=cx+Math.cos(a)*R,y=cy+Math.sin(a)*R,c=Math.cos(a),sn=Math.sin(a);
+    const lx=cx+Math.cos(a)*(R+28),ly=cy+Math.sin(a)*(R+28);
+    const anchor=c>.25?'start':c<-.25?'end':'middle';
+    const dy=sn<-.8?-4:sn>.8?14:5;
+    s+=`<g class="stage-node ${st.L[0]}" data-s="${i}" tabindex="0" role="button" aria-label="${i+1}. ${esc(st.n)}"><circle class="halo" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="21"/><circle class="n" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="15"/><text class="num" x="${x.toFixed(1)}" y="${(y+4).toFixed(1)}">${i+1}</text><text class="lab" x="${lx.toFixed(1)}" y="${(ly+dy).toFixed(1)}" text-anchor="${anchor}">${esc(st.n.toUpperCase())}</text></g>`;
+  });
+  $('#ring').innerHTML=s;
+  $('#ring').addEventListener('click',e=>{const g=e.target.closest('.stage-node');if(g)selectStage(+g.dataset.s);});
+  $('#ring').addEventListener('keydown',e=>{const g=e.target.closest('.stage-node');if(g&&(e.key==='Enter'||e.key===' ')){e.preventDefault();selectStage(+g.dataset.s);}});
+})();
+$('#layerFilter').innerHTML=`<span class="eyebrow" style="margin-right:6px">Resaltar</span>`+['hum','ia','auto'].map(k=>`<button class="chip" aria-pressed="false" data-layer="${k}">${ICON[k]}${LAYER[k]}</button>`).join('');
+$('#layerFilter').addEventListener('click',e=>{const b=e.target.closest('[data-layer]');if(!b)return;layerSel=layerSel===b.dataset.layer?null:b.dataset.layer;$$('#layerFilter .chip').forEach(c=>c.setAttribute('aria-pressed',c.dataset.layer===layerSel));$$('#ring .stage-node').forEach(g=>g.classList.toggle('dim',!!layerSel&&!STAGES[+g.dataset.s].L.includes(layerSel)));});
+function selectStage(i){
+  stSel=i;const st=STAGES[i];
+  $$('#ring .stage-node').forEach(g=>g.classList.toggle('sel',+g.dataset.s===i));
+  const next=STAGES[(i+1)%STAGES.length].n;
+  $('#stPanel').innerHTML=`
+    <p class="eyebrow">Etapa ${i+1} de 10 · siguiente: ${esc(next)}</p>
+    <h3>${esc(st.n)}</h3>
+    <div class="chips">${st.L.map(lchip).join('')}</div>
+    <dl class="facts">
+      <div><dt>Qué ocurre</dt><dd>${esc(st.que)}</dd></div>
+      <div><dt>Quién</dt><dd>${esc(st.quien)}</dd></div>
+      <div><dt>Herramientas</dt><dd>${tools(st.tools)}</dd></div>
+      <div class="opp"><dt>Qué registra</dt><dd>${esc(st.dato)}</dd></div>
+    </dl>
+    <div style="display:flex;gap:8px;margin-top:4px">
+      <button class="chip" data-step="-1">← Anterior</button><button class="chip" data-step="1">Siguiente etapa →</button>
+    </div>`;
+}
+$('#stPanel').addEventListener('click',e=>{const b=e.target.closest('[data-step]');if(b)selectStage((stSel+ +b.dataset.step+STAGES.length)%STAGES.length);});
+selectStage(0);
+const ROLES=[
+  ['Instagram','Construir mundo y despertar interés','Web (la historia de la pieza) y WhatsApp (la conversación).','Qué contenido genera guardados, mensajes y clics.',[['Instagram'],['Enlaces rastreables UTM',1]]],
+  ['Web · Shopify','Archivo del mundo Alado y compra','Compra directa, o WhatsApp con la pieza ya identificada.','Visitas por pieza, origen, carritos y lista de espera.',[['Shopify'],['Google Analytics 4',1]]],
+  ['WhatsApp','Conversación y asesoría','Compra asesorada o tienda física.','Consultas por pieza, estado y motivo de no compra.',[['WhatsApp'],['WhatsApp Business: catálogo y etiquetas',1]]],
+  ['Eventos / pasarelas','Momento cumbre del mundo; reunir interés','Página de la colección y WhatsApp.','Contactos asociados a cada evento.',[['QR + registro opcional',1]]],
+  ['Facebook','Infraestructura: bandeja, programación y descubrimiento','Web y perfiles nuevos.','Alcance en públicos que aún no conocen la marca.',[['Meta Business Suite',1],['Pauta de descubrimiento',1]]],
+  ['Google Business','Descubrimiento local hacia la tienda','Tienda física y web.','Búsquedas, llamadas y rutas hacia la tienda.',[['Google Business (completar ficha)']]],
+  ['Tienda física','Experiencia de la pieza','Compra y relación directa.','Ventas y "¿cómo nos conociste?".',[['Shopify POS',1]]],
+  ['Base común','El centro que conecta todo','Reportes, asistente y dossier de colección.','Todo lo anterior, en un solo lugar.',[['Excel / Drive como primer paso'],['CRM ligero',1]]]
+];
+$('#roles').innerHTML=ROLES.map((r,i)=>`<article class="paper role${i===7?' center':''}"><p class="eyebrow">${i===7?'Centro del sistema':'Canal'}</p><h4>${esc(r[0])}</h4><p class="r">${esc(r[1])}</p><dl><div><dt>Lleva a</dt><dd>${esc(r[2])}</dd></div><div><dt>Registra</dt><dd>${esc(r[3])}</dd></div></dl>${tools(r[4])}</article>`).join('');
+$$('#f-propuesto .viewtabs button').forEach(b=>b.onclick=()=>{$$('#f-propuesto .viewtabs button').forEach(x=>x.setAttribute('aria-pressed',x===b));$('#vRing').hidden=b.dataset.view!=='ring';$('#vRoles').hidden=b.dataset.view!=='roles';});
+
+/* ════════ V · COLECCIÓN ════════ */
+const FIN=[
+  {k:'inv',t:'Investigación',src:'DRIVE · ARCHIVO',d:'Referencias culturales, históricas y de territorio. Es el insumo principal y el más humano.',L:['hum','ia'],tools:[['Google Drive'],['Adobe']]},
+  {k:'ven',t:'Ventas',src:'SHOPIFY · TIENDA',d:'Qué se vendió, por qué canal y en qué momento de la temporada.',L:['auto'],tools:[['Shopify'],['Excel']]},
+  {k:'cli',t:'Clientes',src:'WHATSAPP · COMENTARIOS',d:'Comentarios, preguntas frecuentes y motivos de no compra.',L:['ia'],tools:[['WhatsApp'],['Etiquetas WhatsApp Business',1]]},
+  {k:'con',t:'Contenido',src:'INSTAGRAM',d:'Qué contenido generó interés, conversación y tráfico.',L:['ia'],tools:[['Instagram'],['Enlaces rastreables',1]]},
+  {k:'cos',t:'Costos',src:'EXCEL',d:'Costeo de prendas y márgenes de la colección anterior.',L:['auto'],tools:[['Excel']]},
+  {k:'tem',t:'Temporada',src:'CALENDARIO · EVENTOS',d:'Ciclos mayo–julio y julio–noviembre, pasarelas y ferias del año.',L:['hum'],tools:[['Calendario de colección']]}
+];
+const FSEQ=[
+  {k:'ana',t:['Análisis'],x:325,y:110,w:130,L:'ia',d:'El asistente cruza ventas, comentarios, contenido y costos, y entrega un dossier: qué funcionó, qué no, preguntas frecuentes e hipótesis.',q:'Organiza los aprendizajes para la próxima colección.',who:'El diseñador multifuncional lo prepara; la IA organiza.'},
+  {k:'int',t:['Interpretación','humana'],x:490,y:110,w:150,L:'hum',d:'Andrés y Alejandro leen el dossier junto a su intuición y su investigación. Los datos informan; no dictan.',who:'Andrés y Alejandro.'},
+  {k:'cpt',t:['Concepto'],x:645,y:110,w:120,L:'hum',d:'El concepto de la colección nace de la investigación y del criterio de la dirección creativa. La IA no participa en esta decisión.',who:'Dirección creativa.'},
+  {k:'dis',t:['Diseño'],x:785,y:110,w:120,L:'hum',d:'Cerca de 20 referencias de ropa y, cuando aplica, objetos de Alado & Co. La IA puede ordenar fichas y referencias; el diseño es humano.',who:'Dirección creativa y diseñador multifuncional.'},
+  {k:'pro',t:['Producción'],x:935,y:110,w:130,L:'ia',d:'Calendario de producción, costeo con plantilla y cantidades sugeridas según el interés registrado. La relación con los artesanos es humana.',q:'¿Qué productos necesitan producción?',who:'Gerencia con talleres y artesanos.'},
+  {k:'lan',t:['Lanzamiento'],x:935,y:330,w:130,L:'hum',d:'Pasarela o evento. Linesheet, descripciones y copies llegan como primera versión de la IA y se revisan antes de salir. QR por evento para captar interés.',q:'Hazme el linesheet de esta colección.',who:'Todo el equipo.'},
+  {k:'vta',t:['Venta'],x:785,y:330,w:120,L:'auto',d:'Asesoría humana; confirmaciones, guías de envío y recordatorios de seguimiento automáticos.',who:'Equipo comercial y tienda.'},
+  {k:'dat',t:['Datos'],x:645,y:330,w:120,L:'auto',d:'Ventas, etiquetas de WhatsApp, métricas de contenido y registros de eventos se consolidan automáticamente en la base común.',q:'¿Qué prendas de la última colección funcionaron mejor?',who:'Automático.'},
+  {k:'nue',t:['Nuevo ciclo'],x:490,y:330,w:150,L:'cycle',d:'El dossier de cierre se convierte en insumo de la siguiente colección. La información ya no empieza de cero.',q:'Organiza la información necesaria para comenzar una nueva colección.',who:'Todo el equipo.'}
+];
+(function buildFlow(){
+  let s=`<defs><marker id="fa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,1 L9,5 L0,9" fill="none" stroke="var(--graphite)" stroke-width="1.5"/></marker><marker id="faA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,1 L9,5 L0,9" fill="none" stroke="var(--anil)" stroke-width="1.6"/></marker></defs>`;
+  const ih=46,iw=150,ix=20;
+  FIN.forEach((f,i)=>{const y=24+i*62;const cyI=y+ih/2;s+=`<path class="flink" d="M${ix+iw},${cyI} C${ix+iw+50},${cyI} ${220},110 ${258},110" ${i===2?'marker-end="url(#fa)"':''}/>`;});
+  s+=`<text class="flabel" x="${ix}" y="16">INSUMOS</text>`;
+  FIN.forEach((f,i)=>{const y=24+i*62;s+=`<g class="fnode input" data-f="in-${i}" tabindex="0" role="button"><rect x="${ix}" y="${y}" width="${iw}" height="${ih}" rx="2"/><text x="${ix+iw/2}" y="${y+20}">${esc(f.t)}</text><text class="src" x="${ix+iw/2}" y="${y+36}">${f.src}</text></g>`;});
+  // sequence links
+  const link=(a,b)=>{const A=FSEQ[a],B=FSEQ[b];if(A.y===B.y){const dir=B.x>A.x?1:-1;return `<path class="flink" d="M${A.x+dir*A.w/2},${A.y} L${B.x-dir*(B.w/2+4)},${B.y}" marker-end="url(#fa)"/>`;}return `<path class="flink" d="M${A.x},${A.y+24} L${B.x},${B.y-28}" marker-end="url(#fa)"/>`;};
+  for(let i=0;i<FSEQ.length-1;i++)s+=link(i,i+1);
+  // loop back
+  const N=FSEQ[FSEQ.length-1];
+  s+=`<path class="flink loop" d="M${N.x},${N.y+24} V440 H${ix+iw/2} V${24+5*62+ih+8}" marker-end="url(#faA)"/>`;
+  s+=`<text class="flabel" x="${ix+iw/2+14}" y="460" style="fill:var(--anil)">LOS DATOS VUELVEN COMO INSUMOS</text>`;
+  s+=`<text class="flabel" x="325" y="68" text-anchor="middle">EL SISTEMA PREPARA</text>`;
+  s+=`<text class="flabel" x="638" y="68" text-anchor="middle">LAS PERSONAS DECIDEN</text>`;
+  s+=`<line x1="428" y1="62" x2="428" y2="160" stroke="var(--line)" stroke-dasharray="3 4"/>`;
+  s+=`<text class="flabel" x="785" y="156" text-anchor="middle">~20 REFERENCIAS</text>`;
+  FSEQ.forEach((f,i)=>{const h=f.t.length>1?56:48;const y0=f.y-h/2;s+=`<g class="fnode ${f.L}" data-f="sq-${i}" tabindex="0" role="button"><rect x="${f.x-f.w/2}" y="${y0}" width="${f.w}" height="${h}" rx="2"/>${f.t.map((t,k)=>`<text x="${f.x}" y="${y0+(f.t.length>1?23+k*18:29)}">${esc(t)}</text>`).join('')}</g>`;});
+  $('#flow').innerHTML=s;
+  $('#flow').addEventListener('click',e=>{const g=e.target.closest('.fnode');if(g)selectFlow(g.dataset.f);});
+  $('#flow').addEventListener('keydown',e=>{const g=e.target.closest('.fnode');if(g&&(e.key==='Enter'||e.key===' ')){e.preventDefault();selectFlow(g.dataset.f);}});
+})();
+function selectFlow(id){
+  $$('#flow .fnode').forEach(g=>g.classList.toggle('sel',g.dataset.f===id));
+  const [kind,idx]=id.split('-');let html;
+  if(kind==='in'){const f=FIN[+idx];html=`<p class="eyebrow">Insumo · ${esc(f.src)}</p><h3>${esc(f.t)}</h3><div class="chips">${f.L.map(lchip).join('')}</div><dl class="facts"><div><dt>Qué aporta</dt><dd>${esc(f.d)}</dd></div><div><dt>Dónde vive</dt><dd>${tools(f.tools)}</dd></div><div class="opp"><dt>En el sistema</dt><dd>Se consolida en el dossier de colección antes de empezar a diseñar.</dd></div></dl>`;}
+  else{const f=FSEQ[+idx];const lays=f.L==='cycle'?['auto','hum']:[f.L];html=`<p class="eyebrow">Etapa ${+idx+1} de ${FSEQ.length}</p><h3>${esc(f.t.join(' '))}</h3><div class="chips">${lays.map(lchip).join('')}</div><dl class="facts"><div><dt>Qué ocurre</dt><dd>${esc(f.d)}</dd></div><div><dt>Quién</dt><dd>${esc(f.who)}</dd></div></dl>${f.q?`<button class="chip" data-ask="${esc(f.q)}" style="align-self:flex-start">Preguntar al asistente: «${esc(f.q)}» →</button>`:''}`;}
+  $('#flPanel').innerHTML=html;
+}
+selectFlow('sq-0');
+// timeline
+(function(){
+  const M=['E','F','M','A','M','J','J','A','S','O','N','D'];
+  const rows=[
+    ['Colección 1',[[5,7,'sell','Lanzamiento y venta: mayo a julio']]],
+    ['Colección 2',[[7,11,'sell','Lanzamiento y venta: julio a noviembre']]],
+    ['Aprendizaje',[[8,8,'learn','Cierre y dossier de la colección 1 (propuesta)'],[12,12,'learn','Cierre y dossier de la colección 2 (propuesta)']]],
+    ['Diseño siguiente',[[1,4,'design','Diseño de la colección de mayo, con el dossier listo (indicativo)']]]
+  ];
+  let h=`<div class="tl-months"><span></span>${M.map(m=>`<span>${m}</span>`).join('')}</div>`;
+  rows.forEach(r=>{h+=`<div class="tl-row"><b>${r[0]}</b>${r[1].map(b=>`<span class="tl-bar ${b[2]}" style="grid-column:${b[0]+1}/${b[1]+2};grid-row:1" data-tip="${esc(b[3])}"></span>`).join('')}</div>`;});
+  $('#tl').innerHTML=h;
+  $$('#tl .tl-row').forEach(r=>{r.querySelector('b').style.gridRow='1';r.querySelector('b').style.gridColumn='1';});
+})();
+// dossier
+(function(){
+  const bits=[['Ventas','Shopify',4,8,-4],['Hoja de costos','Excel',52,4,3],['Chats sin etiqueta','WhatsApp',18,34,2],['Carpeta de referencias','Drive',60,30,-3],['Estadísticas','Instagram',8,60,-2],['"La chaqueta se vendió bien"','Memoria del equipo',40,58,4],['Presentación de colección','Canva',64,78,-1],['Comentarios en tienda','Nadie los anotó',6,84,3]];
+  $('#dosNow').innerHTML=bits.map((b,i)=>`<span style="left:${b[2]}%;top:${b[3]}%;--r:${b[4]}deg;--d:${i*60}ms">${esc(b[0])}<small>${esc(b[1])}</small></span>`).join('');
+  const items=[['Qué se vendió y por qué canal','ok'],['Qué no se vendió','ok'],['Piezas con interés alto y venta baja','ok'],['Preguntas frecuentes y motivos de no compra','ok'],['Contenido que llevó a conversación','ok'],['Costos y márgenes','part'],['Hipótesis para la siguiente colección','ia'],['Decisiones de la dirección creativa','hum']];
+  const pill=s=>s==='ok'?'<span class="st-pill ok">Automático</span>':s==='part'?'<span class="st-pill part">Parcial</span>':s==='ia'?'<span class="st-pill hum">IA propone</span>':'<span class="st-pill">Humano</span>';
+  $('#dosFuture').innerHTML=`<div class="dfile"><div class="dfile-top"><h4>Dossier de colección</h4><span class="tag prop">Propuesta</span></div><ol>${items.map((it,i)=>`<li class="${it[1]==='hum'?'human':''}"><span class="n">${String(i+1).padStart(2,'0')}</span><span>${esc(it[0])}</span><span class="s">${pill(it[1])}</span></li>`).join('')}</ol></div>`;
+  $$('[data-dos]').forEach(b=>b.onclick=()=>{$$('[data-dos]').forEach(x=>x.setAttribute('aria-pressed',x===b));const f=b.dataset.dos==='future';$('#dosNow').hidden=f;$('#dosFuture').hidden=!f;});
+})();
+
+/* ════════ VI · MATRIZ ════════ */
+const AREAS={all:'Todas',dis:'Diseño y producto',con:'Contenido',com:'Clientes y ventas',op:'Operación'};
+const CATS={
+  auto:{rule:'Lo repetitivo',p:'Procesos que se hacen igual cada vez y no requieren criterio. Liberan horas sin tocar la identidad de la marca.'},
+  ia:{rule:'Lo analítico, organizativo y generativo',p:'La IA prepara, cruza y propone primeras versiones. Una persona revisa, corrige y decide.'},
+  hum:{rule:'Lo creativo, estratégico y relacional',p:'Lo que hace única a Alado. La IA puede aportar insumos, pero no decide.'}
+};
+const TASKS=[
+  ['Reportes periódicos de ventas y redes','auto','op',0,'Se arman igual cada mes: consolidar Shopify, Instagram y las etiquetas de WhatsApp.'],
+  ['Consolidación de datos en la base común','auto','op',0,'Pasar datos de un sistema a otro es trabajo mecánico.'],
+  ['Guías de envío','auto','op',0,'Se generan desde los datos del pedido en Shopify.'],
+  ['Recordatorios de seguimiento','auto','com',0,'Avisan al equipo cuando una conversación queda abierta. La persona decide si escribir.'],
+  ['Clasificación básica de mensajes','auto','com',0,'Etiquetas por tipo de consulta: precio, talla, envío, disponibilidad.'],
+  ['Montaje del linesheet desde las fichas','auto','dis',1,'Una vez aprobadas las fichas, el formato se arma solo con una plantilla.'],
+  ['Cálculo de costeo con plantilla','auto','dis',0,'La fórmula se repite; el precio final lo decide la gerencia.'],
+  ['Programación de publicaciones','auto','con',0,'Publicar a la hora planeada no requiere criterio; decidir qué publicar sí.'],
+  ['Descripciones de producto para linesheet y web','ia','dis',1,'Primera versión desde la ficha técnica; el equipo ajusta la voz de Alado.'],
+  ['Análisis de la colección anterior','ia','dis',2,'Cruza ventas, interés, comentarios y costos en un solo dossier.'],
+  ['Organización de insumos para planear la colección','ia','dis',2,'Reúne investigación, ventas y aprendizajes antes de diseñar.'],
+  ['Análisis de ventas y resultados','ia','com',2,'Detecta patrones y propone hipótesis para discutir.'],
+  ['Edición de fotografías de campaña','ia','con',3,'Retoque básico, recortes y adaptación de formatos. La selección final es humana.'],
+  ['Edición de video','ia','con',0,'Cortes, subtítulos y versiones para cada formato.'],
+  ['Copies para redes (primeras versiones)','ia','con',0,'Borradores a partir de la investigación y la ficha de la pieza.'],
+  ['Análisis de redes sociales','ia','con',0,'Relaciona contenido con conversaciones y tráfico a la web.'],
+  ['Calendario de contenidos','ia','con',0,'Propone un calendario desde la investigación de la colección.'],
+  ['Resumen de comentarios y preguntas','ia','com',0,'Agrupa lo que preguntan y comentan los clientes en todos los canales.'],
+  ['Clasificación de interesados','ia','com',0,'Ordena quién mostró interés, en qué pieza y en qué estado está.'],
+  ['Calendario y planeación de producción','ia','op',0,'Propone fechas y cantidades; se confirma con los talleres.'],
+  ['Estructura de diapositivas de propuestas','ia','dis',0,'Ordena contenido y argumentos; el diseño visual es del equipo.'],
+  ['Organización de la investigación','ia','dis',0,'Clasifica referencias, fuentes e imágenes del archivo.'],
+  ['Estructura de cursos y materiales','ia','con',0,'Primer esquema de contenidos para revisar.'],
+  ['Concepto de colección','hum','dis',0,'Nace de la investigación y la intuición de los fundadores.'],
+  ['Dirección creativa e identidad de Alado','hum','dis',0,'Qué representa la marca no se delega.'],
+  ['Diseño de prendas y objetos de Alado & Co.','hum','dis',0,'Es el oficio central de la casa.'],
+  ['Criterio estético final','hum','con',0,'La última palabra sobre cómo se ve y se siente Alado.'],
+  ['Selección final de imágenes','hum','con',0,'La IA puede preseleccionar; la dirección elige.'],
+  ['Relación con artesanos','hum','op',0,'Una relación de años, hecha en persona.'],
+  ['Estrategia y decisiones finales','hum','com',0,'Los datos informan; la gerencia y la dirección deciden.'],
+  ['Asesoría personalizada al cliente','hum','com',0,'La conversación es parte de la experiencia de lujo artesanal.'],
+  ['Revisión de voz de todo texto generado','hum','con',0,'Ningún texto de IA sale sin pasar por el equipo.'],
+  ['Decisiones sensibles de producto','hum','dis',0,'Precio final, materiales, qué se produce y qué no.']
+];
+let catSel=null,areaSel='all';
+$('#areaFilter').innerHTML=Object.entries(AREAS).map(([k,v])=>`<button class="chip" aria-pressed="${k==='all'}" data-area="${k}">${v}</button>`).join('');
+$('#matrix').innerHTML=['auto','ia','hum'].map(c=>`<div class="mcol" data-col="${c}"><button class="mhead ${c}" aria-pressed="false" data-cat="${c}"><span class="rule">${esc(CATS[c].rule)}</span><span class="ttl">${ICON[c]}${LAYER[c]}</span><p>${esc(CATS[c].p)}</p></button>${TASKS.filter(t=>t[1]===c).map(t=>`<div class="task" data-area="${t[2]}" data-tip="${esc(t[4])}"><div>${esc(t[0])}<span class="area">${AREAS[t[2]]}</span></div>${t[3]?`<span class="prio">P${t[3]}</span>`:''}</div>`).join('')}</div>`).join('');
+function paintMatrix(){
+  $$('#matrix .mcol').forEach(c=>c.classList.toggle('dim',!!catSel&&c.dataset.col!==catSel));
+  $$('#matrix .mhead').forEach(h=>h.setAttribute('aria-pressed',h.dataset.cat===catSel));
+  $$('#matrix .task').forEach(t=>t.classList.toggle('off',areaSel!=='all'&&t.dataset.area!==areaSel));
+  $$('#areaFilter .chip').forEach(b=>b.setAttribute('aria-pressed',b.dataset.area===areaSel));
+}
+$('#matrix').addEventListener('click',e=>{const h=e.target.closest('.mhead');if(!h)return;catSel=catSel===h.dataset.cat?null:h.dataset.cat;paintMatrix();});
+$('#areaFilter').addEventListener('click',e=>{const b=e.target.closest('[data-area]');if(!b)return;areaSel=b.dataset.area;paintMatrix();});
+$('#lflow').innerHTML=[
+  ['hum','Ficha técnica','El diseñador registra materiales, técnica, tallas y la historia de la pieza.'],
+  ['ia','Descripción en borrador','La IA escribe una primera versión para web y linesheet desde la ficha.'],
+  ['hum','Revisión de voz','El equipo corrige el tono: que suene a Alado y no a catálogo.'],
+  ['auto','Montaje del linesheet','La plantilla arma el documento con fotos aprobadas, precios y descripciones.'],
+  ['hum','Aprobación final','La dirección revisa y envía.']
+].map(s=>`<li><span>${lchip(s[0])}</span><div><b>${esc(s[1])}</b><p>${esc(s[2])}</p></div></li>`).join('');
+$('#team').innerHTML=[
+  ['Gerente general · diseño · dirección de marca','Reportes armados a mano, consolidar ventas.','Estrategia, decisiones finales, relación con artesanos.'],
+  ['Director creativo','Buscar información dispersa antes de cada colección.','Concepto, dirección creativa, criterio estético.'],
+  ['Diseñador y asistente multifuncional','Primeras versiones de descripciones, linesheets, costeo repetitivo.','Diseño de producto, fichas técnicas, revisión.'],
+  ['Diseñadora de contenido','Adaptar formatos, primeros copies, reportes de redes.','Contar el mundo de Alado, selección de imágenes, tono.']
+].map(r=>`<li class="paper"><h4>${esc(r[0])}</h4><div class="row"><span>Delega</span><span>${esc(r[1])}</span></div><div class="row"><span>Conserva</span><span>${esc(r[2])}</span></div></li>`).join('');
+
+/* ════════ VII · ASISTENTE ════════ */
+const D='DEMO';
+const A={
+  semana:{src:['Instagram · estadísticas','WhatsApp · etiquetas','Drive · investigación','Calendario de colección'],intro:'Propuesta de cinco piezas para esta semana. Cruza lo que generó conversación en las últimas semanas con el momento de la colección.',
+    b:[{t:'table',h:['Día','Formato','Idea','Por qué'],r:[['Lun','Carrusel','Del archivo a la prenda: la referencia histórica detrás de la chaqueta ref. demo 04','Los carruseles de investigación tuvieron más guardados'],['Mié','Reel','Manos del taller: el bordado en tiempo real','El contenido de oficio abre conversaciones por DM'],['Jue','Stories','Preguntas frecuentes: tallas, cuidado y tiempos','"Talla" es la segunda pregunta más repetida'],['Vie','Reel + enlace','La pieza en movimiento, con enlace rastreable a su ficha','Llevar tráfico medible a la web'],['Sáb','Carrusel','Alado & Co.: el objeto en la casa','Conectar la colección con la línea de hogar']]}],
+    h:'La dirección creativa decide qué historias contar, en qué orden y con qué imágenes. El asistente solo propone.'},
+  linesheet:{src:['Drive · fichas técnicas','Excel · costos','Adobe · fotos aprobadas'],intro:'Preparé una primera versión con las fichas disponibles. Así se ve la estructura:',
+    b:[{t:'sheet',r:[['REF. DEMO 01','Chaqueta','Lino · bordado a mano','S · M · L','Chaqueta de lino con bordado inspirado en la investigación de la colección…'],['REF. DEMO 02','Camisa','Algodón · tintura natural','S · M · L · XL','Camisa amplia teñida a mano, pensada para…'],['REF. DEMO 03','Objeto Alado & Co.','Cerámica','Única','Pieza para la casa que traduce el motivo principal de…']]},
+       {t:'list',cap:'Pendientes detectados',r:['3 fichas sin composición de material: pedir al diseñador.','2 piezas sin foto aprobada: la selección final es de la dirección.','Precios tomados de la hoja de costos: requieren validación.']}],
+    h:'El equipo revisa la voz de cada descripción, aprueba las fotos y valida los precios antes de enviar.'},
+  mejor:{src:['Shopify · ventas','Tienda física','WhatsApp · ventas asesoradas'],intro:'Unidades vendidas por pieza en la última colección, sumando web, tienda y WhatsApp.',
+    b:[{t:'bars',cap:'Unidades vendidas · top 5',r:[['Chaqueta bordada · ref. demo 04',14],['Vestido largo · ref. demo 11',11],['Camisa de lino · ref. demo 02',9],['Pantalón amplio · ref. demo 16',7],['Kimono estampado · ref. demo 08',6]]},
+       {t:'list',cap:'Lo que tienen en común',r:['Las tres primeras muestran una técnica artesanal visible en la pieza.','La ref. demo 04 tuvo su primer pico de ventas después del carrusel de investigación.']}],
+    h:'Interpretar por qué funcionaron y qué conservar es decisión de la dirección creativa.'},
+  peor:{src:['Shopify · ventas','WhatsApp · etiquetas','Instagram'],intro:'Separé dos casos distintos, porque no significan lo mismo:',
+    b:[{t:'table',h:['Pieza','Consultas','Ventas','Lectura'],r:[['Falda plisada · ref. demo 13','12','1','Interés alto, venta baja: revisar precio, talla o tiempos'],['Chaleco · ref. demo 07','2','1','Poco interés: ¿se comunicó? ¿encaja en la colección?'],['Top tejido · ref. demo 19','9','2','Muchas consultas de talla: revisar patronaje o información']]},
+       {t:'note',r:'Sin el registro de consultas esta diferencia no sería visible: solo veríamos «vendió poco».'}],
+    h:'Decidir si una pieza se ajusta, se cuenta de otra forma o se descontinúa es una decisión humana.'},
+  patrones:{src:['Shopify','WhatsApp','Instagram','Tienda física'],intro:'Patrones que aparecen al cruzar las fuentes. Son hipótesis para discutir, no conclusiones.',
+    b:[{t:'list',r:['Las ventas se concentran en las semanas posteriores a la pasarela.','Las piezas cuyo oficio se explicó en contenido se venden más por WhatsApp que por la web.','Las tallas S y M se agotan antes que las demás.','Quien compra en tienda física suele llevar también un objeto de Alado & Co.','Las compras por web llegan más desde Stories con enlace que desde publicaciones sin enlace.']}],
+    h:'La dirección decide qué patrones son relevantes para la marca y cuáles son ruido.'},
+  preguntas:{src:['WhatsApp · etiquetas','Instagram · DMs','Comentarios'],intro:'Preguntas más frecuentes del último mes, en todos los canales de conversación.',
+    b:[{t:'bars',cap:'Menciones en el último mes',r:[['Precio',42],['Tallas y medidas',31],['Tiempos de envío',18],['Materiales y cuidado',14],['Disponibilidad o hecho a pedido',11]]},
+       {t:'list',cap:'Sugerencias',r:['Guía de tallas visible en cada ficha de la web.','Respuestas rápidas en WhatsApp para envíos y cuidado.','Historia destacada en Instagram: «Cómo se hace una pieza Alado».']}],
+    h:'El tono de cada respuesta lo define el equipo.'},
+  interes:{src:['WhatsApp · etiquetas','Instagram · DMs','Registro de eventos'],intro:'Personas que escribieron o dejaron su contacto y aún no compran:',
+    b:[{t:'table',h:['Contacto','Origen','Pieza','Última interacción','Sugerencia'],r:[['Contacto demo A','Reel de desfile','Ref. demo 04','hace 6 días','Avisar cuando llegue su talla'],['Contacto demo B','Evento · QR','Ref. demo 11','hace 12 días','Invitar a la tienda a probársela'],['Contacto demo C','Web → WhatsApp','Ref. demo 13','hace 3 días','Responder la duda de medidas'],['Contacto demo D','DM','Objeto Alado & Co.','hace 20 días','Preguntó el precio y no respondió']]},
+       {t:'note',r:'Solo aparecen personas que escribieron a la marca y aceptaron ser contactadas.'}],
+    h:'El asistente no envía mensajes. El equipo decide a quién escribir, cuándo y cómo.'},
+  trafico:{src:['Instagram','Shopify · analítica','Enlaces rastreables (propuesta)'],intro:'Visitas a la web según el contenido de origen, último mes.',
+    b:[{t:'bars',cap:'Visitas a la web',r:[['Stories con enlace a la ficha',320],['Reel de pasarela',210],['Carrusel de investigación',140],['Enlace del perfil sin campaña',95],['Publicación de Alado & Co.',60]]},
+       {t:'note',r:'Hoy esta pregunta no tiene respuesta precisa: necesita enlaces rastreables (UTM) en cada publicación. Es una de las primeras piezas del ecosistema.'}],
+    h:'Qué hacer con este resultado lo decide la dirección.'},
+  prodint:{src:['Instagram · guardados','WhatsApp · consultas','Shopify · visitas'],intro:'Combino tres señales de interés por pieza:',
+    b:[{t:'table',h:['Pieza','Guardados','Consultas','Visitas web'],r:[['Ref. demo 04 · chaqueta','Alto','Alto','Alto'],['Ref. demo 13 · falda','Medio','Alto','Medio'],['Ref. demo 11 · vestido','Alto','Medio','Bajo'],['Objeto demo 03 · Alado & Co.','Medio','Bajo','Alto']]},
+       {t:'note',r:'La ref. demo 13 genera preguntas pero pocas ventas: candidata a revisar precio o información de talla.'}],
+    h:'Qué piezas destacar o reeditar es decisión de la dirección.'},
+  analiza:{src:['Shopify','WhatsApp','Instagram','Excel · costos'],intro:'Resumen de la última colección en cuatro dimensiones:',
+    b:[{t:'cols4',r:[['Ventas','Concentradas en 5 de 20 referencias; pico después de la pasarela.'],['Interés','Mayor en piezas con técnica artesanal visible.'],['Conversación','La pregunta dominante fue el precio; la segunda, la talla.'],['Contenido','Los carruseles de investigación y las Stories con enlace llevaron más visitas a la web.']]},
+       {t:'list',cap:'Preguntas para la dirección',r:['¿La historia de la colección llegó completa a quien compró por web?','¿Qué hacemos con las piezas de interés alto y venta baja?']}],
+    h:'El análisis informa. El significado y las decisiones son de la dirección creativa.'},
+  aprend:{src:['Dossier de colección','Shopify','WhatsApp','Instagram'],intro:'Aprendizajes ordenados en tres grupos, para leer antes de diseñar:',
+    b:[{t:'cols',r:[['Conservar',['Técnicas artesanales visibles','Carruseles de investigación como puerta de entrada']],['Revisar',['Tallaje de los tops tejidos','Información de precio y tiempos en la web']],['Explorar',['Más objetos de Alado & Co. ligados a la colección','Contenido del territorio antes del lanzamiento']]]},
+       {t:'list',cap:'Preguntas abiertas',r:['¿Qué parte del mundo de la colección no llegó a contarse?','¿Qué piezas generaron conversación pero no se entendieron?']}],
+    h:'El concepto de la próxima colección nace de la investigación y la intuición de Andrés y Alejandro. Este dossier es un insumo, no una instrucción.'},
+  organiza:{src:['Drive','Shopify','Excel','WhatsApp','Instagram'],intro:'Estado de la información para arrancar la nueva colección:',
+    b:[{t:'check',r:[['Investigación cultural e histórica','Drive · carpeta de referencias','ok'],['Ventas de la colección anterior','Shopify + tienda','ok'],['Comentarios y preguntas de clientes','WhatsApp · etiquetas','part'],['Contenido que funcionó','Instagram','ok'],['Costos y márgenes','Excel','pend'],['Calendario de temporada y eventos','Calendario','ok'],['Capacidad de talleres y artesanos','Conversación directa del equipo','hum']]}],
+    h:'La relación con los artesanos y su capacidad se conversan en persona; no se automatizan.'},
+  produccion:{src:['Shopify · inventario','WhatsApp · interesados'],intro:'Piezas a revisar para producción, según inventario, ventas recientes e interés registrado:',
+    b:[{t:'table',h:['Pieza','Disponibles','Vendidas (4 sem.)','Interesados','Sugerencia'],r:[['Ref. demo 04','2','6','5','Producir: demanda activa'],['Ref. demo 11','4','3','2','Esperar'],['Ref. demo 02','0','2','3','Producir a pedido'],['Objeto demo 03','1','2','1','Consultar al taller']]}],
+    h:'Las cantidades finales dependen de la capacidad de los artesanos y de la decisión del equipo.'},
+  inventario:{src:['Shopify · inventario','Tienda física'],intro:'Estado del inventario por referencia:',
+    b:[{t:'bars',cap:'Número de referencias',r:[['● Disponible',11],['◐ Bajo (2 unidades o menos)',6],['○ Agotado',3]]},
+       {t:'list',r:['Las tallas S y M se agotan primero en 4 de las 6 referencias con stock bajo.','Alado & Co.: rotación estable, sin quiebres.']}],
+    h:'Qué reponer, y cuándo, se decide con los talleres.'},
+  derivar:{src:['Drive · investigación','Fichas de colección'],intro:'Contenido que puede salir de una sola colección, según el momento:',
+    b:[{t:'cols',r:[['Antes del lanzamiento',['Investigación: referencias, territorio, archivo','Proceso en taller con artesanos','Bocetos y materiales']],['Lanzamiento',['Campaña y editorial','Pasarela o evento','Linesheet y fichas web de ~20 referencias']],['Después',['La historia de cada pieza','La pieza en el cuerpo de quien la usa','Alado & Co. en la casa','Entrevistas con los fundadores']]]},
+       {t:'note',r:'Una colección puede sostener meses de contenido si la investigación se organiza desde el principio.'}],
+    h:'La dirección decide qué partes del mundo se muestran y cuáles se guardan.'},
+  calendario:{src:['Drive · investigación de ejemplo'],intro:'Calendario de cuatro semanas a partir de una investigación de ejemplo:',
+    b:[{t:'table',h:['Semana','Tema','Piezas'],r:[['1','El territorio','Carrusel de referencias · Reel del lugar · Stories con archivo'],['2','El oficio','Reel de taller · entrevista a artesano (con su autorización) · carrusel de técnica'],['3','Las piezas','Fichas en la web · Stories con enlace · carrusel pieza a pieza'],['4','El mundo completo','Editorial · evento o pasarela · Alado & Co.']]}],
+    h:'El orden, el tono y las imágenes los define la diseñadora de contenido con la dirección.'}
+};
+const QS=[
+  ['Contenido',[['¿Qué contenido deberíamos hacer esta semana?','semana'],['¿Qué contenido llevó más tráfico a la web?','trafico'],['¿Qué contenido puede derivarse de una colección?','derivar'],['Convierte esta investigación en un calendario de contenidos.','calendario']]],
+  ['Colección',[['Analiza nuestra última colección.','analiza'],['¿Qué prendas de la última colección funcionaron mejor?','mejor'],['¿Qué prendas funcionaron peor?','peor'],['¿Qué aprendizajes de la colección anterior deberían considerarse antes de diseñar la siguiente?','aprend'],['Organiza los aprendizajes para la próxima colección.','aprend'],['Organiza la información necesaria para comenzar una nueva colección.','organiza'],['Hazme el linesheet de esta colección.','linesheet']]],
+  ['Clientes y ventas',[['¿Qué patrones aparecen en las ventas?','patrones'],['¿Qué preguntas hacen más los clientes?','preguntas'],['¿Qué personas mostraron interés pero no compraron?','interes'],['¿Qué productos reciben más interés?','prodint']]],
+  ['Producción',[['¿Qué productos necesitan producción?','produccion'],['¿Cómo se está comportando el inventario?','inventario']]]
+];
+$('#qList').innerHTML=QS.map(g=>`<div class="qgroup"><p class="eyebrow">${g[0]}</p>${g[1].map(q=>`<button class="q" aria-pressed="false" data-q="${esc(q[0])}" data-a="${q[1]}">${esc(q[0])}</button>`).join('')}</div>`).join('');
+function renderBlock(b){
+  if(b.t==='table')return `<div class="scrollx"><table class="mtable"><thead><tr>${b.h.map(x=>`<th>${esc(x)}</th>`).join('')}</tr></thead><tbody>${b.r.map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+  if(b.t==='bars'){const max=Math.max(...b.r.map(r=>r[1]));return `<div class="bars"><p class="cap">${esc(b.cap)} · ${D}</p>${b.r.map((r,i)=>`<div class="bar" data-tip="${esc(r[0])}: ${r[1]} (${D})"><span>${esc(r[0])}</span><span class="track"><span class="fill" style="width:${(r[1]/max*100).toFixed(1)}%;animation-delay:${i*70}ms"></span></span><span class="v">${r[1]}</span></div>`).join('')}</div>`;}
+  if(b.t==='list')return `<div>${b.cap?`<p class="bcap">${esc(b.cap)}</p>`:''}<ul class="blist">${b.r.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`;
+  if(b.t==='note')return `<p class="bnote">${esc(b.r)}</p>`;
+  if(b.t==='cols')return `<div class="bcols">${b.r.map(c=>`<div><b>${esc(c[0])}</b><ul class="blist">${c[1].map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`).join('')}</div>`;
+  if(b.t==='cols4')return `<div class="bcols" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">${b.r.map(c=>`<div><b>${esc(c[0])}</b><p style="font-size:12.5px;color:var(--graphite)">${esc(c[1])}</p></div>`).join('')}</div>`;
+  if(b.t==='sheet')return `<div class="sheet">${b.r.map(r=>`<div><span class="ph">FOTO APROBADA</span><b>${esc(r[0])}</b><span style="font-weight:600">${esc(r[1])}</span><p>${esc(r[2])} · ${esc(r[3])}</p><p class="draft">${esc(r[4])}</p><span class="tag prop" style="justify-self:start">Borrador IA</span></div>`).join('')}</div>`;
+  if(b.t==='check'){const p={ok:'<span class="st-pill ok st">Lista</span>',part:'<span class="st-pill part st">Parcial</span>',pend:'<span class="st-pill st">Pendiente</span>',hum:'<span class="st-pill hum st">Humano</span>'};return `<ul class="check">${b.r.map(r=>`<li><span>${esc(r[0])}</span><small>${esc(r[1])}</small>${p[r[2]]}</li>`).join('')}</ul>`;}
+  return '';
+}
+function botHTML(a){
+  return `<div class="msg bot"><div class="msg-top"><div class="srcs">${a.src.map(s=>`<span>${esc(s)}</span>`).join('')}</div><span class="tag demo">${D}</span></div><p class="intro">${esc(a.intro)}</p>${a.b.map(renderBlock).join('')}<div class="human">${ICON.hum}<span><b>Decisión humana.</b> ${esc(a.h)}</span></div></div>`;
+}
+const log=$('#chatLog');let busy=false;
+function ask(q,key,instant){
+  if(busy)return;
+  $$('#qList .q').forEach(b=>b.setAttribute('aria-pressed',b.dataset.q===q));
+  log.insertAdjacentHTML('beforeend',`<div class="msg user">${esc(q)}</div>`);
+  const put=()=>{const a=A[key];log.insertAdjacentHTML('beforeend',a?botHTML(a):`<div class="msg bot"><div class="msg-top"><span class="eyebrow">Asistente</span><span class="tag demo">${D}</span></div><p class="intro">En este prototipo el asistente responde solo a las preguntas de ejemplo. Elige una de la lista o prueba con palabras como «linesheet», «inventario», «tráfico» o «aprendizajes».</p></div>`);const m=log.lastElementChild;log.scrollTop=m.offsetTop-12;};
+  if(instant||reduce){put();return;}
+  busy=true;log.insertAdjacentHTML('beforeend','<div class="typing" aria-label="Escribiendo"><i></i><i></i><i></i></div>');log.scrollTop=log.scrollHeight;
+  setTimeout(()=>{const t=log.querySelector('.typing');if(t)t.remove();put();busy=false;},750);
+}
+$('#qList').addEventListener('click',e=>{const b=e.target.closest('.q');if(b)ask(b.dataset.q,b.dataset.a);});
+const KW=[['linesheet','linesheet'],['descrip','linesheet'],['semana','semana'],['tráfico','trafico'],['trafico','trafico'],['web','trafico'],['deriv','derivar'],['calendario','calendario'],['investigaci','calendario'],['analiza','analiza'],['última colecci','analiza'],['mejor','mejor'],['peor','peor'],['aprendiz','aprend'],['nueva colecci','organiza'],['comenzar','organiza'],['patron','patrones'],['patrón','patrones'],['pregunta','preguntas'],['interés','interes'],['interes','interes'],['no compraron','interes'],['producci','produccion'],['inventario','inventario'],['stock','inventario']];
+$('#askForm').addEventListener('submit',e=>{e.preventDefault();const v=$('#askInput').value.trim();if(!v)return;const low=v.toLowerCase();const hit=KW.find(k=>low.includes(k[0]));ask(v,hit?hit[1]:null);$('#askInput').value='';});
+document.addEventListener('click',e=>{const b=e.target.closest('[data-ask]');if(!b)return;const q=b.dataset.ask;const qb=$$('#qList .q').find(x=>x.dataset.q===q);go(6);if(qb)setTimeout(()=>ask(q,qb.dataset.a),250);});
+ask('¿Qué contenido deberíamos hacer esta semana?','semana',true);
+
+/* ════════ VIII · RESULTADO ════════ */
+const BEFORE=['Canales separados','Información dispersa','Mucho trabajo manual','Poca trazabilidad','Decisiones basadas en información fragmentada'];
+const AFTER=[['Canales conectados',3],['Información organizada',4],['Automatización de tareas repetitivas',5],['IA como asistente',6],['Mayor trazabilidad',2],['Información que vuelve al proceso creativo',4]];
+const MAP=[[0],[1],[2,3],[4],[5]];
+$('#ba').innerHTML=`<div class="bacol before"><h3>ANTES</h3>${BEFORE.map((t,i)=>`<div class="baitem" data-b="${i}"><span class="t">${esc(t)}</span><span class="dn">↓</span></div>`).join('')}</div>
+<div class="bamid" aria-hidden="true"><svg viewBox="0 0 46 20"><path d="M2 10 H40 M33 3 L41 10 L33 17" fill="none" stroke="var(--ink)" stroke-width="1.4"/></svg></div>
+<div class="bacol after"><h3>DESPUÉS</h3>${AFTER.map((t,i)=>`<div class="baitem" data-a="${i}"><span style="display:flex;align-items:center;flex-wrap:wrap"><span class="t">${esc(t[0])}</span><button class="go" data-go="${t[1]}" data-tip="Ver en el folio ${FOLIOS[t[1]][1]}">→ ${FOLIOS[t[1]][1]}</button></span><span class="dn">↓</span></div>`).join('')}</div>`;
+function baHi(bi,ai){
+  let bs=new Set(),as=new Set();
+  if(bi!=null){bs.add(bi);MAP[bi].forEach(a=>as.add(a));}
+  if(ai!=null){as.add(ai);MAP.forEach((m,b)=>{if(m.includes(ai))bs.add(b);});}
+  const any=bi!=null||ai!=null;
+  $$('#ba [data-b]').forEach(el=>{el.classList.toggle('hi',bs.has(+el.dataset.b));el.classList.toggle('lo',any&&!bs.has(+el.dataset.b));});
+  $$('#ba [data-a]').forEach(el=>{el.classList.toggle('hi',as.has(+el.dataset.a));el.classList.toggle('lo',any&&!as.has(+el.dataset.a));});
+}
+$('#ba').addEventListener('mouseover',e=>{const b=e.target.closest('[data-b]'),a=e.target.closest('[data-a]');if(b)baHi(+b.dataset.b,null);else if(a)baHi(null,+a.dataset.a);});
+$('#ba').addEventListener('mouseleave',()=>baHi(null,null));
+$('#triad').innerHTML=['auto','ia','hum'].map(lchip).join('');
+$('#fanswers').innerHTML=[
+  ['Fase 1','¿Cómo puede Alado mejorar su presencia digital mediante un ecosistema conectado?','Dando a cada canal un rol dentro de un mismo ciclo: Instagram construye mundo, la web lo archiva y vende, WhatsApp conversa, los eventos reúnen interés y Google lleva a la tienda. La presencia mejora cuando el interés deja rastro y vuelve como aprendizaje, sin perder el world building.',[1,2,3]],
+  ['Fase 2','¿Cómo deberían trabajar los canales juntos y qué procesos pueden automatizarse?','Con enlaces y etiquetas que marquen el origen de cada interacción y una base común que reúna conversaciones y ventas. Se automatiza lo repetitivo: reportes periódicos, consolidación de datos, guías de envío, recordatorios de seguimiento y clasificación básica de mensajes.',[3,4,5]],
+  ['Fase 3','¿Dónde puede usarse IA y qué debe automatizarse, asistirse o mantenerse humano?','La IA asiste en análisis, organización y primeras versiones: ventas, redes, linesheets, descripciones, calendarios y comentarios. Se mantienen humanos el concepto, la dirección creativa, el diseño, la selección de imágenes, la relación con artesanos y las decisiones finales.',[5,6,4]]
+].map(f=>`<article class="paper fanswer taped"><p class="eyebrow">${f[0]}</p><h4>${esc(f[1])}</h4><p>${esc(f[2])}</p><div class="links">${f[3].map(i=>`<button data-go="${i}">Folio ${FOLIOS[i][1]} · ${esc(FOLIOS[i][2])}</button>`).join('')}</div></article>`).join('');
+
+/* ───────── start ───────── */
+let start=0;try{const h=(location.hash||'').slice(1);const k=FOLIOS.findIndex(f=>f[0]===h);if(k>=0)start=k;}catch(e){}
+go(start);
+})();
+</script>
