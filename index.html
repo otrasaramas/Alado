@@ -35,6 +35,7 @@
 }
 
 *,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
 html,body{height:100%}
 body{background:var(--paper);color:var(--ink);font:400 16px/1.5 var(--body);display:grid;grid-template-rows:auto minmax(0,1fr) auto;grid-template-columns:minmax(0,1fr);overflow:hidden;-webkit-font-smoothing:antialiased}
 body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:var(--grain);
@@ -55,9 +56,10 @@ p{margin:0} ul,ol{margin:0;padding:0;list-style:none}
 .brand{display:flex;align-items:baseline;gap:12px;flex:none}
 .brand b{font:800 26px/1 var(--sans);letter-spacing:-.03em}
 .brand span{font:italic 400 15px var(--display);color:var(--graphite)}
-.folios{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0;justify-content:center}
+.folios{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
+.folios button:first-child{margin-left:auto}.folios button:last-child{margin-right:auto}
 .folios::-webkit-scrollbar{display:none}
-.folios button{flex:none;padding:6px 10px;font:400 16px/1 var(--body);color:var(--graphite);white-space:nowrap;letter-spacing:.01em}
+.folios button{flex:none;padding:6px 9px;font:400 15.5px/1 var(--body);color:var(--graphite);white-space:nowrap;letter-spacing:.01em}
 .folios button:hover{color:var(--ink)}
 .folios button[aria-current="true"]{color:var(--ink);text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px}
 .acad{flex:none;font:500 10px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--stone);border:1px solid var(--line);padding:5px 8px}
@@ -119,7 +121,8 @@ p{margin:0} ul,ol{margin:0;padding:0;list-style:none}
 .cyc button:hover{border-color:var(--line-2)}
 .cyc button[aria-pressed="true"]{background:var(--ink);color:var(--paper-2)}
 .cyc i{font-style:normal;color:var(--stone);font-size:12px}
-.zoombar{display:flex;gap:4px;margin-left:auto;align-items:center}
+.zoombar{position:absolute;top:10px;right:10px;z-index:3;display:flex;gap:4px;align-items:center;background:var(--paper);padding:4px;border:1px solid var(--line)}
+.aibtn{margin-left:auto}
 .zoombar button{width:32px;height:32px;border:1px solid var(--ink);border-radius:2px;font:500 16px var(--sans);display:grid;place-items:center}
 .zoombar button:hover{background:var(--ink);color:var(--paper-2)}
 .zoombar .fit{width:auto;padding:0 10px;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase}
@@ -203,7 +206,7 @@ p{margin:0} ul,ol{margin:0;padding:0;list-style:none}
 .pbody h3{font:400 29px/1.08 var(--display)}
 .pbody h3 em{font-style:italic}
 .types{display:flex;flex-wrap:wrap;gap:6px}
-.types span{display:inline-flex;gap:6px;align-items:center;font:600 10px var(--sans);letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line);padding:4px 8px 4px 6px;border-radius:2px;background:var(--paper)}
+.types > span{display:inline-flex;gap:6px;align-items:center;font:600 10px var(--sans);letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line);padding:4px 8px 4px 6px;border-radius:2px;background:var(--paper)}
 .pnav{display:flex;gap:6px;flex-wrap:wrap}
 .qbox{display:grid;gap:10px}
 .qbox p{font:italic 400 18px/1.3 var(--display)}
@@ -229,6 +232,34 @@ p{margin:0} ul,ol{margin:0;padding:0;list-style:none}
 .crow{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:8px 20px;padding:12px 0;border-top:1px solid var(--line);align-items:center}
 .cchain{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .crow em{color:var(--graphite)}
+
+/* ════════ III · HERRAMIENTAS DE IA ════════ */
+.aibtn{border-color:var(--c-ia);color:var(--c-ia);background:var(--w-ia)}
+.aibtn:hover,.aibtn[aria-pressed="true"]{background:var(--c-ia);border-color:var(--c-ia);color:var(--paper-2)}
+.aisum{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;padding:16px 18px;border:1.5px solid var(--c-ia);background:var(--w-ia);margin-bottom:24px}
+.aisum b{font:600 11px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--c-ia)}
+.aisum .fl{font-size:17px;font-weight:600}
+.aicards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:start}
+.aicard{padding:22px 20px 20px;display:flex;flex-direction:column;gap:12px;border:1.5px dashed var(--c-prop)}
+.aicard .num{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.aicard .num > span:first-child{font:italic 400 40px/1 var(--display);color:var(--c-ia)}
+.aicard h3{font:400 29px/1.08 var(--display)}
+.aicard .kind{font:600 11px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--c-ia)}
+.aicard .note{font-style:italic;color:var(--graphite);font-size:15px}
+.aicard .start{font-size:15px;padding:9px 11px;background:var(--paper);border:1px solid var(--line)}
+.aicard .start b{font:600 10px var(--sans);letter-spacing:.12em;text-transform:uppercase;display:block;color:var(--stone);margin-bottom:2px}
+.aicard .uses li{font-size:15px;padding:5px 0;border-top:1px dotted var(--line);display:flex;gap:8px}
+.aicard .uses li::before{content:"→";color:var(--c-ia)}
+.aicard .no .mk svg circle{fill:var(--on-ink)}
+.aicard .no{background:var(--c-hum);color:var(--on-ink);padding:10px 12px;font-size:14.5px;display:flex;gap:8px;align-items:flex-start}
+.lchips{display:flex;flex-wrap:wrap;gap:5px}
+.lchips button{font:600 10px var(--sans);letter-spacing:.1em;text-transform:uppercase;padding:4px 8px;border:1px solid var(--ink);border-radius:999px}
+.lchips button:hover{background:var(--ink);color:var(--paper-2)}
+.aisec{margin-top:32px}
+.aisec > h3{font:400 28px/1.1 var(--display);margin-bottom:6px}
+.aisec > p{color:var(--graphite);margin-bottom:14px;max-width:70ch}
+.aitable td:nth-child(3){color:var(--c-ia);font-weight:700}
+.aitable td:first-child{font-weight:600}
 
 /* ════════ III · CLIENTES ════════ */
 .two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:22px;align-items:stretch}
@@ -438,8 +469,10 @@ p{margin:0} ul,ol{margin:0;padding:0;list-style:none}
 .closing p span{display:block}
 .triad{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
 
+@media (max-width:1500px){ .brand span{display:none} }
 @media (max-width:1180px){ .acad{display:none} .flegend{display:none} }
 @media (max-width:960px){
+  .aicards{grid-template-columns:minmax(0,1fr)}
   .mapfolio{height:auto}
   .mapgrid{grid-template-columns:minmax(0,1fr)}
   .vp{height:68vh}
@@ -477,16 +510,18 @@ p{margin:0} ul,ol{margin:0;padding:0;list-style:none}
   <div class="maptool">
     <h1>Mapa del ecosistema digital <em>de Alado</em></h1>
     <div class="cyc" id="cyc" role="group" aria-label="Recorrer el ciclo por capas"></div>
-    <div class="zoombar">
+    <button class="btn aibtn" id="aiBtn" aria-pressed="false"><span class="mk" data-mk="ia"></span>IA nueva para integrar</button>
+  </div>
+  <div class="mapgrid">
+    <div class="vp" id="vp">
+      <div id="world"></div>
+      <div class="zoombar">
       <span class="pct" id="pct">100%</span>
       <button id="zOut" aria-label="Alejar">−</button>
       <button id="zIn" aria-label="Acercar">+</button>
       <button class="fit" id="zFit">Ver todo</button>
     </div>
-  </div>
-  <div class="mapgrid">
-    <div class="vp" id="vp">
-      <div id="world"></div>
+
       <span class="vp-hint">Arrastra para mover · rueda para zoom · clic en un nodo o en una capa</span>
     </div>
     <aside class="mpanel">
@@ -517,10 +552,31 @@ p{margin:0} ul,ol{margin:0;padding:0;list-style:none}
   </div>
 </section>
 
+<!-- ════════ III · HERRAMIENTAS DE IA ════════ -->
+<section class="folio" id="f-iatools" hidden>
+  <header class="fhead">
+    <p class="label">III · Herramientas de IA para integrar</p>
+    <h2>Tres herramientas de IA <em>nuevas para Alado</em></h2>
+    <p class="lede">Ninguna forma parte de las herramientas actuales de Alado. Son la propuesta de IA del ecosistema: para qué sirve cada una, en qué capa del mapa entra, quién la usa y qué no decide.</p>
+  </header>
+  <div class="aisum" id="aiSum"></div>
+  <div class="aicards" id="aiCards"></div>
+  <div class="aisec">
+    <h3>Qué tarea asiste cada herramienta</h3>
+    <p>Las tareas manuales del equipo que la IA puede asistir, en orden de carga de trabajo. Ninguna sale sin revisión humana.</p>
+    <div class="paper scrollx" style="padding:6px 16px 10px"><table class="mtable aitable" id="aiTable"></table></div>
+  </div>
+  <div class="aisec">
+    <h3>Cómo entran al ecosistema</h3>
+    <p>La IA no trabaja sola: recibe información de las herramientas actuales y propuestas, y lo que produce pasa por el equipo antes de volver al ecosistema.</p>
+    <div id="aiFlows"></div>
+  </div>
+</section>
+
 <!-- ════════ III · CLIENTES Y AUTOMATIZACIÓN ════════ -->
 <section class="folio" id="f-clientes" hidden>
   <header class="fhead">
-    <p class="label">III · Cliente, CRM y automatización · capas 4 y 5</p>
+    <p class="label">IV · Cliente, CRM y automatización · capas 4 y 5</p>
     <h2>Que el interés <em>deje rastro</em></h2>
     <p class="lede">Hoy el recorrido funciona cuando termina en compra. Cuando no, la información se pierde. Un CRM (HubSpot, propuesta) y una capa de automatización (Make o Zapier, propuesta) registran cada interés sin volver la relación invasiva.</p>
   </header>
@@ -558,7 +614,7 @@ p{margin:0} ul,ol{margin:0;padding:0;list-style:none}
 <!-- ════════ IV · RETORNO AL DISEÑO ════════ -->
 <section class="folio" id="f-retorno" hidden>
   <header class="fhead">
-    <p class="label">IV · Retorno al diseño · capa 8</p>
+    <p class="label">V · Retorno al diseño · capa 8</p>
     <h2>El ecosistema <em>no termina en la venta</em></h2>
     <p class="lede">Contenido, ventas, clientes, comentarios, costos, inventario y contexto se convierten en datos. La IA los analiza, el equipo los interpreta y los aprendizajes vuelven al proceso creativo antes de la siguiente colección. Haz clic en cualquier etapa.</p>
   </header>
@@ -586,7 +642,7 @@ p{margin:0} ul,ol{margin:0;padding:0;list-style:none}
 <!-- ════════ V · CRITERIO HUMANO ════════ -->
 <section class="folio" id="f-criterio" hidden>
   <header class="fhead">
-    <p class="label">V · Criterio humano · capa transversal</p>
+    <p class="label">VI · Criterio humano · capa transversal</p>
     <h2>Automatizar, asistir <em>y decidir</em></h2>
     <p class="lede">El criterio humano atraviesa todas las capas. Lo repetitivo se automatiza, lo analítico lo asiste la IA y lo creativo, estratégico y relacional sigue siendo del equipo.</p>
   </header>
@@ -609,7 +665,7 @@ p{margin:0} ul,ol{margin:0;padding:0;list-style:none}
 <!-- ════════ VI · IA ANALÍTICA ════════ -->
 <section class="folio" id="f-ia" hidden>
   <header class="fhead">
-    <p class="label">VI · IA analítica · capa 7</p>
+    <p class="label">VII · IA analítica · capa 7</p>
     <h2>La IA analiza y asiste. <em>No decide.</em></h2>
     <p class="lede">Así podría responder un asistente (Claude o ChatGPT, propuesta) conectado al dashboard, al CRM, a Shopify y a Drive. Las respuestas usan datos ficticios marcados DEMO.</p>
   </header>
@@ -634,7 +690,7 @@ p{margin:0} ul,ol{margin:0;padding:0;list-style:none}
 <!-- ════════ VII · SÍNTESIS ════════ -->
 <section class="folio" id="f-sintesis" hidden>
   <header class="fhead">
-    <p class="label">VII · Síntesis</p>
+    <p class="label">VIII · Síntesis</p>
     <h2>Un ecosistema <em>que aprende</em></h2>
   </header>
   <div class="answers2" id="answers2"></div>
@@ -681,7 +737,7 @@ document.addEventListener('mouseout',e=>{const t=e.target.closest('[data-tip]');
 document.addEventListener('mousemove',e=>{if(!tip.classList.contains('on'))return;const w=tip.offsetWidth,h=tip.offsetHeight;let x=e.clientX+14,y=e.clientY+16;if(x+w>innerWidth-8)x=e.clientX-w-14;if(y+h>innerHeight-8)y=e.clientY-h-12;tip.style.left=x+'px';tip.style.top=y+'px';});
 
 /* ───────── navigation ───────── */
-const FOLIOS=[['mapa','Mapa del ecosistema'],['stack','Stack digital'],['clientes','Clientes y automatización'],['retorno','Retorno al diseño'],['criterio','Criterio humano'],['ia','IA analítica'],['sintesis','Síntesis']];
+const FOLIOS=[['mapa','Mapa del ecosistema'],['stack','Stack digital'],['herramientas-ia','Herramientas de IA'],['clientes','Clientes y automatización'],['retorno','Retorno al diseño'],['criterio','Criterio humano'],['ia','IA analítica'],['sintesis','Síntesis']];
 const sections=$$('.folio');
 $('#folios').innerHTML=FOLIOS.map((f,i)=>`<button data-go="${i}">${f[1]}</button>`).join('');
 $('#thread').innerHTML=FOLIOS.map((f,i)=>`<button data-go="${i}" data-tip="${f[1]}" aria-label="${f[1]}"></button>`).join('');
@@ -903,10 +959,10 @@ function rectOf(ids){const zs=ZONES.filter(z=>ids.includes(z.id));const x=Math.m
 function focusLayers(ids){userMoved=true;fitRect(rectOf(ids),24,true);$$('.zone',world).forEach(z=>z.classList.toggle('focus',ids.includes(+z.dataset.z)));world.classList.add('layered');}
 function clearFocus(){$$('.zone',world).forEach(z=>z.classList.remove('focus'));world.classList.remove('layered');$$('#cyc button').forEach(b=>b.setAttribute('aria-pressed','false'));}
 $('#zIn').onclick=()=>zoomBy(1.3);$('#zOut').onclick=()=>zoomBy(1/1.3);
-$('#zFit').onclick=()=>{userMoved=false;clearFocus();fitAll(true);showIntro();};
-vp.addEventListener('wheel',e=>{e.preventDefault();const r=vp.getBoundingClientRect();const f=Math.exp(-e.deltaY*(e.ctrlKey?.01:.0016));const ns=clamp(s*f,minS(),2.6);const mx=e.clientX-r.left,my=e.clientY-r.top;tx=mx-(mx-tx)*(ns/s);ty=my-(my-ty)*(ns/s);s=ns;userMoved=true;apply(false);},{passive:false});
+$('#zFit').onclick=()=>{userMoved=false;clearFocus();fitAll(true);showIntro();world.dataset.filter='';$$('#legend .lg').forEach(x=>x.setAttribute('aria-pressed','false'));$('#aiBtn').setAttribute('aria-pressed','false');};
+vp.addEventListener('wheel',e=>{if(e.target.closest('.zoombar'))return;e.preventDefault();const r=vp.getBoundingClientRect();const f=Math.exp(-e.deltaY*(e.ctrlKey?.01:.0016));const ns=clamp(s*f,minS(),2.6);const mx=e.clientX-r.left,my=e.clientY-r.top;tx=mx-(mx-tx)*(ns/s);ty=my-(my-ty)*(ns/s);s=ns;userMoved=true;apply(false);},{passive:false});
 let drag=null,suppress=false;
-vp.addEventListener('pointerdown',e=>{if(e.button!==0)return;drag={x:e.clientX,y:e.clientY,tx,ty,moved:false,id:e.pointerId};});
+vp.addEventListener('pointerdown',e=>{if(e.button!==0||e.target.closest('.zoombar'))return;drag={x:e.clientX,y:e.clientY,tx,ty,moved:false,id:e.pointerId};});
 vp.addEventListener('pointermove',e=>{if(!drag)return;const dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(!drag.moved&&Math.hypot(dx,dy)>5){drag.moved=true;vp.classList.add('dragging');try{vp.setPointerCapture(drag.id);}catch(_){}}if(drag.moved){tx=drag.tx+dx;ty=drag.ty+dy;userMoved=true;apply(false);}});
 const endDrag=()=>{if(drag&&drag.moved){suppress=true;setTimeout(()=>suppress=false,0);}drag=null;vp.classList.remove('dragging');};
 vp.addEventListener('pointerup',endDrag);vp.addEventListener('pointercancel',endDrag);
@@ -980,16 +1036,16 @@ panel.addEventListener('click',e=>{
   const cn=e.target.closest('[data-cy-next]');if(cn)cycleStep(+cn.dataset.cyNext);
 });
 $('#cyc').addEventListener('click',e=>{const b=e.target.closest('[data-cy]');if(b)cycleStep(+b.dataset.cy);});
-$('#legend').addEventListener('click',e=>{const b=e.target.closest('[data-f]');if(!b)return;const on=b.getAttribute('aria-pressed')!=='true';$$('#legend .lg').forEach(x=>x.setAttribute('aria-pressed',x===b&&on));world.dataset.filter=on?b.dataset.f:'';});
+$('#legend').addEventListener('click',e=>{const b=e.target.closest('[data-f]');if(!b)return;const on=b.getAttribute('aria-pressed')!=='true';$$('#legend .lg').forEach(x=>x.setAttribute('aria-pressed',x===b&&on));world.dataset.filter=on?b.dataset.f:'';$('#aiBtn').setAttribute('aria-pressed',String(on&&b.dataset.f==='ia'));});
 function openNode(id){go(0);requestAnimationFrame(()=>{focusLayers([zoneOf(id)]);selectNode(id);});}
 showIntro();
 
 /* ════════ II · STACK ════════ */
 const SA=[['Instagram','Canal','Capas 2 · 3 · 6','World building, descubrimiento e interacción. Fuente de métricas de contenido.','instagram'],['Facebook','Canal','Capa 3','Distribución secundaria del contenido.','facebook'],['Shopify','Canal + fuente de datos','Capas 3 · 6','Información de producto y venta. Productos, ventas, pedidos, clientes e inventario.','shopify'],['WhatsApp','Canal','Capas 3 · 4','Conversación y asesoría; origen de muchos leads.','whatsapp'],['Google Business','Canal','Capas 3 · 6','Descubrimiento local hacia la tienda.','gbusiness'],['Google Drive','Archivo','Capas 1 · 2 · 8','Investigación, fotografías, presentaciones y fichas.','herr_creacion'],['Canva','Diseño gráfico','Capas 1 · 2','Presentaciones, linesheets y piezas gráficas.','herr_creacion'],['Adobe','Diseño e imagen','Capas 1 · 2','Diseño, edición de fotografía y de video.','herr_creacion'],['Excel','Costos y registros','Capas 1 · 8','Costeo de prendas y registros.','herr_creacion']];
-const SP=[['HubSpot','CRM','Capa 4','Una ficha por persona interesada: fuente, producto de interés, estado, compra y seguimiento.','crm'],['Make o Zapier','Automatización','Capa 5','Conecta canales, CRM y Shopify: registra, clasifica y avisa al equipo.','make'],['Looker Studio','Dashboard','Capa 6','Combina Shopify, Instagram, CRM y Google en tableros que se actualizan solos.','dashboard'],['Notion','Knowledge base','Capas 2 · 8','Calendario de contenido y dossier de aprendizajes de cada colección.','aprendizajes'],['Mailchimp o Klaviyo','Email marketing','Capa 3','Boletín y postventa para quien dio su permiso.','email'],['Claude / ChatGPT','IA','Capas 1 · 2 · 7','Analiza, resume, organiza y escribe primeras versiones.','ia'],['Adobe Firefly','IA visual','Capas 1 · 2','Exploración visual y edición asistida de imágenes.','ia_creacion']];
+const SP=[['HubSpot','CRM','Capa 4','Una ficha por persona interesada: fuente, producto de interés, estado, compra y seguimiento.','crm'],['Make o Zapier','Automatización','Capa 5','Conecta canales, CRM y Shopify: registra, clasifica y avisa al equipo.','make'],['Looker Studio','Dashboard','Capa 6','Combina Shopify, Instagram, CRM y Google en tableros que se actualizan solos.','dashboard'],['Notion','Knowledge base','Capas 2 · 8','Calendario de contenido y dossier de aprendizajes de cada colección.','aprendizajes'],['Mailchimp o Klaviyo','Email marketing','Capa 3','Boletín y postventa para quien dio su permiso.','email'],['Claude / ChatGPT','IA','Capas 1 · 2 · 7','Analiza, resume, organiza y escribe primeras versiones.','ia'],['Adobe Firefly','IA visual','Capas 1 · 2','Exploración visual y edición asistida de imágenes.','ia_creacion'],['Transcripción y subtítulos con IA','IA · edición de video','Capas 1 · 2','Por ejemplo, Voz a texto de Adobe Premiere Pro o CapCut.','ia_contenido']];
 const srow=(r,t)=>`<div class="srow"><h4>${mk(t)}${esc(r[0])} <small>${esc(r[1])} · ${esc(r[2])}</small></h4><p>${esc(r[3])}</p><button class="lnk go" data-open="${r[4]}">Ver en el mapa</button></div>`;
 $('#stackAct').innerHTML=`<header>${mk('actual')}<h3>Actual</h3></header><p>Herramientas que Alado ya utiliza.</p>${SA.map(r=>srow(r,'actual')).join('')}`;
-$('#stackProp').innerHTML=`<header>${mk('prop')}<h3>Propuesto</h3><span class="tag prop">No se usan hoy</span></header><p>Ejemplos de herramientas que podrían incorporarse.</p>${SP.map(r=>srow(r,'prop')).join('')}`;
+$('#stackProp').innerHTML=`<header>${mk('prop')}<h3>Propuesto</h3><span class="tag prop">No se usan hoy</span></header><p>Ejemplos de herramientas que podrían incorporarse. <button class="lnk" data-go="2">Ver las herramientas de IA en detalle</button></p>${SP.map(r=>srow(r,'prop')).join('')}`;
 const fl=(t,c)=>`<span class="fl ${c}">${mk(c)}${esc(t)}</span>`;
 $('#connect').innerHTML=[
  [[['Instagram · WhatsApp · web','actual'],['Make / Zapier','auto'],['HubSpot','prop']],'Leads con su fuente y producto de interés.'],
@@ -1000,6 +1056,61 @@ $('#connect').innerHTML=[
  [[['Notion · dossier','prop'],['Dirección creativa','hum'],['Nueva colección','hum']],'Aprendizajes antes de diseñar.']
 ].map(r=>`<div class="crow"><div class="cchain">${r[0].map(x=>fl(x[0],x[1])).join('<span class="muted">→</span>')}</div><em>${esc(r[1])}</em></div>`).join('');
 document.addEventListener('click',e=>{const b=e.target.closest('[data-open]');if(b)openNode(b.dataset.open);});
+
+/* ════════ III · HERRAMIENTAS DE IA ════════ */
+const AIT=[
+ {n:'Claude / ChatGPT',k:'Asistente de análisis y escritura',note:'Basta con elegir una de las dos.',start:'Descripciones de producto y linesheets, la tarea con más carga hoy.',
+  uses:['Primeras versiones de descripciones de producto y linesheets','Análisis de ventas y del rendimiento del contenido','Resumen de comentarios y preguntas de clientes','Comparar colecciones y organizar aprendizajes (dossier)','Primeros copies y propuesta de calendario','Organizar investigación y estructurar propuestas','Sugerir la clasificación de mensajes dentro de Make o Zapier'],
+  layers:[1,2,5,7,8],who:'Diseñador y asistente multifuncional, diseñadora de contenido y gerencia.',in:'Fichas técnicas (Drive), dashboard (Looker Studio), exportaciones del CRM (HubSpot) e investigación.',out:'Borradores, resúmenes, insights e hipótesis que el equipo revisa. Lo validado se guarda en Notion.',no:'No define el concepto, la voz final de la marca, los precios ni las decisiones de colección.',node:'ia'},
+ {n:'Adobe Firefly',k:'IA visual',note:'Se usa como app y dentro de Photoshop (relleno generativo), sobre el Adobe que el equipo ya tiene.',start:'Adaptar las fotografías de campaña a cada formato.',
+  uses:['Edición asistida de fotografía de campaña: limpiar, extender fondos, recortar','Adaptar una imagen a Reels, Stories, web y linesheet','Explorar referencias visuales durante la investigación'],
+  layers:[1,2],who:'Diseñadora de contenido y diseñador multifuncional.',in:'Fotografías de campaña y de producto aprobadas; referencias.',out:'Versiones editadas y adaptadas para revisión.',no:'No elige las imágenes finales, no diseña prendas y no reemplaza la fotografía de campaña.',node:'ia_creacion'},
+ {n:'Transcripción y subtítulos con IA',k:'Edición asistida de video y audio',note:'Por ejemplo, Voz a texto de Adobe Premiere Pro, o CapCut.',start:'Subtítulos de Reels y transcripción de entrevistas.',
+  uses:['Transcribir entrevistas con los fundadores y con artesanos','Subtítulos automáticos para Reels, desfiles y behind the scenes','Cortes y versiones de un mismo video por formato','Convertir entrevistas en texto para investigación y copies'],
+  layers:[1,2],who:'Diseñadora de contenido.',in:'Video y audio de entrevistas, desfiles y taller.',out:'Transcripciones, subtítulos y cortes para aprobar.',no:'No decide qué se cuenta ni publica sin aprobación. Las entrevistas a artesanos se usan con su autorización.',node:'ia_contenido'}
+];
+const LNAME={1:'Crear',2:'Publicar',3:'Conectar',4:'Convertir',5:'Registrar',6:'Registrar',7:'Analizar',8:'Aprender'};
+const layerChips=ls=>`<div class="lchips">${ls.map(l=>`<button data-open-layer="${l}" data-tip="Ver la capa ${l} en el mapa">Capa ${l} · ${LNAME[l]}</button>`).join('')}</div>`;
+$('#aiSum').innerHTML=`<b>Nuevas herramientas de IA</b>${AIT.map(t=>`<span class="fl ia">${mk('ia')}${esc(t.n)}</span>`).join('')}<span class="tag prop">Propuesta · no se usan hoy</span>`;
+$('#aiCards').innerHTML=AIT.map((t,i)=>`<article class="paper aicard">
+  <div class="num"><span>0${i+1}</span><span class="types"><span>${mk('ia')}IA</span><span>${mk('prop')}Propuesta</span></span></div>
+  <div><p class="kind">${esc(t.k)}</p><h3>${esc(t.n)}</h3></div>
+  <p class="note">${esc(t.note)}</p>
+  <p class="start"><b>Empezar por</b>${esc(t.start)}</p>
+  <div><p class="label" style="margin-bottom:4px">Para qué</p><ul class="uses">${t.uses.map(u=>`<li>${esc(u)}</li>`).join('')}</ul></div>
+  <div><p class="label" style="margin-bottom:6px">Dónde entra en el mapa</p>${layerChips(t.layers)}</div>
+  <dl class="facts"><div><dt>Quién la usa</dt><dd>${esc(t.who)}</dd></div><div><dt>Entra</dt><dd>${esc(t.in)}</dd></div><div><dt>Sale</dt><dd>${esc(t.out)}</dd></div></dl>
+  <p class="no">${mk('hum')}<span><b>No decide.</b> ${esc(t.no)}</span></p>
+  <button class="lnk" data-open="${t.node}" style="align-self:flex-start">Ver en el mapa</button>
+ </article>`).join('');
+$('#aiTable').innerHTML=`<thead><tr><th>Tarea del equipo</th><th>Prioridad</th><th>Herramienta de IA</th><th>Qué hace</th></tr></thead><tbody>${[
+ ['Descripciones de producto y linesheets','P1','Claude / ChatGPT','Borrador desde la ficha técnica; el equipo revisa la voz.'],
+ ['Análisis de la colección anterior y de ventas','P2','Claude / ChatGPT + Looker Studio','Insights e hipótesis para discutir.'],
+ ['Planeación de colección','P2','Claude / ChatGPT + Notion','Ordena los insumos antes de diseñar.'],
+ ['Edición de fotografías de campaña','P3','Adobe Firefly (en Photoshop)','Ajustes y formatos; la selección es humana.'],
+ ['Edición de videos','—','Transcripción y subtítulos con IA','Subtítulos, cortes y versiones.'],
+ ['Copies para redes','—','Claude / ChatGPT','Primeras versiones.'],
+ ['Análisis de redes sociales','—','Claude / ChatGPT + Looker Studio','Qué contenido lleva a conversaciones y a la web.'],
+ ['Calendario de contenidos','—','Claude / ChatGPT + Notion','Propuesta desde la investigación.'],
+ ['Clasificación de mensajes e interesados','—','Claude / ChatGPT dentro de Make o Zapier','Sugiere la etiqueta; la acción la decide el equipo.'],
+ ['Investigación y entrevistas','—','Transcripción con IA + Claude / ChatGPT','Transcribir y ordenar fuentes.']
+].map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody>`;
+$('#aiFlows').innerHTML=[
+ [[['Drive · Looker Studio · HubSpot','actual'],['Claude / ChatGPT','ia'],['El equipo revisa','hum'],['Notion · dossier','prop']],'Análisis y aprendizajes de colección.'],
+ [[['Instagram · WhatsApp · web','actual'],['Make / Zapier','auto'],['Claude / ChatGPT','ia'],['HubSpot','prop']],'Clasificación de mensajes e interesados.'],
+ [[['Fotos de campaña','actual'],['Adobe Firefly','ia'],['Selección humana','hum'],['Instagram · Shopify','actual']],'Imágenes adaptadas a cada canal.'],
+ [[['Video y entrevistas','actual'],['Transcripción y subtítulos','ia'],['Aprobación','hum'],['Reels · investigación','actual']],'Video subtitulado y entrevistas en texto.']
+].map(r=>`<div class="crow"><div class="cchain">${r[0].map(x=>`<span class="fl ${x[1]}">${mk(x[1])}${esc(x[0])}</span>`).join('<span class="muted">→</span>')}</div><em>${esc(r[1])}</em></div>`).join('');
+document.addEventListener('click',e=>{const b=e.target.closest('[data-open-layer]');if(!b)return;go(0);requestAnimationFrame(()=>selectLayer(+b.dataset.openLayer));});
+$('#aiBtn').addEventListener('click',()=>{
+  const lb=$('#legend .lg[data-f="ia"]');$$('#legend .lg').forEach(x=>x.setAttribute('aria-pressed',x===lb));world.dataset.filter='ia';
+  $('#aiBtn').setAttribute('aria-pressed','true');
+  clearFocus();userMoved=false;fitAll(true);$$('.nd.sel',world).forEach(n=>n.classList.remove('sel'));
+  panel.innerHTML=`<p class="label">Propuesta de IA</p><h3>IA nueva <em>para integrar</em></h3>
+   <p style="color:var(--graphite)">Tres herramientas que hoy no usa Alado. En el mapa quedan resaltados los nodos de IA.</p>
+   ${AIT.map((t,i)=>`<div style="border-top:1px solid var(--line);padding-top:10px;display:grid;gap:6px"><p class="label" style="color:var(--c-ia)">0${i+1} · ${esc(t.k)}</p><p style="font:400 22px/1.1 var(--display)">${esc(t.n)}</p><p style="font-size:15px;color:var(--graphite)">${esc(t.uses.slice(0,3).join(' · '))}</p>${layerChips(t.layers)}</div>`).join('')}
+   <div class="pnav"><button class="btn" data-go="2">Ver fichas completas</button><button class="chip" data-fit="1">Quitar resaltado</button></div>`;
+});
 
 /* ════════ III · CLIENTES ════════ */
 const STATES=['Nuevo','Consulta','Asesoría','Compra','No compra','Postventa','Seguimiento'];
@@ -1173,7 +1284,7 @@ function ask(q,key,instant){
 $('#qList').addEventListener('click',e=>{const b=e.target.closest('.q');if(b)ask(b.dataset.q,b.dataset.a);});
 const KW=[['linesheet','linesheet'],['descrip','linesheet'],['semana','semana'],['tráfico','trafico'],['trafico','trafico'],['deriv','derivar'],['calendario','calendario'],['analiza','analiza'],['mejor','mejor'],['peor','peor'],['aprendiz','aprend'],['nueva colecci','organiza'],['patr','patrones'],['pregunta','preguntas'],['interés','interes'],['interes','interes'],['producci','produccion'],['inventario','inventario']];
 $('#askForm').addEventListener('submit',e=>{e.preventDefault();const v=$('#askInput').value.trim();if(!v)return;const hit=KW.find(k=>v.toLowerCase().includes(k[0]));ask(v,hit?hit[1]:null);$('#askInput').value='';});
-document.addEventListener('click',e=>{const b=e.target.closest('[data-ask]');if(!b)return;const q=b.dataset.ask;const qb=$$('#qList .q').find(x=>x.dataset.q===q);go(5);if(qb)setTimeout(()=>ask(q,qb.dataset.a),250);});
+document.addEventListener('click',e=>{const b=e.target.closest('[data-ask]');if(!b)return;const q=b.dataset.ask;const qb=$$('#qList .q').find(x=>x.dataset.q===q);go(6);if(qb)setTimeout(()=>ask(q,qb.dataset.a),250);});
 ask('¿Qué prendas funcionaron peor?','peor',true);
 
 /* ════════ VII · SÍNTESIS ════════ */
