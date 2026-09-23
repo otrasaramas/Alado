@@ -1,18 +1,22 @@
-# Alado · Ecosistema digital
+# Alado · Mapa del ecosistema digital
 
-Prototipo conceptual e interactivo (un solo archivo, `index.html`) para presentar en clase el diseño del ecosistema digital de Alado, casa colombiana de arte usable (línea principal y Alado & Co.).
+Prototipo conceptual e interactivo (un solo archivo, `index.html`) para un ejercicio académico sobre el ecosistema digital de Alado, casa colombiana de arte usable (línea principal y Alado & Co.).
 
-Folios:
+La pantalla principal es un mapa de flujos con Alado en el centro y ocho capas alrededor:
 
-1. Introducción
-2. Ecosistema actual: mapa de canales con recorridos y panel por canal
-3. Recorrido del cliente: seis recorridos y la zona opaca
-4. Ecosistema propuesto: ciclo de diez etapas y rol de cada canal
-5. Ciclo de colección: insumos, análisis, decisión humana, calendario y dossier
-6. Matriz Automatizar / IA asiste / Humano
-7. Asistente digital (respuestas con datos ficticios marcados DEMO)
-8. Resultado: antes y después, respuestas a las fases 1, 2 y 3
+1. Marca y creación (crear)
+2. Contenido (publicar)
+3. Distribución (conectar)
+4. Cliente / CRM (convertir)
+5. Automatización (registrar)
+6. Shopify + datos (registrar)
+7. IA analítica (analizar)
+8. Retorno al diseño (aprender → crear de nuevo)
 
-Los datos marcados **DEMO** son ficticios. Las herramientas marcadas **Propuesta** no existen hoy en Alado.
+Un anillo de criterio humano atraviesa todas las capas. El mapa se puede mover, ampliar y recorrer por capas; cada nodo muestra su función, entradas, salidas, herramienta y tipo (actual, propuesto, IA, automatización, humano).
+
+Secciones de apoyo: stack digital, clientes y automatización, retorno al diseño, criterio humano, IA analítica (respuestas DEMO) y síntesis.
+
+Los datos marcados **DEMO** son ficticios. Las herramientas marcadas **Propuesto** (HubSpot, Make o Zapier, Looker Studio, Notion, Mailchimp o Klaviyo, Claude / ChatGPT, Adobe Firefly) no se usan hoy en Alado.
 
 Para verlo, abre `index.html` en un navegador.
