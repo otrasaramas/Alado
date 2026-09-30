@@ -102,29 +102,56 @@ Bride no necesita volumen, necesita **constancia + info siempre disponible**. Po
 
 ---
 
-# PARTE 3 · 20 ideas de reels de Navidad
+# PARTE 3 · 30 ideas de reels de Navidad (versión Alado)
 
-Todas muestran la colección de hogar (drops: Flores / Caballos-cuadros / Ángeles y ciervos). `[Evergreen]` = grabar antes del 11 dic y programar para la franja de vacaciones, con CTA a la web.
+Todas muestran la colección de hogar (drops: Flores / Caballos-cuadros / Ángeles y ciervos). Más Alado (poéticas, con oficio, un punto barrocas, con magia) y más divertidas (stop-motion, ASMR, POV, transformaciones).
 
-1. **Arreglo de floreros** — manos acomodando flores frescas en los jarrones talavera; la casa cobra vida. `[Flores] [Evergreen]`
-2. **La casa se viste de Navidad** — time-lapse: rincón vacío → montado (cojines, mantas, velas). `[Transversal]`
-3. **Montar la mesa de Navidad** — paso a paso: mantel → camino → individuales → vajilla. `[Transversal]`
-4. **La mesa servida / cena de Navidad** — mesa completa, velas, copas, reunión. `[Ángeles y ciervos]`
-5. **Envolver un regalo Alado** — ASMR de envolver un cojín u objeto. `[Transversal] [Evergreen]`
-6. **Del dibujo al textil** — la ilustración pintada a mano → el cojín terminado. `[Transversal] [Evergreen]`
-7. **Encender las velas** — ritual de Nochebuena, candelabros, luz cálida. `[Ángeles y ciervos]`
-8. **Cambiar los cojines** — refresh de la sala en 15 segundos, antes/después. `[Transversal] [Evergreen]`
-9. **ASMR de textil** — macros de bordado, textura, el roce de la tela. `[Transversal] [Evergreen]`
-10. **3 formas de usar un camino de mesa** — versatilidad y estilismo. `[Transversal] [Evergreen]`
-11. **Las novenas en casa** — mantas, cojines, chocolate, calma, gente. `[Caballos / Flores]`
-12. **El árbol al estilo Alado** — decorar sobrio con ciervos y ángeles. `[Ángeles y ciervos]`
-13. **Un brindis de Año Nuevo** — copas, manos, la mesa, luz dorada. `[Transversal] [Evergreen]`
-14. **Recibir invitados** — el recibidor vestido, la puerta que se abre. `[Transversal]`
-15. **"No es solo Navidad"** — el textil floral/caballos en uso cotidiano. `[Flores / Caballos] [Evergreen]`
-16. **Rincón campestre** — cuadros, caballito de madera, manta, tonos camel, heno. `[Caballos]`
-17. **El desayuno de Navidad** — individuales, tazas, luz de mañana, pan. `[Flores] [Evergreen]`
-18. **Bodegón que cobra vida** — stop-motion de flores, cerámica y fruta. `[Flores] [Evergreen]`
-19. **Recorrido por la tienda de Navidad** — la tienda vestida (grabar el 23 oct). `[Transversal]`
-20. **Guía de regalos Alado** — un regalo para cada quien (anfitriona, mamá, amiga). `[Transversal] [Evergreen]`
+**¿Vender o world-building?** Alado vende *el mundo, no el SKU*. La mayoría del contenido es **World-building** (crea deseo, universo y confianza); con picos de **Vende** (revelación de drop, guía de regalos, "regala Alado") que cierran. Cada idea marca su propósito.
 
-**Bonus:** detrás de cámara de la campaña (16 oct) · secuencia completa de Nochebuena (montar → servir → brindar).
+*Tags: `[F]` Flores · `[C]` Caballos-cuadros · `[A]` Ángeles y ciervos · `[T]` Transversal · `[Ever]` evergreen (grabar antes del 11 dic y programar).*
+
+### A · La casa cobra vida (Mago / transformación)
+1. **La casa se viste de Navidad** `[T]` — time-lapse: un salón desnudo se llena de textiles, velas y flores como por magia. → *WB: instala el concepto de campaña.*
+2. **Get ready with the house** `[T][Ever]` — POV: la casa "se arregla" como una persona (se pone cojines, se perfuma con flores). → *WB + divertido.*
+3. **Cojines que se acomodan solos** `[T][Ever]` — stop-motion: cojines y mantas saltan a su lugar al ritmo del jazz. → *Vende (producto) + divertido.*
+4. **El rincón imposible** `[T][Ever]` — antes/después: un rincón triste → rincón Alado en 15s. → *Vende: un objeto transforma un espacio.*
+
+### B · La mesa y la cena
+5. **Cómo montar una mesa que se recuerde** `[T][Ever]` — how-to: mantel → camino → individuales → vajilla → flores → velas. → *Vende (educativo) + guardable.*
+6. **La mesa servida** `[A]` — recorrido de una mesa de Nochebuena abundante, barroca, con jarrones talavera. → *WB: aspiración.*
+7. **3 mesas, 3 ánimos** `[T][Ever]` — la misma mesa vestida íntima, festiva y campestre con los 3 drops. → *Vende: versatilidad.*
+8. **El brindis** `[T][Ever]` — copas, manos, luz dorada, cierre de año. → *WB emocional.*
+9. **No cocinamos, montamos** `[T]` — el arte del estilismo de mesa, no la comida. → *WB + guía.*
+
+### C · Flores y floreros
+10. **El arte de un florero** `[F][Ever]` — manos arreglando flores frescas en los jarrones talavera; la casa respira. → *WB + Vende (el jarrón).*
+11. **Flores todo el año** `[F][Ever]` — el textil floral en enero, en marzo… no solo Navidad. → *Vende: rompe la objeción.*
+12. **Bodegón que cobra vida** `[F][Ever]` — stop-motion barroco: flores, fruta y cerámica se arman en un cuadro flamenco. → *WB + divertido (muy Alado).*
+13. **El mismo ramo, tres jarrones** `[F][Ever]` — cómo cambia una flor según el objeto que la sostiene. → *Vende (objetos).*
+
+### D · Caballos y cuadros (el campo)
+14. **Una Navidad de campo** `[C]` — rincón campestre: cuadros, caballito de madera, manta, heno, camel. → *WB (mundo Casa de Campo).*
+15. **Los caballos galopan** `[C][Ever]` — juego visual: el patrón a cuadros/caballo en movimiento como transición. → *WB + divertido.*
+16. **Del cuadro a la casa** `[C][Ever]` — la misma tela como manta, cojín y camino: un solo mundo. → *Vende: la línea completa.*
+
+### E · Ángeles y ciervos
+17. **El pesebre Alado** `[A]` — reinterpretar la decoración con ciervos y ángeles, sobrio y bello. → *WB (tradición elevada).*
+18. **Encender las velas** `[A]` — ritual de Nochebuena, candelabros, ciervos, la luz que crece. → *WB emocional.*
+19. **El árbol al estilo Alado** `[A][Ever]` — decorar un rincón sobrio con ángeles y ciervos, nada kitsch. → *Vende (deco) + WB.*
+20. **Aparecen los ángeles** `[A][Ever]` — stop-motion mágico: los ángeles y ciervos "llegan" a la casa. → *Divertido + Mago.*
+
+### F · El regalo (vende fuerte)
+21. **Regala Alado** `[T][Ever]` — ASMR de envolver un cojín u objeto, "un regalo con alma". → *Vende (gifting).*
+22. **Guía de regalos** `[T][Ever]` — un regalo para cada quien: anfitriona, mamá, amiga, novia. → *Vende: dirige la compra.*
+23. **El regalo que dura** `[T][Ever]` — vs. el regalo desechable; un objeto que se queda años. → *Vende: justifica el precio.*
+24. **Envuelto en tela** `[T][Ever]` — usar un pañuelo Alado como envoltura (furoshiki). → *Divertido + Vende (pañuelos).*
+
+### G · Oficio y detalle (world-building mentor)
+25. **Del dibujo al textil** `[T][Ever]` — la ilustración pintada a mano → el cojín terminado. → *WB (oficio, confianza).*
+26. **ASMR de tela** `[T][Ever]` — macros de bordado, textura, el roce; satisfactorio. → *WB + sensorial.*
+27. **La historia detrás del estampado** `[T][Ever]` — qué inspiró el patrón de flores o de ciervos. → *WB (mentor, profundidad).*
+
+### H · Tradición colombiana elevada
+28. **Las novenas, pero Alado** `[C/F]` — el ambiente de novena (velitas, chocolate, mantas) elevado. → *WB (tradición + raíces).*
+29. **Una Navidad con raíces** `[T]` — objetos y telas que dialogan con la Navidad colombiana de antes (lo republicano, lo campesino). → *WB (ADN histórico).*
+30. **El día que se monta la tienda** `[T]` — detrás de cámara del montaje navideño en la tienda (grabar el 23 oct). → *WB + Vende (invita a visitar).*
