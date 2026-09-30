@@ -5,6 +5,12 @@ Revisé las 14 páginas del sitio y las 337 imágenes que publica. Este document
 
 Cada imagen tiene un código (por ejemplo `EQ-09`). En [`alado-imagenes.csv`](alado-imagenes.csv) está la lista de todas, con el nombre del archivo original y el enlace a la imagen en tamaño completo.
 
+**Copia guardada en este repositorio** (por si el sitio cambia):
+- `imagenes/<código>.jpg`: cada imagen, a 900 px (por ejemplo `imagenes/EQ-09.jpg`).
+- `imagenes/alta-resolucion/`: diapositivas y artes con texto, en alta resolución, para poder leerlos.
+- `hojas-de-contacto/`: mosaicos con 9 imágenes por hoja y su código, para ver una colección de un vistazo.
+- `textos-fuente/`: el texto original de cada página de Alado, tal como aparece en el sitio.
+
 ---
 
 ## 1. La marca
