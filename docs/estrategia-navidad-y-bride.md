@@ -79,6 +79,27 @@ No necesita ser constante, necesita ser **consistente y siempre disponible**: im
 
 El trabajo del contenido = **sembrar el deseo + capturar el DM**. Haz que escribir sea sin fricción (link, Destacado, CTA claro). **Métrica: citas/DMs de novia**, no likes.
 
+## Bride semana a semana (plan sencillo y mantenible)
+Bride no necesita volumen, necesita **constancia + info siempre disponible**. Poco trabajo semanal si se monta bien.
+
+**Una sola vez:** armar el **Destacado fijo "Bride"** (proceso · vestidos · cómo agendar). Luego solo se alimenta.
+
+**Mínimo semanal:** 1–2 **stories** de Bride (reusando material) + mantener el Destacado. Nada más. **El reel dedicado es mensual.**
+
+**Rotación de 4 semanas** (cada semana, uno de los 4 mensajes):
+| Semana | Mensaje | Story fácil |
+|---|---|---|
+| 1 | El sueño | Foto de novia real + frase evocadora. |
+| 2 | El proceso | Clip del dibujo a mano / atelier: "así diseñamos tu vestido, contigo". |
+| 3 | El resultado | Detalle de un vestido terminado (foto de fotógrafo) + "hecho para ella, único". |
+| 4 | La invitación | FAQ (¿cuánto tarda?, ¿cómo agendo?) + CTA "agenda tu cita". |
+
+**1 vez al mes:** un reel o carrusel dedicado (el de mejor material: proceso, revelación de vestido o testimonio).
+
+**Sostenibilidad — grabar por lotes:** en un día en el atelier captura dibujo a mano + macros de tela + proceso → material para semanas. Pide **siempre** a cada novia sus fotos de fotógrafo (con permiso): es el banco de "resultado".
+
+**Métrica:** DMs y citas de novia, no likes.
+
 ---
 
 # PARTE 3 · 20 ideas de reels de Navidad
