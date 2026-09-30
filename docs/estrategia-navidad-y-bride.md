@@ -78,3 +78,32 @@ No necesita ser constante, necesita ser **consistente y siempre disponible**: im
 > IG (sueño) → te sigue/guarda → cuando se compromete, **escribe al DM** → "agenda tu cita" → cita → venta.
 
 El trabajo del contenido = **sembrar el deseo + capturar el DM**. Haz que escribir sea sin fricción (link, Destacado, CTA claro). **Métrica: citas/DMs de novia**, no likes.
+
+---
+
+# PARTE 3 · 20 ideas de reels de Navidad
+
+Todas muestran la colección de hogar (drops: Flores / Caballos-cuadros / Ángeles y ciervos). `[Evergreen]` = grabar antes del 11 dic y programar para la franja de vacaciones, con CTA a la web.
+
+1. **Arreglo de floreros** — manos acomodando flores frescas en los jarrones talavera; la casa cobra vida. `[Flores] [Evergreen]`
+2. **La casa se viste de Navidad** — time-lapse: rincón vacío → montado (cojines, mantas, velas). `[Transversal]`
+3. **Montar la mesa de Navidad** — paso a paso: mantel → camino → individuales → vajilla. `[Transversal]`
+4. **La mesa servida / cena de Navidad** — mesa completa, velas, copas, reunión. `[Ángeles y ciervos]`
+5. **Envolver un regalo Alado** — ASMR de envolver un cojín u objeto. `[Transversal] [Evergreen]`
+6. **Del dibujo al textil** — la ilustración pintada a mano → el cojín terminado. `[Transversal] [Evergreen]`
+7. **Encender las velas** — ritual de Nochebuena, candelabros, luz cálida. `[Ángeles y ciervos]`
+8. **Cambiar los cojines** — refresh de la sala en 15 segundos, antes/después. `[Transversal] [Evergreen]`
+9. **ASMR de textil** — macros de bordado, textura, el roce de la tela. `[Transversal] [Evergreen]`
+10. **3 formas de usar un camino de mesa** — versatilidad y estilismo. `[Transversal] [Evergreen]`
+11. **Las novenas en casa** — mantas, cojines, chocolate, calma, gente. `[Caballos / Flores]`
+12. **El árbol al estilo Alado** — decorar sobrio con ciervos y ángeles. `[Ángeles y ciervos]`
+13. **Un brindis de Año Nuevo** — copas, manos, la mesa, luz dorada. `[Transversal] [Evergreen]`
+14. **Recibir invitados** — el recibidor vestido, la puerta que se abre. `[Transversal]`
+15. **"No es solo Navidad"** — el textil floral/caballos en uso cotidiano. `[Flores / Caballos] [Evergreen]`
+16. **Rincón campestre** — cuadros, caballito de madera, manta, tonos camel, heno. `[Caballos]`
+17. **El desayuno de Navidad** — individuales, tazas, luz de mañana, pan. `[Flores] [Evergreen]`
+18. **Bodegón que cobra vida** — stop-motion de flores, cerámica y fruta. `[Flores] [Evergreen]`
+19. **Recorrido por la tienda de Navidad** — la tienda vestida (grabar el 23 oct). `[Transversal]`
+20. **Guía de regalos Alado** — un regalo para cada quien (anfitriona, mamá, amiga). `[Transversal] [Evergreen]`
+
+**Bonus:** detrás de cámara de la campaña (16 oct) · secuencia completa de Nochebuena (montar → servir → brindar).
