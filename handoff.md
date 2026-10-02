@@ -50,3 +50,8 @@ Construir el **cerebro de marca de Alado** para el Codex de Andrés y la **estra
 - **Corrección:** las vacaciones son del **12 dic al 12 ene** (antes decía 11).
 - **Archivos nuevos en `docs/sesion-2026-10-02/`:** `05-plan-contenido-oct-dic.md`, `presupuesto-contenido-oct-dic.xlsx`, `datos-presentacion-contenido.json` (base para la presentación en artifact).
 - **Pendiente:** Tarea 3 (contenido Alado ropa), Tarea 4 (guion de invitación al taller, P02 del plan), confirmar tarifa de historias y los estimados de gastos reembolsables, y construir la presentación a partir del JSON.
+
+## Presentación (2026-10-03)
+- Deck de la propuesta para Andrés y Alejo (18 diapositivas, estética Alado): https://claude.ai/artifact/2vozp4t8Th8AHpuqBa5ypx (privado hasta que Sara lo comparta).
+- Se construyó con el calendario final de `docs/sesion-2026-10-02/datos-presentacion-contenido.json`: 13 reels, 5 carruseles, 8 sets de historias; opciones $2.910.000 / $4.920.000 / $6.060.000.
+- Por confirmar antes de presentar: tarifa de sets de historias ($180.000) y los gastos reembolsables estimados ($640.000).
