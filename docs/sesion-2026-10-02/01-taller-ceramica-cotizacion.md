@@ -5,13 +5,20 @@
 ## Objetivo
 Cotizar el taller: definir qué incluye, los costos y el precio por persona.
 
-## Decisiones clave (definen el costo) — POR CONFIRMAR
-- **Modalidad:** ☐ pintura en frío (se la llevan el mismo día, sin horno) · ☐ esmalte + quema (necesita horno y entrega posterior). `[definir]`
-- **Cupos:** mínimo `[__]` · máximo `[__]`.
-- **Duración / horario:** `[__ horas]`.
-- **Lugar:** `[taller / tienda / casa]`.
-- **Quién dicta:** `[__]`.
-- **¿Incluye refrigerio?** ☐ sí ☐ no. ¿Recuerdo/kit? ☐ sí ☐ no.
+## Decisiones (confirmadas)
+- **Modalidad:** ✅ **esmalte + quema** (entrega posterior).
+- **Cupos:** 10–12 (estimado 11).
+- **Refrigerio:** ✅ **completo con vino**.
+- **Duración / horario / lugar / quién dicta:** `[por definir]`.
+
+## Resultado (estimados de Medellín — editables en el Excel)
+> Hoja de cálculo: **`cotizacion-taller-ceramica.xlsx`** (edita las celdas amarillas; recalcula sola).
+
+- Costo variable/persona: **$70.000** · Fijos + colchón 10%: **$1.056.000** · Costo/persona (a 11): **$166.000**
+- **Precio sugerido por cupo: ~$315.000** (margen 45%) · Punto de equilibrio: **5 personas**
+- Ganancia estimada: mín (10) $1.268.000 · estimado (11) $1.500.400 · máx (12) $1.732.800
+
+**⚠️ $315.000 es premium** (mercado típico $90.000–$180.000); lo empujan los fijos repartidos entre pocos. Palancas para bajarlo: espacio propio, sin asistente, más cupos o menos margen. Con fijos magros (~$704.000) y margen 30% → ~**$200.000/cupo**.
 
 ## Costos
 **Variables (por persona)** — `[llenar $]`
