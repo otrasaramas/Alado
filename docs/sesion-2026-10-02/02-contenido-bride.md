@@ -20,20 +20,68 @@ Empujan lo alquilado/ya-diseñado por **comisión + seguridad + control**, y ven
 
 ## Activo clave: el figurín en vivo + Alejo como autor
 Alejo dibuja **un figurín hermoso en vivo en la cita** → es **arte + prueba de bespoke + no necesita que él hable.** Es la firma de la marca.
-- **Alejo es la cara, pero no habla en cámara** (le da pena / gaguea). Su autoridad se construye con **sus manos dibujando + textos en su voz** ("Notas de Alejo"). Más adelante: voz en off; a cámara solo si quiere.
+- **Alejo es la cara.** Hoy le da pena hablar en cámara y se traba; la decisión es **entrenarlo de forma gradual** (ver "Escalera de voz" abajo), no forzarlo ni esconderlo para siempre. Mientras tanto su autoridad se construye con **sus manos dibujando + textos en su voz** ("Notas de Alejo").
 - Andrés puede ir a cámara, pero no siempre está; la cara de Bride es Alejo (quien te diseña).
 
+## La restricción de privacidad (define todo el contenido)
+Las novias **no quieren que se muestre NADA de su vestido antes del evento**, y muchas tampoco después. El contenido **NO puede depender de vestidos de clientas.**
+- **Pipeline de las novias reales (el "bonus"):** capturar el figurín en cada cita → **guardarlo** con solicitud de permiso → publicar el set (figurín + fotos profesionales) **solo después del evento y solo si consiente.** Es oro ocasional, no la base.
+- **Facilitar el "sí":** ofrecer algo a cambio (la edición profesional, un detalle, un feature), incluirlo en la experiencia/contrato, normalizarlo. Aun así, muchas dirán que no.
+- **Discreción = lujo:** *"En Alado protegemos la intimidad de cada novia."* El misterio suma exclusividad.
+- **Prueba social privada:** portafolio en la cita, lookbook privado, testimonios de texto (anónimos si hace falta), voz a voz. No tiene que ser pública.
+
 ## CAPA 1 — lo mínimo, poco pero constante
-Lo que SÍ se puede producir hoy. Objetivo: constancia, no volumen.
+Lo que SÍ se puede producir hoy **sin depender de clientas**. Objetivo: constancia, no volumen.
 - **Una vez:** Destacado fijo **"Bride"** (proceso · vestidos · cómo agendar).
 - **Semanal:** **1 pieza** (reel o carrusel) + 2–3 stories.
-- **4 tipos de pieza** (rotación; todas salen de las citas, sin que Alejo hable):
-  1. **El figurín en vivo** — manos de Alejo dibujando (time-lapse). La firma.
-  2. **Del figurín al vestido** — el dibujo al lado del vestido real. Mata la objeción del "no entrega como se ve". Prueba.
-  3. **El detalle** — macros de bordado, tela, hechura. Arte/autoridad.
-  4. **La novia** — novia real (foto/testimonio, con permiso). Prueba social + estatus.
-- **Grabar por lotes** en las citas → semanas de contenido.
-- **Autoridad de Alejo sin cámara:** captions/carruseles escritos en su voz (los redacta la IA de marca, él aprueba): silueta, tela, por qué bespoke, el oficio.
+- **4 tipos de pieza (que NO necesitan el vestido de una novia):**
+  1. **Figurines de autor** — Alejo dibuja figurines **de concepto** (no de clientas), en vivo. La artistería del trazo, publicable siempre. La firma de la marca.
+  2. **Oficio y detalle** — macros de tela, encaje, bordado, atelier, manos. Infinito, sin rostro ni vestido identificable.
+  3. **Notas de Alejo (autoridad)** — su experticia en texto/voz sobre b-roll abstracto o sobre figurines de concepto: silueta, tela, por qué bespoke.
+  4. **Lo que SÍ es de Alado** — la colección prêt-à-porter de novia, las pasarelas y el **editorial premiado**: publicables y de alto estatus.
+  - **Bonus (oro ocasional):** cuando una novia consiente, se libera su figurín + fotos profesionales como revelación especial, **después del evento**.
+- **Grabar por lotes** (una jornada de figurines de concepto + detalle de atelier) → semanas de contenido.
+- **Autoridad de Alejo sin cámara:** captions/carruseles en su voz (los redacta la IA de marca, él aprueba).
+
+## El figurín como objeto de lujo (entregable enmarcado)
+**Idea:** la novia recibe su figurín terminado, **enmarcado**, para su casa. Mi análisis: es buena y hace varias cosas a la vez.
+- **Sube el ticket:** convierte el servicio en *vestido + obra de arte original*. Es parte del argumento para $9–10M sin tocar el vestido.
+- **Resuelve la privacidad:** el objeto es de la novia. Si ella decide publicarlo después del evento, es contenido gratis y auténtico; Alado no tiene que pedir permiso para nada.
+- **Refuerza lo único:** "no alquilado, no repetido" se vuelve tangible, colgado en una pared.
+- **Voz a voz:** un cuadro firmado por Alejo en la casa de la novia lo ven todos los invitados que pasen.
+
+**Cómo hacerlo más lindo (propuesta):**
+- **Dos momentos:** (1) el figurín en vivo en la cita (rápido, vivo, con gesto); (2) una **versión final** más trabajada para entregar con el vestido (acuarela/tinta sobre papel de algodón, mismo trazo de Alejo, más pulida).
+- **Sello de Alado:** laurel, abejas o una cenefa en el borde; firma y fecha de Alejo; **numeración** ("Figurín N.º 47"); un **retazo de la tela real** pegado junto al dibujo.
+- **Presentación:** marco sobrio, passepartout crema, caja o envoltura propia de Alado. El empaque cuenta tanto como el dibujo.
+- **Certificado breve** (nombre de la novia, fecha de la boda, "diseñado por Alejandro González").
+
+**A tener en cuenta (no es gratis):** más horas de Alejo (su tiempo ya es el recurso escaso, atiende todas las citas), costo del marco y del papel, y logística de entrega. Hay que **meterlo en el precio**, no regalarlo, y decidir si sube a $9–10M ya o al ritmo en que Alado consiga que lo pague el mercado. Conviene probar con las próximas 3–5 novias y medir antes de volverlo estándar.
+
+## Alejo como voz de autoridad: entrenarlo y qué decir
+**Mi lectura:** tienes razón en que no se vuelve capaz si nunca lo hace, y en que la autoridad pública es un activo del que depende subir el ticket. Dos matices:
+1. **Gradual, con su acuerdo.** Ponerlo a hablar a cámara de golpe puede cementar el miedo. Mejor una escalera donde cada escalón es un poco más expuesto que el anterior, y que **él participe en decidir el ritmo**. Si el trabarse es más de fondo que nervios, un fonoaudiólogo o coach de voz se vuelve parte del plan; no es algo que decidamos por él.
+2. **La autoridad viene de lo que dice, no de lo fluido que suena.** Alguien con criterio claro y opiniones concretas se percibe experto aunque haga pausas. Se edita, se hace en tomas cortas y se pone subtítulo.
+
+**Escalera de voz (≈3 meses):**
+| Etapa | Qué hace Alejo | Exposición |
+|---|---|---|
+| 1 | Nada de voz: manos dibujando + captions escritos en su voz | Ninguna |
+| 2 | **Voz en off** grabada aparte (audio solo, varias tomas, se edita) sobre sus dibujos o el atelier | Baja |
+| 3 | **Habla a cámara pero mirando el dibujo**, no el lente (frase de 10–15 s) | Media-baja |
+| 4 | **Formato entrevista**: Sara o Andrés le preguntan y él responde (más natural que monólogo) | Media |
+| 5 | A cámara directa, piezas cortas con guion corto | Alta |
+Cada etapa dura lo que él necesite. No se salta ninguna sin que él diga que está listo.
+
+**Prácticas útiles:** escribir los textos con él (frases cortas, su vocabulario), ensayar antes de grabar, permitir repetir tomas, grabar en el atelier donde ya está cómodo, y empezar con temas que domina.
+
+### Tendencias y la contradicción con la marca
+Ojo: el cerebro de marca dice que Alado **nunca toca tendencias** (no es trendy, no es fast fashion). Para posicionar a Alejo como experto en tendencias hay que **reconciliarlo**, y se puede sin traicionar a Alado:
+- Alejo no habla *de* tendencias para seguirlas, sino **como el que las lee para decirte cuáles ignorar**. Es el arquetipo del mentor/sabio: "esto sube, esto pasa de moda, esto es atemporal".
+- **Formatos posibles:** "Qué se va y qué se queda" cada temporada de novias; "tendencias que no recomendaría y por qué"; silueta/escote/tela explicados con criterio; historia de la moda nupcial (por qué el blanco, por qué el velo) conectada con el ADN histórico de Alado.
+- **Regla:** siempre con **punto de vista propio** y con la **autoridad del oficio** (él hace el vestido), nunca como lista copiada de Pinterest o de pasarelas.
+- **Hay que decidir y actualizar el cerebro de marca**: pasar de "nunca tendencias" a "no seguimos tendencias; las leemos y opinamos con criterio".
+- **No cito datos de mercado de tendencias aquí:** no los verifiqué en este entorno. El contenido de tendencias debe salir de lo que Alejo observa y de fuentes de moda nupcial que él ya consulte.
 
 ## Celebration — temporada de prom y 15s
 Misma máquina (figurín + bespoke + exclusividad), público más joven y un punto más divertido, igual de elevado. **Arrancar ya** (el bespoke necesita anticipación).
