@@ -87,5 +87,8 @@ Estas ideas evitan repetir las 30 de Navidad de `estrategia-navidad-y-bride.md`;
 - **C19** Nuevo en tienda: unas pocas piezas únicas de la semana. *Vende*
 - **C20** Cómo llegar a la tienda: ubicación, horario y un plan para el día. *Vende*
 
-## Qué funciona (se llena con la selección de Sara)
-`[pendiente]`
+## Qué funciona (selección de Sara, 2026-10-02)
+- **Bride:** B1, B3, B10, B11, B15, B16, B17, B20. Los reels (B1 y B3) se rehicieron en versión menos cinematográfica.
+- **Alado y Alado & Co. en fin de año:** A18 (muy importante), más ideas nuevas de Navidad (receta, mesa, ancheta).
+- **Alado & Co.:** C1, C5, C10, C11, C14, C18, C19, C20.
+- Desarrollo completo en `07-desarrollo-ideas-seleccionadas.md`.
