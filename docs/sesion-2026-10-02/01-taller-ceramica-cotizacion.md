@@ -68,3 +68,13 @@ Con **11 personas** y precio de **$200.000/cupo**:
 
 ---
 *Siguiente paso: Sara confirma modalidad y cupos → se llenan los números → precio final. (Se ofreció hoja de cálculo en Excel con fórmulas.)*
+
+## Actualización 2026-10-03: Excel con precio del cupo, margen y ganancia
+`cotizacion-taller-ceramica.xlsx` ahora calcula, con celdas amarillas editables: costo total, ganancia, margen real, ganancia por persona, precio mínimo del cupo, precio recomendado para el margen que se quiera, punto de equilibrio, cuánto se puede pagar al restaurante y una tabla de escenarios por número de personas.
+
+Con 11 personas, $200.000 por cupo, 5% de imprevistos y el contenido del taller ($690.000) como costo:
+- Costo total $1.926.330 · ganancia $273.670 · margen 12,4% · $24.879 por persona.
+- Precio mínimo $175.121; para un margen de 40% el cupo debería valer **$295.000**.
+- Punto de equilibrio: 10 personas.
+
+Sin cargar el contenido al taller ($0), el margen con el mismo precio sube a 45%.
