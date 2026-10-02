@@ -2,23 +2,23 @@
   "titulo": "Alado — Plan de contenido y presupuesto, 5 oct → 1 dic 2026 (+ banco de vacaciones)",
   "preparado": "2026-10-02",
   "tarifas": {
-    "video": 210000,
-    "carrusel": 150000,
-    "historias_set": 180000,
+    "video": 200000,
+    "carrusel": 170000,
+    "historias_set": 120000,
     "historias_nota": "por confirmar"
   },
   "opciones": [
     {
       "nombre": "Esencial",
-      "valor": 2910000
+      "valor": 2620000
     },
     {
       "nombre": "Completo",
-      "valor": 4920000
+      "valor": 4410000
     },
     {
       "nombre": "Completo + banco de vacaciones",
-      "valor": 6060000
+      "valor": 5550000
     }
   ],
   "reembolsables_estimados": [
@@ -45,8 +45,8 @@
   ],
   "reembolsables_total": 640000,
   "nucleo_por_mes": {
-    "octubre": 2130000,
-    "noviembre": 2790000,
+    "octubre": 1850000,
+    "noviembre": 2560000,
     "diciembre": 0
   },
   "conteos": {
@@ -70,7 +70,7 @@
       "prioridad": "A",
       "se_graba": "mar 6 oct · pre-taller",
       "capturar": "Piezas en blanco, pigmentos, manos pintando (Lizeth o Andrés), el restaurante. Texto en pantalla. CTA: reserva tu cupo.",
-      "valor": 210000
+      "valor": 200000
     },
     {
       "id": "02",
@@ -83,7 +83,7 @@
       "prioridad": "A",
       "se_graba": "lun 5 oct · atelier",
       "capturar": "Proceso en 5 pasos, qué incluye, Celebration, preguntas frecuentes, cómo agendar. Solo figurines de concepto, macros y colección.",
-      "valor": 180000
+      "valor": 120000
     },
     {
       "id": "03",
@@ -96,7 +96,7 @@
       "prioridad": "A",
       "se_graba": "material existente",
       "capturar": "Ropa: web y tienda. Hogar: tienda de El Retiro. Dónde, horario y WhatsApp. Si vives lejos: consulta disponibilidad.",
-      "valor": 180000
+      "valor": 120000
     },
     {
       "id": "04",
@@ -109,7 +109,7 @@
       "prioridad": "A",
       "se_graba": "lun 5 oct · atelier",
       "capturar": "Plano cenital fijo, una sola toma de 20–30 s: la mano de Alejo dibuja un figurín de concepto. Sonido del lápiz.",
-      "valor": 210000
+      "valor": 200000
     },
     {
       "id": "05",
@@ -122,7 +122,7 @@
       "prioridad": "A",
       "se_graba": "mar 6 oct y sáb 17 oct",
       "capturar": "Cupos y cuenta regresiva del 14 al 16 oct; historias en vivo durante el taller el 17 oct.",
-      "valor": 180000
+      "valor": 120000
     },
     {
       "id": "06",
@@ -135,7 +135,7 @@
       "prioridad": "A",
       "se_graba": "sáb 17 oct · taller",
       "capturar": "Llegada, manos, piezas pintadas, brindis. Audio ambiente. Con permiso de imagen de las asistentes.",
-      "valor": 210000
+      "valor": 200000
     },
     {
       "id": "07",
@@ -148,7 +148,7 @@
       "prioridad": "A",
       "se_graba": "lun 5 oct · atelier",
       "capturar": "7 láminas con figurines de concepto y detalles del atelier. Tono respetuoso, sin criticar el alquiler.",
-      "valor": 150000
+      "valor": 170000
     },
     {
       "id": "08",
@@ -161,7 +161,7 @@
       "prioridad": "A",
       "se_graba": "vie 23 oct · tienda",
       "capturar": "Caminata continua con el celular por cinco rincones: cerámica, textil hogar, luz, muebles, regalos. Se publica un sábado.",
-      "valor": 210000
+      "valor": 200000
     },
     {
       "id": "09",
@@ -174,7 +174,7 @@
       "prioridad": "B",
       "se_graba": "vie 23 oct · tienda",
       "capturar": "Ubicación en el parque principal, horario y un plan para el día. Sticker de ubicación.",
-      "valor": 180000
+      "valor": 120000
     },
     {
       "id": "10",
@@ -187,7 +187,7 @@
       "prioridad": "B",
       "se_graba": "sáb 17 oct · taller",
       "capturar": "Plano cenital: base, dibujo, color. Lizeth pinta una pieza de referencia durante el taller.",
-      "valor": 210000
+      "valor": 200000
     },
     {
       "id": "11",
@@ -200,7 +200,7 @@
       "prioridad": "A",
       "se_graba": "vie 16 oct · casa de Andrés",
       "capturar": "Transformación de un rincón vacío a montado: cojines, mantas, velas, flores.",
-      "valor": 210000
+      "valor": 200000
     },
     {
       "id": "12",
@@ -213,7 +213,7 @@
       "prioridad": "B",
       "se_graba": "vie 23 oct · tienda",
       "capturar": "6–10 fotos de piezas disponibles, con medidas y colección. Primer set de la rutina quincenal.",
-      "valor": 180000
+      "valor": 120000
     },
     {
       "id": "13",
@@ -226,7 +226,7 @@
       "prioridad": "A",
       "se_graba": "vie 16 oct · casa de Andrés",
       "capturar": "Macros del textil floral, mesa con flores frescas, manos arreglando un florero.",
-      "valor": 210000
+      "valor": 200000
     },
     {
       "id": "14",
@@ -239,7 +239,7 @@
       "prioridad": "B",
       "se_graba": "mar 3 nov · casa o tienda",
       "capturar": "Montaje de mesa con el set del taller que se queda Alado. Depende de que las piezas regresen de la quema.",
-      "valor": 210000
+      "valor": 200000
     },
     {
       "id": "15",
@@ -252,7 +252,7 @@
       "prioridad": "B",
       "se_graba": "vie 16 oct · casa de Andrés",
       "capturar": "8 láminas: mantel, camino, individuales, vajilla, servilleta, flores y velas.",
-      "valor": 150000
+      "valor": 170000
     },
     {
       "id": "16",
@@ -265,7 +265,7 @@
       "prioridad": "A",
       "se_graba": "vie 16 oct · casa de Andrés",
       "capturar": "Cuadros, caballito de madera y manta en un rincón campestre.",
-      "valor": 210000
+      "valor": 200000
     },
     {
       "id": "17",
@@ -278,7 +278,7 @@
       "prioridad": "B",
       "se_graba": "lun 5 oct · atelier",
       "capturar": "7 láminas con los pasos reales del servicio. Alejo confirma los tiempos.",
-      "valor": 150000
+      "valor": 170000
     },
     {
       "id": "18",
@@ -291,7 +291,7 @@
       "prioridad": "B",
       "se_graba": "vie 6 nov · tienda",
       "capturar": "Segundo set de la rutina quincenal de fotos.",
-      "valor": 180000
+      "valor": 120000
     },
     {
       "id": "19",
@@ -304,7 +304,7 @@
       "prioridad": "A",
       "se_graba": "vie 16 oct · casa de Andrés",
       "capturar": "Mesa de Nochebuena con velas, ciervos y ángeles.",
-      "valor": 210000
+      "valor": 200000
     },
     {
       "id": "20",
@@ -317,7 +317,7 @@
       "prioridad": "A",
       "se_graba": "lun 5 oct · atelier",
       "capturar": "7 láminas con figurines de concepto. Sin fotos de menores sin autorización de sus padres.",
-      "valor": 150000
+      "valor": 170000
     },
     {
       "id": "21",
@@ -330,7 +330,7 @@
       "prioridad": "B",
       "se_graba": "jue 12 nov · casa de Andrés",
       "capturar": "Manos preparando, receta en texto, mesa servida en cerámica pintada a mano. Se pide la receta y su historia antes.",
-      "valor": 210000
+      "valor": 200000
     },
     {
       "id": "22",
@@ -343,7 +343,7 @@
       "prioridad": "B",
       "se_graba": "mar 17 nov · Alejo",
       "capturar": "Pregunta el lunes; respuestas escritas a mano sobre un dibujo el miércoles 25.",
-      "valor": 180000
+      "valor": 120000
     },
     {
       "id": "23",
@@ -356,7 +356,7 @@
       "prioridad": "A",
       "se_graba": "mar 17 nov · Alejo",
       "capturar": "Cenital: Alejo escribe a mano Se va / Se queda / Ignoro. Sin voz. Antes, entrevista de 15 minutos.",
-      "valor": 210000
+      "valor": 200000
     },
     {
       "id": "24",
@@ -369,7 +369,7 @@
       "prioridad": "B",
       "se_graba": "jue 19 nov · tienda",
       "capturar": "Empacar, atar y escribir la tarjeta a mano. Contenido y precio de la ancheta por definir.",
-      "valor": 210000
+      "valor": 200000
     },
     {
       "id": "25",
@@ -382,7 +382,7 @@
       "prioridad": "B",
       "se_graba": "sáb 21 nov · El Retiro",
       "capturar": "8 láminas: mapa ilustrado, paradas con aliados, la tienda. Verificar eventos del pueblo antes de nombrarlos.",
-      "valor": 150000
+      "valor": 170000
     },
     {
       "id": "26",
@@ -395,7 +395,7 @@
       "prioridad": "A",
       "se_graba": "mar 17 nov · Alejo",
       "capturar": "Cuenta regresiva, qué traer a tu cita, cómo agendar y aviso de vacaciones.",
-      "valor": 180000
+      "valor": 120000
     },
     {
       "id": "V1",
@@ -408,7 +408,7 @@
       "prioridad": "A",
       "se_graba": "1–9 dic · banco",
       "capturar": "Evergreen. Textiles en uso cotidiano. CTA: web.",
-      "valor": 210000
+      "valor": 200000
     },
     {
       "id": "V2",
@@ -421,7 +421,7 @@
       "prioridad": "A",
       "se_graba": "1–9 dic · banco",
       "capturar": "Evergreen. Envolver un cojín u objeto.",
-      "valor": 210000
+      "valor": 200000
     },
     {
       "id": "V3",
@@ -434,7 +434,7 @@
       "prioridad": "A",
       "se_graba": "1–9 dic · banco",
       "capturar": "Evergreen. Mantel, camino, individuales, flores y velas.",
-      "valor": 210000
+      "valor": 200000
     },
     {
       "id": "V4",
@@ -447,7 +447,7 @@
       "prioridad": "A",
       "se_graba": "1–9 dic · banco",
       "capturar": "Evergreen. Otra pieza pintada a mano.",
-      "valor": 210000
+      "valor": 200000
     },
     {
       "id": "V5",
@@ -460,7 +460,7 @@
       "prioridad": "A",
       "se_graba": "1–9 dic · banco",
       "capturar": "Evergreen, escrito en voz de Alejo. CTA: agenda desde el 12 ene.",
-      "valor": 150000
+      "valor": 170000
     },
     {
       "id": "V6",
@@ -473,7 +473,7 @@
       "prioridad": "A",
       "se_graba": "1–9 dic · banco",
       "capturar": "Evergreen. Qué incluye, tiempos y formulario para dejar datos.",
-      "valor": 150000
+      "valor": 170000
     }
   ],
   "lotes_de_produccion": [

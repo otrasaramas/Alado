@@ -6,7 +6,7 @@
 - **Qué es:** un plan de contenido para Alado Bride y Alado & Co. (con la cuenta de Alado enfocada en el hogar y la Navidad), hecho por una sola persona.
 - **Piezas:** **13 videos, 5 carruseles y 8 sets de historias** hasta el 1 de diciembre. Lo esencial son 9 videos, 2 carruseles y 4 sets de historias.
 - **Vacaciones (12 dic → 12 ene):** seis piezas evergreen se producen y se programan antes.
-- **Presupuesto:** $2.910.000 (esencial), $4.920.000 (completo) o $6.060.000 (completo + banco de vacaciones).
+- **Presupuesto:** $2.620.000 (esencial), $4.410.000 (completo) o $5.550.000 (completo + banco de vacaciones).
 
 ## 2. Lo que condiciona el plan
 - **Bride es la caja de la empresa.** Vestido promedio ~$6M, 3–4 al mes; meta de $9–10M.
@@ -20,36 +20,36 @@
 - **Alado & Co. y la cuenta de Alado:** en fin de año casi no hay ropa, así que se habla del hogar y de la Navidad. Vender el mundo: tres drops, el taller de cerámica, la mesa, la receta, la ancheta y la tienda de El Retiro como destino. Rutina quincenal de fotos de «lo que hay» y un piloto para pedidos a distancia.
 
 ## 4. Calendario
-Prioridad **A** = esencial, **B** = complemento. Tarifas: video $210.000, carrusel $150.000, set de historias $180.000.
+Prioridad **A** = esencial, **B** = complemento. Tarifas: video $200.000, carrusel $170.000, set de historias $120.000.
 
 | Publica | Se graba | Línea | Pieza | Formato | Prior. | Valor |
 |---|---|---|---|---|---|---|
-| jue 8 oct | mar 6 oct · pre-taller | Alado & Co. | **01** · Invitación al taller de cerámica (17 oct) | Video | A | $210.000 |
-| vie 9 oct | lun 5 oct · atelier | Bride | **02** · B16 · Destacado fijo «Bride» (10 historias) | Historias | A | $180.000 |
-| lun 12 oct | material existente | Alado | **03** · A18 · Cómo comprar (Destacado) | Historias | A | $180.000 |
-| mar 13 oct | lun 5 oct · atelier | Bride | **04** · B1 · El figurín en vivo | Video | A | $210.000 |
-| mié 14 oct | mar 6 oct y sáb 17 oct | Alado & Co. | **05** · C18 · Taller: cupos, cuenta regresiva y en vivo | Historias | A | $180.000 |
-| mar 20 oct | sáb 17 oct · taller | Alado & Co. | **06** · Recap del taller de cerámica | Video | A | $210.000 |
-| jue 22 oct | lun 5 oct · atelier | Bride | **07** · B10 · Único vs. alquilado | Carrusel | A | $150.000 |
-| sáb 24 oct | vie 23 oct · tienda | Alado & Co. | **08** · C5 · Recorrido por la tienda de Navidad | Video | A | $210.000 |
-| lun 26 oct | vie 23 oct · tienda | Alado & Co. | **09** · C20 · Cómo llegar a la tienda | Historias | B | $180.000 |
-| mar 27 oct | sáb 17 oct · taller | Alado & Co. | **10** · C1 · Cómo se pinta una pieza (1) | Video | B | $210.000 |
-| jue 29 oct | vie 16 oct · casa de Andrés | Alado & Co. | **11** · La casa se viste de Navidad | Video | A | $210.000 |
-| lun 2 nov | vie 23 oct · tienda | Alado & Co. | **12** · C19 · Esta semana en la tienda (1) | Historias | B | $180.000 |
-| mar 3 nov | vie 16 oct · casa de Andrés | Alado & Co. | **13** · Drop 1 · Flores | Video | A | $210.000 |
-| jue 5 nov | mar 3 nov · casa o tienda | Alado & Co. | **14** · C10 · Pon la mesa con tus piezas pintadas | Video | B | $210.000 |
-| sáb 7 nov | vie 16 oct · casa de Andrés | Alado & Co. | **15** · C11 · Cómo vestir una mesa por capas | Carrusel | B | $150.000 |
-| mar 10 nov | vie 16 oct · casa de Andrés | Alado & Co. | **16** · Drop 2 · Caballos a cuadros | Video | A | $210.000 |
-| jue 12 nov | lun 5 oct · atelier | Bride | **17** · B11 · Del primer lápiz a la entrega | Carrusel | B | $150.000 |
-| lun 16 nov | vie 6 nov · tienda | Alado & Co. | **18** · C19 · Esta semana en la tienda (2) | Historias | B | $180.000 |
-| mar 17 nov | vie 16 oct · casa de Andrés | Alado & Co. | **19** · Drop 3 · Ángeles y ciervos | Video | A | $210.000 |
-| jue 19 nov | lun 5 oct · atelier | Celebration | **20** · B15 · Prom y 15s: tu vestido, único | Carrusel | A | $150.000 |
-| sáb 21 nov | jue 12 nov · casa de Andrés | Alado & Co. | **21** · Receta de Navidad en la mesa Alado | Video | B | $210.000 |
-| lun 23 nov | mar 17 nov · Alejo | Bride | **22** · B17 · Caja de preguntas con Alejo | Historias | B | $180.000 |
-| mar 24 nov | mar 17 nov · Alejo | Bride | **23** · B3 · Notas de Alejo (manuscritas) | Video | A | $210.000 |
-| jue 26 nov | jue 19 nov · tienda | Alado & Co. | **24** · Armamos una ancheta Alado | Video | B | $210.000 |
-| sáb 28 nov | sáb 21 nov · El Retiro | Alado & Co. | **25** · C14 · Un día en El Retiro en Navidad | Carrusel | B | $150.000 |
-| lun 30 nov | mar 17 nov · Alejo | Bride | **26** · B20 · Agenda abierta hasta el 11 de diciembre | Historias | A | $180.000 |
+| jue 8 oct | mar 6 oct · pre-taller | Alado & Co. | **01** · Invitación al taller de cerámica (17 oct) | Video | A | $200.000 |
+| vie 9 oct | lun 5 oct · atelier | Bride | **02** · B16 · Destacado fijo «Bride» (10 historias) | Historias | A | $120.000 |
+| lun 12 oct | material existente | Alado | **03** · A18 · Cómo comprar (Destacado) | Historias | A | $120.000 |
+| mar 13 oct | lun 5 oct · atelier | Bride | **04** · B1 · El figurín en vivo | Video | A | $200.000 |
+| mié 14 oct | mar 6 oct y sáb 17 oct | Alado & Co. | **05** · C18 · Taller: cupos, cuenta regresiva y en vivo | Historias | A | $120.000 |
+| mar 20 oct | sáb 17 oct · taller | Alado & Co. | **06** · Recap del taller de cerámica | Video | A | $200.000 |
+| jue 22 oct | lun 5 oct · atelier | Bride | **07** · B10 · Único vs. alquilado | Carrusel | A | $170.000 |
+| sáb 24 oct | vie 23 oct · tienda | Alado & Co. | **08** · C5 · Recorrido por la tienda de Navidad | Video | A | $200.000 |
+| lun 26 oct | vie 23 oct · tienda | Alado & Co. | **09** · C20 · Cómo llegar a la tienda | Historias | B | $120.000 |
+| mar 27 oct | sáb 17 oct · taller | Alado & Co. | **10** · C1 · Cómo se pinta una pieza (1) | Video | B | $200.000 |
+| jue 29 oct | vie 16 oct · casa de Andrés | Alado & Co. | **11** · La casa se viste de Navidad | Video | A | $200.000 |
+| lun 2 nov | vie 23 oct · tienda | Alado & Co. | **12** · C19 · Esta semana en la tienda (1) | Historias | B | $120.000 |
+| mar 3 nov | vie 16 oct · casa de Andrés | Alado & Co. | **13** · Drop 1 · Flores | Video | A | $200.000 |
+| jue 5 nov | mar 3 nov · casa o tienda | Alado & Co. | **14** · C10 · Pon la mesa con tus piezas pintadas | Video | B | $200.000 |
+| sáb 7 nov | vie 16 oct · casa de Andrés | Alado & Co. | **15** · C11 · Cómo vestir una mesa por capas | Carrusel | B | $170.000 |
+| mar 10 nov | vie 16 oct · casa de Andrés | Alado & Co. | **16** · Drop 2 · Caballos a cuadros | Video | A | $200.000 |
+| jue 12 nov | lun 5 oct · atelier | Bride | **17** · B11 · Del primer lápiz a la entrega | Carrusel | B | $170.000 |
+| lun 16 nov | vie 6 nov · tienda | Alado & Co. | **18** · C19 · Esta semana en la tienda (2) | Historias | B | $120.000 |
+| mar 17 nov | vie 16 oct · casa de Andrés | Alado & Co. | **19** · Drop 3 · Ángeles y ciervos | Video | A | $200.000 |
+| jue 19 nov | lun 5 oct · atelier | Celebration | **20** · B15 · Prom y 15s: tu vestido, único | Carrusel | A | $170.000 |
+| sáb 21 nov | jue 12 nov · casa de Andrés | Alado & Co. | **21** · Receta de Navidad en la mesa Alado | Video | B | $200.000 |
+| lun 23 nov | mar 17 nov · Alejo | Bride | **22** · B17 · Caja de preguntas con Alejo | Historias | B | $120.000 |
+| mar 24 nov | mar 17 nov · Alejo | Bride | **23** · B3 · Notas de Alejo (manuscritas) | Video | A | $200.000 |
+| jue 26 nov | jue 19 nov · tienda | Alado & Co. | **24** · Armamos una ancheta Alado | Video | B | $200.000 |
+| sáb 28 nov | sáb 21 nov · El Retiro | Alado & Co. | **25** · C14 · Un día en El Retiro en Navidad | Carrusel | B | $170.000 |
+| lun 30 nov | mar 17 nov · Alejo | Bride | **26** · B20 · Agenda abierta hasta el 11 de diciembre | Historias | A | $120.000 |
 
 ### Ficha de captura
 - **01 · Invitación al taller de cerámica (17 oct)** (jue 8 oct): Piezas en blanco, pigmentos, manos pintando (Lizeth o Andrés), el restaurante. Texto en pantalla. CTA: reserva tu cupo.
@@ -84,12 +84,12 @@ Seis piezas evergreen, sin fechas ni referencias al equipo. Se producen del 1 al
 
 | Publica | Se graba | Línea | Pieza | Formato | Prior. | Valor |
 |---|---|---|---|---|---|---|
-| mar 15 dic | 1–9 dic · banco | Alado & Co. | **V1** · No es solo Navidad (flores y caballos todo el año) | Video | A | $210.000 |
-| vie 18 dic | 1–9 dic · banco | Alado | **V2** · Regala Alado (envolver) | Video | A | $210.000 |
-| mar 22 dic | 1–9 dic · banco | Alado & Co. | **V3** · Cómo montar una mesa que se recuerde | Video | A | $210.000 |
-| mar 29 dic | 1–9 dic · banco | Alado & Co. | **V4** · C1 · Cómo se pinta una pieza (2) | Video | A | $210.000 |
-| mar 5 ene | 1–9 dic · banco | Bride | **V5** · Notas de Alejo: novias 2027 | Carrusel | A | $150.000 |
-| sáb 9 ene | 1–9 dic · banco | Bride | **V6** · Cómo agendar tu cita desde el 12 de enero | Carrusel | A | $150.000 |
+| mar 15 dic | 1–9 dic · banco | Alado & Co. | **V1** · No es solo Navidad (flores y caballos todo el año) | Video | A | $200.000 |
+| vie 18 dic | 1–9 dic · banco | Alado | **V2** · Regala Alado (envolver) | Video | A | $200.000 |
+| mar 22 dic | 1–9 dic · banco | Alado & Co. | **V3** · Cómo montar una mesa que se recuerde | Video | A | $200.000 |
+| mar 29 dic | 1–9 dic · banco | Alado & Co. | **V4** · C1 · Cómo se pinta una pieza (2) | Video | A | $200.000 |
+| mar 5 ene | 1–9 dic · banco | Bride | **V5** · Notas de Alejo: novias 2027 | Carrusel | A | $170.000 |
+| sáb 9 ene | 1–9 dic · banco | Bride | **V6** · Cómo agendar tu cita desde el 12 de enero | Carrusel | A | $170.000 |
 
 - **V1 · No es solo Navidad (flores y caballos todo el año)** (mar 15 dic): Evergreen. Textiles en uso cotidiano. CTA: web.
 - **V2 · Regala Alado (envolver)** (vie 18 dic): Evergreen. Envolver un cojín u objeto.
@@ -135,11 +135,11 @@ Se graba por lotes, en vertical 9:16, con tres planos por escena (abierto, medio
 ## 8. Presupuesto
 | Opción | Qué incluye | Valor |
 |---|---|---|
-| 1 · Esencial | 9 videos + 2 carruseles + 4 sets de historias | **$2.910.000** |
-| 2 · Completo | 13 videos + 5 carruseles + 8 sets de historias | **$4.920.000** |
-| 3 · Completo + banco de vacaciones | La 2 + 6 piezas evergreen programadas | **$6.060.000** |
+| 1 · Esencial | 9 videos + 2 carruseles + 4 sets de historias | **$2.620.000** |
+| 2 · Completo | 13 videos + 5 carruseles + 8 sets de historias | **$4.410.000** |
+| 3 · Completo + banco de vacaciones | La 2 + 6 piezas evergreen programadas | **$5.550.000** |
 
-**Núcleo por mes:** octubre $2.130.000 · noviembre $2.790.000.
+**Núcleo por mes:** octubre $1.850.000 · noviembre $2.560.000.
 
 **Gastos reembolsables (estimados, a confirmar; $0 si Alado ya tiene el equipo):** $640.000
 - Luz LED portátil (el taller tiene poca luz): $180.000

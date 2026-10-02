@@ -55,3 +55,8 @@ Construir el **cerebro de marca de Alado** para el Codex de Andrés y la **estra
 - Deck de la propuesta para Andrés y Alejo (18 diapositivas, estética Alado): https://claude.ai/artifact/2vozp4t8Th8AHpuqBa5ypx (privado hasta que Sara lo comparta).
 - Se construyó con el calendario final de `docs/sesion-2026-10-02/datos-presentacion-contenido.json`: 13 reels, 5 carruseles, 8 sets de historias; opciones $2.910.000 / $4.920.000 / $6.060.000.
 - Por confirmar antes de presentar: tarifa de sets de historias ($180.000) y los gastos reembolsables estimados ($640.000).
+
+## Cambio de tarifas (2026-10-03)
+- Tarifas nuevas: reel $200.000, carrusel $170.000, set de historias $120.000.
+- Totales: esencial $2.620.000, plan completo $4.410.000, plan completo + vacaciones $5.550.000 (banco de vacaciones $1.140.000; reembolsables estimados $640.000 aparte). Por mes: octubre $1.850.000, noviembre $2.560.000.
+- Reemplaza las cifras anteriores de este documento ($2.910.000 / $4.920.000 / $6.060.000 y tarifa de historias de $180.000). Excel, JSON, plan y presentación ya están actualizados.
