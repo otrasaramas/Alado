@@ -10,15 +10,15 @@
 - Contenido del taller: lo dan Andrés, Alejo y Laura ($0).
 - Materiales: hojas, pinceles y retazos de tela para practicar.
 
-## Pendiente
-- **Costo real del kimono en blanco** (el mensaje llegó cortado). En el Excel hay un estimado de $120.000.
+## Costo del kimono
+- Kimono en blanco: **$80.000** (dato de Sara).
 
-## Resultado con el estimado del kimono
-- Costo total $3.653.150 (incluye $500.000 del restaurante, 1 kimono de repuesto y 5% de imprevistos).
-- Con 15 personas a $350.000: ganancia $1.596.850 · margen 30,4%.
-- Precio recomendado para un margen del 40%: $410.000.
-- Punto de equilibrio: 6 personas (aproximado).
-- Por cada $10.000 que cambie el costo del kimono, el precio recomendado cambia unos $19.000.
+## Resultado
+- Costo total $2.981.150 (incluye $500.000 del restaurante, 1 kimono de repuesto y 5% de imprevistos).
+- Con 15 personas a $350.000: ingresos $5.250.000 · ganancia **$2.268.850** · margen **43,2%**.
+- Precio recomendado para un margen del 40%: **$335.000**.
+- Punto de equilibrio: 5 personas (aproximado).
+- Pago sugerido al restaurante (30% de la ganancia): $830.000; el presupuesto de Sara es $500.000.
 
 ## Otras cosas a pensar
-Ver la lista en el chat: protección interna del kimono, práctica, marcado del diseño, secado y fijado, cuidado de la prenda, mesas y limpieza en el restaurante, agenda de las 4 horas, reserva y cancelación, permisos de imagen.
+Protección interna del kimono, práctica en retazos de la misma tela, marcado del diseño, secado y fijado, cuidado de la prenda, mesas y limpieza en el restaurante, agenda de las 4 horas, reserva y cancelación, permisos de imagen.
