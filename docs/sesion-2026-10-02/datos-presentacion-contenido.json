@@ -1,0 +1,524 @@
+{
+  "titulo": "Alado — Plan de contenido y presupuesto, 5 oct → 1 dic 2026 (+ banco de vacaciones)",
+  "preparado": "2026-10-02",
+  "autora": "Sara",
+  "para": "Andrés y Alejandro (Alado)",
+  "contexto": {
+    "bride_ticket_actual": "~$6M (3–4 vestidos/mes)",
+    "bride_ticket_meta": "$9–10M",
+    "vacaciones": "12 dic → 12 ene",
+    "privacidad": "Las novias no permiten mostrar su vestido antes del evento; muchas tampoco después",
+    "alejo": "Se entrena gradualmente para hablar; hoy no a cámara. Experto en tendencias con criterio propio",
+    "fechas": {
+      "2026-10-16": "Sesión de fotos de Navidad (casa de Andrés)",
+      "2026-10-17": "Taller de cerámica (restaurante)",
+      "2026-10-23": "Montaje de Navidad en la tienda + reel",
+      "2026-12-12": "Inicio vacaciones",
+      "2027-01-12": "Regreso"
+    }
+  },
+  "tarifas": {
+    "video": 210000,
+    "carrusel": 150000,
+    "historias_set": 180000,
+    "historias_nota": "tarifa anterior, por confirmar"
+  },
+  "opciones": [
+    {
+      "nombre": "Esencial",
+      "valor": 2190000
+    },
+    {
+      "nombre": "Completo",
+      "valor": 3210000
+    },
+    {
+      "nombre": "Completo + banco de vacaciones",
+      "valor": 4350000
+    },
+    {
+      "nombre": "Todo incluido (con historias)",
+      "valor": 5070000
+    }
+  ],
+  "reembolsables_estimados": [
+    {
+      "concepto": "Luz LED portátil (el taller tiene poca luz)",
+      "valor": 180000
+    },
+    {
+      "concepto": "Micrófono de solapa (voz en off de Alejo)",
+      "valor": 90000
+    },
+    {
+      "concepto": "Trípode / soporte para celular",
+      "valor": 70000
+    },
+    {
+      "concepto": "Banco de música con licencia comercial (2 meses)",
+      "valor": 100000
+    },
+    {
+      "concepto": "Transporte a El Retiro (4 viajes × $50.000)",
+      "valor": 200000
+    }
+  ],
+  "reembolsables_total": 640000,
+  "nucleo_por_mes": {
+    "octubre": 1560000,
+    "noviembre": 1500000,
+    "diciembre": 150000
+  },
+  "conteos": {
+    "nucleo_videos": 11,
+    "nucleo_carruseles": 6,
+    "historias_sets": 4,
+    "faseB_piezas": 6,
+    "esencial_videos": 9,
+    "esencial_carruseles": 2
+  },
+  "calendario": [
+    {
+      "id": "P01",
+      "fecha": "2026-10-06",
+      "dia": "mar",
+      "linea": "Bride",
+      "pieza": "Así se diseña un vestido en Alado",
+      "formato": "Carrusel",
+      "fase": "Núcleo",
+      "prioridad": "A",
+      "capturar": "5–7 fotos: hojas de figurines de concepto de Alejo (hoja completa + detalle del trazo), macros del atelier (telas, encaje, hilos), mesa de la cita vacía. Texto en voz de Alejo (caption). CTA: agenda tu cita.",
+      "valor": 150000
+    },
+    {
+      "id": "P02",
+      "fecha": "2026-10-08",
+      "dia": "jue",
+      "linea": "Alado & Co.",
+      "pieza": "Invitación al taller de cerámica (17 oct)",
+      "formato": "Video",
+      "fase": "Núcleo",
+      "prioridad": "A",
+      "capturar": "Video vertical: piezas en blanco, pigmentos, manos pintando (Lizeth / Andrés), el restaurante. Texto en pantalla + música instrumental con licencia. CTA: reserva tu cupo (10–12 cupos).",
+      "valor": 210000
+    },
+    {
+      "id": "P03",
+      "fecha": "2026-10-13",
+      "dia": "mar",
+      "linea": "Bride",
+      "pieza": "El figurín en vivo",
+      "formato": "Video",
+      "fase": "Núcleo",
+      "prioridad": "A",
+      "capturar": "Video cenital 20–30 s de las manos de Alejo dibujando un figurín de CONCEPTO (no de una clienta). Sonido ambiente del lápiz + música instrumental. Sin voz.",
+      "valor": 210000
+    },
+    {
+      "id": "P04",
+      "fecha": "2026-10-20",
+      "dia": "mar",
+      "linea": "Alado & Co.",
+      "pieza": "Recap del taller de cerámica",
+      "formato": "Video",
+      "fase": "Núcleo",
+      "prioridad": "A",
+      "capturar": "Video grabado el 17 oct: llegada, manos, risas, piezas pintadas, brindis. Audio ambiente. Requiere permiso de imagen de asistentes.",
+      "valor": 210000
+    },
+    {
+      "id": "P05",
+      "fecha": "2026-10-22",
+      "dia": "jue",
+      "linea": "Alado (ropa)",
+      "pieza": "Una pieza, su historia",
+      "formato": "Carrusel",
+      "fase": "Núcleo",
+      "prioridad": "B",
+      "capturar": "5–6 fotos de producto/campaña existentes + texto de la historia de la colección (pedir a Andrés). Se afina en la Tarea 3.",
+      "valor": 150000
+    },
+    {
+      "id": "P06",
+      "fecha": "2026-10-24",
+      "dia": "sáb",
+      "linea": "Alado & Co.",
+      "pieza": "La tienda de Navidad",
+      "formato": "Video",
+      "fase": "Núcleo",
+      "prioridad": "A",
+      "capturar": "Video grabado el vie 23 oct tras el montaje: planos generales, detalles de objetos, manos acomodando. CTA: ven a El Retiro (horarios). Se publica sábado (plan de fin de semana).",
+      "valor": 210000
+    },
+    {
+      "id": "P07",
+      "fecha": "2026-10-27",
+      "dia": "mar",
+      "linea": "Bride",
+      "pieza": "Oficio y detalle",
+      "formato": "Video",
+      "fase": "Núcleo",
+      "prioridad": "B",
+      "capturar": "Macros de bordado, encaje, costura a mano e hilos (del lote de atelier). Sin vestidos de clientas.",
+      "valor": 210000
+    },
+    {
+      "id": "P08",
+      "fecha": "2026-10-29",
+      "dia": "jue",
+      "linea": "Alado & Co.",
+      "pieza": "La casa se viste de Navidad",
+      "formato": "Video",
+      "fase": "Núcleo",
+      "prioridad": "A",
+      "capturar": "Time-lapse/transformación en la casa de Andrés (sesión del 16 oct): rincón vacío a montado. Ambiente y manos.",
+      "valor": 210000
+    },
+    {
+      "id": "P09",
+      "fecha": "2026-11-03",
+      "dia": "mar",
+      "linea": "Alado & Co.",
+      "pieza": "Drop 1 · Flores (revelación)",
+      "formato": "Video",
+      "fase": "Núcleo",
+      "prioridad": "A",
+      "capturar": "Macros del textil floral, mesa con flores frescas, manos arreglando un florero (sesión 16 oct). CTA: tienda + web.",
+      "valor": 210000
+    },
+    {
+      "id": "P10",
+      "fecha": "2026-11-05",
+      "dia": "jue",
+      "linea": "Alado & Co.",
+      "pieza": "Flores todo el año",
+      "formato": "Carrusel",
+      "fase": "Núcleo",
+      "prioridad": "B",
+      "capturar": "6 fotos de la sesión del 16 oct: el textil floral en distintos usos. Caption evergreen.",
+      "valor": 150000
+    },
+    {
+      "id": "P11",
+      "fecha": "2026-11-10",
+      "dia": "mar",
+      "linea": "Alado & Co.",
+      "pieza": "Drop 2 · Caballos a cuadros (revelación)",
+      "formato": "Video",
+      "fase": "Núcleo",
+      "prioridad": "A",
+      "capturar": "Cuadros, caballito de madera y manta en un rincón campestre (sesión 16 oct).",
+      "valor": 210000
+    },
+    {
+      "id": "P12",
+      "fecha": "2026-11-12",
+      "dia": "jue",
+      "linea": "Bride",
+      "pieza": "El figurín enmarcado",
+      "formato": "Video",
+      "fase": "Núcleo",
+      "prioridad": "B",
+      "capturar": "Video del ritual de entrega con un figurín de MUESTRA enmarcado (sin novia real): papel, firma, numeración, retazo de tela, marco. Requiere prototipo listo antes del 6 nov.",
+      "valor": 210000
+    },
+    {
+      "id": "P13",
+      "fecha": "2026-11-17",
+      "dia": "mar",
+      "linea": "Alado & Co.",
+      "pieza": "Drop 3 · Ángeles y ciervos (revelación)",
+      "formato": "Video",
+      "fase": "Núcleo",
+      "prioridad": "A",
+      "capturar": "Mesa de Nochebuena con velas, ciervos y ángeles (sesión 16 oct).",
+      "valor": 210000
+    },
+    {
+      "id": "P14",
+      "fecha": "2026-11-19",
+      "dia": "jue",
+      "linea": "Celebration",
+      "pieza": "Prom y 15s: tu vestido, único",
+      "formato": "Carrusel",
+      "fase": "Núcleo",
+      "prioridad": "B",
+      "capturar": "Fotos de 3–4 figurines de concepto para prom/15s (Alejo los dibuja en el lote 6). CTA: agenda para la temporada.",
+      "valor": 150000
+    },
+    {
+      "id": "P15",
+      "fecha": "2026-11-24",
+      "dia": "mar",
+      "linea": "Bride",
+      "pieza": "Notas de Alejo: qué se va y qué se queda",
+      "formato": "Video",
+      "fase": "Núcleo",
+      "prioridad": "A",
+      "capturar": "Voz en off de Alejo (~45 s, grabada aparte, varias tomas) sobre sus dibujos y el atelier. Subtítulos. Punto de vista propio sobre tendencias nupciales; guion corto aprobado por él.",
+      "valor": 210000
+    },
+    {
+      "id": "P16",
+      "fecha": "2026-11-26",
+      "dia": "jue",
+      "linea": "Alado",
+      "pieza": "Regala Alado (guía de regalos)",
+      "formato": "Carrusel",
+      "fase": "Núcleo",
+      "prioridad": "B",
+      "capturar": "6 fotos de objetos, accesorios y pañuelos como regalo (envueltos), tomadas en la tienda. CTA: tienda + web.",
+      "valor": 150000
+    },
+    {
+      "id": "P17",
+      "fecha": "2026-12-01",
+      "dia": "mar",
+      "linea": "Bride",
+      "pieza": "Agenda tu cita antes de vacaciones",
+      "formato": "Carrusel",
+      "fase": "Núcleo",
+      "prioridad": "A",
+      "capturar": "5 fotos/gráficos: cómo agendar, qué incluye, tiempos y fecha de cierre. CTA: agenda hasta el 11 dic; reabre el 12 ene.",
+      "valor": 150000
+    },
+    {
+      "id": "H1",
+      "fecha": "2026-10-05",
+      "dia": "lun",
+      "linea": "Bride",
+      "pieza": "Destacado fijo «Bride» (montaje único)",
+      "formato": "Historias",
+      "fase": "Historias (opcional)",
+      "prioridad": "A",
+      "capturar": "8–10 stories: proceso, cómo agendar, preguntas frecuentes, vestidos de la colección y pasarela, tiempos. Se guarda en Destacados.",
+      "valor": 180000
+    },
+    {
+      "id": "H2",
+      "fecha": "2026-10-17",
+      "dia": "sáb",
+      "linea": "Alado & Co.",
+      "pieza": "Taller de cerámica en vivo",
+      "formato": "Historias",
+      "fase": "Historias (opcional)",
+      "prioridad": "A",
+      "capturar": "Stories durante el taller: llegada, pintura, quema, el resultado esperado.",
+      "valor": 180000
+    },
+    {
+      "id": "H3",
+      "fecha": "2026-11-02",
+      "dia": "lun",
+      "linea": "Alado & Co.",
+      "pieza": "Semana de lanzamiento de los drops",
+      "formato": "Historias",
+      "fase": "Historias (opcional)",
+      "prioridad": "B",
+      "capturar": "Encuestas, cuenta regresiva y avances de los 3 drops.",
+      "valor": 180000
+    },
+    {
+      "id": "H4",
+      "fecha": "2026-11-30",
+      "dia": "lun",
+      "linea": "Bride",
+      "pieza": "Última llamada antes de vacaciones",
+      "formato": "Historias",
+      "fase": "Historias (opcional)",
+      "prioridad": "A",
+      "capturar": "Cierre de agenda, aviso de vacaciones (12 dic–12 ene), cómo dejar tus datos.",
+      "valor": 180000
+    },
+    {
+      "id": "B1",
+      "fecha": "2026-12-15",
+      "dia": "mar",
+      "linea": "Alado & Co.",
+      "pieza": "No es solo Navidad (flores y caballos todo el año)",
+      "formato": "Video",
+      "fase": "Fase B",
+      "prioridad": "A",
+      "capturar": "Evergreen, sin fecha. Textiles en uso cotidiano. CTA: web.",
+      "valor": 210000
+    },
+    {
+      "id": "B2",
+      "fecha": "2026-12-18",
+      "dia": "vie",
+      "linea": "Alado",
+      "pieza": "Regala Alado (envolver, ASMR)",
+      "formato": "Video",
+      "fase": "Fase B",
+      "prioridad": "A",
+      "capturar": "Evergreen. Envolver un cojín u objeto. CTA: web.",
+      "valor": 210000
+    },
+    {
+      "id": "B3",
+      "fecha": "2026-12-22",
+      "dia": "mar",
+      "linea": "Alado & Co.",
+      "pieza": "Cómo montar una mesa que se recuerde",
+      "formato": "Video",
+      "fase": "Fase B",
+      "prioridad": "A",
+      "capturar": "Evergreen. Mantel, camino, individuales, flores, velas. CTA: web.",
+      "valor": 210000
+    },
+    {
+      "id": "B4",
+      "fecha": "2026-12-29",
+      "dia": "mar",
+      "linea": "Alado & Co.",
+      "pieza": "Del dibujo al textil",
+      "formato": "Video",
+      "fase": "Fase B",
+      "prioridad": "A",
+      "capturar": "Evergreen. La ilustración pintada a mano y el cojín terminado.",
+      "valor": 210000
+    },
+    {
+      "id": "B5",
+      "fecha": "2027-01-05",
+      "dia": "mar",
+      "linea": "Bride",
+      "pieza": "Notas de Alejo: novias 2027",
+      "formato": "Carrusel",
+      "fase": "Fase B",
+      "prioridad": "A",
+      "capturar": "Evergreen, escrito en voz de Alejo (sin cámara). CTA: agenda desde el 12 ene.",
+      "valor": 150000
+    },
+    {
+      "id": "B6",
+      "fecha": "2027-01-09",
+      "dia": "sáb",
+      "linea": "Bride",
+      "pieza": "Cómo agendar tu cita desde el 12 de enero",
+      "formato": "Carrusel",
+      "fase": "Fase B",
+      "prioridad": "A",
+      "capturar": "Evergreen. Qué incluye, tiempos, formulario para dejar datos.",
+      "valor": 150000
+    }
+  ],
+  "lotes_de_produccion": [
+    {
+      "lote": 1,
+      "fecha": "semana 5–9 oct",
+      "donde": "Atelier con Alejo (~3 h)",
+      "para": [
+        "P01",
+        "P03",
+        "P07",
+        "H1"
+      ]
+    },
+    {
+      "lote": 2,
+      "fecha": "7 oct",
+      "donde": "Pre-taller (~1 h)",
+      "para": [
+        "P02"
+      ]
+    },
+    {
+      "lote": 3,
+      "fecha": "16 oct",
+      "donde": "Casa de Andrés (jornada completa)",
+      "para": [
+        "P08",
+        "P09",
+        "P10",
+        "P11",
+        "P13"
+      ]
+    },
+    {
+      "lote": 4,
+      "fecha": "17 oct",
+      "donde": "Taller de cerámica",
+      "para": [
+        "P04",
+        "H2"
+      ]
+    },
+    {
+      "lote": 5,
+      "fecha": "23 oct",
+      "donde": "Tienda de El Retiro",
+      "para": [
+        "P06",
+        "P16"
+      ]
+    },
+    {
+      "lote": 6,
+      "fecha": "2–6 nov",
+      "donde": "Atelier con Alejo (~3 h)",
+      "para": [
+        "P12",
+        "P14"
+      ]
+    },
+    {
+      "lote": 7,
+      "fecha": "16–20 nov",
+      "donde": "Grabación de voz de Alejo (30–40 min)",
+      "para": [
+        "P15"
+      ]
+    },
+    {
+      "lote": 8,
+      "fecha": "1–9 dic",
+      "donde": "Tienda o casa (1 jornada)",
+      "para": [
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6"
+      ]
+    }
+  ],
+  "necesidades_de_alado": [
+    "Fechas de Alejo: dos sesiones de atelier (~3 h) y una de voz (30–40 min)",
+    "Acceso: casa de Andrés (16 oct), tienda (23 oct), restaurante del taller",
+    "Un aprobador único (Andrés) con respuesta en 48 h",
+    "Productos de los 3 drops listos para el 16 oct",
+    "Historia de cada drop/pieza (si no se sabe, se pide)",
+    "Licencia de música: no usar el playlist de Spotify en contenido de marca",
+    "Autorizaciones de imagen: asistentes al taller, novias, artesanos",
+    "Plan de vacaciones: respuesta automática y formulario para dejar datos",
+    "Decisión sobre tendencias y plan de voz de Alejo (con su acuerdo)",
+    "Acuerdo de derechos de uso del contenido"
+  ],
+  "riesgos": [
+    "Todo depende del tiempo de Alejo (atiende todas las citas)",
+    "Si los productos de los drops no están listos el 16 oct, se corre toda la campaña",
+    "Mensajes de novias sin responder entre el 12 dic y el 12 ene",
+    "Música sin licencia puede silenciar o retirar los reels",
+    "Ritmo de ~2 piezas por semana es el máximo realista para una sola persona"
+  ],
+  "metricas": [
+    "DMs y citas de novia (Bride)",
+    "Cupos vendidos del taller",
+    "Visitas a la tienda y a la web (Navidad)",
+    "Guardados y compartidos antes que 'me gusta'"
+  ],
+  "esquema_presentacion": [
+    "Contexto y objetivo",
+    "Qué aprendimos (privacidad, vacaciones, estatus)",
+    "La estrategia en una página",
+    "Calendario 5 oct–1 dic",
+    "Producción: lotes y quién hace qué",
+    "Banco de vacaciones",
+    "Opciones y presupuesto",
+    "Qué necesito de Alado",
+    "Riesgos y métricas",
+    "Siguientes pasos"
+  ]
+}

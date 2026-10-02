@@ -9,10 +9,10 @@
 ## Fechas clave
 - **16 oct** — sesión de fotos de campaña de Navidad (en la casa de Andrés). *→ Grabar también video/b-roll, no solo fotos.*
 - **23 oct** — se monta la Navidad en la tienda → se graba un reel.
-- **11 dic → 11 ene** — el equipo está de vacaciones.
+- **12 dic → 12 ene** — el equipo está de vacaciones.
 
 ## La regla de oro (por las vacaciones)
-Todo el contenido del **11 dic al 11 ene** debe quedar **grabado y programado antes del 11 de diciembre**, y su CTA debe llevar a la **web (Shopify)**, que vende sin que nadie esté. Nada que dependa de citas, respuestas o grabar en vivo en esa franja. → **Pre-producir en octubre/noviembre y agendar.**
+Todo el contenido del **12 dic al 12 ene** debe quedar **grabado y programado antes del 12 de diciembre**, y su CTA debe llevar a la **web (Shopify)**, que vende sin que nadie esté. Nada que dependa de citas, respuestas o grabar en vivo en esa franja. → **Pre-producir en octubre/noviembre y agendar.**
 
 ## Concepto de campaña (casa de Andrés)
 **"La casa Alado se viste de Navidad."** La casa (grande, con vivero, plantas, antigüedades, sala, mesas) es el set perfecto para una Navidad colombiana cálida, elegante y un punto barroca —nunca kitsch—. Estilo: luz natural + artificial cálida donde falte; capas y abundancia (Alado no es minimal en el arte); momentos domésticos reales (manos que sirven la mesa, arreglan flores, encienden velas); props de la marca: jarrones talavera, candelabros, cerámica, plantas, el caballito de madera.
@@ -30,8 +30,8 @@ Todo el contenido del **11 dic al 11 ene** debe quedar **grabado y programado an
 | **Nov (sem 1–2)** | Drop 1 · Flores | Reel de revelación + reel de "cómo montar tu mesa". CTA: tienda + web. |
 | **Nov (sem 3)** | Drop 2 · Caballos cuadros | Reel de revelación + reel evergreen "no es solo Navidad". |
 | **Nov (sem 4)–1 dic** | Drop 3 · Ángeles y ciervos | Reel de revelación (el más navideño) + reel "regala Alado". |
-| **1–10 dic** | Empuje de regalo + última llamada | "Regala Alado", última semana para venir a la tienda antes de vacaciones. **Aquí se PROGRAMA todo lo del 11 dic–11 ene.** |
-| **11 dic–11 ene** | Franja de vacaciones (pre-agendada) | Reels evergreen + de regalo, **CTA solo a la web**. "Aún puedes regalar", "disponible en la web". |
+| **1–11 dic** | Empuje de regalo + última llamada | "Regala Alado", última semana para venir a la tienda antes de vacaciones. **Aquí se PROGRAMA todo lo del 12 dic–12 ene.** |
+| **12 dic–12 ene** | Franja de vacaciones (pre-agendada) | Reels evergreen + de regalo, **CTA solo a la web**. "Aún puedes regalar", "disponible en la web". |
 
 ## 10 ideas de reels (mínimo 8)
 1. **"La casa se viste de Navidad"** — transformación/time-lapse de una mesa o rincón que pasa de vacío a totalmente montado en Alado. *(estrella, del 16 oct)*
@@ -45,7 +45,7 @@ Todo el contenido del **11 dic al 11 ene** debe quedar **grabado y programado an
 9. **"La mesa servida" / Nochebuena** — emotivo, ambiente de reunión, la mesa vestida en Alado.
 10. **"No es solo Navidad"** — los textiles de flores/caballos en un uso cotidiano → refuerza el uso todo el año. *(perfecto para programar en vacaciones)*
 
-> Los reels **6, 7, 8 y 10 son evergreen** → ideales para programar en la franja del 11 dic–11 ene.
+> Los reels **6, 7, 8 y 10 son evergreen** → ideales para programar en la franja del 12 dic–12 ene.
 
 ---
 

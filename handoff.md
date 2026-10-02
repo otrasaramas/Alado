@@ -38,7 +38,15 @@ Construir el **cerebro de marca de Alado** para el Codex de Andrés y la **estra
 - **Guiones de reels:** desarrollar plano por plano los prioritarios — "La casa se viste de Navidad", "Bodegón que cobra vida", "Regala Alado"; y el reel de la tienda (23 oct).
 - **Bride:** armar el contenido del **Destacado fijo "Bride"** (proceso · vestidos · cómo agendar).
 - **Taller de cerámica (17 oct):** definir modalidad (**pintura en frío vs. esmalte+quema**) y cupos; se ofreció una **hoja de cálculo de cotización** con fórmulas (pendiente de hacer).
-- **Producción de Navidad:** grabar el **16 oct** (fotos + b-roll de los 3 drops) y el **23 oct** (reel de la tienda vestida). **Pre-producir y PROGRAMAR los reels evergreen antes del 11 dic**, porque el equipo está de vacaciones del **11 dic al 11 ene** — ese contenido debe llevar a la **web (Shopify)**, sin depender del equipo.
+- **Producción de Navidad:** grabar el **16 oct** (fotos + b-roll de los 3 drops) y el **23 oct** (reel de la tienda vestida). **Pre-producir y PROGRAMAR los reels evergreen antes del 12 dic**, porque el equipo está de vacaciones del **12 dic al 12 ene** — ese contenido debe llevar a la **web (Shopify)**, sin depender del equipo.
 
 ---
 *Punto de entrada para la próxima sesión: `docs/ALADO-CODEX.md` (marca) y `docs/estrategia-navidad-y-bride.md` (contenido inmediato).*
+
+---
+## Actualización 2026-10-02 (sesión de 4 tareas)
+- **Hecho:** cotización del taller de cerámica (Excel simple), estrategia de Bride (privacidad, figurín enmarcado, escalera de voz de Alejo, tendencias con criterio) y plan de contenido 5 oct → 1 dic con presupuesto.
+- **Decisión tomada:** Alado sí habla de tendencias, con criterio propio (Alejo); ya está en `docs/cerebro-de-marca.md` y `docs/ALADO-CODEX.md`.
+- **Corrección:** las vacaciones son del **12 dic al 12 ene** (antes decía 11).
+- **Archivos nuevos en `docs/sesion-2026-10-02/`:** `05-plan-contenido-oct-dic.md`, `presupuesto-contenido-oct-dic.xlsx`, `datos-presentacion-contenido.json` (base para la presentación en artifact).
+- **Pendiente:** Tarea 3 (contenido Alado ropa), Tarea 4 (guion de invitación al taller, P02 del plan), confirmar tarifa de historias y los estimados de gastos reembolsables, y construir la presentación a partir del JSON.

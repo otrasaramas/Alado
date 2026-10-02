@@ -364,8 +364,14 @@ La IA debe moverse en ese registro: palabras que evocan territorio, historia, of
 **Temas que la marca NUNCA toca:**
 - Religión (temas religiosos de forma explícita). *Nota: la marca sí toma prestada la* imaginería *religiosa como recurso estético/decorativo, pero no habla de religión ni toma postura.*
 - Política explícita.
-- Tendencias y cualquier cosa asociada al *fast fashion*.
+- El *fast fashion* y el consumo rápido.
 - El lujo tradicional "que solo es caro": Alado no es eso. Alado es **lujo local, lujo artesanal** — lujo por oficio, historia y significado, no por precio ni estatus.
+
+**Tendencias: no se siguen, se leen y se opinan (actualizado 2026-10-02).** Alado no se define por las tendencias ni las persigue, pero **sí habla de ellas con criterio**: la gente busca referentes que le digan qué se usa y qué no. Quien lo hace es **Alejandro (Alejo)**, como experto: lee las tendencias para decir cuáles se quedan, cuáles se van y cuáles ignorar.
+- Siempre con **punto de vista propio** y respaldo del oficio (él hace el vestido); nunca una lista copiada de pasarelas o Pinterest.
+- Encaja con el arquetipo Sabio/Mentor: orienta al cliente-héroe.
+- Formatos: "qué se va y qué se queda", "tendencias que no recomendaría y por qué", silueta/tela/escote explicados con criterio, historia de la moda nupcial.
+- Sigue vetado: lenguaje de moda efímera ("lo último", "must have", "viral") y cualquier tono de consumo rápido.
 
 **Qué NO es Alado (anti-marca):**
 - No es *trendy* ni *girly* per se.

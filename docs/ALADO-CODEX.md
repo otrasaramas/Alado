@@ -39,7 +39,8 @@ Personas cultas (mujeres y hombres) de Medellín y El Retiro; profesionales con 
 
 ## 6. Nunca hagas esto
 - Nada de "descuento/sale/oferta" ni urgencia comercial.
-- No tocar religión, política explícita, tendencias ni fast fashion. *(Sí se usa la imaginería religiosa como recurso estético, sin hablar de religión.)*
+- No tocar religión, política explícita ni fast fashion. *(Sí se usa la imaginería religiosa como recurso estético, sin hablar de religión.)*
+- **Tendencias:** no se siguen, **se leen y se opinan con criterio**. Alejo (como experto) dice qué se usa, qué se va y qué ignorar, con punto de vista propio y el respaldo del oficio. Nunca lenguaje de moda efímera ("must have", "lo último", "viral").
 - No proyectar el lujo "que solo es caro": Alado es **lujo local y artesanal** (por oficio, historia y significado).
 - Nada de humor, sarcasmo, exceso de emojis, ni tono despectivo/segregador. No banalizar los temas serios; tratarlos con profundidad.
 - Alado **no** es trendy, girly, rápida, masiva, ni "digerible".

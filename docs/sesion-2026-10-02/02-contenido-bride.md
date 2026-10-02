@@ -99,3 +99,7 @@ Misma máquina (figurín + bespoke + exclusividad), público más joven y un pun
 
 ---
 *Siguiente: escribir el guion del reel "El figurín en vivo" y armar el contenido del Destacado "Bride".*
+
+---
+## Plan de ejecución
+El calendario con fechas, lotes de grabación y presupuesto de Bride y del resto de líneas está en `05-plan-contenido-oct-dic.md` y `presupuesto-contenido-oct-dic.xlsx`.
