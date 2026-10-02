@@ -18,14 +18,21 @@ Cotizar el taller: definir qué incluye, los costos y el precio por persona.
 - **Lugar:** un **restaurante** (el refrigerio/comida lo maneja el restaurante → no entra al costo de Alado; espacio $0, según el trato).
 - **Compras:** pinceles, esponjas, materiales y delantales (reutilizables).
 
-## Resultado (editable en el Excel)
-> Hoja: **`cotizacion-taller-ceramica.xlsx`** (edita las celdas amarillas; recalcula sola).
+## Datos reales (finales)
+- Set: 4 pocillos ($3.200) + 4 platos ($2.200) = **$21.600/persona** · **8 piezas**.
+- Pigmentos: **$6.000/persona** · Quema: **$3.000/pieza** (taller amigo) = **$24.000/persona**.
+- Lizeth: 5h × $9.000 = **$45.000**. Andrés y Alejandro: fundadores.
+- Restaurante: pone **lugar, aperitivos y vino** → no es costo de Alado.
 
-- Variable/persona: **$37.600** · Fijos + colchón 10%: **$610.500** · Costo/persona (a 11): **$93.100**
-- **Precio sugerido por cupo: ~$175.000** (margen 45%) · Punto de equilibrio: **5 personas**
-- Ganancia: mín (10) **$693.500** · estimado (11) **$823.900** · máx (12) **$954.300**
+## Resultado (hoja simple y editable)
+> **`cotizacion-taller-ceramica.xlsx`** — edita las celdas amarillas; se calcula solo.
 
-**Por confirmar (mueve el precio):** costo real de **pigmentos** y de **quema** (¿horno propio = $0?); y el **trato con el restaurante** (espacio/comida). Nota: pinceles/esponjas/delantales son **reutilizables** → los próximos talleres salen mucho más baratos.
+Con **11 personas** y precio de **$200.000/cupo**:
+- Costo variable/persona: **$53.600** · Costo fijo total: **$555.000** · Costo total: **$1.144.600**
+- Ingresos: **$2.200.000** · **Ganancia: $1.055.400**
+- **👉 Puedes pagarle al restaurante hasta ~$455.000 total (~$41.400/persona)** si quieres conservar $600.000 de ganancia.
+
+*Nota: pinceles/esponjas/delantales son reutilizables → próximos talleres cuestan menos.*
 
 ## Costos
 **Variables (por persona)** — `[llenar $]`
