@@ -4,9 +4,9 @@
 
 ## 1. Resumen
 - **Qué es:** un plan de contenido para Alado Bride y Alado & Co. (con la cuenta de Alado enfocada en el hogar y la Navidad), hecho por una sola persona.
-- **Piezas:** **13 videos, 5 carruseles y 8 sets de historias** hasta el 1 de diciembre. Lo esencial son 9 videos, 2 carruseles y 4 sets de historias.
+- **Piezas:** **11 videos, 6 carruseles y 8 sets de historias** hasta el 1 de diciembre. Lo esencial son 9 videos, 3 carruseles y 4 sets de historias.
 - **Vacaciones (12 dic → 12 ene):** seis piezas evergreen se producen y se programan antes.
-- **Presupuesto:** $2.620.000 (esencial), $4.410.000 (completo) o $5.550.000 (completo + banco de vacaciones).
+- **Presupuesto:** $2.790.000 (esencial), $4.180.000 (completo) o $5.320.000 (completo + banco de vacaciones).
 
 ## 2. Lo que condiciona el plan
 - **Bride es la caja de la empresa.** Vestido promedio ~$6M, 3–4 al mes; meta de $9–10M.
@@ -26,6 +26,7 @@ Prioridad **A** = esencial, **B** = complemento. Tarifas: video $200.000, carrus
 |---|---|---|---|---|---|---|
 | jue 8 oct | mar 6 oct · pre-taller | Alado & Co. | **01** · Invitación al taller de cerámica (17 oct) | Video | A | $200.000 |
 | vie 9 oct | lun 5 oct · atelier | Bride | **02** · B16 · Destacado fijo «Bride» (10 historias) | Historias | A | $120.000 |
+| sáb 10 oct | mar 6 oct · pre-taller | Alado & Co. | **27** · Cómo participar en el taller de cerámica | Carrusel | A | $170.000 |
 | lun 12 oct | material existente | Alado | **03** · A18 · Cómo comprar (Destacado) | Historias | A | $120.000 |
 | mar 13 oct | lun 5 oct · atelier | Bride | **04** · B1 · El figurín en vivo | Video | A | $200.000 |
 | mié 14 oct | mar 6 oct y sáb 17 oct | Alado & Co. | **05** · C18 · Taller: cupos, cuenta regresiva y en vivo | Historias | A | $120.000 |
@@ -33,11 +34,9 @@ Prioridad **A** = esencial, **B** = complemento. Tarifas: video $200.000, carrus
 | jue 22 oct | lun 5 oct · atelier | Bride | **07** · B10 · Único vs. alquilado | Carrusel | A | $170.000 |
 | sáb 24 oct | vie 23 oct · tienda | Alado & Co. | **08** · C5 · Recorrido por la tienda de Navidad | Video | A | $200.000 |
 | lun 26 oct | vie 23 oct · tienda | Alado & Co. | **09** · C20 · Cómo llegar a la tienda | Historias | B | $120.000 |
-| mar 27 oct | sáb 17 oct · taller | Alado & Co. | **10** · C1 · Cómo se pinta una pieza (1) | Video | B | $200.000 |
 | jue 29 oct | vie 16 oct · casa de Andrés | Alado & Co. | **11** · La casa se viste de Navidad | Video | A | $200.000 |
 | lun 2 nov | vie 23 oct · tienda | Alado & Co. | **12** · C19 · Esta semana en la tienda (1) | Historias | B | $120.000 |
 | mar 3 nov | vie 16 oct · casa de Andrés | Alado & Co. | **13** · Drop 1 · Flores | Video | A | $200.000 |
-| jue 5 nov | mar 3 nov · casa o tienda | Alado & Co. | **14** · C10 · Pon la mesa con tus piezas pintadas | Video | B | $200.000 |
 | sáb 7 nov | vie 16 oct · casa de Andrés | Alado & Co. | **15** · C11 · Cómo vestir una mesa por capas | Carrusel | B | $170.000 |
 | mar 10 nov | vie 16 oct · casa de Andrés | Alado & Co. | **16** · Drop 2 · Caballos a cuadros | Video | A | $200.000 |
 | jue 12 nov | lun 5 oct · atelier | Bride | **17** · B11 · Del primer lápiz a la entrega | Carrusel | B | $170.000 |
@@ -54,6 +53,7 @@ Prioridad **A** = esencial, **B** = complemento. Tarifas: video $200.000, carrus
 ### Ficha de captura
 - **01 · Invitación al taller de cerámica (17 oct)** (jue 8 oct): Piezas en blanco, pigmentos, manos pintando (Lizeth o Andrés), el restaurante. Texto en pantalla. CTA: reserva tu cupo.
 - **02 · B16 · Destacado fijo «Bride» (10 historias)** (vie 9 oct): Proceso en 5 pasos, qué incluye, Celebration, preguntas frecuentes, cómo agendar. Solo figurines de concepto, macros y colección.
+- **27 · Cómo participar en el taller de cerámica** (sáb 10 oct): 6 láminas: qué incluye, quién lo dicta, cupos, precio y cómo reservar.
 - **03 · A18 · Cómo comprar (Destacado)** (lun 12 oct): Ropa: web y tienda. Hogar: tienda de El Retiro. Dónde, horario y WhatsApp. Si vives lejos: consulta disponibilidad.
 - **04 · B1 · El figurín en vivo** (mar 13 oct): Plano cenital fijo, una sola toma de 20–30 s: la mano de Alejo dibuja un figurín de concepto. Sonido del lápiz.
 - **05 · C18 · Taller: cupos, cuenta regresiva y en vivo** (mié 14 oct): Cupos y cuenta regresiva del 14 al 16 oct; historias en vivo durante el taller el 17 oct.
@@ -61,11 +61,9 @@ Prioridad **A** = esencial, **B** = complemento. Tarifas: video $200.000, carrus
 - **07 · B10 · Único vs. alquilado** (jue 22 oct): 7 láminas con figurines de concepto y detalles del atelier. Tono respetuoso, sin criticar el alquiler.
 - **08 · C5 · Recorrido por la tienda de Navidad** (sáb 24 oct): Caminata continua con el celular por cinco rincones: cerámica, textil hogar, luz, muebles, regalos. Se publica un sábado.
 - **09 · C20 · Cómo llegar a la tienda** (lun 26 oct): Ubicación en el parque principal, horario y un plan para el día. Sticker de ubicación.
-- **10 · C1 · Cómo se pinta una pieza (1)** (mar 27 oct): Plano cenital: base, dibujo, color. Lizeth pinta una pieza de referencia durante el taller.
 - **11 · La casa se viste de Navidad** (jue 29 oct): Transformación de un rincón vacío a montado: cojines, mantas, velas, flores.
 - **12 · C19 · Esta semana en la tienda (1)** (lun 2 nov): 6–10 fotos de piezas disponibles, con medidas y colección. Primer set de la rutina quincenal.
 - **13 · Drop 1 · Flores** (mar 3 nov): Macros del textil floral, mesa con flores frescas, manos arreglando un florero.
-- **14 · C10 · Pon la mesa con tus piezas pintadas** (jue 5 nov): Montaje de mesa con el set del taller que se queda Alado. Depende de que las piezas regresen de la quema.
 - **15 · C11 · Cómo vestir una mesa por capas** (sáb 7 nov): 8 láminas: mantel, camino, individuales, vajilla, servilleta, flores y velas.
 - **16 · Drop 2 · Caballos a cuadros** (mar 10 nov): Cuadros, caballito de madera y manta en un rincón campestre.
 - **17 · B11 · Del primer lápiz a la entrega** (jue 12 nov): 7 láminas con los pasos reales del servicio. Alejo confirma los tiempos.
@@ -87,14 +85,14 @@ Seis piezas evergreen, sin fechas ni referencias al equipo. Se producen del 1 al
 | mar 15 dic | 1–9 dic · banco | Alado & Co. | **V1** · No es solo Navidad (flores y caballos todo el año) | Video | A | $200.000 |
 | vie 18 dic | 1–9 dic · banco | Alado | **V2** · Regala Alado (envolver) | Video | A | $200.000 |
 | mar 22 dic | 1–9 dic · banco | Alado & Co. | **V3** · Cómo montar una mesa que se recuerde | Video | A | $200.000 |
-| mar 29 dic | 1–9 dic · banco | Alado & Co. | **V4** · C1 · Cómo se pinta una pieza (2) | Video | A | $200.000 |
+| mar 29 dic | 1–9 dic · banco | Alado & Co. | **V4** · Cómo se pinta una pieza | Video | A | $200.000 |
 | mar 5 ene | 1–9 dic · banco | Bride | **V5** · Notas de Alejo: novias 2027 | Carrusel | A | $170.000 |
 | sáb 9 ene | 1–9 dic · banco | Bride | **V6** · Cómo agendar tu cita desde el 12 de enero | Carrusel | A | $170.000 |
 
 - **V1 · No es solo Navidad (flores y caballos todo el año)** (mar 15 dic): Evergreen. Textiles en uso cotidiano. CTA: web.
 - **V2 · Regala Alado (envolver)** (vie 18 dic): Evergreen. Envolver un cojín u objeto.
 - **V3 · Cómo montar una mesa que se recuerde** (mar 22 dic): Evergreen. Mantel, camino, individuales, flores y velas.
-- **V4 · C1 · Cómo se pinta una pieza (2)** (mar 29 dic): Evergreen. Otra pieza pintada a mano.
+- **V4 · Cómo se pinta una pieza** (mar 29 dic): Evergreen. Otra pieza pintada a mano.
 - **V5 · Notas de Alejo: novias 2027** (mar 5 ene): Evergreen, escrito en voz de Alejo. CTA: agenda desde el 12 ene.
 - **V6 · Cómo agendar tu cita desde el 12 de enero** (sáb 9 ene): Evergreen. Qué incluye, tiempos y formulario para dejar datos.
 
@@ -107,11 +105,10 @@ Se graba por lotes, en vertical 9:16, con tres planos por escena (abierto, medio
 | Cuándo | Dónde | Qué | Piezas |
 |---|---|---|---|
 | lun 5 oct | Atelier con Alejo (≈3 h) | Figurines de concepto, macros de tela, material de Bride | 02, 04, 07, 17, 20 |
-| mar 6 oct | Pre-taller y restaurante (≈1 h) | Piezas, pigmentos, el lugar | 01, 05 |
+| mar 6 oct | Pre-taller y restaurante (≈1 h) | Piezas, pigmentos, el lugar | 01, 05, 27 |
 | vie 16 oct | Casa de Andrés, jornada completa | Los tres drops, la casa vestida, la mesa por capas | 11, 13, 15, 16, 19 |
-| sáb 17 oct | Taller de cerámica | Taller en vivo, recap, Lizeth pintando | 05, 06, 10 |
+| sáb 17 oct | Taller de cerámica | Taller en vivo y recap | 05, 06 |
 | vie 23 oct | Tienda de El Retiro | Recorrido, fotos de «lo que hay», exterior | 08, 09, 12 |
-| mar 3 nov | Mesa con las piezas del taller | Set que se queda Alado (si regresó de la quema) | 14 |
 | vie 6 nov | Tienda de El Retiro | Segunda sesión quincenal de fotos | 18 |
 | jue 12 nov | Casa de Andrés | Receta de Navidad y mesa servida | 21 |
 | lun 16 – vie 20 nov | Alejo y tienda | Entrevista, notas a mano, respuestas, agenda; ancheta | 22, 23, 24, 26 |
@@ -135,11 +132,11 @@ Se graba por lotes, en vertical 9:16, con tres planos por escena (abierto, medio
 ## 8. Presupuesto
 | Opción | Qué incluye | Valor |
 |---|---|---|
-| 1 · Esencial | 9 videos + 2 carruseles + 4 sets de historias | **$2.620.000** |
-| 2 · Completo | 13 videos + 5 carruseles + 8 sets de historias | **$4.410.000** |
-| 3 · Completo + banco de vacaciones | La 2 + 6 piezas evergreen programadas | **$5.550.000** |
+| 1 · Esencial | 9 videos + 3 carruseles + 4 sets de historias | **$2.790.000** |
+| 2 · Completo | 11 videos + 6 carruseles + 8 sets de historias | **$4.180.000** |
+| 3 · Completo + banco de vacaciones | La 2 + 6 piezas evergreen programadas | **$5.320.000** |
 
-**Núcleo por mes:** octubre $1.850.000 · noviembre $2.560.000.
+**Núcleo por mes:** octubre $1.820.000 · noviembre $2.360.000.
 
 **Gastos reembolsables (estimados, a confirmar; $0 si Alado ya tiene el equipo):** $640.000
 - Luz LED portátil (el taller tiene poca luz): $180.000
@@ -154,7 +151,6 @@ Se graba por lotes, en vertical 9:16, con tres planos por escena (abierto, medio
 **Riesgos**
 - Todo depende del tiempo de Alejo, que atiende todas las citas
 - Si los productos de los drops no están listos el 16 oct, se corre toda la campaña de noviembre
-- El taller de cerámica y la quema: C10 depende de que las piezas regresen a tiempo
 - Mensajes de novias sin responder entre el 12 dic y el 12 ene
 - Música sin licencia puede silenciar o retirar los reels
 - El plan completo son unas 2 piezas por semana más historias: es el máximo realista para una sola persona

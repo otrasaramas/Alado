@@ -10,15 +10,15 @@
   "opciones": [
     {
       "nombre": "Esencial",
-      "valor": 2620000
+      "valor": 2790000
     },
     {
       "nombre": "Completo",
-      "valor": 4410000
+      "valor": 4180000
     },
     {
       "nombre": "Completo + banco de vacaciones",
-      "valor": 5550000
+      "valor": 5320000
     }
   ],
   "reembolsables_estimados": [
@@ -45,17 +45,17 @@
   ],
   "reembolsables_total": 640000,
   "nucleo_por_mes": {
-    "octubre": 1850000,
-    "noviembre": 2560000,
+    "octubre": 1820000,
+    "noviembre": 2360000,
     "diciembre": 0
   },
   "conteos": {
-    "nucleo_videos": 13,
-    "nucleo_carruseles": 5,
+    "nucleo_videos": 11,
+    "nucleo_carruseles": 6,
     "nucleo_historias": 8,
     "faseB_piezas": 6,
     "esencial_videos": 9,
-    "esencial_carruseles": 2,
+    "esencial_carruseles": 3,
     "esencial_historias": 4
   },
   "calendario": [
@@ -177,19 +177,6 @@
       "valor": 120000
     },
     {
-      "id": "10",
-      "fecha": "2026-10-27",
-      "dia": "mar",
-      "linea": "Alado & Co.",
-      "pieza": "C1 · Cómo se pinta una pieza (1)",
-      "formato": "Video",
-      "fase": "Núcleo",
-      "prioridad": "B",
-      "se_graba": "sáb 17 oct · taller",
-      "capturar": "Plano cenital: base, dibujo, color. Lizeth pinta una pieza de referencia durante el taller.",
-      "valor": 200000
-    },
-    {
       "id": "11",
       "fecha": "2026-10-29",
       "dia": "jue",
@@ -226,19 +213,6 @@
       "prioridad": "A",
       "se_graba": "vie 16 oct · casa de Andrés",
       "capturar": "Macros del textil floral, mesa con flores frescas, manos arreglando un florero.",
-      "valor": 200000
-    },
-    {
-      "id": "14",
-      "fecha": "2026-11-05",
-      "dia": "jue",
-      "linea": "Alado & Co.",
-      "pieza": "C10 · Pon la mesa con tus piezas pintadas",
-      "formato": "Video",
-      "fase": "Núcleo",
-      "prioridad": "B",
-      "se_graba": "mar 3 nov · casa o tienda",
-      "capturar": "Montaje de mesa con el set del taller que se queda Alado. Depende de que las piezas regresen de la quema.",
       "valor": 200000
     },
     {
@@ -398,6 +372,19 @@
       "valor": 120000
     },
     {
+      "id": "27",
+      "fecha": "2026-10-10",
+      "dia": "sáb",
+      "linea": "Alado & Co.",
+      "pieza": "Cómo participar en el taller de cerámica",
+      "formato": "Carrusel",
+      "fase": "Núcleo",
+      "prioridad": "A",
+      "se_graba": "mar 6 oct · pre-taller",
+      "capturar": "6 láminas: qué incluye, quién lo dicta, cupos, precio y cómo reservar.",
+      "valor": 170000
+    },
+    {
       "id": "V1",
       "fecha": "2026-12-15",
       "dia": "mar",
@@ -441,7 +428,7 @@
       "fecha": "2026-12-29",
       "dia": "mar",
       "linea": "Alado & Co.",
-      "pieza": "C1 · Cómo se pinta una pieza (2)",
+      "pieza": "Cómo se pinta una pieza",
       "formato": "Video",
       "fase": "Fase B",
       "prioridad": "A",
@@ -487,7 +474,7 @@
       "cuando": "mar 6 oct",
       "donde": "Pre-taller y restaurante (≈1 h)",
       "que": "Piezas, pigmentos, el lugar",
-      "piezas": "01, 05"
+      "piezas": "01, 05, 27"
     },
     {
       "cuando": "vie 16 oct",
@@ -498,20 +485,14 @@
     {
       "cuando": "sáb 17 oct",
       "donde": "Taller de cerámica",
-      "que": "Taller en vivo, recap, Lizeth pintando",
-      "piezas": "05, 06, 10"
+      "que": "Taller en vivo y recap",
+      "piezas": "05, 06"
     },
     {
       "cuando": "vie 23 oct",
       "donde": "Tienda de El Retiro",
       "que": "Recorrido, fotos de «lo que hay», exterior",
       "piezas": "08, 09, 12"
-    },
-    {
-      "cuando": "mar 3 nov",
-      "donde": "Mesa con las piezas del taller",
-      "que": "Set que se queda Alado (si regresó de la quema)",
-      "piezas": "14"
     },
     {
       "cuando": "vie 6 nov",
@@ -561,7 +542,6 @@
   "riesgos": [
     "Todo depende del tiempo de Alejo, que atiende todas las citas",
     "Si los productos de los drops no están listos el 16 oct, se corre toda la campaña de noviembre",
-    "El taller de cerámica y la quema: C10 depende de que las piezas regresen a tiempo",
     "Mensajes de novias sin responder entre el 12 dic y el 12 ene",
     "Música sin licencia puede silenciar o retirar los reels",
     "El plan completo son unas 2 piezas por semana más historias: es el máximo realista para una sola persona",

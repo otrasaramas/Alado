@@ -60,3 +60,8 @@ Construir el **cerebro de marca de Alado** para el Codex de Andrés y la **estra
 - Tarifas nuevas: reel $200.000, carrusel $170.000, set de historias $120.000.
 - Totales: esencial $2.620.000, plan completo $4.410.000, plan completo + vacaciones $5.550.000 (banco de vacaciones $1.140.000; reembolsables estimados $640.000 aparte). Por mes: octubre $1.850.000, noviembre $2.560.000.
 - Reemplaza las cifras anteriores de este documento ($2.910.000 / $4.920.000 / $6.060.000 y tarifa de historias de $180.000). Excel, JSON, plan y presentación ya están actualizados.
+
+## Taller de cerámica: alcance reducido (2026-10-03)
+- El contenido del taller queda en 4 piezas: invitación (reel), cómo participar (carrusel, nuevo), historias y recap (video). Salen «Cómo se pinta una pieza» (C1) y «Mesa con piezas pintadas» (C10) por el costo del taller.
+- Subtotal del taller: $690.000 (antes $920.000). Plan completo: $4.180.000 (25 piezas); con vacaciones: $5.320.000 (31 piezas); esencial: $2.790.000.
+- Queda pendiente decidir si se mantiene el recordatorio del 6 oct sobre el set extra de cerámica para Alado (era para «Mesa con piezas pintadas»).
