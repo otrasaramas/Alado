@@ -80,7 +80,7 @@
 
 ## Respuestas confirmadas (6 oct)
 1. Apto para alimentos y lavavajillas: sí. Se cuenta en el taller, no en la promoción; si alguien pregunta antes, se responde que sí.
-2. Se pintan 5 pocillos y 5 platos, uno de más de cada uno por si alguno no sale bien.
+2. Se pintan 4 pocillos y 4 platos, uno de más de cada uno por si alguno no sale bien.
 3. Las piezas se recogen en Medellín o en El Retiro.
 4. Anticipo del 50% ($115.000).
 5. Cancelación: se devuelve el 80%.

@@ -4,7 +4,7 @@
 > Lo que va entre [corchetes] falta por definir.
 
 ## Datos confirmados (6 oct)
-- Se pintan **5 pocillos y 5 platos** por persona, uno de más de cada uno por si alguno no sale bien.
+- Se pintan **4 pocillos y 4 platos** por persona. Hay piezas de repuesto en la mesa por si algo pasa.
 - Las piezas se **recogen en el Taller Alado (Itagüí) o en la Tienda Alado (El Retiro)**. Avisamos cuando estén listas.
 - Se reserva con **anticipo del 50% ($115.000)**.
 - Cancelación: **se devuelve el 80%** de lo pagado (las piezas se compran para cada persona). Se acepta **cambio de nombre**.
@@ -27,8 +27,8 @@ Cómo participar en nuestra tarde de pintura cerámica
 Te enseñamos las técnicas básicas y te acompañamos en cada pieza. Andrés, Alejo y Lizeth van a estar contigo en la mesa toda la tarde.
 
 **3 · Qué vas a pintar**
-5 pocillos y 5 platos.
-Tu juego de café para cuatro, y una pieza más de cada uno por si alguna no sale como esperabas.
+4 pocillos y 4 platos: tu juego de café para cuatro.
+Y piezas de repuesto en la mesa, por si alguna no sale como esperabas.
 
 **4 · Cómo es la tarde**
 Llegas, te sirves un café y eliges tus colores.
@@ -49,13 +49,13 @@ Desde los 13 años. Puedes venir solo o sola, la mesa es compartida.
 Si quieres, trae a alguien que te acompañe.
 
 **8 · Cómo reservar**
-Escríbenos por WhatsApp [número].
-Separas tu cupo con el 50% ($115.000) y pagas el resto [cuándo].
+Escríbenos por WhatsApp al 316 533 3125.
+Separas tu cupo con el 50% ($115.000) y pagas el resto el día del taller.
 Son 18 cupos.
 
 **Caption**
 > No necesitas saber pintar para venir. Te enseñamos lo básico, te acompañamos en cada pieza y te llevas un juego de café pintado por ti.
-> Sábado 17 de octubre, de 2 a 6 p. m., en Montesereno, El Retiro. 18 cupos. Reserva por WhatsApp.
+> Sábado 17 de octubre, de 2 a 6 p. m., en Montesereno, El Retiro. 18 cupos. Reserva por WhatsApp al 316 533 3125.
 
 ---
 
@@ -64,7 +64,7 @@ Son 18 cupos.
 ### 1. Cuando alguien pregunta
 > Hola, [nombre]. Qué bueno que te interese la tarde de pintura cerámica.
 >
-> Es el sábado 17 de octubre, de 2:00 a 6:00 p. m., en Montesereno, El Retiro. Pintas 5 pocillos y 5 platos (tu juego de café para cuatro, con una pieza de más por si alguna no sale como esperabas). No necesitas saber pintar: te enseñamos lo básico y te acompañamos toda la tarde.
+> Es el sábado 17 de octubre, de 2:00 a 6:00 p. m., en Montesereno, El Retiro. Pintas tu juego de café para cuatro: 4 pocillos y 4 platos. No necesitas saber pintar: te enseñamos lo básico y te acompañamos toda la tarde.
 >
 > Incluye materiales, delantal, la quema de tus piezas, vino, café, bebidas sin alcohol y bocados. Hay parqueadero y el espacio es cubierto.
 >
@@ -75,7 +75,7 @@ Son 18 cupos.
 ### 2. Cuando paga el anticipo (confirmación)
 > [Nombre], tu cupo está confirmado. Gracias.
 >
-> Recibimos $115.000. El saldo de $115.000 se paga [cuándo].
+> Recibimos $115.000. El saldo de $115.000 se paga el día del taller.
 >
 > Te dejamos los detalles:
 > - Sábado 17 de octubre, 2:00 p. m.
@@ -91,7 +91,7 @@ Son 18 cupos.
 ### 3. Recordatorio (viernes 16 de octubre)
 > Hola, [nombre]. Mañana nos vemos en Montesereno a las 2:00 p. m.
 > Ubicación: [link]. Hay parqueadero.
-> [Si falta el saldo: Recuerda el saldo de $115.000 a la cuenta (…).]
+> Recuerda traer el saldo de $115.000.
 > Te esperamos con café.
 
 ### 4. Si alguien cancela

@@ -20,7 +20,7 @@ Arrastra la foto encima del fondo azul y Canva lo reemplaza. Si la foto es clara
 Los sellos ("Pinta tu / Te llevas tu VAJILLA") son imágenes porque el texto va curvo. Si quieres otra frase, pídeme el PNG. Las capas sueltas están en `capas/`.
 
 ## Pendientes
-- Número de WhatsApp (`[número]` en la historia 1).
+- Número de WhatsApp (`316 533 3125` en la historia 1).
 
 ## Comida (tardeo, 18 personas, ~$400.000)
 Unos $22.000 por persona: alcanza para vino, café y pasabocas, no para comida. Repartición sugerida:

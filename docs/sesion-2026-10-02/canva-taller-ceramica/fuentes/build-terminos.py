@@ -8,24 +8,24 @@ def F(t): return f'<span class="fill">{t}</span>'   # dato por completar
 
 SECTIONS = [
  ("Qué incluye", f"""<ul>
-  <li>5 pocillos y 5 platos para pintar.</li>
+  <li>4 pocillos y 4 platos para pintar: tu juego de café para cuatro.</li>
   <li>Pigmentos, pinceles, materiales y delantal.</li>
   <li>Guía y acompañamiento de Andrés, Alejo y Lizeth durante toda la tarde.</li>
   <li>La quema de tus piezas.</li>
   <li>Vino, café, bebidas sin alcohol y bocados para la tarde (no es un almuerzo).</li>
   <li>Parqueadero y espacio cubierto.</li></ul>
   <p>Llega a las 2:00 p. m. para empezar a tiempo y ven con ropa cómoda.</p>"""),
- ("Valor y reserva", f"""<p>El valor del taller es de <b>$230.000 por persona</b>. Tu cupo queda separado cuando recibimos el anticipo del <b>50% ($115.000)</b> y nos envías el comprobante por WhatsApp. El saldo de $115.000 se paga {F("[antes del taller / el día del taller]")}.</p>
+ ("Valor y reserva", f"""<p>El valor del taller es de <b>$230.000 por persona</b>. Tu cupo queda separado cuando recibimos el anticipo del <b>50% ($115.000)</b> y nos envías el comprobante por WhatsApp. El saldo de $115.000 se paga el día del taller.</p>
   <p>Hay 18 cupos y se asignan en orden de pago.</p>"""),
  ("Cancelación y cambio de nombre", f"""<p>Las piezas y los materiales se compran para cada participante. Por eso, si cancelas tu asistencia, te devolvemos el <b>80% del valor pagado</b>.</p>
-  <p>Si no puedes asistir, también puedes <b>ceder tu cupo a otra persona</b>. Solo avísanos su nombre {F("[hasta el … de octubre]")}.</p>
+  <p>Si no puedes asistir, también puedes <b>ceder tu cupo a otra persona</b>. Solo avísanos su nombre hasta el viernes 16 de octubre.</p>
   <p>Si por fuerza mayor Alado debe cancelar o cambiar la fecha, te proponemos una nueva fecha o te devolvemos el 100% de lo pagado.</p>"""),
  ("Alergias y alimentación", """<p>Te agradecemos contarnos al reservar si tienes alguna alergia o restricción alimentaria, para tenerla en cuenta.</p>"""),
  ("Acompañantes", """<p>Cada participante puede venir con <b>un (1) acompañante</b>. El acompañante asiste como invitado: no participa en la actividad de pintura ni en el servicio de alimentos y bebidas incluido en el taller.</p>"""),
  ("Edad mínima", """<p>La edad mínima para participar es de <b>13 años</b>. Los menores de edad asisten con un adulto responsable y no consumen bebidas alcohólicas.</p>"""),
  ("La cerámica es un proceso incierto", """<p>En la quema, la cerámica tiene vida propia: los colores pueden cambiar de tono y una pieza puede agrietarse o romperse. No podemos garantizar el resultado de cada pieza después de la quema.</p>
-  <p>Por eso pintas <b>5 pocillos y 5 platos</b>: una pieza de más de cada uno, para que tu juego de café para cuatro quede completo aunque alguna no salga como esperabas.</p>"""),
- ("Entrega de las piezas", f"""<p>Después del taller llevamos tus piezas a la quema. Te avisamos por WhatsApp cuando estén listas {F("[aprox. … días después]")}. Puedes recogerlas en:</p>
+  <p>Tendremos algunas piezas de repuesto en la mesa por si alguna se daña durante la tarde o no sale como esperabas.</p>"""),
+ ("Entrega de las piezas", f"""<p>Después del taller llevamos tus piezas a la quema. Te avisamos por WhatsApp cuando estén listas, <b>aproximadamente 2 a 3 semanas después del taller</b>. Puedes recogerlas en:</p>
   <ul><li><b>Taller Alado</b>, en Itagüí.</li><li><b>Tienda Alado</b>, en El Retiro.</li></ul>
   <p>Te enviamos la dirección y el horario con el aviso.</p>"""),
  ("Fotos y video", """<p>Durante la tarde tomaremos fotos y video para las redes de Alado. Si prefieres no aparecer, cuéntanos y lo respetamos.</p>"""),
@@ -65,7 +65,7 @@ footer .sig {{ font-weight:600; text-align:right; }}
 </header>
 <p class="intro">Gracias por reservar tu cupo. Esto es lo que necesitas saber para disfrutar la tarde.</p>
 <div class="cols">{secs}</div>
-<footer><div class="ok">Al pagar el anticipo aceptas estas condiciones. Si tienes cualquier pregunta, escríbenos por WhatsApp al {F("[número]")}.</div><div class="sig">Te esperamos.<br>Alado &amp; Co.</div></footer>
+<footer><div class="ok">Al pagar el anticipo aceptas estas condiciones. Si tienes cualquier pregunta, escríbenos por WhatsApp al <b>316 533 3125</b>.</div><div class="sig">Te esperamos.<br>Alado &amp; Co.</div></footer>
 </div></body></html>"""
 (HERE/"tyc.html").write_text(html)
 

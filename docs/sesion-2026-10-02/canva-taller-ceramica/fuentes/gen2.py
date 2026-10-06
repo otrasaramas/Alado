@@ -73,12 +73,12 @@ def page1():
         P(TX, TY+568, "POR PERSONA", 22, 600, TW/2, "center", 3) +
         P(TX, TY+600, "$230.000", 54, 700, TW/2, "center", -1) +
         P(TX+TW/2, TY+568, "RESERVAS POR WHATSAPP", 22, 600, TW/2, "center", 3) +
-        P(TX+TW/2, TY+604, "[número]", 44, 600, TW/2, "center"))
+        P(TX+TW/2, TY+604, "316 533 3125", 40, 600, TW/2, "center"))
     return {"ticket": lines, "seal": seal_svg(850, 870, 150, "Pinta tu", "VAJILLA"), "text": text}
 
 def page2():
     TY, TH = 760, 860
-    items = ["5 pocillos y 5 platos para pintar", "Pigmentos, pinceles y materiales", "La quema de tus piezas",
+    items = ["4 pocillos y 4 platos para pintar", "Pigmentos, pinceles y materiales", "La quema de tus piezas",
              "Te acompañan Andrés, Alejo y Lizeth", "Vino, café y pasabocas para la tarde"]
     rows = 118; y0 = TY + 40
     ln = "".join(f'<line x1="{TX+40}" y1="{y0+rows*(i+1)}" x2="{TX+TW-40}" y2="{y0+rows*(i+1)}"/>' for i in range(len(items)))

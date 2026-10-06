@@ -15,7 +15,7 @@ Cada uno dura 2–3 s. Graba 2–3 tomas de cada uno y luego elegimos.
 | 4 | **"El café sabe distinto en un pocillo que pintaste tú."** | Sirve café en un pocillo pintado y lo levanta. |
 | 5 | "En Alado diseñamos cada pieza. Esta vez la diseñas tú." | Pasa la mano por las piezas en blanco. |
 | 6 | "Te invito a pasar un sábado en El Retiro, pintando cerámica." | Caminando hacia la mesa puesta, con el paisaje detrás. |
-| 7 | "Cinco pocillos, cinco platos y una tarde entera para pintarlos." | Va poniendo las piezas en la mesa, una por una. |
+| 7 | "Cuatro pocillos, cuatro platos y una tarde entera para pintarlos." | Va poniendo las piezas en la mesa, una por una. |
 | 8 | "Esta es la mesa donde vas a pintar el 17 de octubre." | Plano abierto de la mesa; Andrés entra a cuadro. |
 | 9 | "Todos llegan diciendo 'yo no sé pintar'. Y todos se van con su juego de café." | A cámara, tranquilo, con una sonrisa al final. |
 | 10 | "Lo que pintes ese sábado lo vas a usar todos los días." | Con un plato pintado en la mano, lo gira para mostrarlo. |
@@ -30,14 +30,14 @@ Cada uno dura 2–3 s. Graba 2–3 tomas de cada uno y luego elegimos.
 | 0–3 s | *(hook de Andrés a cámara)* | Andrés | — |
 | 3–8 s | Te invitamos a una tarde de pintura cerámica en El Retiro. | Llegada a Montesereno, paisaje, la mesa puesta con piezas blancas | Tarde de pintura cerámica |
 | 8–14 s | No necesitas saber pintar: te enseñamos lo básico y te acompañamos en cada pieza. | Manos de Alejo o Lizeth guiando otra mano; primer trazo | Te acompañamos en cada pieza |
-| 14–20 s | Pintas cinco pocillos y cinco platos. Tu juego de café para cuatro, hecho por ti. | Macro del pigmento en el pincel, pocillo girando, plato con un patrón a medio hacer | 5 pocillos · 5 platos |
+| 14–20 s | Pintas cuatro pocillos y cuatro platos. Tu juego de café para cuatro, hecho por ti. | Macro del pigmento en el pincel, pocillo girando, plato con un patrón a medio hacer | 5 pocillos · 5 platos |
 | 20–25 s | Hay vino, café y algo para picar. Una tarde sin prisa. | Copa servida, café caliente, tabla de bocados, risas a lo lejos | Vino · café · bocados |
 | 25–29 s | Nosotros llevamos tus piezas a la quema. Tú te llevas el recuerdo. | Piezas terminadas en fila, luz de tarde | — |
 
 **Texto completo para leer:**
 > Te invitamos a una tarde de pintura cerámica en El Retiro.
 > No necesitas saber pintar: te enseñamos lo básico y te acompañamos en cada pieza.
-> Pintas cinco pocillos y cinco platos. Tu juego de café para cuatro, hecho por ti.
+> Pintas cuatro pocillos y cuatro platos. Tu juego de café para cuatro, hecho por ti.
 > Hay vino, café y algo para picar. Una tarde sin prisa.
 > Nosotros llevamos tus piezas a la quema. Tú te llevas el recuerdo.
 
@@ -50,7 +50,7 @@ A cámara, cerca de la mesa. Elige una:
 **Texto en pantalla del cierre:**
 > Sábado 17 de octubre · 2 – 6 p. m.
 > Montesereno, El Retiro · $230.000
-> Reserva por WhatsApp [número] · 18 cupos
+> Reserva por WhatsApp 316 533 3125 · 18 cupos
 
 ## Para la grabación
 - **El b-roll se tiene que preparar:** el taller todavía no ha pasado. Hace falta una sesión corta antes con la mesa montada, piezas, pigmentos y 2 o 3 personas pintando (Alejo, Lizeth, alguien del equipo). Con una hora alcanza.
@@ -81,7 +81,7 @@ Recomendados: 1, 2 y 4. El 4 solo si las piezas llegan en bizcocho, es decir, ya
 > Hay objetos que se compran y objetos que se hacen.
 > Este sábado, en El Retiro, te invitamos a hacer los tuyos.
 > No hace falta saber pintar: te enseñamos el primer trazo y te acompañamos hasta el último.
-> Cinco pocillos, cinco platos. Un juego de café para cuatro, con tu mano en cada pieza.
+> Cuatro pocillos, cuatro platos. Un juego de café para cuatro, con tu mano en cada pieza.
 > Vino, café y una tarde sin prisa en la montaña.
 > Nosotros llevamos tus piezas al fuego. Tú te llevas lo que pintaste, y la tarde en que lo hiciste.
 
@@ -108,12 +108,12 @@ Combinación sugerida: hook 1 + voz en off A + outro A. Para algo más corto y e
 | 0–3 s | **Andrés a cámara (hook 2)** | "Lo que se hace con las manos se queda un poco con uno." | Manos de Andrés sobre las piezas en blanco; sube la mirada a cámara |
 | 3–9 s | **Andrés a cámara (presentación)** | "Soy Andrés Restrepo, cofundador y diseñador de Alado, y te invito este 17 de octubre a pintar con nosotros tu propio juego de café para cuatro." | Plano medio, sentado a la mesa |
 | 9–14 s | Voz en off | "No hace falta saber pintar: te enseñamos el primer trazo y te acompañamos hasta el último." | Mano que guía otra mano, primer trazo |
-| 14–19 s | Voz en off | "Cinco pocillos, cinco platos, con tu mano en cada pieza." | Macro del pigmento, pocillo girando |
+| 14–19 s | Voz en off | "Cuatro pocillos, cuatro platos, con tu mano en cada pieza." | Macro del pigmento, pocillo girando |
 | 19–24 s | Voz en off | "Vino, café y una tarde sin prisa en la montaña, en El Retiro." | Copa, café, bocados, paisaje |
 | 24–28 s | Voz en off | "Nosotros llevamos tus piezas al fuego. Tú te llevas lo que pintaste, y la tarde en que lo hiciste." | Piezas terminadas en fila, luz de tarde |
 | 28–33 s | **Andrés a cámara (outro)** | "Te esperamos con la mesa puesta y los pinceles listos." | Andrés en la mesa, sonríe |
 
-Texto en pantalla del cierre: Sábado 17 de octubre · 2 – 6 p. m. · Montesereno, El Retiro · $230.000 · Reserva por WhatsApp [número] · 18 cupos.
+Texto en pantalla del cierre: Sábado 17 de octubre · 2 – 6 p. m. · Montesereno, El Retiro · $230.000 · Reserva por WhatsApp 316 533 3125 · 18 cupos.
 
 Versión más corta de la presentación, por si se traba: "Soy Andrés, de Alado. Este 17 de octubre te invito a pintar tu propio juego de café."
 
@@ -127,7 +127,7 @@ Reemplaza la voz en off del guion final. Hook, presentación de Andrés y outro 
 |---|---|---|
 | 9–15 s | Llegas a Montesereno al comienzo de la tarde. Te recibimos con un café y una mesa llena de piezas en blanco. | Llegada, paisaje, café servido, mesa desde arriba |
 | 15–22 s | Te enseñamos lo básico: cómo cargar el pincel, cómo mezclar el color, cómo se pinta sobre el barro. | Manos de Alejo o Lizeth mostrando; pigmento en el pincel |
-| 22–30 s | Y luego, el tiempo es tuyo. Pintas cinco pocillos y cinco platos, a tu ritmo, con nosotros a tu lado. | Primer trazo, mano que guía otra mano, pocillo girando |
+| 22–30 s | Y luego, el tiempo es tuyo. Pintas cuatro pocillos y cuatro platos, a tu ritmo, con nosotros a tu lado. | Primer trazo, mano que guía otra mano, pocillo girando |
 | 30–35 s | Cuando cae la tarde, llega el vino. Y la conversación. | Copa servida, bocados, risas, luz dorada |
 | 35–43 s | Al final, llevamos tus piezas al fuego. Unos días después vuelven a ti, listas para el café de cada mañana. | Piezas terminadas en fila; pocillo pintado con café |
 
