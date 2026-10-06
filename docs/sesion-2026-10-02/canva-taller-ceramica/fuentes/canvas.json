@@ -37,13 +37,21 @@
       "w": 1080,
       "h": 1920,
       "title": "Historia 4 · Invitación (editable en Canva)"
+    },
+    "Incluye.dc.html": {
+      "x": 4640,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Historia 5 · Qué incluye (editable en Canva)"
     }
   },
   "order": [
     "Main.dc.html",
     "Detalle.dc.html",
     "Collage.dc.html",
-    "Invitacion.dc.html"
+    "Invitacion.dc.html",
+    "Incluye.dc.html"
   ],
   "notes": {},
   "designSystems": []

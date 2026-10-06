@@ -52,9 +52,9 @@ Todo en crema `#F3F1EA`, en Archivo, ligeramente inclinado como en la referencia
 - Aperitivos y vino (historia 2).
 - Número de cupos, si se va a mostrar.
 
-## Historia 4 · Invitación (editable en Canva)
-Carpeta `historia-4-invitacion/`. Usa la distribución del referente "Ceramics Workshop": foto de fondo completa, título grande, sello y ticket.
-Datos: sábado 17 de octubre, 2 – 6 p. m., Montesereno, El Retiro. **Se edita en Canva**: importas el PDF y los textos quedan editables. Instrucciones en `historia-4-invitacion/LEEME.md`.
+## Historias 4 y 5 · Estilo ticket (editables en Canva)
+Carpeta `historia-4-invitacion/`. Usan la distribución del referente "Ceramics Workshop": la invitación y "¿Qué incluye?".
+Datos: sábado 17 de octubre, 2 – 6 p. m., Montesereno, El Retiro. Importa `historias-taller-ceramica.pdf` en Canva (2 páginas, texto editable). Instrucciones en `historia-4-invitacion/LEEME.md`.
 
 ## Carpeta `fuentes/`
 Los archivos originales del diseño (`.dc.html` y `canvas.json`). Sirven para regenerar los PNG si algo cambia.
