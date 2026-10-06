@@ -58,3 +58,43 @@ A cámara, cerca de la mesa. Elige una:
 - **Andrés:** luz natural de lado, cámara a la altura de los ojos, micrófono de solapa. Frases cortas, varias tomas. Si se traba, se corta y se usa otra toma.
 - **Música:** con licencia (biblioteca de Instagram o banco con licencia), suave, jazz o acústica, a bajo volumen bajo la voz.
 - **Subtítulos** de todo lo que se dice, porque muchas personas ven los reels sin sonido.
+
+---
+
+# Versión poética (más Alado) · 6 oct
+
+## 10 hooks
+1. **"Una taza blanca es una promesa. El 17 de octubre la cumples tú."** (levanta un pocillo en blanco)
+2. **"Lo que se hace con las manos se queda un poco con uno."** (manos sobre las piezas)
+3. "Hay tardes que se pintan. Esta es una de ellas." (mira la mesa puesta, luego a cámara)
+4. **"El barro ya pasó por el fuego una vez. La segunda vez va con tu color."** (gira un pocillo en bizcocho)
+5. "Pintar es otra forma de quedarse." (a cámara, pausado)
+6. "Cada trazo de esa tarde va a volver a ti cada mañana, con el café." (sirve café en un pocillo pintado)
+7. "Antes de ser tuyo, este pocillo es solo blanco." (pocillo al centro del cuadro)
+8. "En Alado creemos que lo hecho a mano guarda el tiempo de quien lo hizo." (pasa la mano por las piezas)
+9. "Una montaña, un pincel y algo tuyo que va a durar años." (caminando hacia la mesa, paisaje detrás)
+10. "Te invito a una tarde lenta, de color y de barro." (sentado a la mesa)
+
+Recomendados: 1, 2 y 4. El 4 solo si las piezas llegan en bizcocho, es decir, ya quemadas una vez.
+
+## Voz en off · opción A (narrativa)
+> Hay objetos que se compran y objetos que se hacen.
+> Este sábado, en El Retiro, te invitamos a hacer los tuyos.
+> No hace falta saber pintar: te enseñamos el primer trazo y te acompañamos hasta el último.
+> Cinco pocillos, cinco platos. Un juego de café para cuatro, con tu mano en cada pieza.
+> Vino, café y una tarde sin prisa en la montaña.
+> Nosotros llevamos tus piezas al fuego. Tú te llevas lo que pintaste, y la tarde en que lo hiciste.
+
+## Voz en off · opción B (más lírica y corta)
+> Toda pieza empieza en blanco.
+> La tuya empieza un sábado de octubre, en El Retiro, entre pinceles, vino y montaña.
+> Te enseñamos lo básico y te acompañamos en cada trazo, hasta que el color sea tuyo.
+> Después, el fuego hace lo suyo.
+> Y cada mañana, con el café, vuelve esa tarde.
+
+## Outros con Andrés
+- **A:** "Te esperamos el 17 de octubre, con la mesa puesta y los pinceles listos."
+- **B:** "Trae las manos. El resto lo ponemos nosotros."
+- **C:** "Sábado 17 de octubre. Que el café de todos los días lleve tu trazo."
+
+Combinación sugerida: hook 1 + voz en off A + outro A. Para algo más corto y emotivo: hook 2 + voz en off B + outro C.
