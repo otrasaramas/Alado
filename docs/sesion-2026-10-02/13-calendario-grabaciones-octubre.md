@@ -11,6 +11,7 @@
 | **sáb 17 oct** | Taller de pintura cerámica: historias en vivo y recap | Alado & Co. | Confirmado |
 | **mié 21 oct** | Campaña Alado & Co. + videos | Alado & Co. | Confirmado |
 | **vie 23 oct** | Video de la tienda Alado & Co. (El Retiro) | Alado & Co. | Confirmado |
+| **vie 27 nov** | Lanzamiento Alado × Entrelazos + apertura del restaurante + pasarela | Alado | Confirmado (ideas en `14-ideas-lanzamiento-entrelazos.md`) |
 | Por confirmar | Taller de los Pérez: dónde se fabrica la tela | Alado | **Recordar** |
 | Por confirmar | Lilo · partes siguientes | Bride | Definir con Lilo |
 | Por confirmar | Bride 1 · El servicio, con las niñas del taller vestidas y Lola | Bride | **Confirmar fecha con Andrés** |
@@ -44,5 +45,5 @@ Ritmo de la serie de Lilo: una parte cada semana, los jueves, para que la gente 
 
 ## 4. Por aclarar
 1. Mencionaste **5 videos de Bride**, pero hay 4 en la lista. ¿El quinto es la serie de Lilo o falta uno?
-2. La campaña Alado & Co. del **21 de octubre**: ¿reemplaza la sesión del **16 de octubre** en la casa de Andrés (drops de Navidad) o son dos grabaciones distintas?
+2. ~~¿La campaña del 21 oct reemplaza la sesión del 16 oct?~~ **Resuelto:** el 16 oct no hay grabación. Los drops de Navidad se graban en la campaña del **21 oct**.
 3. Las piezas nuevas (serie de Lilo, Pérez y los videos de Bride) no estaban en el presupuesto. ¿Reemplazan piezas del plan o se suman? Cada video adicional se cobra a $200.000.
