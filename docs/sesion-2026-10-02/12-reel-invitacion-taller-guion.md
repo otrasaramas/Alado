@@ -98,3 +98,21 @@ Recomendados: 1, 2 y 4. El 4 solo si las piezas llegan en bizcocho, es decir, ya
 - **C:** "Sábado 17 de octubre. Que el café de todos los días lleve tu trazo."
 
 Combinación sugerida: hook 1 + voz en off A + outro A. Para algo más corto y emotivo: hook 2 + voz en off B + outro C.
+
+---
+
+# Guion final (elegido el 6 oct)
+
+| Tiempo | Quién | Texto | Imagen |
+|---|---|---|---|
+| 0–3 s | **Andrés a cámara (hook 2)** | "Lo que se hace con las manos se queda un poco con uno." | Manos de Andrés sobre las piezas en blanco; sube la mirada a cámara |
+| 3–9 s | **Andrés a cámara (presentación)** | "Soy Andrés Restrepo, cofundador y diseñador de Alado, y te invito este 17 de octubre a pintar con nosotros tu propio juego de café para cuatro." | Plano medio, sentado a la mesa |
+| 9–14 s | Voz en off | "No hace falta saber pintar: te enseñamos el primer trazo y te acompañamos hasta el último." | Mano que guía otra mano, primer trazo |
+| 14–19 s | Voz en off | "Cinco pocillos, cinco platos, con tu mano en cada pieza." | Macro del pigmento, pocillo girando |
+| 19–24 s | Voz en off | "Vino, café y una tarde sin prisa en la montaña, en El Retiro." | Copa, café, bocados, paisaje |
+| 24–28 s | Voz en off | "Nosotros llevamos tus piezas al fuego. Tú te llevas lo que pintaste, y la tarde en que lo hiciste." | Piezas terminadas en fila, luz de tarde |
+| 28–33 s | **Andrés a cámara (outro)** | "Te esperamos con la mesa puesta y los pinceles listos." | Andrés en la mesa, sonríe |
+
+Texto en pantalla del cierre: Sábado 17 de octubre · 2 – 6 p. m. · Montesereno, El Retiro · $230.000 · Reserva por WhatsApp [número] · 18 cupos.
+
+Versión más corta de la presentación, por si se traba: "Soy Andrés, de Alado. Este 17 de octubre te invito a pintar tu propio juego de café."
