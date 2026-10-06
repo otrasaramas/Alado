@@ -31,7 +31,7 @@ Te enseñamos las técnicas básicas y te acompañamos en cada pieza. Andrés, A
 Y piezas de repuesto en la mesa, por si alguna no sale como esperabas.
 
 **4 · Cómo es la tarde**
-Llegas, te sirves un café y eliges tus colores.
+Llegas (te pedimos llegar 15 minutos antes, 1:45 p. m.), te sirves un café y eliges tus colores.
 Aprendes lo básico, pintas a tu ritmo y conversas.
 Vino, bocados y una tarde sin prisa en El Retiro.
 
@@ -78,7 +78,7 @@ Son 18 cupos.
 > Recibimos $115.000. El saldo de $115.000 se paga el día del taller.
 >
 > Te dejamos los detalles:
-> - Sábado 17 de octubre, 2:00 p. m.
+> - Sábado 17 de octubre. Te pedimos llegar a la 1:45 p. m. para empezar puntuales a las 2:00.
 > - Ubicación: [link de Google Maps de Montesereno]. Hay parqueadero.
 > - Ven con ropa cómoda. Nosotros tenemos delantales.
 > - ¿Tienes alguna alergia o restricción con la comida? Cuéntanos para tenerlo en cuenta.
@@ -89,7 +89,7 @@ Son 18 cupos.
 > Después de la tarde llevamos tus piezas a la quema. Te avisamos cuando estén listas para recogerlas en nuestro taller en Itagüí o en la tienda de El Retiro.
 
 ### 3. Recordatorio (viernes 16 de octubre)
-> Hola, [nombre]. Mañana nos vemos en Montesereno a las 2:00 p. m.
+> Hola, [nombre]. Mañana nos vemos en Montesereno. Te esperamos desde la 1:45 p. m. para empezar puntuales a las 2:00.
 > Ubicación: [link]. Hay parqueadero.
 > Recuerda traer el saldo de $115.000.
 > Te esperamos con café.

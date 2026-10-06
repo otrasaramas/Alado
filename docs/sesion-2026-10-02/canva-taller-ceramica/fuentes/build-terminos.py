@@ -14,7 +14,7 @@ SECTIONS = [
   <li>La quema de tus piezas.</li>
   <li>Vino, café, bebidas sin alcohol y bocados para la tarde (no es un almuerzo).</li>
   <li>Parqueadero y espacio cubierto.</li></ul>
-  <p>Llega a las 2:00 p. m. para empezar a tiempo y ven con ropa cómoda.</p>"""),
+  <p>Llega 15 minutos antes (1:45 p. m.) para que empecemos puntuales, y ven con ropa cómoda.</p>"""),
  ("Valor y reserva", f"""<p>El valor del taller es de <b>$230.000 por persona</b>. Tu cupo queda separado cuando recibimos el anticipo del <b>50% ($115.000)</b> y nos envías el comprobante por WhatsApp. El saldo de $115.000 se paga el día del taller.</p>
   <p>Hay 18 cupos y se asignan en orden de pago.</p>"""),
  ("Cancelación y cambio de nombre", f"""<p>Las piezas y los materiales se compran para cada participante. Por eso, si cancelas tu asistencia, te devolvemos el <b>80% del valor pagado</b>.</p>
