@@ -52,9 +52,9 @@ Todo en crema `#F3F1EA`, en Archivo, ligeramente inclinado como en la referencia
 - Aperitivos y vino (historia 2).
 - Número de cupos, si se va a mostrar.
 
-## Historia 4 · Ventana (editable en Canva)
-Carpeta `historia-4-ventana/`. Usa la distribución del referente Cläj Ceramics: fondo azul con grano y la foto dentro de una vasija.
-Esta historia **sí se edita en Canva**: importas el PDF (o el PPTX) y los textos quedan editables. Las instrucciones están en `historia-4-ventana/LEEME.md`.
+## Historia 4 · Invitación (editable en Canva)
+Carpeta `historia-4-invitacion/`. Usa la distribución del referente "Ceramics Workshop": foto de fondo completa, título grande, sello y ticket.
+Datos: sábado 17 de octubre, 2 – 6 p. m., Montesereno, El Retiro. **Se edita en Canva**: importas el PDF y los textos quedan editables. Instrucciones en `historia-4-invitacion/LEEME.md`.
 
 ## Carpeta `fuentes/`
 Los archivos originales del diseño (`.dc.html` y `canvas.json`). Sirven para regenerar los PNG si algo cambia.

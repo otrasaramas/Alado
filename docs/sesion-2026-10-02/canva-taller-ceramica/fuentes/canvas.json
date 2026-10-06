@@ -31,19 +31,19 @@
       "h": 1920,
       "title": "Historia 3 · Collage (referente)"
     },
-    "Ventana.dc.html": {
+    "Invitacion.dc.html": {
       "x": 3480,
       "y": 0,
       "w": 1080,
       "h": 1920,
-      "title": "Historia 4 · Ventana (para Canva)"
+      "title": "Historia 4 · Invitación (editable en Canva)"
     }
   },
   "order": [
     "Main.dc.html",
     "Detalle.dc.html",
     "Collage.dc.html",
-    "Ventana.dc.html"
+    "Invitacion.dc.html"
   ],
   "notes": {},
   "designSystems": []
