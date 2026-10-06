@@ -30,7 +30,7 @@ Cada uno dura 2–3 s. Graba 2–3 tomas de cada uno y luego elegimos.
 | 0–3 s | *(hook de Andrés a cámara)* | Andrés | — |
 | 3–8 s | Te invitamos a una tarde de pintura cerámica en El Retiro. | Llegada a Montesereno, paisaje, la mesa puesta con piezas blancas | Tarde de pintura cerámica |
 | 8–14 s | No necesitas saber pintar: te enseñamos lo básico y te acompañamos en cada pieza. | Manos de Alejo o Lizeth guiando otra mano; primer trazo | Te acompañamos en cada pieza |
-| 14–20 s | Pintas cuatro pocillos y cuatro platos. Tu juego de café para cuatro, hecho por ti. | Macro del pigmento en el pincel, pocillo girando, plato con un patrón a medio hacer | 5 pocillos · 5 platos |
+| 14–20 s | Pintas cuatro pocillos y cuatro platos. Tu juego de café para cuatro, hecho por ti. | Macro del pigmento en el pincel, pocillo girando, plato con un patrón a medio hacer | 4 pocillos · 4 platos |
 | 20–25 s | Hay vino, café y algo para picar. Una tarde sin prisa. | Copa servida, café caliente, tabla de bocados, risas a lo lejos | Vino · café · bocados |
 | 25–29 s | Nosotros llevamos tus piezas a la quema. Tú te llevas el recuerdo. | Piezas terminadas en fila, luz de tarde | — |
 
@@ -134,7 +134,7 @@ Reemplaza la voz en off del guion final. Hook, presentación de Andrés y outro 
 ## Opción B (más corta, unos 25 s)
 > Ven a Montesereno un sábado en la tarde.
 > Te recibimos con café y una mesa llena de piezas en blanco.
-> Aprendes lo básico, y el resto del tiempo es tuyo: cinco pocillos, cinco platos, a tu ritmo y con nosotros al lado.
+> Aprendes lo básico, y el resto del tiempo es tuyo: cuatro pocillos, cuatro platos, a tu ritmo y con nosotros al lado.
 > Cae la tarde, llega el vino.
 > Y unos días después, tus piezas vuelven del fuego, listas para tu café.
 
