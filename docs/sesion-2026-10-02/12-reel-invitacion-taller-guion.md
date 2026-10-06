@@ -116,3 +116,24 @@ Combinación sugerida: hook 1 + voz en off A + outro A. Para algo más corto y e
 Texto en pantalla del cierre: Sábado 17 de octubre · 2 – 6 p. m. · Montesereno, El Retiro · $230.000 · Reserva por WhatsApp [número] · 18 cupos.
 
 Versión más corta de la presentación, por si se traba: "Soy Andrés, de Alado. Este 17 de octubre te invito a pintar tu propio juego de café."
+
+---
+
+# Voz en off lineal: la tarde contada en orden (ajuste del 6 oct)
+Reemplaza la voz en off del guion final. Hook, presentación de Andrés y outro se mantienen. Duración total aprox. 45–50 s.
+
+## Opción A (completa, unos 34 s)
+| Tiempo | Voz en off | Imagen |
+|---|---|---|
+| 9–15 s | Llegas a Montesereno al comienzo de la tarde. Te recibimos con un café y una mesa llena de piezas en blanco. | Llegada, paisaje, café servido, mesa desde arriba |
+| 15–22 s | Te enseñamos lo básico: cómo cargar el pincel, cómo mezclar el color, cómo se pinta sobre el barro. | Manos de Alejo o Lizeth mostrando; pigmento en el pincel |
+| 22–30 s | Y luego, el tiempo es tuyo. Pintas cinco pocillos y cinco platos, a tu ritmo, con nosotros a tu lado. | Primer trazo, mano que guía otra mano, pocillo girando |
+| 30–35 s | Cuando cae la tarde, llega el vino. Y la conversación. | Copa servida, bocados, risas, luz dorada |
+| 35–43 s | Al final, llevamos tus piezas al fuego. Unos días después vuelven a ti, listas para el café de cada mañana. | Piezas terminadas en fila; pocillo pintado con café |
+
+## Opción B (más corta, unos 25 s)
+> Ven a Montesereno un sábado en la tarde.
+> Te recibimos con café y una mesa llena de piezas en blanco.
+> Aprendes lo básico, y el resto del tiempo es tuyo: cinco pocillos, cinco platos, a tu ritmo y con nosotros al lado.
+> Cae la tarde, llega el vino.
+> Y unos días después, tus piezas vuelven del fuego, listas para tu café.
