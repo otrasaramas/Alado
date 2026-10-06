@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Taller de pintura cerámica · ventana</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Archivo:wght@500;600&display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="font-variant-numeric: lining-nums">
+<div id="root" style="width:1080px;height:1920px;position:relative;overflow:hidden;background:{{bg}}">
+<div id="ph" style="position:absolute;left:188.5px;top:455px;width:703.0px;height:740.0px;
+background:radial-gradient(ellipse at 40% 35%, #B8B0A3, #8C857A);display:flex;align-items:center;justify-content:center">
+<span style="font-family:'Archivo', Arial, sans-serif;font-weight:600;font-size:30px;letter-spacing:6px;color:#F3F1EA;opacity:.85">TU FOTO AQUÍ</span></div><svg id="win" width="1080" height="1920" viewBox="0 0 1080 1920" style="position:absolute;left:0;top:0">
+<defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="7" stitchTiles="stitch"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 -1.6 1.15"/>
+</filter>
+<filter id="grain2" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="2" seed="21" stitchTiles="stitch"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.1"/>
+</filter>
+<mask id="m"><rect width="1080" height="1920" fill="#fff"/><path d="M 280 0 H 480 V 70 C 600 80 740 140 755 300 C 770 440 700 580 590 660 L 590 800 H 170 L 170 660 C 60 580 -10 440 5 300 C 20 140 160 80 280 70 Z" transform="translate(188.5 455) scale(0.925)" fill="#000"/></mask>
+</defs>
+<g mask="url(#m)">
+<rect width="1080" height="1920" fill="{{bg}}"/>
+<rect width="1080" height="1920" filter="url(#grain)" opacity="0.22"/>
+<rect width="1080" height="1920" filter="url(#grain2)" opacity="0.22"/>
+</g>
+</svg>
+<div id="t-labels" style="position:absolute;left:64px;top:235px;font-size:40px;font-family:'Archivo', Arial, sans-serif;font-weight:500;color:{{fg}};letter-spacing:-1.2px;line-height:1.02;margin:0">Fecha<br>Hora<br>Lugar<br>Valor</div>
+<div id="t-values" style="position:absolute;right:64px;top:235px;text-align:right;font-size:40px;font-family:'Archivo', Arial, sans-serif;font-weight:500;color:{{fg}};letter-spacing:-1.2px;line-height:1.02;margin:0">Sábado 17 de octubre<br>1 – 4 p. m.<br>El Retiro<br>$230.000</div>
+<div id="t-title1" style="position:absolute;left:229px;top:1238px;font-family:'Playfair Display', Georgia, serif;font-weight:400;font-size:118px;line-height:1;letter-spacing:3px;color:{{title}}">PINTURA</div>
+<div id="t-tag" style="position:absolute;left:765px;top:1308px;font-family:'Playfair Display', Georgia, serif;font-style:italic;font-weight:400;font-size:26px;line-height:1;color:{{title}}">taller de una tarde</div>
+<div id="t-title2" style="position:absolute;left:229px;top:1356px;font-family:'Playfair Display', Georgia, serif;font-weight:400;font-size:118px;line-height:1;letter-spacing:3px;color:{{title}}">CERÁMICA</div>
+<div id="t-left" style="position:absolute;left:64px;top:1556px;font-size:50px;font-family:'Archivo', Arial, sans-serif;font-weight:500;color:{{fg}};letter-spacing:-1.2px;line-height:1.02;margin:0;letter-spacing:-2px;line-height:.98">TALLER<br>ALADO &amp; CO.</div>
+<div id="t-right" style="position:absolute;right:64px;top:1556px;text-align:right;font-size:50px;font-family:'Archivo', Arial, sans-serif;font-weight:500;color:{{fg}};letter-spacing:-1.2px;line-height:1.02;margin:0;letter-spacing:-2px;line-height:.98">RESERVAS<br>ABIERTAS</div></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"bg": {"editor": "color", "default": "#5C7891"}, "fg": {"editor": "color", "default": "#ECEFF1"}, "title": {"editor": "color", "default": "#CFD6DD"}, "$preview": {"width": 1080, "height": 1920}}'>
+class Component extends DCLogic {
+renderVals() {
+return { bg: this.props.bg ?? '#5C7891', fg: this.props.fg ?? '#ECEFF1', title: this.props.title ?? '#CFD6DD' };
+}
+}
+</script>
+</body>
+</html>

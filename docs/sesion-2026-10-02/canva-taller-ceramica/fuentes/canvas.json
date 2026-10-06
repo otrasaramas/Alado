@@ -1,15 +1,50 @@
 {
   "v": 3,
-  "createdOnFiles": {"v": 1, "at": "2026-10-03T12:00:00Z"},
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-03T12:00:00Z"
+  },
   "title": "Taller de pintura cerámica · historias",
-  "launch": {"view": "canvas"},
+  "launch": {
+    "view": "canvas"
+  },
   "pages": [],
   "boards": {
-    "Main.dc.html": {"x": 0, "y": 0, "w": 1080, "h": 1920, "title": "Historia 1 · Anuncio"},
-    "Detalle.dc.html": {"x": 1160, "y": 0, "w": 1080, "h": 1920, "title": "Historia 2 · Qué incluye"},
-    "Collage.dc.html": {"x": 2320, "y": 0, "w": 1080, "h": 1920, "title": "Historia 3 · Collage (referente)"}
+    "Main.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Historia 1 · Anuncio"
+    },
+    "Detalle.dc.html": {
+      "x": 1160,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Historia 2 · Qué incluye"
+    },
+    "Collage.dc.html": {
+      "x": 2320,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Historia 3 · Collage (referente)"
+    },
+    "Ventana.dc.html": {
+      "x": 3480,
+      "y": 0,
+      "w": 1080,
+      "h": 1920,
+      "title": "Historia 4 · Ventana (para Canva)"
+    }
   },
-  "order": ["Main.dc.html", "Detalle.dc.html", "Collage.dc.html"],
+  "order": [
+    "Main.dc.html",
+    "Detalle.dc.html",
+    "Collage.dc.html",
+    "Ventana.dc.html"
+  ],
   "notes": {},
   "designSystems": []
 }
