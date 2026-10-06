@@ -7,11 +7,12 @@
 - Se pintan **4 pocillos y 4 platos** por persona. Hay piezas de repuesto en la mesa por si algo pasa.
 - Las piezas se **recogen en el Taller Alado (Itagüí) o en la Tienda Alado (El Retiro)**. Avisamos cuando estén listas.
 - Se reserva con **anticipo del 50% ($115.000)**.
-- Cancelación: **se devuelve el 80%** de lo pagado (las piezas se compran para cada persona). Se acepta **cambio de nombre**.
+- Cancelación: **el anticipo no es reembolsable** (las piezas se compran para cada persona). Se acepta **cambio de nombre** hasta el 16 de octubre.
 - La cerámica es un proceso incierto: no se garantiza el resultado de cada pieza tras la quema (por eso son 5 y 5).
 - Términos y condiciones en PDF: `terminos-taller-pintura-ceramica.pdf`.
 - Hay parqueadero. El espacio es cubierto. Hay delantales.
-- **Edad mínima: 13 años.** Se admite **1 acompañante por participante**, que no pinta ni consume (asiste como invitado).
+- **Edad mínima: 13 años.** Acompañantes: la persona **avisa con anticipación** y Alado confirma y le cuenta cómo se gestiona.
+- Entrega: también **a domicilio por un costo adicional**.
 - Hay bebidas sin alcohol.
 - Apto para alimentos y lavavajillas: **se cuenta en el taller**, no en la promoción. Si alguien pregunta antes, se responde que sí.
 
@@ -82,7 +83,7 @@ Son 18 cupos.
 > - Ubicación: [link de Google Maps de Montesereno]. Hay parqueadero.
 > - Ven con ropa cómoda. Nosotros tenemos delantales.
 > - ¿Tienes alguna alergia o restricción con la comida? Cuéntanos para tenerlo en cuenta.
-> - ¿Vienes con acompañante? Dinos su nombre. Asiste como invitado: no pinta ni hace parte del servicio de comida y bebida.
+> - Si quieres venir con acompañante, avísanos y te contamos cómo se gestiona.
 >
 > Te adjuntamos los términos y condiciones del taller.
 >
@@ -95,7 +96,7 @@ Son 18 cupos.
 > Te esperamos con café.
 
 ### 4. Si alguien cancela
-> Entendemos, [nombre]. Te devolvemos el 80% de lo que pagaste: [$ valor]. El 20% restante cubre los materiales y la preparación que ya separamos para ti.
+> Entendemos, [nombre]. Como las piezas y los materiales se compran para cada participante, el anticipo no es reembolsable.
 > Si prefieres, puedes ceder tu cupo a otra persona: solo dinos su nombre.
 > Te avisamos de la próxima tarde.
 
@@ -105,9 +106,9 @@ Son 18 cupos.
 ---
 
 ## Lo que falta definir
-1. **El acompañante:** ¿paga?, ¿cuánto?, ¿pinta o solo acompaña?, ¿toma vino y bocados? Esto afecta el presupuesto de comida (18 personas pueden volverse 36) y el espacio.
+1. ~~El acompañante~~ **Resuelto:** se avisa con anticipación y Alado confirma caso a caso.
 2. **El saldo:** ¿se paga antes del taller o el mismo día?
-3. **La cancelación:** ¿hasta qué fecha aplica el 80%? ¿Y si cancela el día antes? ¿Se puede ceder el cupo?
+3. ~~La cancelación~~ **Resuelto:** el anticipo no se devuelve; se puede ceder el cupo hasta el 16 de octubre.
 4. **La entrega:** fecha aproximada y punto exacto de recogida en Medellín.
 5. **Si las 10 piezas salen bien:** ¿se lleva las 10? (El texto asume que sí.)
 6. Número de WhatsApp y cuenta bancaria.

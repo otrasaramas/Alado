@@ -54,7 +54,7 @@
 | "¿Quién va? ¿Gente como yo?" | Mostrar la mesa, el espacio y a Andrés, Alejo y Lizeth. Después del taller, el recap con asistentes (con permiso). | Reel invitación, recap |
 | "¿Puedo ir con mi pareja o una amiga?" | Sí, es un buen plan para dos. *(Cada persona paga su cupo.)* | Caption |
 | "¿Puedo llevar niños?" | *(Decidir: ¿desde qué edad? Con vino en la mesa, quizás solo adultos.)* | WhatsApp |
-| "¿Puede ir alguien que solo acompañe?" | *(Decidir si hay cupo de acompañante sin pintar.)* | WhatsApp |
+| "¿Puede ir alguien que solo acompañe?" | Avísanos con anticipación y te contamos cómo se gestiona. | WhatsApp |
 
 ## 6. Confianza en la marca
 | Lo que piensa | Cómo se responde | Dónde |
@@ -83,12 +83,12 @@
 2. Se pintan 4 pocillos y 4 platos, uno de más de cada uno por si alguno no sale bien.
 3. Las piezas se recogen en Medellín o en El Retiro.
 4. Anticipo del 50% ($115.000).
-5. Cancelación: se devuelve el 80%.
+5. Cancelación: el anticipo no es reembolsable. Se puede ceder el cupo (cambio de nombre) hasta el 16 de octubre.
 6. Hay parqueadero, el espacio es cubierto y hay delantales.
-7. Edad mínima 10 años; 1 acompañante por participante.
+7. Edad mínima 13 años. Acompañantes: avisar con anticipación y Alado confirma cómo se gestiona.
 8. Hay bebidas sin alcohol.
 
-Pendiente: condición del acompañante, cuándo se paga el saldo, hasta qué fecha aplica el 80%, fecha y punto de entrega en Medellín. Ver `11-taller-carrusel-y-whatsapp.md`.
+Saldo: el día del taller. Entrega: 2 a 3 semanas, en el Taller Alado (Itagüí) o la Tienda Alado (El Retiro), o a domicilio por un costo adicional. Ver `terminos-taller-pintura-ceramica.pdf`.
 
 ## Cómo usar esto en el contenido
 - **Carrusel "Cómo participar" (sáb. 10 oct):** responde 1, 3 y 4 (no sabes pintar, qué te llevas y si sirve, cómo llegar).

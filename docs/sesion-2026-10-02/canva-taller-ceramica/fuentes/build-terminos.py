@@ -17,17 +17,17 @@ SECTIONS = [
   <p>Llega 15 minutos antes (1:45 p. m.) para que empecemos puntuales, y ven con ropa cómoda.</p>"""),
  ("Valor y reserva", f"""<p>El valor del taller es de <b>$230.000 por persona</b>. Tu cupo queda separado cuando recibimos el anticipo del <b>50% ($115.000)</b> y nos envías el comprobante por WhatsApp. El saldo de $115.000 se paga el día del taller.</p>
   <p>Hay 18 cupos y se asignan en orden de pago.</p>"""),
- ("Cancelación y cambio de nombre", f"""<p>Las piezas y los materiales se compran para cada participante. Por eso, si cancelas tu asistencia, te devolvemos el <b>80% del valor pagado</b>.</p>
+ ("Cancelación y cambio de nombre", f"""<p>Las piezas y los materiales se compran para cada participante. Por eso, si cancelas tu asistencia, <b>el anticipo no es reembolsable</b>.</p>
   <p>Si no puedes asistir, también puedes <b>ceder tu cupo a otra persona</b>. Solo avísanos su nombre hasta el viernes 16 de octubre.</p>
   <p>Si por fuerza mayor Alado debe cancelar o cambiar la fecha, te proponemos una nueva fecha o te devolvemos el 100% de lo pagado.</p>"""),
  ("Alergias y alimentación", """<p>Te agradecemos contarnos al reservar si tienes alguna alergia o restricción alimentaria, para tenerla en cuenta.</p>"""),
- ("Acompañantes", """<p>Cada participante puede venir con <b>un (1) acompañante</b>. El acompañante asiste como invitado: no participa en la actividad de pintura ni en el servicio de alimentos y bebidas incluido en el taller.</p>"""),
+ ("Acompañantes", """<p>Si quieres venir con un acompañante, avísanos con anticipación para confirmarlo y contarte cómo se gestiona.</p>"""),
  ("Edad mínima", """<p>La edad mínima para participar es de <b>13 años</b>. Los menores de edad asisten con un adulto responsable y no consumen bebidas alcohólicas.</p>"""),
  ("La cerámica es un proceso incierto", """<p>En la quema, la cerámica tiene vida propia: los colores pueden cambiar de tono y una pieza puede agrietarse o romperse. No podemos garantizar el resultado de cada pieza después de la quema.</p>
   <p>Tendremos algunas piezas de repuesto en la mesa por si alguna se daña durante la tarde o no sale como esperabas.</p>"""),
  ("Entrega de las piezas", f"""<p>Después del taller llevamos tus piezas a la quema. Te avisamos por WhatsApp cuando estén listas, <b>aproximadamente 2 a 3 semanas después del taller</b>. Puedes recogerlas en:</p>
   <ul><li><b>Taller Alado</b>, en Itagüí.</li><li><b>Tienda Alado</b>, en El Retiro.</li></ul>
-  <p>Te enviamos la dirección y el horario con el aviso.</p>"""),
+  <p>Te enviamos la dirección y el horario con el aviso. Si prefieres, <b>por un costo adicional te enviamos las piezas terminadas a domicilio</b>.</p>"""),
  ("Fotos y video", """<p>Durante la tarde tomaremos fotos y video para las redes de Alado. Si prefieres no aparecer, cuéntanos y lo respetamos.</p>"""),
 ]
 
