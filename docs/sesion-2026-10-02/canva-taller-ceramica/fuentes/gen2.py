@@ -54,28 +54,32 @@ def header(sub, title):
             P(56, 372, title, 170, 400, ls=-2, lh=.92, color=C['paper'], fam="Archivo Black", fit=968))
 
 def page1():
-    TY, TH = 1120, 560; cw = TW/3
+    TY, TH = 1000, 690; cw = TW/3
     lines = f'''<svg width="1080" height="1920" style="position:absolute;left:0;top:0"><path d="{ticket_path(TY,TH)}" fill="{C['paper']}"/>
       <g stroke="{C['line']}" stroke-width="2">
       <line x1="{TX+cw:.0f}" y1="{TY+50}" x2="{TX+cw:.0f}" y2="{TY+250}"/><line x1="{TX+2*cw:.0f}" y1="{TY+50}" x2="{TX+2*cw:.0f}" y2="{TY+250}"/>
       <line x1="{TX+40}" y1="{TY+290}" x2="{TX+TW-40}" y2="{TY+290}"/><line x1="{TX+40}" y1="{TY+400}" x2="{TX+TW-40}" y2="{TY+400}"/>
-      <line x1="{TX+TW/2:.0f}" y1="{TY+420}" x2="{TX+TW/2:.0f}" y2="{TY+530}"/></g></svg>'''
+      <line x1="{TX+40}" y1="{TY+540}" x2="{TX+TW-40}" y2="{TY+540}"/>
+      <line x1="{TX+TW/2:.0f}" y1="{TY+560}" x2="{TX+TW/2:.0f}" y2="{TY+660}"/></g></svg>'''
     text = (header("TE INVITA A UNA TARDE DE", "PINTURA<br>CERÁMICA") +
+        P(64, 712, "Pinta tu propio juego<br>de café para cuatro", 44, 600, ls=-.5, lh=1.15, color=C['paper']) +
         P(TX, TY+124, "SÁBADO", 46, 600, cw, "center", 3) +
         P(TX+cw, TY+58, "17", 112, 700, cw, "center", -2) +
         P(TX+cw, TY+184, "OCTUBRE", 38, 600, cw, "center", 3) +
         P(TX+2*cw, TY+102, "2 – 6<br>P. M.", 50, 600, cw, "center", 0, 1.05) +
         P(TX, TY+322, "Montesereno · El Retiro", 46, 600, TW, "center") +
-        P(TX, TY+428, "POR PERSONA", 24, 600, TW/2, "center", 3) +
-        P(TX, TY+464, "$230.000", 58, 700, TW/2, "center", -1) +
-        P(TX+TW/2, TY+428, "RESERVAS POR WHATSAPP", 22, 600, TW/2, "center", 3) +
-        P(TX+TW/2, TY+468, "[número]", 46, 600, TW/2, "center"))
-    return {"ticket": lines, "seal": seal_svg(838, 905, 165, "Pinta tu", "VAJILLA"), "text": text}
+        P(TX, TY+426, "INCLUYE", 22, 600, TW, "center", 3) +
+        P(TX, TY+462, "Materiales, quema, vino, café y pasabocas", 38, 600, TW, "center", -.3) +
+        P(TX, TY+568, "POR PERSONA", 22, 600, TW/2, "center", 3) +
+        P(TX, TY+600, "$230.000", 54, 700, TW/2, "center", -1) +
+        P(TX+TW/2, TY+568, "RESERVAS POR WHATSAPP", 22, 600, TW/2, "center", 3) +
+        P(TX+TW/2, TY+604, "[número]", 44, 600, TW/2, "center"))
+    return {"ticket": lines, "seal": seal_svg(850, 870, 150, "Pinta tu", "VAJILLA"), "text": text}
 
 def page2():
     TY, TH = 760, 860
     items = ["4 pocillos y 4 platos para pintar", "Pigmentos, pinceles y materiales", "La quema de tus piezas",
-             "Te acompañan Andrés, Alejo y Lizeth", "[Aperitivos y vino · por confirmar]"]
+             "Te acompañan Andrés, Alejo y Lizeth", "Vino, café y pasabocas para la tarde"]
     rows = 118; y0 = TY + 40
     ln = "".join(f'<line x1="{TX+40}" y1="{y0+rows*(i+1)}" x2="{TX+TW-40}" y2="{y0+rows*(i+1)}"/>' for i in range(len(items)))
     yb = y0 + rows*len(items)
