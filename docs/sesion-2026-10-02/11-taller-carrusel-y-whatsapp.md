@@ -5,11 +5,13 @@
 
 ## Datos confirmados (6 oct)
 - Se pintan **5 pocillos y 5 platos** por persona, uno de más de cada uno por si alguno no sale bien.
-- Las piezas se **recogen en Medellín o en El Retiro**.
+- Las piezas se **recogen en el Taller Alado (Itagüí) o en la Tienda Alado (El Retiro)**. Avisamos cuando estén listas.
 - Se reserva con **anticipo del 50% ($115.000)**.
-- Cancelación: **se devuelve el 80%** de lo pagado.
+- Cancelación: **se devuelve el 80%** de lo pagado (las piezas se compran para cada persona). Se acepta **cambio de nombre**.
+- La cerámica es un proceso incierto: no se garantiza el resultado de cada pieza tras la quema (por eso son 5 y 5).
+- Términos y condiciones en PDF: `terminos-taller-pintura-ceramica.pdf`.
 - Hay parqueadero. El espacio es cubierto. Hay delantales.
-- **Edad mínima: 10 años.** Se admite **1 acompañante por participante**.
+- **Edad mínima: 13 años.** Se admite **1 acompañante por participante**, que no pinta ni consume (asiste como invitado).
 - Hay bebidas sin alcohol.
 - Apto para alimentos y lavavajillas: **se cuenta en el taller**, no en la promoción. Si alguien pregunta antes, se responde que sí.
 
@@ -40,11 +42,11 @@ Vino, café, bebidas sin alcohol y bocados.
 Parqueadero y espacio cubierto.
 
 **6 · Después de la tarde**
-Llevamos tus piezas a la quema. Las recoges en Medellín o en El Retiro [fecha aproximada].
+Llevamos tus piezas a la quema y te avisamos cuando estén listas. Las recoges en nuestro taller en Itagüí o en la tienda de El Retiro.
 
 **7 · Con quién**
-Desde los 10 años. Puedes venir solo o sola, la mesa es compartida.
-Cada participante puede traer un acompañante. [Condición del acompañante: ¿paga?, ¿pinta?]
+Desde los 13 años. Puedes venir solo o sola, la mesa es compartida.
+Si quieres, trae a alguien que te acompañe.
 
 **8 · Cómo reservar**
 Escríbenos por WhatsApp [número].
@@ -80,9 +82,11 @@ Son 18 cupos.
 > - Ubicación: [link de Google Maps de Montesereno]. Hay parqueadero.
 > - Ven con ropa cómoda. Nosotros tenemos delantales.
 > - ¿Tienes alguna alergia o restricción con la comida? Cuéntanos para tenerlo en cuenta.
-> - ¿Vienes con acompañante? Dinos su nombre. [Condición del acompañante.]
+> - ¿Vienes con acompañante? Dinos su nombre. Asiste como invitado: no pinta ni hace parte del servicio de comida y bebida.
 >
-> Después de la tarde llevamos tus piezas a la quema. Las recoges en Medellín o en El Retiro, como te quede mejor. Te avisamos cuando estén listas.
+> Te adjuntamos los términos y condiciones del taller.
+>
+> Después de la tarde llevamos tus piezas a la quema. Te avisamos cuando estén listas para recogerlas en nuestro taller en Itagüí o en la tienda de El Retiro.
 
 ### 3. Recordatorio (viernes 16 de octubre)
 > Hola, [nombre]. Mañana nos vemos en Montesereno a las 2:00 p. m.
@@ -92,7 +96,7 @@ Son 18 cupos.
 
 ### 4. Si alguien cancela
 > Entendemos, [nombre]. Te devolvemos el 80% de lo que pagaste: [$ valor]. El 20% restante cubre los materiales y la preparación que ya separamos para ti.
-> [Si se define: Si prefieres, puedes ceder tu cupo a otra persona sin costo.]
+> Si prefieres, puedes ceder tu cupo a otra persona: solo dinos su nombre.
 > Te avisamos de la próxima tarde.
 
 ### 5. Si preguntan si las piezas se pueden usar

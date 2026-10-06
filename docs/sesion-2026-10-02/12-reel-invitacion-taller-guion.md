@@ -137,3 +137,26 @@ Reemplaza la voz en off del guion final. Hook, presentación de Andrés y outro 
 > Aprendes lo básico, y el resto del tiempo es tuyo: cinco pocillos, cinco platos, a tu ritmo y con nosotros al lado.
 > Cae la tarde, llega el vino.
 > Y unos días después, tus piezas vuelven del fuego, listas para tu café.
+
+---
+
+# Voz en off final (sobre el texto de Sara, 6 oct)
+Va después del hook y la presentación de Andrés. Unos 40 s. Las dos últimas frases las puede decir Andrés a cámara como outro.
+
+> Aprenderás distintas técnicas y pinceladas para crear un patrón a tu gusto, y llevarlo a cada pieza de tu juego de café.
+> Te acompañamos todo el tiempo: aquí nadie pinta solo.
+> Será una tarde de risas, conversación y creatividad, con vino, café y algo rico para picar.
+> Nos vemos en Montesereno, El Retiro, de 2 a 6 de la tarde.
+> El cupo tiene un valor de 230 mil pesos e incluye la quema de tus piezas, que luego recoges en El Retiro o en Itagüí.
+> Queremos que te sientas en casa: de todo lo demás nos encargamos nosotros.
+> *(Andrés)* Te esperamos. Reserva tu cupo por WhatsApp.
+
+| Frase | Imagen |
+|---|---|
+| Técnicas y pinceladas, tu patrón | Manos mostrando pinceladas distintas; un patrón repetido en pocillo y plato |
+| Nadie pinta solo | Alejo o Lizeth inclinándose a ayudar; mano que guía otra mano |
+| Risas, conversación, creatividad | Mesa completa, gente riendo, copa y café |
+| Montesereno, de 2 a 6 | Paisaje de El Retiro, luz de tarde |
+| 230 mil, quema, recoger | Piezas terminadas en fila |
+| Te sientas en casa | Alguien sirviendo vino, detalle de la mesa puesta |
+| Te esperamos | Andrés a cámara |
