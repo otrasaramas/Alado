@@ -112,3 +112,27 @@ Son 18 cupos.
 4. **La entrega:** fecha aproximada y punto exacto de recogida en Medellín.
 5. **Si las 10 piezas salen bien:** ¿se lleva las 10? (El texto asume que sí.)
 6. Número de WhatsApp y cuenta bancaria.
+
+---
+
+## Invitación a clientas favoritas (antes de abrirlo al público)
+
+### Mensaje principal
+> Hola, [nombre]. Antes de contarle a todo el mundo, queríamos invitarte a ti.
+>
+> El sábado 17 de octubre vamos a tener una tarde de pintura cerámica en Montesereno, El Retiro, de 2:00 a 6:00 p. m. Vas a pintar tu propio juego de café para cuatro, con Andrés, Alejo y Lizeth acompañándote en cada pieza. No necesitas saber pintar.
+>
+> Habrá vino, café y algo rico para picar. Nosotros llevamos tus piezas a la quema y te avisamos cuando estén listas.
+>
+> El cupo tiene un valor de $230.000 y son pocos. Como eres parte de la casa Alado, quisimos que fueras de las primeras en saberlo.
+>
+> Si te provoca, te separo uno. Te esperamos.
+
+### Versión corta
+> Hola, [nombre]. Queríamos invitarte a ti antes que a nadie: el sábado 17 de octubre tenemos una tarde de pintura cerámica en El Retiro, de 2 a 6 p. m. Pintas tu propio juego de café para cuatro, con vino, café y nosotros a tu lado. El cupo es de $230.000. ¿Te separo uno?
+
+### Si responde que sí
+> Qué alegría, [nombre]. Para separar tu cupo, el anticipo es de $115.000 a [cuenta]. Me envías el comprobante por aquí y te mando los detalles y los términos del taller. El saldo se paga el día del taller.
+
+### Si no responde en 2 o 3 días (una sola vez)
+> Hola, [nombre]. Solo quería saber si te animas a la tarde de cerámica del 17. Mañana la abrimos al público y quería guardarte el lugar si te provoca.
