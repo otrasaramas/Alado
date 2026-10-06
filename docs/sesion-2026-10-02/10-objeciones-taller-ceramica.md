@@ -78,15 +78,17 @@
 
 ---
 
-## Lo que hay que decidir o confirmar para poder responder
-1. Esmalte apto para alimentos y sin plomo; microondas y lavavajillas.
-2. Qué pasa si una pieza se rompe en la quema.
-3. Fecha de entrega y cómo se recogen o envían las piezas.
-4. Forma de pago: anticipo y saldo, y cuenta de la empresa.
-5. Política de cancelación o cambio de nombre.
-6. Parqueadero, espacio cubierto, delantales.
-7. Edad mínima y si se admite acompañante que no pinta.
-8. Bebida sin alcohol y pregunta de alergias.
+## Respuestas confirmadas (6 oct)
+1. Apto para alimentos y lavavajillas: sí. Se cuenta en el taller, no en la promoción; si alguien pregunta antes, se responde que sí.
+2. Se pintan 5 pocillos y 5 platos, uno de más de cada uno por si alguno no sale bien.
+3. Las piezas se recogen en Medellín o en El Retiro.
+4. Anticipo del 50% ($115.000).
+5. Cancelación: se devuelve el 80%.
+6. Hay parqueadero, el espacio es cubierto y hay delantales.
+7. Edad mínima 10 años; 1 acompañante por participante.
+8. Hay bebidas sin alcohol.
+
+Pendiente: condición del acompañante, cuándo se paga el saldo, hasta qué fecha aplica el 80%, fecha y punto de entrega en Medellín. Ver `11-taller-carrusel-y-whatsapp.md`.
 
 ## Cómo usar esto en el contenido
 - **Carrusel "Cómo participar" (sáb. 10 oct):** responde 1, 3 y 4 (no sabes pintar, qué te llevas y si sirve, cómo llegar).
