@@ -44,6 +44,13 @@
       "w": 1080,
       "h": 1920,
       "title": "Historia 5 · Qué incluye (editable en Canva)"
+    },
+    "Confirmacion.dc.html": {
+      "x": 5800,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "Post · Confirmación de cupo (feed 1080×1350)"
     }
   },
   "order": [
@@ -51,7 +58,8 @@
     "Detalle.dc.html",
     "Collage.dc.html",
     "Invitacion.dc.html",
-    "Incluye.dc.html"
+    "Incluye.dc.html",
+    "Confirmacion.dc.html"
   ],
   "notes": {},
   "designSystems": []
