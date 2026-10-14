@@ -65,3 +65,8 @@ Construir el **cerebro de marca de Alado** para el Codex de Andrés y la **estra
 - El contenido del taller queda en 4 piezas: invitación (reel), cómo participar (carrusel, nuevo), historias y recap (video). Salen «Cómo se pinta una pieza» (C1) y «Mesa con piezas pintadas» (C10) por el costo del taller.
 - Subtotal del taller: $690.000 (antes $920.000). Plan completo: $4.180.000 (25 piezas); con vacaciones: $5.320.000 (31 piezas); esencial: $2.790.000.
 - Queda pendiente decidir si se mantiene el recordatorio del 6 oct sobre el set extra de cerámica para Alado (era para «Mesa con piezas pintadas»).
+
+## Taller de cerámica: cuenta con 15 confirmadas (2026-10-14)
+- 15 personas confirmadas, cupo a $230.000, comida en Montesereno ~$16.000 por persona, 20% de pocillos y platos de repuesto y quema a $3.000 por pieza.
+- Costo total $2.436.990 (pintura y materiales $440.000; cerámica y quema $748.800) · ganancia $1.013.010 · margen 29,4%. Detalle en `docs/sesion-2026-10-02/01-taller-ceramica-cotizacion.md`.
+- El Excel se regenera con `docs/sesion-2026-10-02/fuentes-cotizacion/build_taller_ceramica.py`.

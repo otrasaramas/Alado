@@ -2,6 +2,49 @@
 
 > Tarea 1 · Sesión 2026-10-02. **Fecha del taller: 17 de octubre.**
 
+## Cuenta vigente (14 de octubre)
+Sábado 17 de octubre · 2 – 6 p. m. · Montesereno, El Retiro · 18 cupos · **15 personas confirmadas** · **cupo a $230.000**.
+Excel: **`cotizacion-taller-ceramica.xlsx`** (edita las celdas amarillas). Se genera con `fuentes-cotizacion/build_taller_ceramica.py`.
+
+### Qué hay que comprar y pagar
+| Concepto | Cantidad | Valor | Total |
+|---|---|---|---|
+| Pocillos (con 20% de repuesto) | 72 | $3.200 | $230.400 |
+| Platos (con 20% de repuesto) | 72 | $2.200 | $158.400 |
+| Quema (solo las piezas que se llevan) | 120 | $3.000 | $360.000 |
+| **Cerámica y quema** | | | **$748.800** |
+| Pigmentos | 15 | $6.000 | $90.000 |
+| Pinceles, esponjas y materiales | | | $200.000 |
+| Delantales | | | $120.000 |
+| Empaque | 15 | $2.000 | $30.000 |
+| **Pintura y materiales** | | | **$440.000** |
+| Comida en Montesereno | 15 | $16.000 | $240.000 |
+| Lizeth | 5 h | $9.000 | $45.000 |
+| Otros: transporte, flores, promoción | | | $190.000 |
+| **Compras y pagos** | | | **$1.663.800** |
+| Imprevistos (5% de compras y pagos) | | | $83.190 |
+| Contenido del taller | | | $690.000 |
+| **Costo total** | | | **$2.436.990** |
+
+Repuestos: 15 personas × 4 = 60 pocillos y 60 platos, más 20% = 72 de cada uno. Solo se queman las 8 piezas que se lleva cada persona (120); los repuestos que no se usen quedan para el próximo taller.
+
+### Resultado
+- Ingresos: $3.450.000 · costo total: $2.436.990 · **ganancia: $1.013.010** · **margen: 29,4%** ($67.534 por persona).
+- Sin cargar el contenido al taller: ganancia $1.703.010 (49,4%).
+- Anticipos (50%): $1.725.000 · saldo por cobrar el día del taller: $1.725.000.
+- Punto de equilibrio: 9 personas. Con los 18 cupos llenos: ganancia $1.466.760 (35,4%).
+- Para un margen de 40%, el cupo tendría que valer $275.000 (solo como referencia: el precio ya está publicado).
+
+### Supuestos por confirmar
+- La comida ($16.000 por persona) es aproximada. Si el vino no viene incluido, va en su celda aparte (hoy en $0).
+- Montesereno no cobra el espacio ($0).
+- Delantales ($120.000, calculados para 12 personas), materiales ($200.000), empaque y otros fijos son estimados.
+- No incluye la comida de Andrés, Alejo y Lizeth.
+- Los imprevistos se calculan sobre compras y pagos, ya no sobre el contenido. El pago al restaurante de la versión anterior se reemplazó por la comida por persona.
+
+---
+*Lo que sigue es el historial de la cotización: sus cifras ya no son vigentes.*
+
 ## Objetivo
 Cotizar el taller: definir qué incluye, los costos y el precio por persona.
 
