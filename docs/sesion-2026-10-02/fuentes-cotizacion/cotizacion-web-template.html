@@ -1,0 +1,300 @@
+<title>Cotización de contenido Alado</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link id="fonts" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap">
+<style id="page-style">
+/* Layout: one quote sheet on a cool ground; header with the total, a table per line of work, then rates and terms. Edit mode swaps cells for inputs. */
+:root {
+  --ground: #E9EDF0;
+  --sheet: #FFFFFF;
+  --ink: #1F2A33;
+  --muted: #5E6B76;
+  --rule: #D5DCE2;
+  --accent: #5C7891;
+  --accent-soft: #E4EBF2;
+  --warn: #8F520F;
+  --warn-soft: #FBF0DF;
+  --display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --body: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #12161A; --sheet: #1B2127; --ink: #E5EAEE; --muted: #9AA7B2; --rule: #2E3740;
+    --accent: #93B3D1; --accent-soft: #24303B; --warn: #E3AA5E; --warn-soft: #32281A; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #12161A; --sheet: #1B2127; --ink: #E5EAEE; --muted: #9AA7B2; --rule: #2E3740;
+  --accent: #93B3D1; --accent-soft: #24303B; --warn: #E3AA5E; --warn-soft: #32281A; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--ground); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.5; margin: 0; }
+.wrap { max-width: 980px; margin: 0 auto; padding-block: 28px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; flex-direction: column; gap: 16px; }
+.toolbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: flex-end; padding: 10px 0; background: var(--ground); }
+.toolbar .status { margin-right: auto; font-size: 13px; color: var(--muted); }
+.toolbar .status.dirty { color: var(--warn); font-weight: 600; }
+button { font: 600 14px var(--body); border-radius: 6px; padding: 9px 16px; cursor: pointer; border: 1px solid var(--rule); background: var(--sheet); color: var(--ink); }
+button.primary { background: var(--accent); border-color: var(--accent); color: var(--sheet); }
+button.link { border: 0; background: none; color: var(--accent); padding: 6px 4px; font-weight: 600; }
+button.x { border: 0; background: none; color: var(--muted); padding: 4px 8px; font-size: 13px; }
+button:disabled { opacity: .5; cursor: default; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.banner { background: var(--warn-soft); color: var(--ink); border: 1px solid var(--warn); border-radius: 8px; padding: 12px 14px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.banner p { margin: 0; flex: 1 1 260px; }
+.sheet { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: clamp(20px, 4vw, 44px); display: flex; flex-direction: column; gap: 34px; min-width: 0; }
+.head { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 40px; align-items: end; padding-bottom: 26px; border-bottom: 2px solid var(--ink); }
+.eyebrow { margin: 0 0 6px; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); }
+h1 { margin: 0; font-family: var(--display); font-weight: 400; font-size: clamp(32px, 5.4vw, 52px); line-height: 1.02; text-wrap: balance; }
+h1 em { font-style: italic; }
+.meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px 24px; margin-top: 22px; }
+.meta div { min-width: 0; }
+.meta dt { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.meta dd { margin: 2px 0 0; font-weight: 500; overflow-wrap: anywhere; }
+.total { text-align: right; font-variant-numeric: tabular-nums; }
+.total .label { font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.total .value { font-family: var(--display); font-size: clamp(34px, 5vw, 48px); line-height: 1; margin-top: 6px; }
+.total .pending { margin-top: 8px; font-size: 13px; color: var(--warn); font-weight: 600; }
+.summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.summary div { background: var(--accent-soft); border-radius: 8px; padding: 12px 14px; font-variant-numeric: tabular-nums; }
+.summary span { display: block; font-size: 12.5px; color: var(--muted); }
+.summary b { font-size: 20px; font-weight: 600; }
+h2 { margin: 0 0 12px; font-family: var(--display); font-weight: 400; font-size: 26px; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px; }
+h2 small { font-family: var(--body); font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+th { text-align: left; font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); padding: 8px 10px; border-bottom: 1px solid var(--ink); white-space: nowrap; }
+td { padding: 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+td.num, th.num { text-align: right; white-space: nowrap; }
+td.fmt { color: var(--muted); white-space: nowrap; }
+td.date { white-space: nowrap; }
+.tbd { color: var(--warn); font-weight: 600; }
+.chip-tbd { display: inline-block; font-size: 12px; font-weight: 600; color: var(--warn); background: var(--warn-soft); border-radius: 999px; padding: 1px 9px; }
+tfoot td { border-bottom: 0; font-weight: 600; }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 34px; }
+ul.plain { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+.foot { font-size: 13px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 16px; }
+input, select { font: inherit; color: var(--ink); background: var(--sheet); border: 1px solid var(--rule); border-radius: 5px; padding: 6px 8px; width: 100%; min-width: 0; }
+input.n { text-align: right; font-variant-numeric: tabular-nums; }
+td.qty input { width: 64px; }
+td.price input { width: 130px; }
+.edit-list { display: flex; flex-direction: column; gap: 8px; }
+.edit-list .row { display: flex; gap: 6px; align-items: center; }
+.hint { font-size: 12.5px; color: var(--muted); margin: 6px 0 0; }
+@media (max-width: 640px) {
+  .head { grid-template-columns: minmax(0, 1fr); }
+  .total { text-align: left; }
+}
+</style>
+<div id="app"></div>
+<script type="application/json" id="quote-state">/*STATE*/</script>
+<script id="page-script">
+(function () {
+  "use strict";
+  var TITLE = "Cotización de contenido Alado";
+  var saved = JSON.parse(document.getElementById("quote-state").textContent);
+  var state = clone(saved);
+  var editing = false, canEdit = false, readOnly = false, busy = false, artifactNs = null;
+  var DRAFT_KEY = "cot-alado-draft";
+  var app = document.getElementById("app");
+  var money = new Intl.NumberFormat("es-CO", { style: "currency", currency: "COP", maximumFractionDigits: 0 });
+
+  function clone(o) { return JSON.parse(JSON.stringify(o)); }
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function fmt(n) { return money.format(n); }
+  function rateOf(id) { for (var i = 0; i < state.rates.length; i++) if (state.rates[i].id === id) return state.rates[i]; return null; }
+  function priceOf(it) { var r = rateOf(it.rate); return r && typeof r.price === "number" ? r.price : null; }
+  function lineTotal(it) { var p = priceOf(it); return p == null ? null : p * (Number(it.qty) || 0); }
+  function sectionTotal(sec) { var t = 0, tbd = 0; sec.items.forEach(function (it) { var v = lineTotal(it); if (v == null) { if (Number(it.qty) > 0) tbd++; } else t += v; }); return { t: t, tbd: tbd }; }
+  function grand() { var t = 0, tbd = 0; state.sections.forEach(function (s) { var x = sectionTotal(s); t += x.t; tbd += x.tbd; }); return { t: t, tbd: tbd }; }
+  function dirty() { return JSON.stringify(state) !== JSON.stringify(saved); }
+  function uid(p) { return p + Math.random().toString(36).slice(2, 8); }
+
+  function stashDraft() { try { if (dirty()) sessionStorage.setItem(DRAFT_KEY, JSON.stringify({ base: saved, draft: state })); else sessionStorage.removeItem(DRAFT_KEY); } catch (e) {} }
+  function readDraft() { try { var d = JSON.parse(sessionStorage.getItem(DRAFT_KEY) || "null"); return d && d.draft ? d : null; } catch (e) { return null; } }
+  function clearDraft() { try { sessionStorage.removeItem(DRAFT_KEY); } catch (e) {} }
+
+  var pendingDraft = readDraft();
+  if (pendingDraft && JSON.stringify(pendingDraft.base) === JSON.stringify(saved) && JSON.stringify(pendingDraft.draft) !== JSON.stringify(saved)) {
+    state = pendingDraft.draft; editing = true; pendingDraft = null;
+  } else if (pendingDraft && JSON.stringify(pendingDraft.draft) === JSON.stringify(saved)) {
+    clearDraft(); pendingDraft = null;
+  }
+
+  function rateLabel(it) { var r = rateOf(it.rate); return r ? r.name : "Sin tarifa"; }
+
+  function viewTable(sec) {
+    var rows = sec.items.map(function (it) {
+      var p = priceOf(it), lt = lineTotal(it);
+      var date = /definir/i.test(it.date || "") || !it.date ? '<span class="chip-tbd">Por definir</span>' : esc(it.date);
+      return "<tr><td>" + esc(it.piece) + '</td><td class="fmt">' + esc(rateLabel(it)) + '</td><td class="date">' + date + '</td><td class="num">' + esc(it.qty) +
+        '</td><td class="num">' + (p == null ? '<span class="tbd">Por definir</span>' : fmt(p)) + '</td><td class="num">' + (lt == null ? '<span class="tbd">—</span>' : fmt(lt)) + "</td></tr>";
+    }).join("");
+    var st = sectionTotal(sec);
+    return '<section><h2>' + esc(sec.name) + "<small>" + fmt(st.t) + (st.tbd ? ' <span class="tbd">+ ' + st.tbd + " por definir</span>" : "") + "</small></h2>" +
+      '<div class="scroll"><table><thead><tr><th>Pieza</th><th>Formato</th><th>Publica</th><th class="num">Cant.</th><th class="num">Valor unitario</th><th class="num">Subtotal</th></tr></thead><tbody>' + rows + "</tbody></table></div></section>";
+  }
+
+  function editTable(sec, si) {
+    var opts = function (sel) { return state.rates.map(function (r) { return '<option value="' + esc(r.id) + '"' + (r.id === sel ? " selected" : "") + ">" + esc(r.name) + "</option>"; }).join(""); };
+    var rows = sec.items.map(function (it, ii) {
+      var lt = lineTotal(it);
+      return '<tr><td><input id="piece-' + it.id + '" data-s="' + si + '" data-i="' + ii + '" data-f="piece" value="' + esc(it.piece) + '" aria-label="Pieza"></td>' +
+        '<td><select id="rate-' + it.id + '" data-s="' + si + '" data-i="' + ii + '" data-f="rate" aria-label="Formato">' + opts(it.rate) + "</select></td>" +
+        '<td><input id="date-' + it.id + '" data-s="' + si + '" data-i="' + ii + '" data-f="date" value="' + esc(it.date) + '" aria-label="Fecha de publicación"></td>' +
+        '<td class="qty"><input class="n" type="number" min="0" step="1" id="qty-' + it.id + '" data-s="' + si + '" data-i="' + ii + '" data-f="qty" value="' + esc(it.qty) + '" aria-label="Cantidad"></td>' +
+        '<td class="num">' + (lt == null ? '<span class="tbd">Por definir</span>' : fmt(lt)) + "</td>" +
+        '<td><button class="x" type="button" data-act="del-item" data-s="' + si + '" data-i="' + ii + '" aria-label="Quitar ' + esc(it.piece) + '">Quitar</button></td></tr>';
+    }).join("");
+    var st = sectionTotal(sec);
+    return '<section><h2><span><input id="secname-' + sec.id + '" data-sec="' + si + '" value="' + esc(sec.name) + '" aria-label="Nombre de la sección" style="font: inherit; width: auto; max-width: 100%"></span><small>' + fmt(st.t) + "</small></h2>" +
+      '<div class="scroll"><table><thead><tr><th>Pieza</th><th>Formato</th><th>Publica</th><th class="num">Cant.</th><th class="num">Subtotal</th><th></th></tr></thead><tbody>' + rows + "</tbody></table></div>" +
+      '<button class="link" type="button" data-act="add-item" data-s="' + si + '">+ Añadir pieza</button></section>';
+  }
+
+  function ratesBlock() {
+    if (!editing) {
+      return '<section><h2>Tarifas</h2><div class="scroll"><table><thead><tr><th>Formato</th><th class="num">Valor</th><th>Incluye</th></tr></thead><tbody>' +
+        state.rates.map(function (r) { return "<tr><td>" + esc(r.name) + '</td><td class="num">' + (typeof r.price === "number" ? fmt(r.price) : '<span class="tbd">Por definir</span>') + "</td><td>" + esc(r.note) + "</td></tr>"; }).join("") +
+        "</tbody></table></div></section>";
+    }
+    return '<section><h2>Tarifas</h2><div class="scroll"><table><thead><tr><th>Formato</th><th class="num">Valor</th><th>Incluye</th><th></th></tr></thead><tbody>' +
+      state.rates.map(function (r, ri) {
+        var used = state.sections.some(function (s) { return s.items.some(function (it) { return it.rate === r.id; }); });
+        return '<tr><td><input id="rname-' + r.id + '" data-r="' + ri + '" data-f="name" value="' + esc(r.name) + '" aria-label="Nombre de la tarifa"></td>' +
+          '<td class="price"><input class="n" type="number" min="0" step="1000" id="rprice-' + r.id + '" data-r="' + ri + '" data-f="price" value="' + (typeof r.price === "number" ? r.price : "") + '" placeholder="Por definir" aria-label="Valor de ' + esc(r.name) + '"></td>' +
+          '<td><input id="rnote-' + r.id + '" data-r="' + ri + '" data-f="note" value="' + esc(r.note) + '" aria-label="Qué incluye"></td>' +
+          "<td>" + (used ? "" : '<button class="x" type="button" data-act="del-rate" data-r="' + ri + '">Quitar</button>') + "</td></tr>";
+      }).join("") + '</tbody></table></div><button class="link" type="button" data-act="add-rate">+ Añadir tarifa</button><p class="hint">Deja el valor vacío para marcarlo como «Por definir».</p></section>';
+  }
+
+  function listBlock(key, title) {
+    if (!editing) return '<section><h2>' + title + '</h2><ul class="plain">' + state[key].map(function (t) { return "<li>" + esc(t) + "</li>"; }).join("") + "</ul></section>";
+    return '<section><h2>' + title + '</h2><div class="edit-list">' + state[key].map(function (t, i) {
+      return '<div class="row"><input id="' + key + "-" + i + '" data-list="' + key + '" data-i="' + i + '" value="' + esc(t) + '" aria-label="' + title + '"><button class="x" type="button" data-act="del-line" data-list="' + key + '" data-i="' + i + '">Quitar</button></div>';
+    }).join("") + '</div><button class="link" type="button" data-act="add-line" data-list="' + key + '">+ Añadir</button></section>';
+  }
+
+  function metaField(key, label) {
+    return "<div><dt>" + label + "</dt><dd>" + (editing ? '<input id="meta-' + key + '" data-meta="' + key + '" value="' + esc(state[key]) + '" aria-label="' + label + '">' : esc(state[key])) + "</dd></div>";
+  }
+
+  function toolbar() {
+    if (!canEdit && !readOnly) return "";
+    if (readOnly) return '<div class="toolbar"><span class="status">Vista de solo lectura</span></div>';
+    if (!editing) return '<div class="toolbar"><span class="status" id="status" aria-live="polite"></span><button type="button" data-act="edit">Editar</button></div>';
+    var d = dirty();
+    return '<div class="toolbar"><span class="status' + (d ? " dirty" : "") + '" id="status" aria-live="polite">' + (busy ? "Guardando…" : d ? "Cambios sin guardar" : "Sin cambios") + "</span>" +
+      '<button type="button" data-act="discard"' + (busy ? " disabled" : "") + ">" + (d ? "Descartar cambios" : "Cerrar edición") + "</button>" +
+      '<button class="primary" type="button" data-act="save"' + (!d || busy ? " disabled" : "") + ">Guardar cambios</button></div>";
+  }
+
+  function render() {
+    var g = grand();
+    var banner = pendingDraft ? '<div class="banner" role="status"><p>Tenías cambios sin guardar de una versión anterior de esta cotización.</p><button type="button" data-act="restore">Recuperarlos</button><button type="button" data-act="forget">Descartarlos</button></div>' : "";
+    var summary = state.sections.map(function (s) { var x = sectionTotal(s); return "<div><span>" + esc(s.name) + "</span><b>" + fmt(x.t) + "</b></div>"; }).join("");
+    app.innerHTML = '<div class="wrap">' + toolbar() + banner +
+      '<article class="sheet">' +
+        '<header class="head"><div><p class="eyebrow">Cotización</p><h1>Contenido para <em>Alado</em></h1><dl class="meta">' +
+          metaField("client", "Para") + metaField("period", "Periodo") + metaField("preparedBy", "Preparada por") + metaField("date", "Fecha") +
+        '</dl></div><div class="total"><div class="label">Total</div><div class="value">' + fmt(g.t) + "</div>" +
+          (g.tbd ? '<div class="pending">+ ' + g.tbd + (g.tbd === 1 ? " pieza" : " piezas") + " por definir</div>" : "") + "</div></header>" +
+        '<div class="summary">' + summary + "</div>" +
+        state.sections.map(function (s, i) { return editing ? editTable(s, i) : viewTable(s); }).join("") +
+        ratesBlock() +
+        '<div class="cols">' + listBlock("conditions", "Condiciones") + listBlock("notes", "Notas") + "</div>" +
+        '<p class="foot">Valores en pesos colombianos. Las piezas «por definir» se suman al total cuando tengan tarifa.</p>' +
+      "</article></div>";
+  }
+
+  function rerenderKeepFocus() {
+    var a = document.activeElement, id = a && a.id, s = a && a.selectionStart, e = a && a.selectionEnd;
+    render();
+    if (id) { var el = document.getElementById(id); if (el) { el.focus(); try { if (s != null) el.setSelectionRange(s, e); } catch (x) {} } }
+  }
+
+  app.addEventListener("input", function (ev) {
+    var t = ev.target, d = t.dataset;
+    if (d.meta) state[d.meta] = t.value;
+    else if (d.sec != null && d.sec !== "") state.sections[+d.sec].name = t.value;
+    else if (d.list) state[d.list][+d.i] = t.value;
+    else if (d.r != null && d.r !== "") {
+      var r = state.rates[+d.r];
+      if (d.f === "price") r.price = t.value === "" ? null : Math.max(0, Math.round(Number(t.value)) || 0);
+      else r[d.f] = t.value;
+    } else if (d.s != null && d.s !== "") {
+      var it = state.sections[+d.s].items[+d.i];
+      if (d.f === "qty") it.qty = t.value === "" ? 0 : Math.max(0, Math.round(Number(t.value)) || 0);
+      else it[d.f] = t.value;
+    } else return;
+    stashDraft();
+    rerenderKeepFocus();
+  });
+
+  app.addEventListener("click", function (ev) {
+    var b = ev.target.closest("button[data-act]"); if (!b) return;
+    var d = b.dataset, act = d.act;
+    if (act === "edit") { editing = true; render(); return; }
+    if (act === "discard") { state = clone(saved); editing = false; clearDraft(); render(); return; }
+    if (act === "save") { save(); return; }
+    if (act === "restore") { state = pendingDraft.draft; pendingDraft = null; editing = canEdit; stashDraft(); render(); return; }
+    if (act === "forget") { pendingDraft = null; clearDraft(); render(); return; }
+    if (act === "add-item") { var sec = state.sections[+d.s]; sec.items.push({ id: uid(sec.id), piece: "Nueva pieza", rate: state.rates[0] ? state.rates[0].id : "", date: "Por definir", qty: 1 }); }
+    else if (act === "del-item") state.sections[+d.s].items.splice(+d.i, 1);
+    else if (act === "add-rate") state.rates.push({ id: uid("r"), name: "Nueva tarifa", price: null, note: "" });
+    else if (act === "del-rate") state.rates.splice(+d.r, 1);
+    else if (act === "add-line") state[d.list].push("");
+    else if (act === "del-line") state[d.list].splice(+d.i, 1);
+    else return;
+    stashDraft(); render();
+  });
+
+  function resetCss() {
+    var styles = document.head ? document.head.querySelectorAll("style") : [];
+    for (var i = 0; i < styles.length; i++) { var t = styles[i].textContent || ""; if (t.indexOf("[hidden]") !== -1) return t; }
+    return ":root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}";
+  }
+
+  function buildDocument(st) {
+    var S = "script";
+    var json = JSON.stringify(st, null, 1).replace(/</g, "\\u003c");
+    return "<!doctype html><html><head><meta charset=utf8><meta name=viewport content=\"width=device-width,initial-scale=1,viewport-fit=cover\"><style>" + resetCss() + "</style></head><body>" +
+      "<title>" + esc(TITLE) + "</title>\n<meta name=\"claude:viewport-fit-sides\" content=\"cover\">\n" +
+      "<link id=\"fonts\" rel=\"stylesheet\" href=\"" + esc(document.getElementById("fonts").getAttribute("href")) + "\">\n" +
+      "<style id=\"page-style\">" + document.getElementById("page-style").textContent + "</style>\n" +
+      "<div id=\"app\"></div>\n" +
+      "<" + S + " type=\"application/json\" id=\"quote-state\">" + json + "</" + S + ">\n" +
+      "<" + S + " id=\"page-script\">" + document.getElementById("page-script").textContent + "</" + S + ">\n</body></html>";
+  }
+
+  function setStatus(msg) { var s = document.getElementById("status"); if (s) s.textContent = msg; }
+
+  function save() {
+    if (!artifactNs || busy || !dirty()) return;
+    busy = true; render();
+    var doc = buildDocument(state);
+    try { sessionStorage.setItem(DRAFT_KEY, JSON.stringify({ base: saved, draft: state })); } catch (e) {}
+    artifactNs.publish(doc).then(function () {
+      clearDraft();
+      saved = clone(state); busy = false; editing = false; render(); setStatus("Guardado. Cargando la nueva versión…");
+    }, function (err) {
+      busy = false;
+      var code = err && err.code;
+      if (code === "conflict") { render(); setStatus("Alguien guardó otra versión. Se va a recargar; tus cambios quedan para recuperar."); return; }
+      if (code === "not_writer" || code === "not_granted" || code === "not_declared" || code === "consent_required" || code === "capability_disabled" || code === "capability_removed") {
+        canEdit = false; readOnly = true; editing = false; state = clone(saved); clearDraft(); render(); return;
+      }
+      render();
+      setStatus(code === "rate_limited" ? "Se guardó varias veces seguidas. Espera un momento y vuelve a intentar." : code === "too_large" ? "La cotización es demasiado grande para guardarla." : "No se pudo guardar. Vuelve a intentarlo en un momento.");
+    });
+  }
+
+  render();
+  if (window.claude && typeof window.claude.use === "function") {
+    window.claude.use("artifact").then(function (ns) {
+      artifactNs = ns;
+      canEdit = !!ns;
+      if (!ns) editing = false;
+      render();
+    }, function () {});
+  } else { editing = false; render(); }
+})();
+</script>

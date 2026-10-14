@@ -1,0 +1,175 @@
+{
+ "client": "Alado · Alado Bride y Alado & Co.",
+ "period": "Octubre 2026 – enero 2027",
+ "preparedBy": "Sara",
+ "date": "14 de octubre de 2026",
+ "rates": [
+  {
+   "id": "video",
+   "name": "Video",
+   "price": 200000,
+   "note": "Grabado y editado"
+  },
+  {
+   "id": "carrusel",
+   "name": "Carrusel",
+   "price": 170000,
+   "note": ""
+  },
+  {
+   "id": "grafica",
+   "name": "Pieza gráfica",
+   "price": 120000,
+   "note": ""
+  },
+  {
+   "id": "gestion",
+   "name": "Gestión y organización de taller",
+   "price": 600000,
+   "note": "Comunicación con inscritas, pagos, documentos, logística y el día del taller"
+  },
+  {
+   "id": "fotos",
+   "name": "Campaña de fotos",
+   "price": null,
+   "note": "Sesión del 22 de octubre"
+  }
+ ],
+ "sections": [
+  {
+   "id": "bride",
+   "name": "Alado Bride",
+   "items": [
+    {
+     "id": "b1",
+     "piece": "Alejo como artista",
+     "rate": "video",
+     "date": "Por definir",
+     "qty": 1
+    },
+    {
+     "id": "b2",
+     "piece": "La atención en el taller: Lola y las chicas",
+     "rate": "video",
+     "date": "Por definir",
+     "qty": 1
+    },
+    {
+     "id": "b3",
+     "piece": "7 claves del vestido perfecto",
+     "rate": "video",
+     "date": "Por definir",
+     "qty": 1
+    },
+    {
+     "id": "b4",
+     "piece": "7 claves del traje perfecto",
+     "rate": "video",
+     "date": "Por definir",
+     "qty": 1
+    },
+    {
+     "id": "b5",
+     "piece": "Agenda abierta hasta el 11 de diciembre",
+     "rate": "grafica",
+     "date": "30 nov",
+     "qty": 1
+    },
+    {
+     "id": "b6",
+     "piece": "Notas de Alejo: novias 2027",
+     "rate": "carrusel",
+     "date": "5 ene",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "id": "co",
+   "name": "Alado & Co.",
+   "items": [
+    {
+     "id": "c1",
+     "piece": "Taller de cerámica · Video promocional con Andrés",
+     "rate": "video",
+     "date": "8 oct",
+     "qty": 1
+    },
+    {
+     "id": "c2",
+     "piece": "Taller de cerámica · Invitación",
+     "rate": "grafica",
+     "date": "7 oct",
+     "qty": 1
+    },
+    {
+     "id": "c3",
+     "piece": "Taller de cerámica · Gestión y organización",
+     "rate": "gestion",
+     "date": "17 oct",
+     "qty": 1
+    },
+    {
+     "id": "c4",
+     "piece": "Taller de cerámica · Video del taller",
+     "rate": "video",
+     "date": "19 oct",
+     "qty": 1
+    },
+    {
+     "id": "c5",
+     "piece": "Campaña de fotos de textil hogar",
+     "rate": "fotos",
+     "date": "27 oct",
+     "qty": 1
+    },
+    {
+     "id": "c6",
+     "piece": "Video de Navidad",
+     "rate": "video",
+     "date": "29 oct",
+     "qty": 1
+    },
+    {
+     "id": "c7",
+     "piece": "Video de textil hogar",
+     "rate": "video",
+     "date": "3 nov",
+     "qty": 1
+    },
+    {
+     "id": "c8",
+     "piece": "Video de la receta",
+     "rate": "video",
+     "date": "21 nov",
+     "qty": 1
+    },
+    {
+     "id": "c9",
+     "piece": "Montando la tienda",
+     "rate": "video",
+     "date": "24 oct",
+     "qty": 1
+    },
+    {
+     "id": "c10",
+     "piece": "Video en el taller de los Pérez",
+     "rate": "video",
+     "date": "Por definir",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "conditions": [
+  "50% al aprobar y 50% contra entrega, por mes.",
+  "Hasta dos rondas de ajustes por pieza.",
+  "Piezas extra a la tarifa vigente.",
+  "Gastos reembolsables aparte y con aprobación previa (transporte, equipo, música con licencia).",
+  "Los derechos del contenido son de Alado; Sara puede mostrarlo en su portafolio."
+ ],
+ "notes": [
+  "La tarifa de la campaña de fotos está por definir: el total sube cuando se agregue.",
+  "Las fechas por definir se acuerdan con Andrés y Alejo."
+ ]
+}
