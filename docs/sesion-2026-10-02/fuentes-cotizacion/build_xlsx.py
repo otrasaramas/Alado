@@ -79,7 +79,7 @@ ws.cell(r, 4, "TOTAL").font = Font(bold=True, size=13)
 c = ws.cell(r, 11, f"=SUM(K{sum_first}:K{r-1})"); c.number_format = money; c.font = Font(bold=True, size=13)
 for j in range(1, 13): ws.cell(r, j).fill = TOT
 total_row = r; r += 1
-ws.cell(r, 4, "Gestión de talleres y campaña de fotos todavía no tienen tarifa: el total sube cuando las definas.").font = Font(italic=True, color="9C5700")
+ws.cell(r, 4, "La gestión del taller y la campaña de fotos todavía no tienen tarifa: el total sube cuando las definas.").font = Font(italic=True, color="9C5700")
 r += 2
 
 ws.cell(r, 1, "POR MES (según fecha de publicación)").font = Font(bold=True, color=BLUE); r += 1
@@ -99,13 +99,10 @@ for t in ["50% al aprobar y 50% contra entrega, por mes.",
     ws.cell(r, 2, "· " + t); r += 1
 r += 1
 ws.cell(r, 1, "DATOS QUE FALTAN").font = Font(bold=True, color="9C5700"); r += 1
-for t in ["Tarifa de gestión y organización por taller.",
+for t in ["Tarifa de gestión y organización del taller de cerámica.",
           "Tarifa de la campaña de fotos de textil hogar (y cuántas fotos editadas se entregan).",
           "Tarifa de pieza gráfica suelta (hoy igual al set de historias).",
-          "Número de partes de la serie con Lilo.",
-          "Fechas: servicio con Lola, Alejo como artista, Alejo 7 claves, video promocional del kimono, taller de los Pérez.",
-          "¿Salieron el Destacado «Bride» (9 oct) y el figurín en vivo (13 oct)?",
-          "¿Se cotizan el video de los Pérez y el contenido del lanzamiento con Entrelazos (27 nov)?",
+          "Fechas: Alejo como artista, la atención en el taller, 7 claves del vestido, 7 claves del traje, video de los Pérez.",
           "¿Los opcionales del taller de cerámica van dentro de gestión o aparte?"]:
     ws.cell(r, 2, "· " + t); r += 1
 

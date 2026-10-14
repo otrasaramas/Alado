@@ -13,25 +13,15 @@ RATES = [  # formato, tarifa (None = por definir), nota
 
 # linea, proyecto, pieza, formato, graba, publica, cantidad, nota
 ITEMS = [
- ("Bride", "Alado Bride", "Destacado fijo «Bride»", "Historias", None, D(10,9), 1, "¿Ya salió?"),
- ("Bride", "Alado Bride", "El figurín en vivo", "Video", None, D(10,13), 1, "¿Ya salió?"),
- ("Bride", "Alado Bride", "Serie con Lilo: diseñar un vestido con ella", "Video", D(10,6), D(10,15), 3, "Partes por confirmar; una cada jueves"),
- ("Bride", "Alado Bride", "Único vs. alquilado", "Carrusel", None, D(10,22), 1, ""),
- ("Bride", "Celebration", "Historias de prom y 15 (material de Lola)", "Historias", None, "asap", 1, "Lo antes posible; permiso de los padres"),
- ("Bride", "Alado Bride", "Del primer lápiz a la entrega", "Carrusel", None, D(11,12), 1, "Alejo confirma tiempos"),
- ("Bride", "Celebration", "Prom y 15: tu vestido, único", "Carrusel", None, D(11,19), 1, ""),
- ("Bride", "Alado Bride", "Caja de preguntas con Alejo", "Historias", None, D(11,23), 1, ""),
- ("Bride", "Alado Bride", "Notas de Alejo (manuscritas)", "Video", None, D(11,24), 1, ""),
- ("Bride", "Alado Bride", "Agenda abierta hasta el 11 de diciembre", "Historias", None, D(11,30), 1, ""),
- ("Bride", "Alado Bride", "El servicio, con las niñas del taller y Lola", "Video", None, None, 1, "Fecha con Andrés"),
- ("Bride", "Alado Bride", "Alejo como artista", "Video", None, None, 1, "Fecha con Alejo"),
- ("Bride", "Alado Bride", "Alejo como experto: 7 claves (novia y trajes)", "Video", None, None, 1, "Fecha con Alejo"),
+ ("Bride", "Alado Bride", "Alejo como artista", "Video", None, None, 1, "Una pieza sobre Alejo"),
+ ("Bride", "Alado Bride", "La atención en el taller: Lola y las chicas", "Video", None, None, 1, "Fecha con Andrés"),
+ ("Bride", "Alado Bride", "7 claves del vestido perfecto", "Video", None, None, 1, "Con Alejo"),
+ ("Bride", "Alado Bride", "7 claves del traje perfecto", "Video", None, None, 1, "Con Alejo"),
+ ("Bride", "Alado Bride", "Agenda abierta hasta el 11 de diciembre", "Pieza gráfica", None, D(11,30), 1, ""),
  ("Bride", "Alado Bride", "Notas de Alejo: novias 2027", "Carrusel", None, D(1,5), 1, ""),
- ("Bride", "Alado Bride", "Cómo agendar tu cita en enero", "Carrusel", None, D(1,9), 1, ""),
 
  ("Alado & Co.", "Taller de pintura cerámica", "Video promocional con Andrés", "Video", D(10,6), D(10,8), 1, ""),
  ("Alado & Co.", "Taller de pintura cerámica", "Invitación", "Pieza gráfica", None, D(10,7), 1, ""),
- ("Alado & Co.", "Taller de pintura cerámica", "¿Qué incluye?", "Pieza gráfica", None, D(10,10), 1, ""),
  ("Alado & Co.", "Taller de pintura cerámica", "Gestión y organización del taller", "Gestión de taller", None, D(10,17), 1, "Hasta el día del taller"),
  ("Alado & Co.", "Taller de pintura cerámica", "Video del taller", "Video", D(10,17), D(10,19), 1, "Sale 2 días después"),
  ("Alado & Co.", "Grabación de Navidad", "Campaña de fotos de textil hogar", "Campaña de fotos", D(10,22), D(10,27), 1, ""),
@@ -39,10 +29,7 @@ ITEMS = [
  ("Alado & Co.", "Grabación de Navidad", "Video de textil hogar", "Video", D(10,22), D(11,3), 1, ""),
  ("Alado & Co.", "Grabación de Navidad", "Video de la receta", "Video", D(10,22), D(11,21), 1, ""),
  ("Alado & Co.", "La tienda", "Montando la tienda", "Video", D(10,23), D(10,24), 1, ""),
- ("Alado & Co.", "Taller de pintura textil (kimono)", "Video promocional", "Video", None, D(11,17), 1, "Fecha de grabación por definir"),
- ("Alado & Co.", "Taller de pintura textil (kimono)", "Invitación", "Pieza gráfica", None, D(11,20), 1, ""),
- ("Alado & Co.", "Taller de pintura textil (kimono)", "Gestión y organización del taller", "Gestión de taller", None, D(12,12), 1, "Hasta el día del taller"),
- ("Alado & Co.", "Taller de pintura textil (kimono)", "Video del taller", "Video", D(12,12), D(12,14), 1, "Sale 2 días después"),
+ ("Alado & Co.", "La tela", "Video en el taller de los Pérez", "Video", None, None, 1, "Fecha por confirmar"),
 ]
 
 # Opcionales del taller de cerámica (cantidad 0: suman solo si no van en gestión)
@@ -55,13 +42,10 @@ OPTIONAL = [
 # Eventos y grabaciones para el calendario (no cotizados aparte)
 EVENTS = [
  (D(10,6), "Grabación", "Alado & Co.", "Video de Andrés para el taller"),
- (D(10,6), "Grabación", "Bride", "Lilo · parte 1"),
  (D(10,17), "Evento", "Alado & Co.", "Taller de pintura cerámica · Montesereno"),
  (D(10,22), "Grabación", "Alado & Co.", "Día de Navidad: fotos de textil hogar, Navidad, receta"),
  (D(10,23), "Grabación", "Alado & Co.", "Montaje de la tienda en El Retiro"),
  (D(11,27), "Evento", "Alado", "Lanzamiento Alado × Entrelazos y pasarela"),
  (D(12,12), "Evento", "Alado & Co.", "Taller de pintura textil (kimono)"),
 ]
-UNDATED_EXTRA = [
- ("Alado", "Video en el taller de los Pérez (la tela)", "Fecha por confirmar · no está en la cotización"),
-]
+UNDATED_EXTRA = []
