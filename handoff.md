@@ -68,6 +68,7 @@ Construir el **cerebro de marca de Alado** para el Codex de Andrés y la **estra
 
 ## Taller de cerámica: cuenta sencilla (2026-10-14)
 - En casa, 15 personas confirmadas, cupo a $230.000, sin venta online ni pago a restaurante.
-- Gastos $2.353.800 (incluye 20% de pocillos y platos de repuesto, quema a $3.000 por pieza, comida a $16.000 por persona y contenido $690.000) · ganancia $1.096.200 (32%). Detalle en `docs/sesion-2026-10-02/01-taller-ceramica-cotizacion.md`.
+- Gastos $2.583.800 (incluye 20% de pocillos y platos de repuesto, quema a $3.000 por pieza, comida a $16.000 por persona, materiales $250.000, delantales 15 × $20.000 y contenido $690.000) · ganancia $866.200 (25%). Detalle en `docs/sesion-2026-10-02/01-taller-ceramica-cotizacion.md`.
+- Lista de compras de materiales (sin pigmentos): `docs/sesion-2026-10-02/16-lista-compras-taller-ceramica.md`.
 - Los términos, la invitación, el carrusel, el reel y el post de confirmación todavía dicen Montesereno, El Retiro.
 - El Excel se regenera con `docs/sesion-2026-10-02/fuentes-cotizacion/build_taller_ceramica.py`.
