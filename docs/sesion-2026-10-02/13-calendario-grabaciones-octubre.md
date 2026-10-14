@@ -9,7 +9,7 @@
 | **mar 6 oct** | Video de Andrés invitando al taller de cerámica | Alado & Co. | Confirmado (hoy) |
 | **mar 6 oct** | Lilo · parte 1: diseñar un vestido con ella (serie de varias partes) | Bride | Confirmado (hoy) |
 | **sáb 17 oct** | Taller de pintura cerámica: historias en vivo y recap | Alado & Co. | Confirmado |
-| **mié 21 oct** | Campaña Alado & Co. + videos | Alado & Co. | Confirmado |
+| **jue 22 oct** | Día de grabación de Navidad: campaña de fotos de textil hogar + videos de Navidad, receta y textil hogar | Alado & Co. | Confirmado (antes decía 21 oct) |
 | **vie 23 oct** | Video de la tienda Alado & Co. (El Retiro) | Alado & Co. | Confirmado |
 | **vie 27 nov** | Lanzamiento Alado × Entrelazos + apertura del restaurante + pasarela | Alado | Confirmado (ideas en `14-ideas-lanzamiento-entrelazos.md`) |
 | Por confirmar | Taller de los Pérez: dónde se fabrica la tela | Alado | **Recordar** |
