@@ -1,123 +1,22 @@
 # Taller de pintura en cerámica — Cotización
 
-> Tarea 1 · Sesión 2026-10-02. **Fecha del taller: 17 de octubre.**
+Sábado 17 de octubre · en casa · **15 personas confirmadas** · **cupo a $230.000**.
+Excel: **`cotizacion-taller-ceramica.xlsx`**. Cambia las celdas amarillas y lo demás se calcula solo.
 
-## Cuenta vigente (14 de octubre)
-Sábado 17 de octubre · 2 – 6 p. m. · Montesereno, El Retiro · 18 cupos · **15 personas confirmadas** · **cupo a $230.000**.
-Excel: **`cotizacion-taller-ceramica.xlsx`** (edita las celdas amarillas). Se genera con `fuentes-cotizacion/build_taller_ceramica.py`.
+## Gastos
+| Qué | Total |
+|---|---|
+| Pocillos y platos (72 de cada uno, con 20% de repuesto) | $388.800 |
+| Quema (120 piezas × $3.000) | $360.000 |
+| Pintura y materiales (pigmentos, pinceles, delantales, empaque) | $440.000 |
+| Comida (15 × $16.000) | $240.000 |
+| Lizeth (5 h × $9.000) | $45.000 |
+| Otros: transporte, flores | $190.000 |
+| Contenido del taller | $690.000 |
+| **Total** | **$2.353.800** |
 
-### Qué hay que comprar y pagar
-| Concepto | Cantidad | Valor | Total |
-|---|---|---|---|
-| Pocillos (con 20% de repuesto) | 72 | $3.200 | $230.400 |
-| Platos (con 20% de repuesto) | 72 | $2.200 | $158.400 |
-| Quema (solo las piezas que se llevan) | 120 | $3.000 | $360.000 |
-| **Cerámica y quema** | | | **$748.800** |
-| Pigmentos | 15 | $6.000 | $90.000 |
-| Pinceles, esponjas y materiales | | | $200.000 |
-| Delantales | | | $120.000 |
-| Empaque | 15 | $2.000 | $30.000 |
-| **Pintura y materiales** | | | **$440.000** |
-| Comida en Montesereno | 15 | $16.000 | $240.000 |
-| Lizeth | 5 h | $9.000 | $45.000 |
-| Otros: transporte, flores, promoción | | | $190.000 |
-| **Compras y pagos** | | | **$1.663.800** |
-| Imprevistos (5% de compras y pagos) | | | $83.190 |
-| Contenido del taller | | | $690.000 |
-| **Costo total** | | | **$2.436.990** |
-
-Repuestos: 15 personas × 4 = 60 pocillos y 60 platos, más 20% = 72 de cada uno. Solo se queman las 8 piezas que se lleva cada persona (120); los repuestos que no se usen quedan para el próximo taller.
-
-### Resultado
-- Ingresos: $3.450.000 · costo total: $2.436.990 · **ganancia: $1.013.010** · **margen: 29,4%** ($67.534 por persona).
-- Sin cargar el contenido al taller: ganancia $1.703.010 (49,4%).
-- Anticipos (50%): $1.725.000 · saldo por cobrar el día del taller: $1.725.000.
-- Punto de equilibrio: 9 personas. Con los 18 cupos llenos: ganancia $1.466.760 (35,4%).
-- Para un margen de 40%, el cupo tendría que valer $275.000 (solo como referencia: el precio ya está publicado).
-
-### Supuestos por confirmar
-- La comida ($16.000 por persona) es aproximada. Si el vino no viene incluido, va en su celda aparte (hoy en $0).
-- Montesereno no cobra el espacio ($0).
-- Delantales ($120.000, calculados para 12 personas), materiales ($200.000), empaque y otros fijos son estimados.
-- No incluye la comida de Andrés, Alejo y Lizeth.
-- Los imprevistos se calculan sobre compras y pagos, ya no sobre el contenido. El pago al restaurante de la versión anterior se reemplazó por la comida por persona.
-
----
-*Lo que sigue es el historial de la cotización: sus cifras ya no son vigentes.*
-
-## Objetivo
-Cotizar el taller: definir qué incluye, los costos y el precio por persona.
-
-## Decisiones (confirmadas)
-- **Modalidad:** ✅ **esmalte + quema** (entrega posterior).
-- **Cupos:** 10–12 (estimado 11).
-- **Refrigerio:** ✅ **completo con vino**.
-- **Duración / horario / lugar / quién dicta:** `[por definir]`.
-
-## Datos reales
-- **Qué pinta cada persona:** set de **4 pocillos + 4 platos**. Pocillo $3.200/u · plato $2.200/u → **$21.600/persona** en cerámica.
-- **Pigmentos:** los pone Alado (estimado, confirmar).
-- **Talleristas:** Andrés + Alejandro (fundadores) + **Lizeth** (experta en pintura del Carmen), $9.000/hora × **5 horas = $45.000**.
-- **Lugar:** un **restaurante** (el refrigerio/comida lo maneja el restaurante → no entra al costo de Alado; espacio $0, según el trato).
-- **Compras:** pinceles, esponjas, materiales y delantales (reutilizables).
-
-## Datos reales (finales)
-- Set: 4 pocillos ($3.200) + 4 platos ($2.200) = **$21.600/persona** · **8 piezas**.
-- Pigmentos: **$6.000/persona** · Quema: **$3.000/pieza** (taller amigo) = **$24.000/persona**.
-- Lizeth: 5h × $9.000 = **$45.000**. Andrés y Alejandro: fundadores.
-- Restaurante: pone **lugar, aperitivos y vino** → no es costo de Alado.
-
-## Resultado (hoja simple y editable)
-> **`cotizacion-taller-ceramica.xlsx`** — edita las celdas amarillas; se calcula solo.
-
-Con **11 personas** y precio de **$200.000/cupo**:
-- Costo variable/persona: **$53.600** · Costo fijo total: **$555.000** · Costo total: **$1.144.600**
-- Ingresos: **$2.200.000** · **Ganancia: $1.055.400**
-- **👉 Puedes pagarle al restaurante hasta ~$455.000 total (~$41.400/persona)** si quieres conservar $600.000 de ganancia.
-
-*Nota: pinceles/esponjas/delantales son reutilizables → próximos talleres cuestan menos.*
-
-## Costos
-**Variables (por persona)** — `[llenar $]`
-- Pieza(s) de cerámica en blanco/bisque: `[$]`
-- Pinturas/esmaltes, pinceles, esponjas, agua: `[$]`
-- Quema por pieza (si aplica): `[$]`
-- Delantal + empaque: `[$]`
-- Refrigerio/bebidas: `[$]`
-- Tarjeta/kit: `[$]`
-- **Subtotal variable/persona:** `[$]`
-
-**Fijos (no cambian con el nº de gente)** — `[llenar $]`
-- Honorarios de quien dicta (dictado + preparación): `[$]`
-- Asistente (si aplica): `[$]`
-- Uso/alquiler del espacio + montaje + limpieza: `[$]`
-- Ambientación (flores, música): `[$]`
-- Diseño y promoción: `[$]`
-- Transporte de materiales / piezas a quemar: `[$]`
-- Comisión pasarela de pago (si venta online): `[$]`
-- **Colchón imprevistos (~10%):** `[$]`
-- **Subtotal fijos:** `[$]`
-
-## Cálculo del precio
-- **Precio/persona = variable/persona + (fijos ÷ nº mínimo) + margen.**
-- Punto de equilibrio (cupos para cubrir costos): `[__]`
-- Referencia de mercado (Medellín, cerámica/experiencia): ~$90.000–$180.000/persona.
-- **Precio sugerido por cupo:** `[$]`
-
-## Términos de la cotización
-- Anticipo/reserva: `[% ]` · Política de cancelación: `[__]` · Cupo mínimo para realizarlo: `[__]`
-- Qué incluye exactamente: `[__]`
-- Qué se llevan (y si hay quema, cuándo/cómo se entrega): `[__]`
-
----
-*Siguiente paso: Sara confirma modalidad y cupos → se llenan los números → precio final. (Se ofreció hoja de cálculo en Excel con fórmulas.)*
-
-## Actualización 2026-10-03: Excel con precio del cupo, margen y ganancia
-`cotizacion-taller-ceramica.xlsx` ahora calcula, con celdas amarillas editables: costo total, ganancia, margen real, ganancia por persona, precio mínimo del cupo, precio recomendado para el margen que se quiera, punto de equilibrio, cuánto se puede pagar al restaurante y una tabla de escenarios por número de personas.
-
-Con 11 personas, $200.000 por cupo, 5% de imprevistos y el contenido del taller ($690.000) como costo:
-- Costo total $1.926.330 · ganancia $273.670 · margen 12,4% · $24.879 por persona.
-- Precio mínimo $175.121; para un margen de 40% el cupo debería valer **$295.000**.
-- Punto de equilibrio: 10 personas.
-
-Sin cargar el contenido al taller ($0), el margen con el mismo precio sube a 45%.
+## Cuenta
+- Ingresos: **$3.450.000** (15 × $230.000).
+- Gastos: **$2.353.800**.
+- **Ganancia: $1.096.200** (32%), $73.080 por persona.
+- Sin cargar el contenido al taller, la ganancia es de $1.786.200.
