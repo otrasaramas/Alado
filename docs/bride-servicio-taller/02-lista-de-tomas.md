@@ -81,7 +81,7 @@ Las demás: 1 o 2 tomas. Video vertical 9:16; fotos 4:5. Cámara lenta (60 fps) 
 - [ ] X12 Cinco fotos verticales 9:16 de detalles, para historias.
 
 ## Antes de irte
-- [ ] Están todas las ★ (son 21).
+- [ ] Están todas las ★ (son 18).
 - [ ] Revisaste en la pantalla que los macros estén enfocados.
 - [ ] No se ve ningún nombre, número de teléfono ni vestido completo de una novia.
 - [ ] Copia de seguridad del material.

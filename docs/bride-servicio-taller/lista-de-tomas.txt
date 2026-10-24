@@ -90,7 +90,7 @@ DE SOBRA · por si las moscas
 
 
 Antes de irte
-- [ ] Están todas las ★ (son 21).
+- [ ] Están todas las ★ (son 18).
 - [ ] Revisaste en la pantalla que los macros estén enfocados.
 - [ ] No se ve ningún nombre, número de teléfono ni vestido completo de una novia.
 - [ ] Copia de seguridad del material.
