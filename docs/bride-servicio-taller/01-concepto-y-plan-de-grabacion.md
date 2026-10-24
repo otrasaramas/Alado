@@ -1,62 +1,76 @@
-# Alado Bride · La atención en el taller: Lola y las chicas
+# Alado Bride · «Antes de que llegues»
 
-> Pieza de la cotización: «La atención en el taller: Lola y las chicas» (video). Entregables: **carrusel con fotos y videos** y, si alcanza, un **reel el sábado** con el mismo material.
-> Una jornada de grabación de **4 horas**. Lola sale poco y no habla. Las confeccionistas no hablan: se graban manos y trabajo.
+> Pieza de la cotización: «La atención en el taller: Lola y las chicas». Entregables: **reel (sábado)** y **carrusel** con el mismo material.
+> Una jornada de **4 horas**. Lola sale poco y no habla. Las confeccionistas no hablan: manos y trabajo.
+> Versión 2 (24 oct). La versión 1, «Contigo, puntada a puntada», se descartó: explicaba el proceso y se veía como servicio, no como lujo.
 
-## Concepto: «Contigo, puntada a puntada»
-**El dolor:** buscar vestido de novia sola, entre perchas y referencias, con miedo a que lo hecho a la medida quede mal.
-**La respuesta de Alado:** un servicio personal de principio a fin. Alguien te responde desde el primer mensaje, tu cita es solo tuya, quince confeccionistas hacen tu vestido completo en nuestro taller, y se prueba y ajusta contigo.
-**El tono:** lujo silencioso. Se muestra tiempo, atención y manos. No se critica el alquiler ni a nadie: la diferencia se ve sola.
+## Concepto
+Todo lo que pasa en Alado **antes de que la novia llegue a su cita**: Lola escribe a mano su bienvenida, se eligen las telas pensando en ella, se pone la mesa, el taller trabaja. La puerta se abre.
+- **No se explica el servicio personalizado: se ve.** Todo está preparado para una sola persona.
+- **El dolor (estar sola, miedo a que lo hecho a la medida quede mal) se resuelve sin nombrarlo:** la novia ve a un equipo entero preparándose para ella.
+- **Lujo silencioso:** planos lentos, pocos y con aire. Casi sin texto. Nada de listas.
+- **Lola es la anfitriona:** no "responde WhatsApp", *te recibe*.
 
-## Carrusel (9 láminas, fotos y videos)
+## Reel (sábado · 25 s)
+Sonido del lugar (la pluma sobre el papel, la taza, la tijera, una máquina a lo lejos) y música instrumental suave con licencia. Texto solo al principio y al final.
+
+| Tiempo | Imagen | Texto en pantalla |
+|---|---|---|
+| 0–3 s | La sala vacía con luz de mañana; una cortina se mueve | **Antes de que llegues…** |
+| 3–6 s | Manos de Lola escriben «Para ti» en una tarjeta | — |
+| 6–9 s | Una mano extiende y alisa encaje y tul sobre la mesa | — |
+| 9–12 s | Café servido en un pocillo de cerámica; flores frescas | — |
+| 12–16 s | Bordado en macro, cámara lenta | — |
+| 16–19 s | Un alfiler entra en la tela del maniquí; cinta métrica | — |
+| 19–22 s | Lola deja la tarjeta sobre la mesa y sale de cuadro, de espaldas | — |
+| 22–25 s | La puerta se abre y entra la luz | **…ya estábamos pensando en ti.** |
+| 25–27 s | Fundido | Agenda tu cita · Alado Bride |
+
+## Carrusel (7 láminas)
 | # | Imagen | Texto |
 |---|---|---|
-| 1 | **Video:** manos pasando tul o encaje a contraluz | **Un vestido de novia no debería buscarse sola.** |
-| 2 | **Video:** manos de Lola con el celular, respondiendo un chat (pantalla genérica, sin datos reales) | Desde el primer mensaje, alguien te acompaña. Ella es Lola. |
-| 3 | **Foto:** la sala de citas lista: flores, café, papel y lápiz | Tu cita es solo tuya: con tiempo y sin afán. |
-| 4 | **Video:** plano general del taller, de espaldas o desenfocado | En nuestro taller, quince confeccionistas hacen tu vestido completo. |
-| 5 | **Foto:** tijera cortando la tela sobre la mesa | Se corta para ti. |
-| 6 | **Video:** máquina y puntada a mano, en macro | Se cose a mano, pieza por pieza. |
-| 7 | **Video:** bordado y terminaciones en cámara lenta | Los bordados y las terminaciones los hacen dos de nuestras artesanas, puntada a puntada. |
-| 8 | **Foto:** maniquí con alfileres y cinta métrica (sin mostrar un vestido completo de una novia) | Lo probamos y lo ajustamos contigo hasta que sea tuyo. |
-| 9 | **Foto:** detalle de etiqueta, tela o empaque de Alado | Un vestido hecho para ti, y un equipo entero contigo. **Escríbele a Lola y agenda tu cita.** |
+| 1 | **Video:** la sala lista, luz de mañana | **Antes de que llegues…** |
+| 2 | **Foto:** manos de Lola escribiendo la tarjeta | Lola prepara tu bienvenida. |
+| 3 | **Foto:** telas extendidas sobre la mesa | Elegimos las telas pensando en ti. |
+| 4 | **Video:** bordado en macro | Dos artesanas terminan cada bordado a mano. |
+| 5 | **Foto:** maniquí con alfileres | Tu vestido se prueba y se ajusta contigo, cuantas veces haga falta. |
+| 6 | **Texto sobre tela o fondo crema:** frase real de una novia | *«[Frase de una novia, con su permiso y sin nombre]»* |
+| 7 | **Video:** la puerta que se abre | **…ya estábamos pensando en ti.** Agenda tu cita. |
+
+Si no hay frase de una novia, la lámina 6 se quita y quedan 6.
 
 **Caption**
-> Buscar tu vestido de novia no debería ser algo que hagas sola. En Alado te acompañamos desde el primer mensaje: Lola te responde y agenda tu cita, y quince confeccionistas hacen tu vestido a mano en nuestro taller. Lo probamos y lo ajustamos contigo hasta que sea tuyo.
+> Antes de que llegues a tu cita, ya estamos trabajando para ti. Lola prepara tu bienvenida, elegimos las telas que vas a tocar y, en nuestro taller, manos expertas cosen y bordan cada vestido. Lo probamos y lo ajustamos contigo hasta que sea tuyo.
 > Escríbenos y agenda tu cita.
 
-## Reel (sábado · 20–25 s, sin voz)
-Texto en pantalla sobre los mismos planos, con música instrumental con licencia y sonido del taller de fondo.
-| Tiempo | Imagen | Texto |
-|---|---|---|
-| 0–3 s | Tul o encaje a contraluz | Un vestido de novia no debería buscarse sola. |
-| 3–6 s | Manos de Lola con el celular | Desde el primer mensaje, te acompañamos. |
-| 6–9 s | Sala de citas lista | Tu cita, solo para ti. |
-| 9–15 s | Taller general → tijera → máquina → puntada a mano | Quince confeccionistas hacen tu vestido completo. |
-| 15–19 s | Bordado en cámara lenta | Puntada a puntada. |
-| 19–22 s | Maniquí con alfileres | Lo ajustamos contigo hasta que sea tuyo. |
-| 22–25 s | Detalle de Alado | Agenda tu cita con Lola. |
+## Plan de grabación (4 horas, en el orden de la historia)
+Trípode siempre. Cada plano: **3 tomas de 10 s** y **una foto**. Video vertical 9:16; fotos 4:5. Movimientos lentos o cámara fija.
 
-## Plan de grabación (4 horas)
-Graba **cada plano en video (10 s) y en foto**: el video sirve para el reel y el carrusel, la foto para las láminas fijas. Video en vertical 9:16; fotos en 4:5.
-
-| Tiempo | Qué | Planos |
+| Tiempo | Bloque | Planos |
 |---|---|---|
-| 0:00 – 0:30 | **Preparar** | Abrir cortinas (luz natural), ordenar mesas, retirar objetos personales, montar la sala de citas (flores, café, papel). Elegir qué vestidos o piezas se pueden mostrar. |
-| 0:30 – 1:00 | **Lola** | Manos con el celular respondiendo · Lola de espaldas en la ventana o la puerta · arreglando la sala antes de una cita · sirviendo un café. |
-| 1:00 – 2:30 | **Taller** | Plano general (desde una esquina, cara de nadie) · tijera cortando · alfileres · cinta métrica · máquina de coser · plancha con vapor · aguja con hilo · encaje · pedrería · puntada a mano. |
-| 2:30 – 3:15 | **Las dos de terminaciones** | Bordado en macro, en cámara lenta · hilo pasando por la aguja · pedrería una por una · las manos de las dos trabajando juntas. |
-| 3:15 – 3:45 | **La prueba** | Maniquí con alfileres · ajuste de ruedo · cinta métrica en la cintura del maniquí · perchas con piezas en proceso (solo fragmentos). |
-| 3:45 – 4:00 | **Detalles y repaso** | Etiqueta, telas, caja o empaque · revisar que no falte ningún plano de la lista del carrusel. |
+| 0:00 – 0:30 | **Preparar la sala** | Abrir cortinas, apagar luces de techo, limpiar la mesa, poner flores, montar la utilería. |
+| 0:30 – 1:15 | **La bienvenida (Lola)** | Tarjeta: plano detalle de la pluma escribiendo «Para ti» y plano medio de las manos · meter la tarjeta en el sobre · dejarla sobre la mesa · servir el café · Lola sale de cuadro de espaldas. |
+| 1:15 – 2:00 | **Las telas** | Extender tul y encaje sobre la mesa · una mano alisa el encaje · muestras atadas con cinta · tijera junto a las telas. |
+| 2:00 – 3:00 | **El taller** | Bordado de las dos artesanas en macro y cámara lenta (60 fps), 3–4 tomas · aguja enhebrando · pedrería una por una · un solo plano general del taller, desenfocado, como atmósfera. |
+| 3:00 – 3:30 | **La prueba** | Alfiler entrando en la tela del maniquí · cinta métrica · ruedo · perchas con fundas (solo fragmentos). |
+| 3:30 – 4:00 | **La puerta** | Plano fijo desde adentro hacia la puerta: se abre despacio y entra la luz (3 tomas) · la sala vacía, lista, como primer plano del video. Fotos de respaldo. |
+
+## Utilería
+- Tarjeta de papel grueso o de algodón, sobre y pluma o estilógrafo.
+- Muestras de tul, encaje y seda; cinta para atarlas.
+- Pocillos de cerámica (si hay, los de Alado & Co.) y café recién hecho.
+- Flores frescas, blancas o de un solo tono.
+- Maniquí, alfiletero, cinta métrica, tijera de sastre.
+- Fundas para los vestidos en proceso.
 
 ## Cuidados
-- **Privacidad de las novias:** los vestidos en proceso son de clientas. Solo fragmentos y macros, nunca la silueta completa. Si hay un vestido de colección o de muestra, ese sí se puede mostrar entero.
-- **Caras:** ni Lola ni las confeccionistas salen de frente si no quieren. Manos, espaldas y desenfoque.
-- **Pantallas:** el chat de WhatsApp del plano de Lola debe ser genérico (sin nombres ni números reales).
-- **Música:** con licencia, nunca música en tendencia (regla de marca).
+- **La tarjeta no lleva el nombre de una clienta real:** «Para ti» o una inicial.
+- **Vestidos de novias:** solo fragmentos, nunca la silueta completa.
+- **Caras:** nadie sale de frente si no quiere.
+- **Música:** con licencia y nunca en tendencia.
 
 ## Por confirmar
 1. Fecha de la grabación.
-2. ¿Hay una sala o rincón para las citas que se pueda montar?
-3. ¿Hay un vestido de colección o de muestra para mostrar entero?
-4. ¿Cuántas pruebas tiene una novia? (Si es un número fijo, se puede decir en la lámina 8.)
+2. **La frase de una novia** (Lola puede tener mensajes o comentarios; se pide permiso y va sin nombre).
+3. «Cuantas veces haga falta» en la lámina 5: confirmar con Andrés que es la política real de pruebas.
+4. Qué puerta y qué sala se usan.
