@@ -48,3 +48,16 @@
 - **Dónde:** un cuarto pequeño sin eco (con ropa o cortinas alrededor), el celular a un palmo de la boca.
 - **Cómo:** 3 o 4 tomas completas, despacio, con pausas entre frases. Se elige la mejor en edición.
 - **Al cierre del video** (en pantalla, no narrado): «Tienda Alado & Co. · Parque de El Retiro · [horario]».
+
+## Versión elegida (29 oct)
+**Español**
+> Este año, la Navidad no llegó a Alado con prisa.
+> Llegó despacio, como llegan las cosas hechas a mano:
+> una flor bordada, un plato pintado, una mesa puesta.
+> Ya puedes visitar nuestra tienda de El Retiro.
+
+**English**
+> This year, Christmas didn't hurry to Alado.
+> It arrived slowly, the way handmade things do:
+> an embroidered flower, a painted plate, a table set and waiting.
+> You can now visit our store in El Retiro.
