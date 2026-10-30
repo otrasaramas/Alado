@@ -61,3 +61,18 @@
 > It arrived slowly, the way handmade things do:
 > an embroidered flower, a painted plate, a table set and waiting.
 > You can now visit our store in El Retiro.
+
+## Versión alegre (30 oct, propuesta de Sara ajustada)
+**English**
+> This year, Christmas didn't walk to Alado. It ran.
+> Excited, impatient, dying to arrive,
+> and here it found everything waiting:
+> an embroidered flower, a painted plate, a table already set.
+> You can now visit our store in El Retiro.
+
+**Español**
+> Este año, la Navidad no llegó caminando a Alado. Llegó corriendo.
+> Emocionada, impaciente, con ganas de llegar,
+> y aquí lo encontró todo listo:
+> una flor bordada, un plato pintado, una mesa ya puesta.
+> Ya puedes visitar nuestra tienda de El Retiro.
