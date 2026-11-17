@@ -9,10 +9,10 @@ def F(t): return f'<span class="fill">{t}</span>'
 
 NUM = "03"; FECHA_DIA = "17 de noviembre"; FECHA_ANIO = "de 2026"
 ITEMS = [  # título, descripción, fecha, cantidad (texto), cant, unitario
- ("Video de la tienda de El Retiro", "Día completo de grabación en El Retiro, edición y entrega", "23/10", "1", 1, 200000),
- ("Video con material de Alado", "Edición, música y texto sobre material suministrado por Alado", F("[fecha]"), "1", 1, 140000),
- ("Fotografías de producto", "Sesión en la tienda de El Retiro, selección y corrección de color", "23/10", "124", 124, 4000),
- ("Set de historias de Instagram", "Set producido con fotografías propias y material de Alado", F("[fecha]"), "1 set", 1, 120000),
+ ("Video de la tienda de El Retiro", "Día completo de grabación en El Retiro, edición y entrega", "28/10", "1", 1, 200000),
+ ("Video con material de Alado", "Edición, música y texto sobre material suministrado por Alado", "13/11", "1", 1, 140000),
+ ("Fotografías de producto", "Sesión en la tienda de El Retiro, selección y corrección de color", "28/10", "124", 124, 4000),
+ ("Set de historias de Instagram", "Set producido con fotografías propias y material de Alado", "13/11", "1 set", 1, 120000),
 ]
 total = sum(c * v for *_, c, v in ITEMS)
 WORDS = "NOVECIENTOS CINCUENTA Y SEIS MIL PESOS M/CTE"
