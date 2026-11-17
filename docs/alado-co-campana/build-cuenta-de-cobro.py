@@ -10,7 +10,7 @@ def F(t): return f'<span class="fill">{t}</span>'
 ITEMS = [
  ("Video de la tienda de El Retiro", "Un día completo de grabación en El Retiro, edición y entrega.", 1, 200000),
  ("Video editado con material de Alado", "Edición, música y texto sobre el material suministrado por Alado. Sin grabación.", 1, 140000),
- ("Fotografías de producto", "Sesión de fotografía de producto con la cámara de Alado, selección y corrección de color. 124 fotografías editadas entregadas.", 124, 3000),
+ ("Fotografías de producto", "Sesión de fotografía de producto con la cámara de Alado, selección y corrección de color. 124 fotografías editadas entregadas.", 124, 4000),
  ("Set de historias de Instagram", "Un set producido con fotografías propias y material de Alado.", 1, 120000),
 ]
 total = sum(q * v for *_, q, v in ITEMS)
@@ -54,7 +54,7 @@ td {{ padding:3mm 2mm; border-bottom:1px solid var(--rule); vertical-align:top; 
 <p style="margin:0 0 3mm">Servicios de creación de contenido para Alado &amp; Co., campaña de Navidad en la tienda de El Retiro.</p>
 <table><thead><tr><th>Servicio</th><th class="num">Cant.</th><th class="num">Valor unit.</th><th class="num">Subtotal</th></tr></thead>
 <tbody>{rows}<tr class="tot"><td>Total a pagar</td><td></td><td></td><td class="num">{money(total)}</td></tr></tbody></table>
-<div class="words">Son: <b>ochocientos treinta y dos mil pesos moneda corriente.</b><br>Abonos recibidos: {F("[$ 0]")} · Saldo a pagar: {F("[" + money(total) + "]")}</div>
+<div class="words">Son: <b>novecientos cincuenta y seis mil pesos moneda corriente.</b><br>Abonos recibidos: {F("[$ 0]")} · Saldo a pagar: {F("[" + money(total) + "]")}</div>
 <h2>Forma de pago</h2>
 <div class="pay"><div><small style="color:var(--muted);font-weight:600;letter-spacing:1px;font-size:7pt">BANCO Y TIPO DE CUENTA</small><br>{F("[Banco · ahorros / corriente]")}</div>
 <div><small style="color:var(--muted);font-weight:600;letter-spacing:1px;font-size:7pt">NÚMERO DE CUENTA</small><br>{F("[número]")}</div>
